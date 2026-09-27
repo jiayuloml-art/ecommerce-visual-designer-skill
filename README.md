@@ -1,25 +1,39 @@
-# ecommerce-visual-designer — V1 Draft
+# ecommerce-visual-designer
 
-This package is the first Codex-compatible draft derived from the V0.6 framework.
+A Codex-compatible AI Skill for e-commerce visual design.
 
-## Test philosophy
-Use fresh-context black-box tests to separate skill quality from long-chat context leakage.
+This V1 draft turns an incomplete client brief into a structured workflow for:
+- diagnosis and strategy,
+- output-package recommendation,
+- platform and technical-spec resolution,
+- art direction and campaign visual systems,
+- production/tool routing,
+- visual QA and delivery.
 
-### Black-box mode
-Give the agent only:
-- this Skill package,
-- one test brief,
-- test assets when present.
+## Structure
 
-Do not provide the expected-behavior file to the agent.
+- `SKILL.md` — main controller and operating rules
+- `PROJECT_STATE.schema.md` — persistent project-state schema
+- `references/` — progressively loaded design, platform, production, provider, and QA references
 
-### Debug / regression mode
-Enable DEVELOPMENT / DEBUG MODE and inspect routing, state, QA, and fallback behavior after a black-box failure.
+## Client behavior
 
-## Recommended first test
-`tests/T01-coffee-detail/brief.md`
+The Skill defaults to **CLIENT MODE**: client-facing responses stay concise and decision-oriented. Internal taxonomies, state labels, routing logic, and debug diagnostics remain hidden unless development/debugging is explicitly requested.
 
-Run once in a fresh context, then compare against `expected-behaviors.md`.
+## Testing
 
-## Pass philosophy
-A visually attractive result does not automatically pass. Truth, platform readiness, client communication, routing, and artifact status matter.
+Black-box evaluation files are intentionally kept **outside this repository** so the tested agent cannot read expected behaviors in advance.
+
+Recommended evaluation pattern:
+
+1. Install/use this Skill in a fresh Codex context.
+2. Provide only the test brief and any test assets.
+3. Run the task without exposing the expected-behavior rubric.
+4. Compare the result against the external evaluation rubric afterward.
+5. Use DEVELOPMENT / DEBUG MODE only when diagnosing a failed test.
+
+## Status
+
+**V1 Draft** — ready for fresh-context black-box testing and iterative patching.
+
+A visually attractive result is not automatically a pass. Product truth, client communication, routing, platform readiness, QA, and artifact status all matter.
