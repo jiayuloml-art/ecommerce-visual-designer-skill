@@ -1,20 +1,46 @@
 # ecommerce-visual-designer
 
-A Codex-compatible AI Skill for e-commerce visual design.
+A portable AI Skill for e-commerce visual design.
 
-This V1 draft turns an incomplete client brief into a structured workflow for:
-- diagnosis and strategy,
-- output-package recommendation,
-- platform and technical-spec resolution,
-- art direction and campaign visual systems,
-- production/tool routing,
-- visual QA and delivery.
+## Version status
 
-## Structure
+- `main` remains the stable V1 baseline until V1.1 is approved.
+- `release/v1.1` is the integration branch for the V1.1 architecture and behavior upgrade.
+- The V1 baseline commit is `953d35840649bdfe067b80f79da836c7a72cb3ca`.
 
-- `SKILL.md` — main controller and operating rules
-- `PROJECT_STATE.schema.md` — persistent project-state schema
-- `references/` — progressively loaded design, platform, production, provider, and QA references
+## What V1.1 changes
+
+V1.1 keeps the seven-state controller and strengthens four areas:
+
+1. **Strategy intelligence** — selling-point discovery and evidence-backed visual benchmarking.
+2. **Production discipline** — non-redundant output planning, anchor-first expansion, asset preservation, and local revision.
+3. **Production compilation** — structured per-output/slot plans with truth constraints, scene layers, visual resource allocation, text ownership, routing, and QA states.
+4. **Runtime portability** — host/runtime adaptation is separated from production-provider selection.
+
+## Repository structure
+
+```text
+SKILL.md
+PROJECT_STATE.schema.md
+CHANGELOG.md
+references/
+├── context/
+│   ├── platforms/
+│   └── categories/
+├── methods/
+│   ├── strategy/
+│   ├── mediums/
+│   ├── visual/
+│   └── production/
+└── ai-tools/
+```
+
+The upper-level structure separates:
+- **context** — external task conditions,
+- **methods** — design and production methods,
+- **ai-tools** — host/runtime adaptation.
+
+The detailed design taxonomy remains inside those layers rather than being flattened into one directory.
 
 ## Client behavior
 
@@ -22,18 +48,15 @@ The Skill defaults to **CLIENT MODE**: client-facing responses stay concise and 
 
 ## Testing
 
-Black-box evaluation files are intentionally kept **outside this repository** so the tested agent cannot read expected behaviors in advance.
+Black-box evaluation files and expected-behavior rubrics remain outside the runtime Skill so the tested agent cannot read answers in advance.
 
-Recommended evaluation pattern:
+Recommended evaluation after V1.1 integration:
+- full-flow,
+- boundary behavior,
+- revision/local repair,
+- capability failure,
+- visual quality,
+- cross-runtime behavior,
+- holdout regression.
 
-1. Install/use this Skill in a fresh Codex context.
-2. Provide only the test brief and any test assets.
-3. Run the task without exposing the expected-behavior rubric.
-4. Compare the result against the external evaluation rubric afterward.
-5. Use DEVELOPMENT / DEBUG MODE only when diagnosing a failed test.
-
-## Status
-
-**V1 Draft** — ready for fresh-context black-box testing and iterative patching.
-
-A visually attractive result is not automatically a pass. Product truth, client communication, routing, platform readiness, QA, and artifact status all matter.
+A visually attractive result is not automatically a pass. Product truth, compliance, technical readiness, client communication, routing, QA state, and artifact status remain non-negotiable hard constraints.

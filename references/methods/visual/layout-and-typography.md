@@ -13,6 +13,15 @@ Prefer deterministic production for:
 
 Image models may generate atmosphere, lettering concepts, or text-free layouts, but uncontrolled text generation is not a reliable source of final commercial copy when exactness matters.
 
+## Text rendering ownership
+Assign one mode for each text-critical output/slot:
+
+- **DETERMINISTIC_LAYOUT** — exact copy is placed by a deterministic layout/composition system.
+- **MODEL_RENDERED_AND_VERIFIED** — model rendering is acceptable only when the final rendered text is explicitly verified.
+- **NO_TEXT** — the visual intentionally contains no in-image text.
+
+Default exact commercial text to DETERMINISTIC_LAYOUT.
+
 ## Layout-first use cases
 - promotional banners,
 - price/offer modules,

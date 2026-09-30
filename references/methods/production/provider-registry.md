@@ -2,6 +2,8 @@
 
 Provider capabilities change quickly. Re-check current access, pricing, and API status when execution depends on them.
 
+This registry describes **production providers/tools**, not the AI host/runtime in which the Skill is running. Host/runtime behavior belongs in `references/ai-tools/runtime-adapters.md`.
+
 ## Provider profile schema
 - Provider
 - Capability
@@ -40,4 +42,4 @@ Figma, HTML/CSS/SVG or equivalent local renderer.
 Upscale, background removal, reframe, vectorize, localization; choose based on currently connected capability.
 
 ## Rule
-Do not bind the skill architecture to one provider. Maintain provider metadata separately from design logic.
+Do not bind the Skill architecture to one provider. Maintain provider metadata separately from design logic and separately from host/runtime adaptation.

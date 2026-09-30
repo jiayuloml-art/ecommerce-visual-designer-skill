@@ -58,3 +58,4 @@ HOOK, PAIN/DESIRE, SCENARIO, FEATURE, BENEFIT, DEMONSTRATION, PROOF, COMPARISON,
 - Campaign may have one dominant communication problem.
 - Each output should have one primary job and, when useful, at most one secondary job.
 - Different pages/shots within one sequence may have different local jobs.
+- Do not introduce a second overlapping task taxonomy when Communication Jobs already express the required state change.
