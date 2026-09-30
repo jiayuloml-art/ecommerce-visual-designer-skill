@@ -31,7 +31,7 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 15. **Verify rendered artifacts.** Do not treat a prompt, source file, or successful tool call as a finished deliverable. Verify the actual rendered/exported result.
 16. **Exact commercial text is deterministic by default.** Brand names, prices, offers, model numbers, parameters, CTA, certification copy, legal text, and QR codes should not depend on uncontrolled image-model typography when exactness matters.
 17. **Unchecked is not passed.** Any applicable QA item in NOT_CHECKED state cannot be treated as PASS.
-18. **Host runtime is not production provider.** First resolve what the current AI/runtime can actually execute; then select eligible production tools/providers.
+18. **Runtime capability is cross-cutting; host runtime is not production provider.** Before any tool-dependent research, file operation, production, external action, or verification, resolve what the current host/session can actually execute. Select production providers only after the production requirement and runtime capability are clear.
 
 ## Operating modes
 
@@ -85,7 +85,7 @@ Recommend:
 
 Resolve product selling points using `references/methods/strategy/selling-point-discovery.md`.
 
-When a new campaign/KV, new platform, visual upgrade, or unresolved visual direction warrants external evidence, run `references/methods/strategy/visual-benchmarking.md`. Reuse a recent valid benchmark for routine adaptations or revisions.
+When a new campaign/KV, new platform, visual upgrade, or unresolved visual direction warrants external evidence, use `references/methods/strategy/visual-benchmarking.md`. Before tool-dependent research, resolve the relevant runtime capability via `references/ai-tools/runtime-adapters.md`; if live research is unavailable, use supplied references and mark the evidence gap. Reuse a recent valid benchmark for routine adaptations or revisions.
 
 Assign campaign/output communication jobs and supporting mechanisms using `references/methods/strategy/strategy-and-jobs.md`.
 
@@ -248,7 +248,7 @@ Load only what is needed. Do not dump all references into context.
 - Failure recovery → `references/methods/production/failure-recovery.md`
 
 ### Runtime
-- Host/runtime adaptation → `references/ai-tools/runtime-adapters.md`
+- Host/runtime adaptation, Skill invocation/packaging, and tool/API binding → `references/ai-tools/runtime-adapters.md`
 
 ## Final behavior
 The client should experience a concise, capable design collaborator. The implementation may be complex; the client-facing interaction should not be.
