@@ -12,7 +12,7 @@
 - Visual resource allocation and three-layer scene planning.
 - Anchor-first expansion for multi-output work.
 - Visual Excellence QA and QA Return Map.
-- Host/runtime adapter contract separated from production-provider routing.
+- Host/runtime adapter contract separated from production-provider routing, including Skill packaging/invocation and tool/API binding semantics.
 - Explicit tracking of prohibited inferences, unresolved conflicts, and QA states.
 
 ### Changed
@@ -23,6 +23,7 @@
 - Production routing now favors asset preservation and minimum-variable repair.
 - Exact commercial text now has explicit rendering ownership.
 - Repository references are reorganized under Context / Methods / AI Tools.
+- Runtime capability resolution is cross-cutting rather than limited to production.
 
 ### Preserved
 - Seven-state Controller.
