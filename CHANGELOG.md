@@ -24,6 +24,9 @@
 - Exact commercial text now has explicit rendering ownership.
 - Repository references are reorganized under Context / Methods / AI Tools.
 - Runtime capability resolution is cross-cutting rather than limited to production.
+- Repository growth follows stable-responsibility / caller / loading-condition / non-overlap governance.
+- After hard gates pass, Visual Excellence is the primary optimization target.
+- Product Truth now uses pre-lock, compile-guard, and rendered-result checkpoints where fidelity/claims matter.
 
 ### Preserved
 - Seven-state Controller.
