@@ -14,6 +14,8 @@ Hard-gate failures cannot be averaged away by aesthetic scores.
 ### Q0 Fact / Product Truth QA
 Check product/SKU/condition, prices, claims, numbers, logo/brand facts, accessories, variant, labels, geometry, and prohibited inferences.
 
+For rendered product visuals, perform the T2 source comparison: compare the actual artifact against the supplied/verified source product and the slot truth constraints, not only against the prompt.
+
 ### Q1 Technical QA
 Canvas, aspect ratio, resolution, duration, file size, format, font load, missing assets, overflow, safe zone, collisions, export integrity.
 
@@ -32,6 +34,14 @@ Check platform-valid action path, output/surface fit, current technical spec, cl
 
 ## Visual Excellence QA
 Run after applicable hard gates pass.
+
+Within the soft optimization layer, prioritize:
+1. **Visual Excellence**
+2. Communication Effectiveness
+3. Platform Fit
+4. Production Efficiency
+
+This order never overrides Product Truth, Compliance, or critical Technical Accuracy.
 
 ### V1 Full-size Craft
 Check product fidelity, material/light coherence, edges, reflections, typography, contact/grounding, and visible artifacts.
