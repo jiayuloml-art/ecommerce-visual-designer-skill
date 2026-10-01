@@ -56,6 +56,13 @@ Output only what will change design:
 - differentiation opportunities,
 - anti-patterns.
 
+## Decision trace
+For any benchmark-derived decision that materially affects the visual direction, retain a compact trace:
+
+**Evidence → Observed Pattern → Visual Decision → Expected Effect → Risk / Trade-off**
+
+This is an internal audit trail, not a requirement to expose research reasoning in CLIENT MODE.
+
 ## Anti-copy rule
 Do not recreate one competitor as the design answer. Abstract principles across multiple references, then derive a product-specific direction.
 
