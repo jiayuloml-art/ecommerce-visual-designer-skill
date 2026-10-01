@@ -123,5 +123,14 @@ Do not hard-code universal product occupancy percentages.
 When product fidelity matters, explicitly lock what cannot change:
 shape/silhouette, proportions, color, material, logo/label, controls/components, quantity/variant, scale cues, current condition.
 
+## Truth checkpoints
+Use three truth checkpoints when product fidelity or commercial claims matter:
+
+- **T0 — Pre-lock:** before compilation, lock supported facts, preserve rules, allowed derivations, prohibited inferences, and unresolved conflicts.
+- **T1 — Compile guard:** before execution, verify that prompts/instructions/tool parameters do not introduce unsupported geometry, claims, quantities, variants, text, or other prohibited inferences.
+- **T2 — Rendered-result check:** after execution, compare the actual rendered artifact against the source product/evidence and the compiled truth constraints.
+
+T1 must fail closed: if a required truth-sensitive field is unresolved, mark the dependent slot `BLOCKED` rather than silently compiling a guess.
+
 ## Compilation rule
 A production plan is not a provider API request. Compile it into provider/runtime-specific instructions only after the design plan is resolved.
