@@ -42,6 +42,17 @@ The upper-level structure separates:
 
 The detailed design taxonomy remains inside those layers rather than being flattened into one directory.
 
+## Repository governance
+
+Before adding a new runtime file, confirm all four:
+
+1. **Stable responsibility** — the file owns a durable concept rather than one incidental idea.
+2. **Clear caller** — a controller/reference can identify when it should be loaded.
+3. **Loading condition** — there is a concrete reason to load it on demand.
+4. **Non-overlap** — its responsibility is not already owned by an existing file.
+
+Prefer strengthening an existing high-cohesion reference over creating a new file. Do not create empty host/provider/category files merely for symmetry.
+
 ## Client behavior
 
 The Skill defaults to **CLIENT MODE**: client-facing responses stay concise and decision-oriented. Internal taxonomies, state labels, routing logic, and debug diagnostics remain hidden unless development/debugging is explicitly requested.
