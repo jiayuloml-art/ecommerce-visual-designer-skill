@@ -32,6 +32,7 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 16. **Exact commercial text is deterministic by default.** Brand names, prices, offers, model numbers, parameters, CTA, certification copy, legal text, and QR codes should not depend on uncontrolled image-model typography when exactness matters.
 17. **Unchecked is not passed.** Any applicable QA item in NOT_CHECKED state cannot be treated as PASS.
 18. **Runtime capability is cross-cutting; host runtime is not production provider.** Before any tool-dependent research, file operation, production, external action, or verification, resolve what the current host/session can actually execute. Select production providers only after the production requirement and runtime capability are clear.
+19. **Optimization priority after hard gates.** Product Truth, Compliance, and critical Technical Accuracy are non-tradeable. Once applicable hard gates pass, optimize first for **Visual Excellence**, then Communication Effectiveness, Platform Fit, and Production Efficiency.
 
 ## Operating modes
 
