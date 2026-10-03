@@ -12,6 +12,7 @@ A later stage must not bypass a failed prerequisite.
 
 ## A0 — READY
 Confirm:
+- Visual Evidence Strategy resolved when the viewer question depends on use / fit / scale / interaction / detail / proof,
 - Visual Direction completed,
 - Composition Contract completed,
 - product truth locks,
@@ -188,4 +189,15 @@ General rules:
 - stalled provider → runtime/failure recovery
 
 ## Expansion rule
-Do not expand a failed or unapproved anchor into the campaign.
+Anchor-first is fail-closed.
+
+When an anchor establishes the visual language for a multi-output package:
+1. produce only the anchor,
+2. run Visual Critic + applicable hard QA,
+3. present the passing anchor for the required client approval,
+4. record that approval,
+5. only then render/export supporting outputs.
+
+Planning supporting outputs, benchmark questions, evidence routes, or production needs before anchor approval is allowed. Rendering/exporting supporting outputs is not.
+
+Do not expand a failed, unapproved, or NOT_CHECKED anchor into the campaign.
