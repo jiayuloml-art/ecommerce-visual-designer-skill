@@ -72,3 +72,11 @@ Explain only material trade-offs, for example:
 
 ## Progress communication
 Do not narrate every internal state. Report progress only when it changes what the client needs to know or decide.
+
+## Visual delivery rationale
+When delivering a visual artifact, include a concise client-facing rationale without waiting to be asked:
+- one-sentence visual thesis,
+- 2–3 key visual decisions and how they support the communication goal,
+- any unresolved platform/production caveat that affects use.
+
+Keep this short and presentation-ready. It is not hidden chain-of-thought and should not become a process diary.
