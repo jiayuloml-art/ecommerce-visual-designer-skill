@@ -41,6 +41,22 @@ What files can be read/written?
 What path/reference model applies?
 What persistence exists?
 
+### 4A. Workspace root / project-path mapping
+The Core Skill uses **relative, host-neutral project paths**. The runtime adapter must resolve those paths against the actual workspace available in the current host.
+
+Default logical project root:
+`projects/<project-id>/`
+
+The exact physical location may differ by host or user-selected workspace. Do not hard-code a particular product directory, operating-system drive, home directory, or Skill installation path into Core rules.
+
+Keep these boundaries distinct where the host permits:
+- Skill/configuration files,
+- active-project files,
+- sibling/archived projects,
+- temporary runtime storage.
+
+A new project should not inherit sibling-project files merely because the runtime can technically read them. Runtime capability defines what **can** be accessed; project source scope defines what **may be treated as current evidence**.
+
 ### 5. Script/code execution
 Can local scripts run?
 What languages/runtimes are available?
