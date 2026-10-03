@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0] — Unreleased
+
+### Added
+- Project workspace isolation: each distinct project uses an explicit active project scope instead of inheriting unrelated files from a shared parent directory.
+- Portable relative project layout (`projects/<project-id>/input|state|working|output`) with runtime-specific path mapping.
+- Explicit cross-project source-scope rules: sibling projects and prior artifacts are not current evidence unless deliberately selected.
+
+### Changed
+- Input resolution now distinguishes filesystem accessibility from project evidence scope.
+- Runtime adapters resolve host-neutral relative project paths rather than embedding one host's absolute/configuration path.
+- Production routing keeps project state, intermediates, and outputs inside the active project workspace by default.
+
 ## [1.1.0] — 2026-10-03
 
 V1.1 is the integrated baseline for external black-box testing. Test-driven corrections will be accumulated for V1.2.
