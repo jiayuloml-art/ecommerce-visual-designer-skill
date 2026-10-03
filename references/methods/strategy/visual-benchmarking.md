@@ -91,19 +91,95 @@ Overseas references are often appropriate here, but they should not be presented
 
 Extract reusable principles rather than copied layouts.
 
-## Visual mechanism deconstruction
-For hero/KV and visual-upgrade work, do not stop at mood adjectives such as “premium”, “warm”, “clean”, or “lifestyle”. Deconstruct selected references into executable mechanisms where applicable:
-- first focal point and hierarchy,
-- product scale / crop / angle,
-- product-to-context relationship,
-- composition balance, tension, and negative space,
-- typography role and spatial relationship to the product,
-- light direction, contrast, material treatment, and depth,
-- scene semantics and prop density,
-- brand-specific visual device,
-- anti-patterns or saturated category clichés to avoid.
+## Reference deconstruction — observe before abstracting
+
+For hero/KV and visual-upgrade work, the agent must first record **visible design facts** from the selected references before summarizing them into principles.
+
+Do not treat adjectives such as “premium”, “warm”, “clean”, “minimal”, “lifestyle”, “restrained”, or “dynamic” as sufficient observation.
+
+For each selected reference, inspect the relevant dimensions below and record only what is actually visible:
+
+### Composition
+- where the product sits in the frame,
+- first and second focal events,
+- visual center of gravity,
+- crop / overlap / occlusion,
+- foreground / midground / background depth,
+- negative-space location and function,
+- directional flow or counterbalance.
+
+### Product presentation
+- product view / angle,
+- upright, tilted, held, inserted, suspended, cropped, nested, or otherwise positioned,
+- apparent scale relative to nearby objects,
+- whether the product is isolated or physically participates in the scene,
+- which product details are emphasized or intentionally suppressed.
+
+### Scene / context
+- which concrete objects establish the use context,
+- whether the scene shows an actual use relationship or only decorative destination imagery,
+- prop count and semantic role,
+- environmental scale cues,
+- whether the setting supports the communication job.
+
+### Human interaction
+When people or body parts appear, record:
+- what action is happening,
+- where physical contact occurs,
+- whether the person demonstrates use, scale, emotion, ownership, or attention guidance,
+- whether the person competes with or supports the product.
+
+### Typography
+- headline location and scale,
+- line-break behavior,
+- alignment and rhythm,
+- relationship between text mass and product mass,
+- whether text overlaps, frames, counterbalances, or remains separate from the product,
+- how price / proof / CTA are integrated into the hierarchy.
+
+### Color / light / material
+- dominant and accent color relationships,
+- saturation / temperature contrast,
+- source-light direction and softness,
+- how the product separates from or absorbs the environment,
+- material highlights, reflections, shadow behavior, and depth cues.
+
+### Graphic / semantic effects
+- what lines, gradients, particles, diagrams, shapes, or effects do,
+- whether they explain product meaning, organize attention, create depth, or merely decorate,
+- how they connect spatially to product, copy, or scene.
+
+For an important selected reference, prefer at least **3 concrete observable facts** across the relevant dimensions before abstracting the lesson. Do not pad the record with dimensions that are not visible or not relevant.
+
+## Visual mechanism extraction
+
+Only after the observable facts are recorded, extract reusable mechanisms.
+
+For each useful reference, keep the chain explicit:
+
+**Visible Observation → Design Mechanism → Transfer Candidate → Do-not-copy Boundary**
+
+Prefer **1–3 strong mechanisms per reference** over a long list of vague principles.
+
+Examples of mechanisms include:
+- product held by a hand so portability is communicated through contact rather than destination scenery,
+- headline mass counterbalancing a tall product silhouette instead of occupying an independent text column,
+- low-saturation environment + brighter product + one commercial accent color,
+- partial foreground occlusion that gives the product depth and credible physical placement,
+- verified feature transformed into a semantic effect that also directs attention.
 
 The goal is not to reproduce a reference. It is to convert evidence into production-relevant design rules.
+
+## Anti-rationalization rule
+
+For a new hero/KV or deliberate visual upgrade, benchmarking must inform the design **before the Composition Contract is locked**.
+
+Do not:
+1. choose a familiar layout first,
+2. search references afterward,
+3. attach abstract phrases to rationalize an already-decided composition.
+
+If the reference did not materially influence any planned decision, record it as non-influential context rather than claiming it was transferred.
 
 ## Benchmark deliverable
 
@@ -146,9 +222,13 @@ For a new hero/KV or deliberate visual upgrade, the benchmark is **not complete*
 Before production, the synthesis should be able to answer, at minimum:
 - what should dominate the first impression,
 - how the product should relate to the scene and copy,
-- which composition/typography/light mechanisms will be used,
+- which product placement / interaction behavior is worth transferring,
+- which composition / typography / color / light mechanisms will be used,
 - what visual clichés or template behaviors must be avoided,
-- which mechanism comes from which evidence track.
+- which mechanism comes from which evidence track,
+- which current design decision each selected mechanism will change or constrain.
+
+When benchmarking is required, at least one selected mechanism must materially affect the proposed visual direction or composition. If none does, the benchmark has not yet become design input.
 
 If evidence is insufficient to support those decisions, either continue research, use a curated Skill baseline, or explicitly downgrade to exploratory concept work.
 
