@@ -9,6 +9,7 @@
 
 ### Changed
 - Visual Benchmarking now prioritizes target-platform/category evidence, qualifies samples by accessibility and visible market signals, keeps Market/Platform and Visual Excellence references distinct, and requires auditable benchmark deliverables before synthesis.
+- Platform/input resolution now asks the minimum sufficient upstream question: when an output type is already known, resolve the target platform first and infer ordinary downstream surface defaults unless a remaining ambiguity materially changes execution.
 - Input resolution now distinguishes filesystem accessibility from project evidence scope.
 - Runtime adapters resolve host-neutral relative project paths rather than embedding one host's absolute/configuration path.
 - Production routing keeps project state, intermediates, and outputs inside the active project workspace by default.
