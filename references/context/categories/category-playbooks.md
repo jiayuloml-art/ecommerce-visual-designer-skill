@@ -57,6 +57,21 @@ Ask internally:
 
 A campaign phrase such as "travel", "autumn", "lightweight", or "outdoor" does not by itself justify a destination landscape or decorative lifestyle background.
 
-For simple utility products, prefer a scene where the product's relation to the user/action/context is legible. If the selected scene is primarily symbolic, the Visual Direction should explicitly justify that abstraction.
+For simple utility products, prefer a scene where the product's relation to the user/action/context is legible.
 
-Scene validity must be handed to Visual Direction / Anchor Production as a constraint, not merely recorded as category research.
+### Daily-use functional product scene priority
+
+For ordinary physical products whose value is understood through daily use — such as drinkware, small home appliances, kitchen tools, storage, commuting goods, wearables, and similar utility products — use this default scene priority for hero and key selling-point visuals:
+
+1. **real use action / interaction**,
+2. **credible use-context environment**,
+3. **use-adjacent scene with clear contextual cues**,
+4. **abstract pedestal / geometric / symbolic stage**.
+
+A person is not mandatory. Realism can also come from credible support, containment, nearby objects, scale cues, occlusion, or environmental traces of use.
+
+Do not default to abstract blocks, pedestals, or decorative geometry merely because they look polished. If an abstract scene is selected for a daily-use functional product, the Visual Direction must state why it serves the communication job better than a credible use context. “Looks premium” is not sufficient by itself.
+
+If the selected scene is primarily symbolic, the Visual Direction should explicitly justify that abstraction.
+
+Scene validity must be handed to Visual Direction / Visual Evidence Strategy / Anchor Production as a constraint, not merely recorded as category research.
