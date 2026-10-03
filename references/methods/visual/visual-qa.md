@@ -106,6 +106,8 @@ For multi-image/multi-slot work, compare side-by-side for:
 - drift.
 
 ### V11 Anchor Acceptance Gate
+For representative hero/KV anchors, the authoritative gate order and reject/revision behavior are defined in `anchor-production-protocol.md`. This section supplies QA criteria; it does not permit skipping an earlier protocol stage.
+
 Before presenting a representative anchor as a direction for client approval, all applicable hero/KV checks must pass or be explicitly marked unresolved:
 - product truth,
 - grounding/contact,
