@@ -91,6 +91,20 @@ Overseas references are often appropriate here, but they should not be presented
 
 Extract reusable principles rather than copied layouts.
 
+## Visual mechanism deconstruction
+For hero/KV and visual-upgrade work, do not stop at mood adjectives such as “premium”, “warm”, “clean”, or “lifestyle”. Deconstruct selected references into executable mechanisms where applicable:
+- first focal point and hierarchy,
+- product scale / crop / angle,
+- product-to-context relationship,
+- composition balance, tension, and negative space,
+- typography role and spatial relationship to the product,
+- light direction, contrast, material treatment, and depth,
+- scene semantics and prop density,
+- brand-specific visual device,
+- anti-patterns or saturated category clichés to avoid.
+
+The goal is not to reproduce a reference. It is to convert evidence into production-relevant design rules.
+
 ## Benchmark deliverable
 
 Keep the evidence structure visible enough that the design recommendation can be audited.
@@ -126,6 +140,18 @@ Only after both tracks are sufficiently established, synthesize:
 
 If one track is weak or unavailable, say so explicitly instead of presenting a complete-sounding benchmark.
 
+### Completion gate
+For a new hero/KV or deliberate visual upgrade, the benchmark is **not complete** until the synthesis yields a compact set of executable visual rules for the current task. A list of URLs, screenshots, or style adjectives alone is insufficient.
+
+Before production, the synthesis should be able to answer, at minimum:
+- what should dominate the first impression,
+- how the product should relate to the scene and copy,
+- which composition/typography/light mechanisms will be used,
+- what visual clichés or template behaviors must be avoided,
+- which mechanism comes from which evidence track.
+
+If evidence is insufficient to support those decisions, either continue research, use a curated Skill baseline, or explicitly downgrade to exploratory concept work.
+
 ## Decision trace
 For any benchmark-derived decision that materially affects the visual direction, retain a compact trace:
 
@@ -137,3 +163,8 @@ This is an internal audit trail, not a requirement to expose hidden reasoning in
 Do not recreate one competitor as the design answer. Abstract principles across multiple references, then derive a product-specific direction.
 
 If live research is unavailable, use supplied references and clearly mark the evidence gap.
+
+## Curated Skill baseline
+A curated reference set bundled with the Skill may be used as a stable visual-quality baseline across models/runtimes. Curated entries should retain source, date checked, category/context, quality dimension, reusable principle, and non-copy boundary.
+
+Curated references complement live research; they do not replace current target-platform evidence when platform effectiveness or current technical behavior is material to the task.
