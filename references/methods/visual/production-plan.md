@@ -38,6 +38,21 @@ visual_lock:
 reference_map:
   # asset/reference id, role, what to take, preserve, influence, coverage limits
 
+preproduction_readiness:
+  platform_surface_resolved: NOT_CHECKED
+  truth_resolved: NOT_CHECKED
+  benchmark_translated: NOT_CHECKED
+  asset_plan_resolved: NOT_CHECKED
+  art_direction_resolved: NOT_CHECKED
+  production_route_resolved: NOT_CHECKED
+  recovery_route_resolved: NOT_CHECKED
+
+supporting_asset_plan:
+  existing_assets: []
+  assets_to_generate_or_source: []
+  semantic_purpose: []
+  truth_or_ip_limits: []
+
 composition:
   primary_focal_subject:
   product_scale_target:
@@ -54,6 +69,15 @@ scene_layers:
   atmosphere:
   semantic_context:
   attention_guidance:
+
+product_scene_integration:
+  perspective_scale:
+  contact:
+  shadow:
+  ambient_light_color:
+  edge_quality:
+  depth_occlusion:
+  preserve_product_identity: true
 
 content_layers:
   - product
@@ -119,9 +143,29 @@ The plan must make clear:
 
 Do not hard-code universal product occupancy percentages.
 
+## Pre-Production Readiness Gate
+Before a slot becomes `READY`, resolve every production-critical field that materially affects the intended result. A slot may still proceed as `S0 CONCEPT` with explicit gaps, but it must not silently enter production-ready execution.
+
+For hero/KV work, readiness normally includes:
+- output/surface/platform state when it changes composition or export behavior,
+- product-truth locks,
+- benchmark-to-visual mechanism translation when benchmarking is required,
+- art direction and first focal event,
+- required product/brand assets,
+- supporting scene/prop/usage assets needed by the concept,
+- primary production route,
+- recovery route for critical tool/provider failure.
+
+Do not call an expensive generation/edit route merely because a general mood has been chosen.
+
 ## Product identity anchors
 When product fidelity matters, explicitly lock what cannot change:
 shape/silhouette, proportions, color, material, logo/label, controls/components, quantity/variant, scale cues, current condition.
+
+## Fidelity-preserving integration
+Preserving the source product does not mean leaving it visually isolated from the scene. When a verified product layer is composited into a new environment, integrate it non-destructively through perspective/scale alignment, contact shadow, ambient light/color matching, edge treatment, depth, and occlusion as appropriate.
+
+Do not hide an integration failure inside a generic white card, rounded rectangle, or isolated cutout unless that separation is an intentional part of the approved art direction.
 
 ## Truth checkpoints
 Use three truth checkpoints when product fidelity or commercial claims matter:
