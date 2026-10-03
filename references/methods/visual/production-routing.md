@@ -8,7 +8,7 @@ Use for conceptual/lifestyle imagery, backgrounds, illustration, creative explor
 Use when existing product/person identity must be preserved while changing background, context, or local visual properties.
 
 ### R3 COMPOSITE
-Use when exact product/brand assets should be combined with generated scenes, lighting, shadows, or graphics.
+Use when exact product/brand assets should be combined with generated scenes, lighting, shadows, or graphics. A composite is incomplete until the product is plausibly integrated through scale/perspective, contact, shadow, ambient light/color, edge quality, depth, and occlusion where relevant.
 
 ### R4 LAYOUT
 Use when exact typography, prices, parameters, CTA, icon systems, or structured information dominate.
@@ -25,6 +25,16 @@ Use when generative imagery and deterministic commercial layers must coexist.
 - Mixed requirements → hybrid route.
 - Unknown product truth must never be generated as verified fact.
 - Use the simplest route that satisfies quality, fidelity, and precision; escalate only when needed.
+
+### Scene + exact-product pattern
+When a hero requires both lifestyle atmosphere and strict product fidelity, prefer a staged route when appropriate:
+1. create/source the scene or background without inventing the product,
+2. preserve the verified product layer,
+3. composite and integrate it into the scene,
+4. apply deterministic typography/brand layers,
+5. verify the rendered artifact against product source and art direction.
+
+If a required scene asset is missing, the production plan should identify and create/source it intentionally rather than defaulting to an empty template.
 
 ## Anchor-first production
 For a coordinated set with shared visual decisions:
@@ -54,6 +64,11 @@ before:
 **direction defect → re-art-direction**
 
 Do not regenerate unrelated verified layers.
+
+## Fallback quality rule
+An alternate route is a recovery path, not permission to collapse visual quality. A fallback artifact must still satisfy the intended communication job and applicable Visual Excellence QA. If the fallback preserves truth but materially degrades the approved visual concept, label it as a recovery draft/prototype and do not present it as equivalent final output.
+
+Generic white-card isolation, untouched cutout-on-template composition, or placeholder decoration is not a default product-preservation solution unless intentionally supported by the art direction.
 
 ## Slot-level routing
 Different slots in one campaign may use different routes. The campaign visual system can remain shared while hero, detail, proof, price, and video units use different production methods.
