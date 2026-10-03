@@ -3,11 +3,29 @@
 ## Core rule
 Never silently guess. Never silently downgrade fidelity.
 
+## Execution outcome states
+Treat a tool/provider execution as one of:
+- **SUCCESS** — a usable result was returned and can be verified.
+- **FAILED** — an explicit error or unusable result was returned.
+- **STALLED** — the call remains pending with no meaningful progress beyond the route/runtime's reasonable wait budget.
+
+A STALLED call is a failure-recovery condition. Do not keep waiting indefinitely or repeatedly tell the client that the same call is still running.
+
 ## Recovery order
 1. RECOVER in the current route.
 2. ALTERNATE ROUTE with equivalent capability.
 3. MANUAL HANDOFF with a provider-ready production pack.
 4. FOCUSED CLARIFICATION only for client-exclusive blocking information.
+
+## Bounded retry / stall recovery
+For a FAILED or STALLED production call:
+1. inspect whether the failure is transient and whether any useful partial artifact exists,
+2. retry the same route at most once when there is a concrete reason the retry may succeed,
+3. otherwise move to an equivalent alternate route,
+4. if the alternate route materially reduces visual quality or fidelity, downgrade artifact status and state that limitation,
+5. use manual handoff or focused clarification only when automatic recovery cannot responsibly continue.
+
+Do not restart the same expensive operation in a loop. Runtime-specific adapters/providers may define a reasonable wait budget; Core does not hard-code one universal minute threshold.
 
 ## Missing product information
 - If non-blocking: omit or use explicit placeholder.
@@ -36,6 +54,16 @@ Never silently guess. Never silently downgrade fidelity.
 
 ## External cost / asset upload
 Trigger HG3 before unapproved external spend, credits, login, or third-party asset upload.
+
+## Production-efficiency evidence
+When execution is materially slow, stalled, retried, or rerouted, record compact operational evidence in development state when available:
+- elapsed time to first usable artifact,
+- stalled/failed tool calls,
+- retry count,
+- route changes,
+- whether the final quality justified the added execution cost/time.
+
+This is diagnostic evidence, not client-facing narration by default.
 
 ## Artifact failure
 Classify:
