@@ -3,6 +3,42 @@
 ## Output discovery
 The client should not have to specify every deliverable. Recommend a package from strategy, platform, communication jobs, campaign scale, evidence needs, and viewer questions.
 
+## Output Contract Gate
+
+Visual production requires a **Confirmed Output Set**.
+
+The minimum contract for each output is:
+- output type,
+- platform/surface state,
+- primary communication job,
+- scope,
+- viewer question,
+- priority.
+
+### Explicit client output
+If the client already specified a sufficiently precise deliverable, use it as the contract starting point and resolve only material gaps.
+
+### Ambiguous output
+If the brief contains product facts, campaign copy, price, CTA, or assets but does **not** make the deliverable clear, do not silently convert the brief into a hero/KV/poster/main image/detail page.
+
+Instead:
+1. diagnose the likely communication need,
+2. recommend one primary output package or route,
+3. give a short reason,
+4. ask the client to approve or adjust it.
+
+This is a recommendation, not a questionnaire.
+
+### Platform/surface
+If platform/surface materially changes the output package, benchmark set, information density, composition, or technical production, resolve it before production.
+
+If the platform is unknown, the agent may recommend a likely route, but a platform-neutral concept may only be produced after the client explicitly approves that concept-only scope.
+
+### Fail-closed rule
+**No Confirmed Output Set → no visual production.**
+
+Preparing strategy, benchmark research, or a proposed output package is allowed before confirmation. Rendering/assembling the client-facing artifact is not.
+
 Each proposed output should include:
 - Output type
 - Platform / surface
