@@ -81,6 +81,9 @@ Check first, second, and supporting reads. Exact copy should remain legible at t
 ### V9 Strategy–Visual Alignment
 Confirm the dominant visual resource and first focal point support the approved communication job and hero selling point.
 
+### V9a Benchmark-to-Artifact Transfer
+When visual benchmarking informed the direction, verify that the final artifact actually expresses the selected reusable mechanisms (for example composition, hierarchy, light/material treatment, typography role, scene semantics, or brand device). A research summary that leaves no visible trace in the artifact does not satisfy this check.
+
 ### V10 Campaign Contact-sheet Review
 For multi-image/multi-slot work, compare side-by-side for:
 - unnecessary repetition,
@@ -89,6 +92,16 @@ For multi-image/multi-slot work, compare side-by-side for:
 - meaningful variation,
 - duplicate jobs,
 - drift.
+
+## Production Efficiency Review
+Keep this separate from Visual Excellence and hard gates. When materially relevant, record:
+- total elapsed time to a usable artifact,
+- stalls/timeouts,
+- retries and route changes,
+- avoidable tool calls or rework caused by unresolved upstream decisions,
+- whether the final artifact quality justified the production cost/time.
+
+A visually strong result may still have an efficiency problem; an efficient result may still fail Visual Excellence.
 
 ## Failure evidence and repair
 Every FAIL should identify:
