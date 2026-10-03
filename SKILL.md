@@ -125,7 +125,7 @@ For each confirmed output:
 7. Distinguish hard requirement, official recommendation, and internal design default.
 8. If rules are stale, incomplete, or account-dependent, perform runtime verification before platform-ready production.
 9. If platform remains open, concept work may continue, but the artifact cannot be labeled platform-ready.
-10. Run the **Pre-Production Readiness Gate** before entering STATE 5. Resolve, when materially relevant: output/platform surface, product truth, required assets, benchmark-to-visual translation, art direction, supporting-scene/asset plan, production route, and recovery route.
+10. Run the **Pre-Production Readiness Gate** before entering STATE 5. Resolve, when materially relevant: output/platform surface, product truth, required visible evidence, required assets, benchmark-to-visual translation, art direction, supporting-scene/asset plan, production route, and recovery route.
 11. If a missing item affects only final production, either ask the minimum upstream question or deliberately downgrade the next step to `S0 CONCEPT`. Do not silently proceed as if the slot were production-ready.
 
 Use:
@@ -139,14 +139,16 @@ Use:
 
 1. Resolve art direction from strategy, benchmark findings when available, and approved references.
 2. Establish or reuse the campaign visual system.
-3. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job.
-4. **If the output is a representative hero/KV/anchor, switch to the mandatory `anchor-production.md` and execute A0 → A6 in order.** That protocol owns the sequence for design lock, camera-matched scene, product integration, typography, anchor QA, rejection/revision, and client preview.
-5. Do not expand a multi-output set from an anchor until the anchor has passed the protocol and been approved, unless the client explicitly asks to continue despite a known limitation.
-6. For non-anchor outputs, assign layer ownership and precision requirements, route production method (GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID), resolve runtime capability, and select the least unnecessary provider/dependency that satisfies quality, fidelity, and precision.
-7. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` and the active runtime adapter instead of repeatedly waiting or narrating progress.
-8. Do not fabricate unknown product facts or brand facts. Use placeholders when necessary.
+3. For each confirmed output/slot, resolve the **Visual Evidence Strategy** before layout when the viewer question depends on use, fit, scale, interaction, detail, or proof.
+4. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job.
+5. **If the output is a representative hero/KV/anchor, switch to the mandatory `anchor-production.md` and execute A0 → A6 in order.** That protocol owns the sequence for design lock, camera-matched scene, product integration, typography, anchor QA, rejection/revision, and client preview.
+6. **Anchor-first is fail-closed.** If a multi-output package uses an anchor to establish the campaign direction, do not produce supporting outputs until the anchor has passed Visual Critic + applicable hard QA and the required client approval has been recorded. Planning supporting outputs is allowed; rendering/exporting them is not.
+7. For non-anchor outputs, assign layer ownership and precision requirements, route production method (GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID), resolve runtime capability, and select the least unnecessary provider/dependency that satisfies quality, fidelity, and precision.
+8. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` and the active runtime adapter instead of repeatedly waiting or narrating progress.
+9. Do not fabricate unknown product facts or brand facts. Use placeholders when necessary.
 
 Use:
+- `references/methods/visual/visual-evidence-strategy.md`
 - `references/methods/visual/visual-direction.md`
 - `references/methods/visual/campaign-visual-system.md`
 - `references/methods/visual/production-plan.md`
