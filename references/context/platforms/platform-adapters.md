@@ -42,4 +42,9 @@ C2C condition-and-trust commerce. Current item condition, real photos, defects, 
 Authenticated/curated commerce + lifestyle community. Platform assurance and product identity can be central trust sources.
 
 ## Rule
-Always resolve `Platform + Surface`; platform name alone is insufficient for production.
+Resolve the **target platform before platform-specific research, platform-fit claims, or final production**.
+
+Then resolve the surface at the minimum necessary level:
+- if the brief already names the output type (for example, a product detail page) and the platform has an ordinary/default implementation for that output, use or recommend that default without creating extra client questions;
+- ask for a more specific surface/device/container only when the ambiguity materially changes content structure, technical specs, or user flow;
+- concept/strategy work may continue while platform is unresolved, but platform-specific benchmarking and platform-ready status must wait.

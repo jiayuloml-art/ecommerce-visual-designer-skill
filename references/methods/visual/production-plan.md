@@ -6,11 +6,14 @@ Use one structured plan per output instance or independently produced slot. This
 Campaign-level strategy, product truth, and campaign visual system are shared.
 Production decisions are output/slot-specific.
 
+When `anchor: true`, the slot must follow `anchor-production.md`. The production plan records the current protocol stage but does not replace the protocol's mandatory transition gates.
+
 ```yaml
 slot_identity:
   slot_id:
   output_id:
   anchor: false
+  anchor_protocol_stage: null # AP0_READY | AP1_DESIGN_LOCK | AP2_SCENE_FIT | AP3_PRODUCT_INTEGRATION | AP4_TYPOGRAPHY | AP5_FINAL_QA | AP6_CLIENT_PREVIEW
 
 output_identity:
   output:
@@ -25,6 +28,15 @@ message:
   main:
   supporting:
 
+visual_evidence:
+  required_visible_evidence:
+  evidence_route:
+  scene_or_action:
+  required_assets: []
+  truth_boundary: []
+  benchmark_question:
+  fallback_evidence_route:
+
 truth_constraints:
   fact_ids: []
   preserve: []
@@ -36,7 +48,23 @@ visual_lock:
   allowed_changes: []
 
 reference_map:
-  # asset/reference id, role, what to take, preserve, influence, coverage limits
+  # reference id, visible observations, extracted mechanism, transfer target, do-not-copy boundary, coverage limits
+
+preproduction_readiness:
+  platform_surface_resolved: NOT_CHECKED
+  truth_resolved: NOT_CHECKED
+  benchmark_translated: NOT_CHECKED
+  visual_evidence_resolved: NOT_CHECKED
+  asset_plan_resolved: NOT_CHECKED
+  art_direction_resolved: NOT_CHECKED
+  production_route_resolved: NOT_CHECKED
+  recovery_route_resolved: NOT_CHECKED
+
+supporting_asset_plan:
+  existing_assets: []
+  assets_to_generate_or_source: []
+  semantic_purpose: []
+  truth_or_ip_limits: []
 
 composition:
   primary_focal_subject:
@@ -48,12 +76,26 @@ composition:
   forbidden_competition: []
   angle:
   spatial_relationship:
+  product_scene_relationship:
+  interaction_action:
+  reference_influences: []
   sequence_or_timing:
 
 scene_layers:
   atmosphere:
   semantic_context:
+  human_or_object_interaction:
   attention_guidance:
+
+product_scene_integration:
+  perspective_scale:
+  interaction_contact:
+  contact:
+  shadow:
+  ambient_light_color:
+  edge_quality:
+  depth_occlusion:
+  preserve_product_identity: true
 
 content_layers:
   - product
@@ -119,9 +161,38 @@ The plan must make clear:
 
 Do not hard-code universal product occupancy percentages.
 
+For benchmarked hero/KV work, `reference_influences` should name the concrete decisions inherited from the Reference Transfer Map. Empty or generic entries such as “premium”, “clean”, or “more dynamic” do not satisfy benchmark translation.
+
+For scene-based work, `product_scene_relationship` should state how the product participates in the scene. If the field can only be described as “product placed left/right/center”, revisit Visual Direction / Composition.
+
+For selling-point / demonstration slots, resolve `visual_evidence.required_visible_evidence` before layout. If the intended message requires use, fit, scale, interaction, or detail proof, copy plus a decorative arrow/shape does not satisfy this field by itself.
+
+If the strongest evidence route cannot be produced truthfully with available assets, choose a truthful fallback evidence route or mark the dependent slot BLOCKED / request the minimum input. Do not decorate around missing evidence.
+
+## Pre-Production Readiness Gate
+Before a slot becomes `READY`, resolve every production-critical field that materially affects the intended result. A slot may still proceed as `S0 CONCEPT` with explicit gaps, but it must not silently enter production-ready execution.
+
+For hero/KV work, readiness normally includes:
+- output/surface/platform state when it changes composition or export behavior,
+- product-truth locks,
+- benchmark-to-visual mechanism translation when benchmarking is required,
+- required visible evidence / evidence route for the slot,
+- art direction and first focal event,
+- required product/brand assets,
+- supporting scene/prop/usage assets needed by the concept,
+- primary production route,
+- recovery route for critical tool/provider failure.
+
+Do not call an expensive generation/edit route merely because a general mood has been chosen.
+
 ## Product identity anchors
 When product fidelity matters, explicitly lock what cannot change:
 shape/silhouette, proportions, color, material, logo/label, controls/components, quantity/variant, scale cues, current condition.
+
+## Fidelity-preserving integration
+Preserving the source product does not mean leaving it visually isolated from the scene. When a verified product layer is composited into a new environment, integrate it non-destructively through perspective/scale alignment, contact shadow, ambient light/color matching, edge treatment, depth, and occlusion as appropriate.
+
+Do not hide an integration failure inside a generic white card, rounded rectangle, or isolated cutout unless that separation is an intentional part of the approved art direction.
 
 ## Truth checkpoints
 Use three truth checkpoints when product fidelity or commercial claims matter:

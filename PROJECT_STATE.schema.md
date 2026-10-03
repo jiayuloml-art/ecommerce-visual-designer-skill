@@ -9,6 +9,8 @@ project:
   current_stage: null
   task_operation: null # CREATE | EXTEND | REVISE | ADAPT | DIRECTION_ONLY
   mode: CLIENT
+  workspace_rel: null # relative to the current runtime/workspace root; no machine-specific absolute path
+  source_scope: [] # active-project files and explicitly allowed external references
 
 facts:
   product: {}
@@ -86,6 +88,9 @@ history:
 ```
 
 ## Persistence rules
+- Keep one `PROJECT_STATE` per active project workspace. Do not reuse another project's state as implicit context for a new project.
+- Store portable relative paths where possible; host/runtime-specific absolute paths may be used transiently for execution but should not become durable project truth.
+- Cross-project references must be explicit in `source_scope`; sibling project folders are not implicitly readable evidence.
 - Store confirmed facts, explicit derived benefits/hypotheses, prohibited inferences, client-approved decisions, and unresolved conflicts; do not store hidden reasoning.
 - Keep missing information distinct from conflicting information.
 - A new client decision supersedes an old decision explicitly; do not silently overwrite.

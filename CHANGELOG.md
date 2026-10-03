@@ -1,5 +1,38 @@
 # Changelog
 
+## [1.2.0] — Unreleased
+
+### Added
+- Fail-closed Output Contract Gate: ambiguous briefs receive a recommended output package and client approval before visual production; minimum questioning no longer permits silent output selection.
+- Project workspace isolation: each distinct project uses an explicit active project scope instead of inheriting unrelated files from a shared parent directory.
+- Portable relative project layout (`projects/<project-id>/input|state|working|output`) with runtime-specific path mapping.
+- Explicit cross-project source-scope rules: sibling projects and prior artifacts are not current evidence unless deliberately selected.
+- Pre-Production Readiness Gate before expensive or fidelity-sensitive production.
+- Hero/KV craft framework and template-resistance check.
+- Benchmark-to-visual mechanism deconstruction and completion gate.
+- Fidelity-preserving product/scene integration pass.
+- STALLED execution state, bounded retry, and production-efficiency evidence.
+- Client-facing visual delivery rationale.
+- Codex-specific runtime adapter with bounded image-generation wait budgets and staged exact-product hero routing.
+- Hero typography craft and approval-ready anchor acceptance gate.
+- Mandatory Anchor Production Protocol: READY → DESIGN LOCK → SCENE FIT → PRODUCT INTEGRATION → TYPOGRAPHY → FINAL QA → CLIENT PREVIEW, with fail-closed stage transitions and no client preview for failed candidates.
+
+### Changed
+- Category scene validity now checks whether the product has a credible use/context relationship instead of accepting literal campaign-copy scenery.
+- Visual Core reorganized into four explicit design responsibilities: Visual Direction, Composition & Typography, Anchor Production, and Independent Visual Critic.
+- Product fidelity now separates Product Identity Lock from View Flexibility (VIEW_LOCKED / VIEW_SELECTABLE / VIEW_RECONSTRUCTABLE / VIEW_PROHIBITED).
+- Scene production is camera-matched to the selected verified product view instead of generating a generic attractive background first.
+- Visual effects require semantic/compositional purpose; decorative effects alone are insufficient.
+- Final visual criticism is separated from producer self-QA; visible result is judged before rationale/self-QA to reduce confirmation bias.
+- Hard artifact QA (truth/technical/regression/platform) is separated from aesthetic criticism.
+- Visual Benchmarking now prioritizes target-platform/category evidence, qualifies samples by accessibility and visible market signals, keeps Market/Platform and Visual Excellence references distinct, and requires auditable benchmark deliverables before synthesis.
+- Platform/input resolution now asks the minimum sufficient upstream question: when an output type is already known, resolve the target platform first and infer ordinary downstream surface defaults unless a remaining ambiguity materially changes execution.
+- Input resolution now distinguishes filesystem accessibility from project evidence scope.
+- Runtime adapters resolve host-neutral relative project paths rather than embedding one host's absolute/configuration path.
+- Production routing keeps project state, intermediates, and outputs inside the active project workspace by default.
+- Fallback routes must preserve a minimum visual-quality baseline; truth-preserving but visually degraded fallbacks remain recovery drafts rather than equivalent finals.
+- Visual QA now checks whether benchmark principles visibly transfer into the artifact and tracks production efficiency separately from visual quality.
+
 ## [1.1.0] — 2026-10-03
 
 V1.1 is the integrated baseline for external black-box testing. Test-driven corrections will be accumulated for V1.2.

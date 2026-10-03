@@ -29,6 +29,21 @@ Use the strongest available evidence:
 
 Do not upgrade lower-confidence evidence into verified truth.
 
+## Project source scope
+Before resolving inputs, establish which files belong to the active project.
+
+Default source scope:
+- the current brief and user-supplied files,
+- the active project's own state, inputs, and approved artifacts,
+- Skill/reference files needed to execute the method,
+- external references explicitly selected or authorized for this project.
+
+For **CREATE**, do not search sibling project folders, prior project states, or prior generated artifacts to fill missing information unless the user explicitly supplies or selects them as references.
+
+For **EXTEND / REVISE / ADAPT**, reuse only the explicitly selected existing project's state and artifacts. A nearby file is not evidence merely because it exists in the same parent directory.
+
+If a file's project ownership is ambiguous, treat it as out of scope until its role is established. This prevents cross-project contamination from being mistaken for product truth.
+
 ## Truth states
 - **CONFIRMED FACT** — directly verified.
 - **DERIVED BENEFIT** — reasonable benefit derived from confirmed facts; keep the derivation traceable.
@@ -49,6 +64,28 @@ Example:
 
 ## Upstream resolution first
 When one upstream answer can resolve several downstream unknowns, resolve the upstream item first. Do not ask the client separately for downstream choices the agent can determine afterward.
+
+### Minimum-sufficient upstream question
+Ask only the nearest unresolved variable that materially changes downstream work.
+
+### Minimum questions are not zero questions
+The goal is to reduce client burden, not to remove consequential client decisions.
+
+If a missing variable changes **what will be produced**, **where it will be used**, or **the scope the client is approving**, it cannot be silently replaced by a professional design default.
+
+Examples:
+- headline + price + CTA does not establish that the client wants a poster/KV;
+- product images do not establish that the client wants a main image rather than a detail page or campaign set;
+- an open platform does not automatically authorize a generic 4:5 deliverable when platform choice changes the useful output.
+
+When the output is ambiguous, recommend the most suitable route and request approval. Ask downstream craft questions only when they remain genuinely decision-changing after that approval.
+
+Example:
+- if the client has already requested a **detail page** but the platform is unknown, ask for the **target platform**;
+- after the platform is known, infer or recommend the platform's ordinary detail-page surface/default presentation when safe;
+- do **not** immediately ask separate questions about mobile/desktop, aspect ratio, page container, or similar downstream details unless they remain materially ambiguous after the platform is resolved.
+
+A missing platform may block platform-specific benchmarking, platform-fit claims, and final technical production, while generic strategy/page-structure work may continue.
 
 ## Missing vs conflict
 - **MISSING:** no supported value exists.
