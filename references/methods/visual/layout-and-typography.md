@@ -42,3 +42,26 @@ Check:
 - collisions,
 - alignment,
 - thumbnail/readability at actual viewing scale.
+
+
+## Hero typography craft
+Deterministic text placement guarantees accuracy, not design quality. For hero/KV work, resolve typography as a visual system rather than a text dump.
+
+Check:
+- headline dominance and readable scale at the intended viewing condition,
+- purposeful line breaks and phrase grouping,
+- contrast against the underlying image,
+- hierarchy among headline, product/model, proof, and secondary messages,
+- spacing/rhythm between text groups,
+- alignment or counterbalance with the product focal subject,
+- whether pills/cards/labels are necessary or merely default UI-like decoration,
+- whether the text block creates a distinct visual relationship with the product instead of occupying leftover empty space.
+
+Avoid:
+- stacking all confirmed facts into the hero,
+- multiple low-contrast translucent text boxes over a detailed scene,
+- tiny model names or proof copy that disappear at thumbnail scale,
+- default centered/left-column templates with no art-direction role,
+- using deterministic layout as a reason to skip typography craft.
+
+For a hero anchor, the copy should usually be reduced to the minimum message set needed for the first impression; additional proof belongs in supporting slots unless the approved strategy requires otherwise.
