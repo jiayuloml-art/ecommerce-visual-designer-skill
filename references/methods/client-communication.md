@@ -80,3 +80,13 @@ When delivering a visual artifact, include a concise client-facing rationale wit
 - any unresolved platform/production caveat that affects use.
 
 Keep this short and presentation-ready. It is not hidden chain-of-thought and should not become a process diary.
+
+
+## Client-facing reference basis
+When external or curated references materially informed a visual direction, the delivery rationale may include a compact Reference Basis:
+- 2–4 selected references or sources,
+- the transferable mechanism taken from each,
+- where that mechanism appears in the proposed visual,
+- no implication that the final design copied the reference.
+
+Use this when it helps the client understand why the direction is credible. Do not dump the full research log.
