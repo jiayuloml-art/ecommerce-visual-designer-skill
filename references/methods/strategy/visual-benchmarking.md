@@ -168,3 +168,17 @@ If live research is unavailable, use supplied references and clearly mark the ev
 A curated reference set bundled with the Skill may be used as a stable visual-quality baseline across models/runtimes. Curated entries should retain source, date checked, category/context, quality dimension, reusable principle, and non-copy boundary.
 
 Curated references complement live research; they do not replace current target-platform evidence when platform effectiveness or current technical behavior is material to the task.
+
+
+## Handoff to Visual Direction
+Visual Benchmarking ends with evidence and reusable mechanisms. It does not decide the final composition or art direction.
+
+Pass forward:
+- selected references,
+- quality/effectiveness evidence,
+- mechanisms extracted,
+- anti-patterns,
+- do-not-copy boundaries,
+- evidence gaps.
+
+`references/methods/visual/visual-direction.md` is responsible for synthesizing those mechanisms into a product-specific Visual Thesis.
