@@ -131,7 +131,7 @@ Use:
 1. Resolve art direction from strategy, benchmark findings when available, and approved references.
 2. Establish or reuse the campaign visual system.
 3. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job.
-4. **If the output is a representative hero/KV/anchor, switch to the mandatory `anchor-production-protocol.md` and execute AP0 → AP6 in order.** That protocol owns the sequence for design lock, camera-matched scene, product integration, typography, anchor QA, rejection/revision, and client preview.
+4. **If the output is a representative hero/KV/anchor, switch to the mandatory `anchor-production.md` and execute A0 → A6 in order.** That protocol owns the sequence for design lock, camera-matched scene, product integration, typography, anchor QA, rejection/revision, and client preview.
 5. Do not expand a multi-output set from an anchor until the anchor has passed the protocol and been approved, unless the client explicitly asks to continue despite a known limitation.
 6. For non-anchor outputs, assign layer ownership and precision requirements, route production method (GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID), resolve runtime capability, and select the least unnecessary provider/dependency that satisfies quality, fidelity, and precision.
 7. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` and the active runtime adapter instead of repeatedly waiting or narrating progress.
