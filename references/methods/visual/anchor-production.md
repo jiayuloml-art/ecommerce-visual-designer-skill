@@ -47,11 +47,27 @@ Assign the usable view state from evidence:
 
 Prefer a better verified view when the supplied view is incompatible with the intended scene. Do not keep a poor camera match merely to preserve source pixels.
 
+### Pose / interaction flexibility
+**Product identity locked does not mean product pose or scene relationship must remain static.**
+
+When evidence and the production route support it, the product may be:
+- tilted or rotated within verified geometry,
+- held or picked up,
+- inserted into a verified holder / storage / use context,
+- partially cropped or occluded,
+- supported by or resting against another object,
+- positioned to participate in foreground / midground depth,
+- connected to a semantic effect or directional visual system.
+
+Do not invent contact geometry, hidden surfaces, accessories, states, or functions that are not supported. If the desired interaction exceeds available evidence, keep the trustworthy product view and redesign the scene around it.
+
 ## A2 — SCENE / CAMERA
 
 Build or select the scene for the chosen product view.
 
 Resolve as applicable:
+- intended product–scene relationship / action,
+- human or object contact when used,
 - horizon/camera height,
 - perspective strength,
 - product placement plane,
@@ -66,6 +82,8 @@ A beautiful room is not enough. It must be camera-compatible with the product.
 
 ### Scene checkpoint
 Without final product/copy, verify:
+- the intended product–scene relationship is geometrically plausible,
+- human/object interaction has a credible contact path when used,
 - plausible placement plane,
 - compatible perspective,
 - believable environmental scale,
@@ -81,6 +99,7 @@ Composite/edit/reconstruct according to the view state and chosen route.
 
 Check and repair as applicable:
 - scale,
+- human/object contact geometry,
 - perspective,
 - grounding/contact,
 - cast/contact shadow,
