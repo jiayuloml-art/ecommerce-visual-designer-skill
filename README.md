@@ -74,6 +74,20 @@ Recommended evaluation of the frozen V1.1 baseline:
 
 A visually attractive result is not automatically a pass. Product truth, compliance, technical readiness, client communication, routing, QA state, and artifact status remain non-negotiable hard constraints.
 
+## Project workspace isolation
+
+V1.2 evaluation introduces a portable project-isolation rule. The Skill installation path is not the default destination for project artifacts. Each new project is assigned a dedicated logical workspace relative to the active runtime/workspace root:
+
+```text
+projects/<project-id>/
+├── input/
+├── state/
+├── working/
+└── output/
+```
+
+The physical parent directory is runtime/user dependent. Core rules must not assume `.codex`, a Windows drive, a home directory, or any other host-specific absolute path. Sibling projects are outside the active evidence scope unless explicitly selected.
+
 ## Version iteration policy
 
-Use **V1.1** as the fixed black-box test baseline. Record test findings externally. Consolidate validated fixes into a new `release/v1.2` branch so different testers do not unknowingly evaluate different V1.1 states.
+Use **V1.1** as the fixed black-box test baseline. Record test findings externally. Consolidate validated fixes in `release/v1.2` so different testers do not unknowingly evaluate different V1.1 states. The V1.2 pull request serves as the integration and evaluation log; test evidence belongs in PR discussion rather than inside the runtime Skill.
