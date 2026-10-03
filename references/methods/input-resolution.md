@@ -65,6 +65,16 @@ Example:
 ## Upstream resolution first
 When one upstream answer can resolve several downstream unknowns, resolve the upstream item first. Do not ask the client separately for downstream choices the agent can determine afterward.
 
+### Minimum-sufficient upstream question
+Ask only the nearest unresolved variable that materially changes downstream work.
+
+Example:
+- if the client has already requested a **detail page** but the platform is unknown, ask for the **target platform**;
+- after the platform is known, infer or recommend the platform's ordinary detail-page surface/default presentation when safe;
+- do **not** immediately ask separate questions about mobile/desktop, aspect ratio, page container, or similar downstream details unless they remain materially ambiguous after the platform is resolved.
+
+A missing platform may block platform-specific benchmarking, platform-fit claims, and final technical production, while generic strategy/page-structure work may continue.
+
 ## Missing vs conflict
 - **MISSING:** no supported value exists.
 - **CONFLICT:** two or more credible sources disagree.
