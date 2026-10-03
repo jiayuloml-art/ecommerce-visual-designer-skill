@@ -58,5 +58,26 @@ Do not regenerate unrelated verified layers.
 ## Slot-level routing
 Different slots in one campaign may use different routes. The campaign visual system can remain shared while hero, detail, proof, price, and video units use different production methods.
 
+## Project-local artifact routing
+All generated task artifacts should be written inside the active project workspace by default.
+
+Portable relative layout:
+```text
+projects/<project-id>/
+├── input/
+├── state/
+├── working/
+└── output/
+```
+
+This is a logical layout, not an absolute filesystem requirement. The runtime may map it to another host-specific location, but the boundaries must remain equivalent.
+
+Rules:
+- do not write normal project outputs into the Skill installation/configuration directory,
+- do not reuse another project's `state/`, `working/`, or `output/` as implicit context,
+- temporary scripts/intermediates created for a project belong in that project's `working/` area unless the runtime requires another temporary location,
+- final exports belong in the active project's `output/`,
+- if the user explicitly chooses another destination, preserve project/source attribution so future sessions do not treat unrelated files as current-project evidence.
+
 ## Visual concept prototype
 A fast generative concept may be used to validate direction before final production. Label it `S0 CONCEPT`; do not treat its text, pricing, product details, or platform specs as final.
