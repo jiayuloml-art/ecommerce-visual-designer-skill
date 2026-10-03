@@ -91,3 +91,24 @@ The physical parent directory is runtime/user dependent. Core rules must not ass
 ## Version iteration policy
 
 Use **V1.1** as the fixed black-box test baseline. Record test findings externally. Consolidate validated fixes in `release/v1.2` so different testers do not unknowingly evaluate different V1.1 states. The V1.2 pull request serves as the integration and evaluation log; test evidence belongs in PR discussion rather than inside the runtime Skill.
+
+
+## V1.2 Visual Core
+
+Representative e-commerce visual production is organized as:
+
+```text
+Visual Benchmarking
+        ↓
+Visual Direction
+        ↓
+Composition & Typography
+        ↓
+Anchor Production
+        ↓
+Independent Visual Critic
+        ↓
+Client Preview / revision loop
+```
+
+Hard artifact QA (truth, technical, regression, platform/compliance) remains separate from visual criticism.
