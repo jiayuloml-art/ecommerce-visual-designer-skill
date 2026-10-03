@@ -12,6 +12,8 @@
 - Fidelity-preserving product/scene integration pass.
 - STALLED execution state, bounded retry, and production-efficiency evidence.
 - Client-facing visual delivery rationale.
+- Codex-specific runtime adapter with bounded image-generation wait budgets and staged exact-product hero routing.
+- Hero typography craft and approval-ready anchor acceptance gate.
 
 ### Changed
 - Visual Benchmarking now prioritizes target-platform/category evidence, qualifies samples by accessibility and visible market signals, keeps Market/Platform and Visual Excellence references distinct, and requires auditable benchmark deliverables before synthesis.
