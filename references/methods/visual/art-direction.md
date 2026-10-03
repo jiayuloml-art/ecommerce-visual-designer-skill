@@ -3,6 +3,7 @@
 Resolve visual direction before production, but do not turn this into a mandatory client questionnaire.
 
 ## Output: Art Direction Brief
+
 ### Visual Intent
 What should the audience perceive/feel?
 
@@ -11,6 +12,35 @@ One concise design proposition that explains why the system should look this way
 
 Example:
 > Quiet Precision — express technology through controlled spacing, restrained material, and precise reflection rather than neon HUD clichés.
+
+### Visual Priority Basis
+Decide where visual resources should primarily go for this output, for example:
+- product form / material,
+- function / evidence,
+- emotion / context.
+
+This is a design question, not a mandatory second taxonomy.
+
+### Hero Relation
+Define the dominant relationship in the frame, for example:
+- Product-dominant
+- Product + Context
+- Product + Evidence
+- Product + Copy
+- Product + Offer
+
+Do not use a fixed product-area percentage as a universal rule.
+
+### Visual Impact Levers
+Use 2–4 intentionally when they materially improve the visual:
+- **Scale**
+- **Crop**
+- **Angle**
+- **Space**
+- **Light**
+- **Motion**
+
+Impact should come from controlled visual relationships, not automatically from more saturation, glow, particles, HUD, or decorative speed lines.
 
 ### Reference Translation
 For each reference:
@@ -24,6 +54,8 @@ Reference roles:
 - INSPIRATION_REFERENCE
 - EXECUTION_REFERENCE
 - SCENE_REFERENCE
+- COMPOSITION_REFERENCE
+- MOTION_REFERENCE
 - NEGATIVE_REFERENCE
 - PROOF_REFERENCE
 - BRAND_REFERENCE

@@ -1,12 +1,13 @@
 # Output System
 
 ## Output discovery
-The client should not have to specify every deliverable. Recommend a package from strategy, platform, communication jobs, and campaign scale.
+The client should not have to specify every deliverable. Recommend a package from strategy, platform, communication jobs, campaign scale, evidence needs, and viewer questions.
 
 Each proposed output should include:
 - Output type
 - Platform / surface
 - Primary communication job
+- Viewer question
 - Priority: Core / Supporting / Optional
 - Short reason
 
@@ -15,7 +16,25 @@ After approval, create a Confirmed Output Set.
 ## Output levels
 - **Output Family:** medium family such as Static, Sequence, Long-form, Temporal/Video.
 - **Output Instance:** a specific asset with a specific job.
+- **Slot:** one independently planned visual unit within an output instance or coordinated image set.
 - **Output Package:** a set of coordinated instances.
+
+## Image/slot role planning
+For each meaningful slot, map:
+
+**Viewer Question → Primary Communication Job → First Visual Focal Point → Visual Evidence → In-image Text / Source**
+
+A slot may use supporting mechanisms, but it should not exist only to increase image count.
+
+## No Redundant Output Rule
+Every additional output/slot must add at least one of:
+- a distinct communication job,
+- new evidence,
+- a new viewer question,
+- a new scenario/use context,
+- new decision support.
+
+If it does not, merge or remove it.
 
 ## Runtime Output Specification
 Compose from:

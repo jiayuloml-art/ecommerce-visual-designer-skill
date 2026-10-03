@@ -18,8 +18,9 @@ Persist the approved shared visual language across outputs.
 13. Information Density
 14. Reference Logic
 15. Negative Direction
-16. Lock Rules
-17. Variation Rules
+16. Fixed Rules / Locks
+17. Allowed Changes / Variation Rules
+18. Distinctive Device / Motif — optional; only when there is a real campaign-specific recurring device
 
 ## Lock / variation
 Consistency does not mean identical layouts.
@@ -27,3 +28,9 @@ Consistency does not mean identical layouts.
 **Lock examples:** product color, product presentation logic, core palette, lighting logic, typography family, logo treatment, graphic language.
 
 **Variation examples:** local composition, scene, people, page role, shot angle, information density, local crop.
+
+For every output/slot, make the boundary explicit:
+- what must remain fixed,
+- what is allowed to change.
+
+Do not create a distinctive-device rule merely to fill a field. Use it only when the campaign has an evidenced, intentional recurring visual mechanism.

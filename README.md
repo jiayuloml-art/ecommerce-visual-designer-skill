@@ -1,20 +1,59 @@
 # ecommerce-visual-designer
 
-A Codex-compatible AI Skill for e-commerce visual design.
+A portable AI Skill for e-commerce visual design.
 
-This V1 draft turns an incomplete client brief into a structured workflow for:
-- diagnosis and strategy,
-- output-package recommendation,
-- platform and technical-spec resolution,
-- art direction and campaign visual systems,
-- production/tool routing,
-- visual QA and delivery.
+## Version status
 
-## Structure
+- **V1.1** is the current integrated baseline.
+- It includes the completed four-peer capability integration and repository restructuring.
+- External black-box validation remains intentionally outside this repository.
+- Test-driven fixes discovered from V1.1 will be collected into **V1.2** rather than continuously mutating the V1.1 baseline.
+- The original V1 baseline commit is `953d35840649bdfe067b80f79da836c7a72cb3ca`.
 
-- `SKILL.md` — main controller and operating rules
-- `PROJECT_STATE.schema.md` — persistent project-state schema
-- `references/` — progressively loaded design, platform, production, provider, and QA references
+## What V1.1 changes
+
+V1.1 keeps the seven-state controller and strengthens four areas:
+
+1. **Strategy intelligence** — selling-point discovery and evidence-backed visual benchmarking.
+2. **Production discipline** — non-redundant output planning, anchor-first expansion, asset preservation, and local revision.
+3. **Production compilation** — structured per-output/slot plans with truth constraints, scene layers, visual resource allocation, text ownership, routing, and QA states.
+4. **Runtime portability** — host/runtime adaptation is separated from production-provider selection.
+
+## Repository structure
+
+```text
+SKILL.md
+PROJECT_STATE.schema.md
+CHANGELOG.md
+references/
+├── context/
+│   ├── platforms/
+│   └── categories/
+├── methods/
+│   ├── strategy/
+│   ├── mediums/
+│   ├── visual/
+│   └── production/
+└── ai-tools/
+```
+
+The upper-level structure separates:
+- **context** — external task conditions,
+- **methods** — design and production methods,
+- **ai-tools** — host/runtime adaptation.
+
+The detailed design taxonomy remains inside those layers rather than being flattened into one directory.
+
+## Repository governance
+
+Before adding a new runtime file, confirm all four:
+
+1. **Stable responsibility** — the file owns a durable concept rather than one incidental idea.
+2. **Clear caller** — a controller/reference can identify when it should be loaded.
+3. **Loading condition** — there is a concrete reason to load it on demand.
+4. **Non-overlap** — its responsibility is not already owned by an existing file.
+
+Prefer strengthening an existing high-cohesion reference over creating a new file. Do not create empty host/provider/category files merely for symmetry.
 
 ## Client behavior
 
@@ -22,18 +61,19 @@ The Skill defaults to **CLIENT MODE**: client-facing responses stay concise and 
 
 ## Testing
 
-Black-box evaluation files are intentionally kept **outside this repository** so the tested agent cannot read expected behaviors in advance.
+Black-box evaluation files and expected-behavior rubrics remain outside the runtime Skill so the tested agent cannot read answers in advance.
 
-Recommended evaluation pattern:
+Recommended evaluation of the frozen V1.1 baseline:
+- full-flow,
+- boundary behavior,
+- revision/local repair,
+- capability failure,
+- visual quality,
+- cross-runtime behavior,
+- holdout regression.
 
-1. Install/use this Skill in a fresh Codex context.
-2. Provide only the test brief and any test assets.
-3. Run the task without exposing the expected-behavior rubric.
-4. Compare the result against the external evaluation rubric afterward.
-5. Use DEVELOPMENT / DEBUG MODE only when diagnosing a failed test.
+A visually attractive result is not automatically a pass. Product truth, compliance, technical readiness, client communication, routing, QA state, and artifact status remain non-negotiable hard constraints.
 
-## Status
+## Version iteration policy
 
-**V1 Draft** — ready for fresh-context black-box testing and iterative patching.
-
-A visually attractive result is not automatically a pass. Product truth, client communication, routing, platform readiness, QA, and artifact status all matter.
+Use **V1.1** as the fixed black-box test baseline. Record test findings externally. Consolidate validated fixes into a new `release/v1.2` branch so different testers do not unknowingly evaluate different V1.1 states.

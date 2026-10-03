@@ -5,6 +5,8 @@ Core question: **What does each page/frame do, and why should the user continue?
 Resolve:
 - Entry / Cover function
 - Page Role
+- Viewer Question
+- Communication Job
 - Sequence logic
 - Reveal logic
 - Transition
@@ -18,4 +20,6 @@ Possible sequence logics:
 - Scenario → Experience → Benefit → Product
 - Existing solution → Difference → Product → Value
 
-Do not fix page count by template. Let communication job determine necessary modules.
+Each page/frame should add a distinct viewer question, communication role, evidence, scenario, or decision-support function. Avoid cosmetic repetition.
+
+Do not fix page count by template. Let communication need determine necessary modules.

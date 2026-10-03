@@ -15,6 +15,12 @@ Never silently guess. Never silently downgrade fidelity.
 - If blocking: ask one focused question.
 - Never invent dimensions, performance, certifications, warranty, claims, price, or SKU facts.
 
+## Conflicting information
+- Keep the conflict explicit.
+- Do not silently choose one source.
+- Block only the dependent branch.
+- Resolve at the nearest upstream source of truth when needed.
+
 ## Missing / stale platform spec
 1. Check local verified reference.
 2. Check current official source.
@@ -23,6 +29,7 @@ Never silently guess. Never silently downgrade fidelity.
 5. If unresolved, remain `S1 PRODUCTION_DRAFT`; do not claim platform-ready.
 
 ## Provider unavailable
+- Re-resolve current runtime capabilities.
 - Try an equivalent available capability.
 - If quality/fidelity changes materially, tell the client and request a choice only if needed.
 - If no automatic route exists, create a provider-ready handoff package.
@@ -35,7 +42,26 @@ Classify:
 - truth/fidelity failure,
 - technical failure,
 - regression,
+- strategy/direction failure,
 - structural visual failure,
-- local polish failure.
+- local polish failure,
+- runtime/provider failure.
 
-Fix highest-impact failure first. Prefer local revision when possible. Use structural revision only when the current structure cannot satisfy the target.
+## QA Return Map
+For each failure:
+1. identify the responsible layer,
+2. return to the nearest node that can actually correct it,
+3. change the minimum number of variables,
+4. preserve unaffected verified assets,
+5. re-QA the affected scope.
+
+Examples:
+- fact/claim → Product Truth / input resolution,
+- product form → product-preserving production route,
+- hierarchy → production plan/composition,
+- campaign drift → campaign visual system,
+- exact copy → deterministic text/layout,
+- export/spec → technical/export,
+- provider unavailable → capability/provider routing.
+
+Fix highest-impact failure first. Structural revision is justified only when local repair cannot satisfy the target.

@@ -2,8 +2,17 @@
 
 ## Separation of concerns
 - **Production Router:** what method is needed? Generate / Edit / Composite / Layout / Video / Hybrid.
-- **Capability Resolver:** what capabilities are currently available?
+- **Runtime Capability Resolver:** what can the current AI host/session actually execute?
 - **Provider Router:** which eligible provider/tool should execute the method?
+
+**Host Runtime ≠ Production Provider.**
+
+A Skill may run in one host while using another provider/tool for image, video, layout, or post-production.
+
+## Routing order
+**Production Requirement → Runtime Capability Resolution → Eligible Provider Resolution → Provider Selection → Execution**
+
+Do not select a provider before the actual production requirement and current runtime capabilities are clear.
 
 ## Selection factors
 - Capability match
