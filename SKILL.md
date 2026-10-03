@@ -35,6 +35,9 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 19. **Optimization priority after hard gates.** Product Truth, Compliance, and critical Technical Accuracy are non-tradeable. Once applicable hard gates pass, optimize first for **Visual Excellence**, then Communication Effectiveness, Platform Fit, and Production Efficiency.
 20. **Project workspace isolation.** Each distinct project/task must operate inside an explicit active project workspace. New project artifacts, state, scripts, and exports belong to that project workspace, not to the Skill/configuration directory or unrelated project folders. Paths in the Core Skill are relative and host-neutral; the runtime maps them to the actual environment.
 
+21. **Readiness before production.** Do not enter expensive or fidelity-sensitive production because the direction merely sounds plausible. Resolve the minimum production-critical context, translate benchmark evidence into executable visual mechanisms, plan required assets, and choose both a primary and recovery route first.
+22. **Bounded execution.** Tool calls may be SUCCESS, FAILED, or STALLED. A long-running call with no meaningful progress must not cause indefinite waiting; recover with a bounded retry and then an alternate route while preserving truth and quality status.
+
 ## Operating modes
 
 ### CLIENT MODE — default
@@ -88,7 +91,7 @@ Recommend:
 
 Resolve product selling points using `references/methods/strategy/selling-point-discovery.md`.
 
-When a new campaign/KV, new platform, visual upgrade, or unresolved visual direction warrants external evidence, use `references/methods/strategy/visual-benchmarking.md`. Before tool-dependent research, resolve the relevant runtime capability via `references/ai-tools/runtime-adapters.md`; if live research is unavailable, use supplied references and mark the evidence gap. Reuse a recent valid benchmark for routine adaptations or revisions.
+When a new campaign/KV, new platform, visual upgrade, or unresolved visual direction warrants external evidence, use `references/methods/strategy/visual-benchmarking.md`. Before tool-dependent research, resolve the relevant runtime capability via `references/ai-tools/runtime-adapters.md`; if live research is unavailable, use supplied references and mark the evidence gap. Reuse a recent valid benchmark for routine adaptations or revisions. For a new hero/KV or deliberate visual upgrade, benchmarking is not complete until the selected references have been translated into executable visual mechanisms such as focal hierarchy, product/context relation, composition, typography role, light/material treatment, scene semantics, brand device, and anti-patterns.
 
 Assign campaign/output communication jobs and supporting mechanisms using `references/methods/strategy/strategy-and-jobs.md`.
 
@@ -114,6 +117,8 @@ For each confirmed output:
 7. Distinguish hard requirement, official recommendation, and internal design default.
 8. If rules are stale, incomplete, or account-dependent, perform runtime verification before platform-ready production.
 9. If platform remains open, concept work may continue, but the artifact cannot be labeled platform-ready.
+10. Run the **Pre-Production Readiness Gate** before entering STATE 5. Resolve, when materially relevant: output/platform surface, product truth, required assets, benchmark-to-visual translation, art direction, supporting-scene/asset plan, production route, and recovery route.
+11. If a missing item affects only final production, either ask the minimum upstream question or deliberately downgrade the next step to `S0 CONCEPT`. Do not silently proceed as if the slot were production-ready.
 
 Use:
 - `references/methods/input-resolution.md`
@@ -122,9 +127,9 @@ Use:
 - `references/context/categories/category-playbooks.md` when category context materially helps.
 
 ### STATE 5 — PRODUCE
-1. Resolve art direction from strategy, benchmark findings when available, and approved references.
+1. Resolve art direction from strategy, benchmark findings when available, and approved references. For hero/KV work, resolve a concrete visual thesis and executable craft mechanisms rather than adjective-only style words.
 2. Establish or reuse the campaign visual system.
-3. For each confirmed output/slot, build a structured visual production plan.
+3. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job.
 4. For multi-output work, create one representative **anchor** first; verify it before expanding the remaining slots when shared visual decisions could propagate errors.
 5. Assign layer ownership and precision requirements.
 6. Route production method: GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID.
@@ -138,7 +143,9 @@ Use:
    - E3 MANUAL HANDOFF
 11. Compile provider/tool-specific instructions from the output/slot production plan.
 12. Execute and assemble the rendered artifact while preserving already verified layers not affected by the change.
-13. Do not fabricate unknown product facts or brand facts. Use placeholders when necessary.
+13. When exact product assets are composited into a generated or photographic scene, run a **fidelity-preserving integration pass**: align perspective/scale, contact, shadow, ambient light/color, edge quality, depth, and occlusion without inventing or deforming product identity.
+14. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` instead of repeatedly waiting or narrating progress.
+15. Do not fabricate unknown product facts or brand facts. Use placeholders when necessary.
 
 Use:
 - `references/methods/visual/art-direction.md`
@@ -174,6 +181,10 @@ Use QA states: **PASS / FAIL / NOT_CHECKED / NOT_APPLICABLE**. Applicable NOT_CH
 On failure: identify the responsible layer → return to the nearest responsible node → make the minimum-variable fix → re-QA the affected scope.
 
 Blocking failures cannot be averaged away by aesthetic scores.
+
+For a client-facing visual delivery, include a concise design rationale: the visual thesis, 2–3 key design decisions and how they support the communication goal, plus any unresolved production/platform caveat. This is a presentation artifact, not hidden chain-of-thought.
+
+Record production-efficiency evidence when execution was materially slow, stalled, retried, or rerouted; runtime failure and visual quality are separate evaluation dimensions.
 
 Use `references/methods/visual/visual-qa.md` and `references/methods/production/failure-recovery.md`.
 
@@ -223,7 +234,8 @@ Prefer local recovery:
 - hierarchy/composition defect → composition node,
 - campaign inconsistency → campaign visual system,
 - strategy/direction defect → art direction/strategy,
-- platform/export defect → technical/export layer.
+- platform/export defect → technical/export layer,
+- stalled runtime/tool call → bounded retry once when justified, then alternate route or handoff; do not wait indefinitely.
 
 See `references/methods/production/failure-recovery.md`.
 
