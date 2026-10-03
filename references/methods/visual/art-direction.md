@@ -29,7 +29,7 @@ Define the dominant relationship in the frame, for example:
 - Product + Copy
 - Product + Offer
 
-Do not use a fixed product-area percentage as a universal rule.
+Do not use a fixed product-area percentage as a universal rule. Do not encode aesthetic judgment as fixed occupancy ranges, fixed prop counts, or similar template numbers unless a platform/specification or explicit client requirement actually supplies them.
 
 ### Visual Impact Levers
 Use 2–4 intentionally when they materially improve the visual:
