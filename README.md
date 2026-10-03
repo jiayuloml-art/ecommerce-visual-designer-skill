@@ -4,9 +4,11 @@ A portable AI Skill for e-commerce visual design.
 
 ## Version status
 
-- `main` remains the stable V1 baseline until V1.1 is approved.
-- `release/v1.1` is the integration branch for the V1.1 architecture and behavior upgrade.
-- The V1 baseline commit is `953d35840649bdfe067b80f79da836c7a72cb3ca`.
+- **V1.1** is the current integrated baseline.
+- It includes the completed four-peer capability integration and repository restructuring.
+- External black-box validation remains intentionally outside this repository.
+- Test-driven fixes discovered from V1.1 will be collected into **V1.2** rather than continuously mutating the V1.1 baseline.
+- The original V1 baseline commit is `953d35840649bdfe067b80f79da836c7a72cb3ca`.
 
 ## What V1.1 changes
 
@@ -61,7 +63,7 @@ The Skill defaults to **CLIENT MODE**: client-facing responses stay concise and 
 
 Black-box evaluation files and expected-behavior rubrics remain outside the runtime Skill so the tested agent cannot read answers in advance.
 
-Recommended evaluation after V1.1 integration:
+Recommended evaluation of the frozen V1.1 baseline:
 - full-flow,
 - boundary behavior,
 - revision/local repair,
@@ -71,3 +73,7 @@ Recommended evaluation after V1.1 integration:
 - holdout regression.
 
 A visually attractive result is not automatically a pass. Product truth, compliance, technical readiness, client communication, routing, QA state, and artifact status remain non-negotiable hard constraints.
+
+## Version iteration policy
+
+Use **V1.1** as the fixed black-box test baseline. Record test findings externally. Consolidate validated fixes into a new `release/v1.2` branch so different testers do not unknowingly evaluate different V1.1 states.
