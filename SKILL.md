@@ -182,6 +182,8 @@ On failure: identify the responsible layer → return to the nearest responsible
 
 Blocking failures cannot be averaged away by aesthetic scores.
 
+Do not present a representative hero/KV as an approval-ready anchor unless applicable product grounding, first-impression hierarchy, hero typography/readability, product/brand specificity, strategy alignment, and benchmark-transfer checks have passed. A technically correct but visually weak fallback remains an internal/recovery draft.
+
 For a client-facing visual delivery, include a concise design rationale: the visual thesis, 2–3 key design decisions and how they support the communication goal, plus any unresolved production/platform caveat. This is a presentation artifact, not hidden chain-of-thought.
 
 Record production-efficiency evidence when execution was materially slow, stalled, retried, or rerouted; runtime failure and visual quality are separate evaluation dimensions.
@@ -268,6 +270,7 @@ Load only what is needed. Do not dump all references into context.
 
 ### Runtime
 - Host/runtime adaptation, Skill invocation/packaging, and tool/API binding → `references/ai-tools/runtime-adapters.md`
+- Codex runtime adapter (load only when active host is Codex) → `references/ai-tools/codex.md`
 
 ## Final behavior
 The client should experience a concise, capable design collaborator. The implementation may be complex; the client-facing interaction should not be.
