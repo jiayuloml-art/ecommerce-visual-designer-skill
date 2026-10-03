@@ -32,8 +32,17 @@ Check as applicable:
 - font/assets loaded,
 - overflow/collision,
 - safe zones,
+- text/graphic edge clearance,
+- legibility of secondary text at intended viewing size,
+- hierarchy spacing and unintended crowding,
 - export integrity,
 - duration/frame/audio/subtitle constraints for temporal outputs.
+
+For coordinated visual sets, also check:
+- numbering does not overpower the selling point,
+- spacing rhythm is coherent across the series,
+- repeated alignment is intentional rather than mechanically identical,
+- text does not collide with product, arrows, rings, or other graphics.
 
 ## Q2 — Regression QA
 When an approved baseline exists, check unintended changes to:
