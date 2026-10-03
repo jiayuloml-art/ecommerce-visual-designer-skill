@@ -68,6 +68,18 @@ When one upstream answer can resolve several downstream unknowns, resolve the up
 ### Minimum-sufficient upstream question
 Ask only the nearest unresolved variable that materially changes downstream work.
 
+### Minimum questions are not zero questions
+The goal is to reduce client burden, not to remove consequential client decisions.
+
+If a missing variable changes **what will be produced**, **where it will be used**, or **the scope the client is approving**, it cannot be silently replaced by a professional design default.
+
+Examples:
+- headline + price + CTA does not establish that the client wants a poster/KV;
+- product images do not establish that the client wants a main image rather than a detail page or campaign set;
+- an open platform does not automatically authorize a generic 4:5 deliverable when platform choice changes the useful output.
+
+When the output is ambiguous, recommend the most suitable route and request approval. Ask downstream craft questions only when they remain genuinely decision-changing after that approval.
+
 Example:
 - if the client has already requested a **detail page** but the platform is unknown, ask for the **target platform**;
 - after the platform is known, infer or recommend the platform's ordinary detail-page surface/default presentation when safe;
