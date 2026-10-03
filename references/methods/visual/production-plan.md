@@ -39,7 +39,7 @@ visual_lock:
   allowed_changes: []
 
 reference_map:
-  # asset/reference id, role, what to take, preserve, influence, coverage limits
+  # reference id, visible observations, extracted mechanism, transfer target, do-not-copy boundary, coverage limits
 
 preproduction_readiness:
   platform_surface_resolved: NOT_CHECKED
@@ -66,15 +66,20 @@ composition:
   forbidden_competition: []
   angle:
   spatial_relationship:
+  product_scene_relationship:
+  interaction_action:
+  reference_influences: []
   sequence_or_timing:
 
 scene_layers:
   atmosphere:
   semantic_context:
+  human_or_object_interaction:
   attention_guidance:
 
 product_scene_integration:
   perspective_scale:
+  interaction_contact:
   contact:
   shadow:
   ambient_light_color:
@@ -145,6 +150,10 @@ The plan must make clear:
 - what must not compete with the primary focal subject.
 
 Do not hard-code universal product occupancy percentages.
+
+For benchmarked hero/KV work, `reference_influences` should name the concrete decisions inherited from the Reference Transfer Map. Empty or generic entries such as “premium”, “clean”, or “more dynamic” do not satisfy benchmark translation.
+
+For scene-based work, `product_scene_relationship` should state how the product participates in the scene. If the field can only be described as “product placed left/right/center”, revisit Visual Direction / Composition.
 
 ## Pre-Production Readiness Gate
 Before a slot becomes `READY`, resolve every production-critical field that materially affects the intended result. A slot may still proceed as `S0 CONCEPT` with explicit gaps, but it must not silently enter production-ready execution.
