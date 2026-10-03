@@ -34,6 +34,29 @@ When a hero requires both lifestyle atmosphere and strict product fidelity, pref
 4. apply deterministic typography/brand layers,
 5. verify the rendered artifact against product source and art direction.
 
+This staged pattern is **not** sufficient by itself when the communication job depends on a real interaction/contact relationship.
+
+### Interaction-aware routing
+If the Visual Evidence Strategy requires any of the following:
+- hand ↔ product,
+- body ↔ wearable/product,
+- product ↔ cup holder / bag / storage / appliance / furniture,
+- foreground object ↔ product,
+- use-state contact / containment / insertion,
+- meaningful overlap / occlusion that proves context,
+
+route production through a method that can preserve the required contact geometry and depth.
+
+Prefer, as appropriate:
+- **EDIT** when an existing product/person/context image can be modified while preserving identity,
+- **COMPOSITE** when separate verified layers can be combined with masks, foreground/background occlusion, contact/shadow, and perspective control,
+- **HYBRID** when generated context plus deterministic exact-product/text layers must coexist,
+- **GENERATIVE / reconstruction** only when product evidence is sufficient for the required view/state and strict truth verification remains possible.
+
+Do **not** default to “background-only generation + flat front-view product overlay” when the concept depends on real interaction. That route may be acceptable for atmosphere-only scenes, but it cannot substitute for missing use evidence.
+
+If the required interaction cannot be produced truthfully with current evidence/capabilities, use the fallback evidence route from `visual-evidence-strategy.md` or block/request the minimum input.
+
 If a required scene asset is missing, the production plan should identify and create/source it intentionally rather than defaulting to an empty template.
 
 ## Anchor-first production
