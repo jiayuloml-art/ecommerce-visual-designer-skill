@@ -37,6 +37,7 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 
 21. **Readiness before production.** Do not enter expensive or fidelity-sensitive production because the direction merely sounds plausible. Resolve the minimum production-critical context, translate benchmark evidence into executable visual mechanisms, plan required assets, and choose both a primary and recovery route first.
 22. **Bounded execution.** Tool calls may be SUCCESS, FAILED, or STALLED. A long-running call with no meaningful progress must not cause indefinite waiting; recover with a bounded retry and then an alternate route while preserving truth and quality status.
+23. **Anchor protocol is mandatory.** Any representative hero/KV/anchor that will be shown for direction approval must follow `references/methods/visual/anchor-production-protocol.md` in order. No later anchor stage may begin while the preceding gate is FAIL or NOT_CHECKED.
 
 ## Operating modes
 
@@ -127,25 +128,14 @@ Use:
 - `references/context/categories/category-playbooks.md` when category context materially helps.
 
 ### STATE 5 — PRODUCE
-1. Resolve art direction from strategy, benchmark findings when available, and approved references. For hero/KV work, resolve a concrete visual thesis and executable craft mechanisms rather than adjective-only style words.
+1. Resolve art direction from strategy, benchmark findings when available, and approved references.
 2. Establish or reuse the campaign visual system.
 3. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job.
-4. For multi-output work, create one representative **anchor** first; verify it before expanding the remaining slots when shared visual decisions could propagate errors.
-5. Assign layer ownership and precision requirements.
-6. Route production method: GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID.
-7. Resolve current host/runtime capabilities using `references/ai-tools/runtime-adapters.md`.
-8. Inspect eligible providers only after the production requirement and runtime capability are clear.
-9. Choose the least unnecessary external dependency that satisfies quality and fidelity requirements.
-10. Select execution mode:
-   - E0 NATIVE EXECUTION
-   - E1 CONNECTED EXECUTION
-   - E2 EXTERNAL CONFIRMED EXECUTION
-   - E3 MANUAL HANDOFF
-11. Compile provider/tool-specific instructions from the output/slot production plan.
-12. Execute and assemble the rendered artifact while preserving already verified layers not affected by the change.
-13. When exact product assets are composited into a generated or photographic scene, run a **fidelity-preserving integration pass**: align perspective/scale, contact, shadow, ambient light/color, edge quality, depth, and occlusion without inventing or deforming product identity.
-14. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` instead of repeatedly waiting or narrating progress.
-15. Do not fabricate unknown product facts or brand facts. Use placeholders when necessary.
+4. **If the output is a representative hero/KV/anchor, switch to the mandatory `anchor-production-protocol.md` and execute AP0 → AP6 in order.** That protocol owns the sequence for design lock, camera-matched scene, product integration, typography, anchor QA, rejection/revision, and client preview.
+5. Do not expand a multi-output set from an anchor until the anchor has passed the protocol and been approved, unless the client explicitly asks to continue despite a known limitation.
+6. For non-anchor outputs, assign layer ownership and precision requirements, route production method (GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID), resolve runtime capability, and select the least unnecessary provider/dependency that satisfies quality, fidelity, and precision.
+7. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` and the active runtime adapter instead of repeatedly waiting or narrating progress.
+8. Do not fabricate unknown product facts or brand facts. Use placeholders when necessary.
 
 Use:
 - `references/methods/visual/art-direction.md`
@@ -259,6 +249,7 @@ Load only what is needed. Do not dump all references into context.
 - Visual benchmark → `references/methods/strategy/visual-benchmarking.md`
 - Medium grammar → `references/methods/mediums/*.md`
 - Art direction → `references/methods/visual/art-direction.md`
+- Anchor production / approval sequence → `references/methods/visual/anchor-production-protocol.md`
 - Campaign consistency → `references/methods/visual/campaign-visual-system.md`
 - Per-output/slot production → `references/methods/visual/production-plan.md`
 - Tool-method routing → `references/methods/visual/production-routing.md`
