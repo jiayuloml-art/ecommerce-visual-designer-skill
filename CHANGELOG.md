@@ -17,6 +17,12 @@
 - Mandatory Anchor Production Protocol: READY → DESIGN LOCK → SCENE FIT → PRODUCT INTEGRATION → TYPOGRAPHY → FINAL QA → CLIENT PREVIEW, with fail-closed stage transitions and no client preview for failed candidates.
 
 ### Changed
+- Visual Core reorganized into four explicit design responsibilities: Visual Direction, Composition & Typography, Anchor Production, and Independent Visual Critic.
+- Product fidelity now separates Product Identity Lock from View Flexibility (VIEW_LOCKED / VIEW_SELECTABLE / VIEW_RECONSTRUCTABLE / VIEW_PROHIBITED).
+- Scene production is camera-matched to the selected verified product view instead of generating a generic attractive background first.
+- Visual effects require semantic/compositional purpose; decorative effects alone are insufficient.
+- Final visual criticism is separated from producer self-QA; visible result is judged before rationale/self-QA to reduce confirmation bias.
+- Hard artifact QA (truth/technical/regression/platform) is separated from aesthetic criticism.
 - Visual Benchmarking now prioritizes target-platform/category evidence, qualifies samples by accessibility and visible market signals, keeps Market/Platform and Visual Excellence references distinct, and requires auditable benchmark deliverables before synthesis.
 - Platform/input resolution now asks the minimum sufficient upstream question: when an output type is already known, resolve the target platform first and infer ordinary downstream surface defaults unless a remaining ambiguity materially changes execution.
 - Input resolution now distinguishes filesystem accessibility from project evidence scope.
