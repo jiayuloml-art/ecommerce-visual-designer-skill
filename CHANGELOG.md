@@ -3,6 +3,7 @@
 ## [1.2.0] — Unreleased
 
 ### Added
+- Fail-closed Output Contract Gate: ambiguous briefs receive a recommended output package and client approval before visual production; minimum questioning no longer permits silent output selection.
 - Project workspace isolation: each distinct project uses an explicit active project scope instead of inheriting unrelated files from a shared parent directory.
 - Portable relative project layout (`projects/<project-id>/input|state|working|output`) with runtime-specific path mapping.
 - Explicit cross-project source-scope rules: sibling projects and prior artifacts are not current evidence unless deliberately selected.
@@ -17,6 +18,7 @@
 - Mandatory Anchor Production Protocol: READY → DESIGN LOCK → SCENE FIT → PRODUCT INTEGRATION → TYPOGRAPHY → FINAL QA → CLIENT PREVIEW, with fail-closed stage transitions and no client preview for failed candidates.
 
 ### Changed
+- Category scene validity now checks whether the product has a credible use/context relationship instead of accepting literal campaign-copy scenery.
 - Visual Core reorganized into four explicit design responsibilities: Visual Direction, Composition & Typography, Anchor Production, and Independent Visual Critic.
 - Product fidelity now separates Product Identity Lock from View Flexibility (VIEW_LOCKED / VIEW_SELECTABLE / VIEW_RECONSTRUCTABLE / VIEW_PROHIBITED).
 - Scene production is camera-matched to the selected verified product view instead of generating a generic attractive background first.
