@@ -93,10 +93,26 @@ Ask:
 
 If yes, product/brand specificity is insufficient.
 
-## C6 — Strategy alignment
+## C6 — Viewer Question / Visual Evidence
+For each supporting or selling-point output, ask:
+- what viewer question is this slot supposed to answer?
+- what visible evidence in the artifact answers it?
+- if the headline/caption were hidden, would the image still provide material evidence for the claim, use context, fit, scale, or action?
+- is the evidence route appropriate to the communication job?
+
+Text may clarify evidence, but it must not be the only reason the selling point is understandable when the slot depends on demonstration, use, context, fit, scale, or interaction.
+
+Examples:
+- “one-hand operation” shown only by an arrow and label → insufficient,
+- “portable” shown only by motion graphics and copy → insufficient when no use/scale evidence exists,
+- “cup-holder fit” shown only as an abstract circle → insufficient if the slot claims in-context compatibility.
+
+If required visible evidence is absent, use **REVISE** or **REJECT** and return to Visual Evidence Strategy / Production Plan rather than polishing typography around the gap.
+
+## C7 — Strategy alignment
 Confirm the visible result supports the approved communication job and first impression without relying on explanatory text outside the artifact.
 
-## C7 — Benchmark transfer
+## C8 — Benchmark transfer
 Only after C0–C6, inspect the Reference Basis when benchmarking informed the direction.
 
 Verify:
@@ -104,7 +120,7 @@ Verify:
 
 A research summary with no visible transfer does not count.
 
-## C8 — Element justification
+## C9 — Element justification
 Every non-required element should serve at least one:
 - communication,
 - semantic context,
@@ -129,6 +145,7 @@ Typical routing:
 - typography hierarchy → Composition & Typography / A5 → REVISE
 - decorative effect → Visual Direction / A4 → REVISE or REJECT
 - product identity drift → Product Truth / A1 → REVISE
+- missing/weak visible evidence for viewer question → Visual Evidence Strategy / Production Plan → REVISE or REJECT
 - benchmark not transferred → Visual Direction → REJECT
 
 ## Client-preview gate
