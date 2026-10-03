@@ -1,6 +1,8 @@
 # Changelog
 
-## [1.1.0] — Unreleased
+## [1.1.0] — 2026-10-03
+
+V1.1 is the integrated baseline for external black-box testing. Test-driven corrections will be accumulated for V1.2.
 
 ### Added
 - Task-operation routing: CREATE / EXTEND / REVISE / ADAPT / DIRECTION_ONLY.
