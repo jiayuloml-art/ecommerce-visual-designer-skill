@@ -8,6 +8,7 @@
 - Explicit cross-project source-scope rules: sibling projects and prior artifacts are not current evidence unless deliberately selected.
 
 ### Changed
+- Visual Benchmarking now prioritizes target-platform/category evidence, qualifies samples by accessibility and visible market signals, keeps Market/Platform and Visual Excellence references distinct, and requires auditable benchmark deliverables before synthesis.
 - Input resolution now distinguishes filesystem accessibility from project evidence scope.
 - Runtime adapters resolve host-neutral relative project paths rather than embedding one host's absolute/configuration path.
 - Production routing keeps project state, intermediates, and outputs inside the active project workspace by default.
