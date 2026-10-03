@@ -13,6 +13,7 @@ Use only what is relevant:
 - brand evidence,
 - platform/surface state,
 - selected selling point(s),
+- required visible evidence / evidence route when the viewer question depends on demonstration or context,
 - benchmark synthesis and references when required,
 - approved campaign locks for revisions/extensions.
 
@@ -80,6 +81,18 @@ If the same mechanism would work unchanged after swapping in any competitor prod
 ### Scene logic
 Define what the environment must communicate and which contextual elements are necessary. Avoid decorating the scene with props that do not support meaning, scale, attention, or brand.
 
+For daily-use functional physical products, default toward a **credible use context** rather than an abstract design stage when the communication goal benefits from purchase imagination, relevance, or use understanding.
+
+Prefer, in order when appropriate:
+1. real use action / physical interaction,
+2. credible use-context environment,
+3. use-adjacent context with clear scale/use cues,
+4. abstract symbolic stage only when it better serves the approved communication job.
+
+A person is optional; believable product ownership/use context is the requirement.
+
+If an abstract pedestal/geometric scene is chosen instead, state the functional reason. Pure polish, “premium feeling”, or empty visual spectacle is insufficient.
+
 ### Semantic effect
 Any particles, airflow, light trails, gradients, waves, diagrams, overlays, or graphic devices must have a communication role.
 
@@ -135,6 +148,7 @@ Visual Direction is resolved only when all are true:
 - the visual thesis describes an executable relationship,
 - product role is clear,
 - product–scene relationship is explicit when a scene is used,
+- required visible evidence is compatible with the chosen scene / interaction when the viewer question depends on evidence,
 - at least one distinctive visual mechanism is defined,
 - scene/effect logic is purposeful where applicable,
 - benchmark evidence has been translated into named current-design decisions when benchmarking was required,
