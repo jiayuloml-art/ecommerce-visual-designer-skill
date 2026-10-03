@@ -6,6 +6,12 @@
 - Project workspace isolation: each distinct project uses an explicit active project scope instead of inheriting unrelated files from a shared parent directory.
 - Portable relative project layout (`projects/<project-id>/input|state|working|output`) with runtime-specific path mapping.
 - Explicit cross-project source-scope rules: sibling projects and prior artifacts are not current evidence unless deliberately selected.
+- Pre-Production Readiness Gate before expensive or fidelity-sensitive production.
+- Hero/KV craft framework and template-resistance check.
+- Benchmark-to-visual mechanism deconstruction and completion gate.
+- Fidelity-preserving product/scene integration pass.
+- STALLED execution state, bounded retry, and production-efficiency evidence.
+- Client-facing visual delivery rationale.
 
 ### Changed
 - Visual Benchmarking now prioritizes target-platform/category evidence, qualifies samples by accessibility and visible market signals, keeps Market/Platform and Visual Excellence references distinct, and requires auditable benchmark deliverables before synthesis.
@@ -13,6 +19,8 @@
 - Input resolution now distinguishes filesystem accessibility from project evidence scope.
 - Runtime adapters resolve host-neutral relative project paths rather than embedding one host's absolute/configuration path.
 - Production routing keeps project state, intermediates, and outputs inside the active project workspace by default.
+- Fallback routes must preserve a minimum visual-quality baseline; truth-preserving but visually degraded fallbacks remain recovery drafts rather than equivalent finals.
+- Visual QA now checks whether benchmark principles visibly transfer into the artifact and tracks production efficiency separately from visual quality.
 
 ## [1.1.0] — 2026-10-03
 
