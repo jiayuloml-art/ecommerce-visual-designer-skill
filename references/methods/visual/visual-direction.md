@@ -46,6 +46,24 @@ Define how the product participates in the visual:
 
 Do not encode aesthetic judgment as a universal product-area percentage.
 
+### Product–scene relationship
+When a scene is used, define **how the product physically or visually participates in it**.
+
+Prefer a relationship expressed as an action or spatial interaction, for example:
+- held / gripped / picked up,
+- inserted into a verified holder or storage context,
+- supported by or resting against a scene object,
+- partially occluded by a foreground object,
+- cropped into the frame to create proximity,
+- nested in a workspace / travel / use context,
+- connected to a semantic effect or directional graphic system.
+
+Do not reduce this to coordinates such as “product on the right”.
+
+**Product Identity Lock ≠ Product Pose Lock.** Preserve verified form, proportions, labels, material, controls, quantity, and supported geometry; allow the pose, crop, contact relationship, and scene participation to become more dynamic when evidence and production capability support it.
+
+Any physical interaction must remain plausible for the product and must not imply an unsupported function, geometry, accessory, or use condition.
+
 ### Distinctive visual mechanism
 Resolve at least one mechanism that makes the direction more than a category template, such as:
 - spatial framing,
@@ -83,13 +101,24 @@ Define:
 - client-declared dislikes,
 - visual approaches contradicted by product/brand evidence.
 
-## Reference Basis
+## Reference Transfer Map
 
 When benchmarking was used, retain an internal trace for selected references:
 
-**Reference → Why selected → Mechanism extracted → Current design use → Do-not-copy boundary**
+**Reference → Visible observation → Mechanism extracted → Current design use → Do-not-copy boundary**
 
-The benchmark is not complete for visual direction if it yields only URLs or style adjectives.
+“Current design use” must name the decision actually affected, such as:
+- product placement / crop / angle,
+- product–scene interaction,
+- scene cue or human action,
+- typography scale / line break / spatial relation,
+- color / light / material treatment,
+- graphic / semantic effect,
+- depth / overlap / negative-space behavior.
+
+A reference that produces only a mood adjective or post-hoc explanation is not considered transferred.
+
+The benchmark is not complete for visual direction if it yields only URLs, style adjectives, or generic language that would remain true for almost any layout.
 
 ### Client-facing reference basis
 For a direction or delivered visual, CLIENT MODE may show a concise 2–4 reference summary when it helps explain the proposal:
@@ -105,9 +134,10 @@ Visual Direction is resolved only when all are true:
 - the first impression is explicit,
 - the visual thesis describes an executable relationship,
 - product role is clear,
+- product–scene relationship is explicit when a scene is used,
 - at least one distinctive visual mechanism is defined,
 - scene/effect logic is purposeful where applicable,
-- benchmark evidence has been translated when benchmarking was required,
+- benchmark evidence has been translated into named current-design decisions when benchmarking was required,
 - negative direction is known.
 
 If these are not resolved, do not move to composition or rendering.
