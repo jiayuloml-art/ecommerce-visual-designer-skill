@@ -28,6 +28,15 @@ message:
   main:
   supporting:
 
+visual_evidence:
+  required_visible_evidence:
+  evidence_route:
+  scene_or_action:
+  required_assets: []
+  truth_boundary: []
+  benchmark_question:
+  fallback_evidence_route:
+
 truth_constraints:
   fact_ids: []
   preserve: []
@@ -45,6 +54,7 @@ preproduction_readiness:
   platform_surface_resolved: NOT_CHECKED
   truth_resolved: NOT_CHECKED
   benchmark_translated: NOT_CHECKED
+  visual_evidence_resolved: NOT_CHECKED
   asset_plan_resolved: NOT_CHECKED
   art_direction_resolved: NOT_CHECKED
   production_route_resolved: NOT_CHECKED
@@ -155,6 +165,10 @@ For benchmarked hero/KV work, `reference_influences` should name the concrete de
 
 For scene-based work, `product_scene_relationship` should state how the product participates in the scene. If the field can only be described as “product placed left/right/center”, revisit Visual Direction / Composition.
 
+For selling-point / demonstration slots, resolve `visual_evidence.required_visible_evidence` before layout. If the intended message requires use, fit, scale, interaction, or detail proof, copy plus a decorative arrow/shape does not satisfy this field by itself.
+
+If the strongest evidence route cannot be produced truthfully with available assets, choose a truthful fallback evidence route or mark the dependent slot BLOCKED / request the minimum input. Do not decorate around missing evidence.
+
 ## Pre-Production Readiness Gate
 Before a slot becomes `READY`, resolve every production-critical field that materially affects the intended result. A slot may still proceed as `S0 CONCEPT` with explicit gaps, but it must not silently enter production-ready execution.
 
@@ -162,6 +176,7 @@ For hero/KV work, readiness normally includes:
 - output/surface/platform state when it changes composition or export behavior,
 - product-truth locks,
 - benchmark-to-visual mechanism translation when benchmarking is required,
+- required visible evidence / evidence route for the slot,
 - art direction and first focal event,
 - required product/brand assets,
 - supporting scene/prop/usage assets needed by the concept,
