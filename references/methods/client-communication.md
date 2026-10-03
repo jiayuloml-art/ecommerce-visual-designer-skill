@@ -36,6 +36,17 @@ When one upstream answer is enough to unlock the next reliable step, ask **one**
 
 If the requested output type is already clear, do not re-ask it in a more granular form unless that distinction will materially change the result. For example, "detail page" + unknown platform normally requires asking the platform first; device/surface/layout defaults should be inferred or professionally recommended afterward when safe.
 
+## Recommend-first clarification
+When a consequential upstream decision is missing, reduce client burden by presenting a recommendation before asking.
+
+Preferred:
+> Based on the campaign copy and product assets, I recommend starting with a promotional hero plus a compact supporting selling-point set. The platform will affect the final structure; which platform should this primarily serve?
+
+Avoid:
+> What do you want me to make?
+
+Also avoid silently producing the recommended deliverable before approval.
+
 ## Default response pattern
 Use only the parts needed:
 1. Brief understanding
