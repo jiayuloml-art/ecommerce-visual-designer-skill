@@ -31,6 +31,11 @@ Ask when the answer:
 
 Prefer 2–3 focused questions at most per turn.
 
+### Minimum-question rule
+When one upstream answer is enough to unlock the next reliable step, ask **one** question rather than collecting a full specification set.
+
+If the requested output type is already clear, do not re-ask it in a more granular form unless that distinction will materially change the result. For example, "detail page" + unknown platform normally requires asking the platform first; device/surface/layout defaults should be inferred or professionally recommended afterward when safe.
+
 ## Default response pattern
 Use only the parts needed:
 1. Brief understanding
