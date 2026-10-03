@@ -35,6 +35,21 @@ Define the spatial/attention relationship among the elements that actually matte
 
 Avoid defaulting to "left text / right product", centered product, or a fixed grid unless that relationship is deliberately justified.
 
+### Product participation
+Define the product's active participation in the frame.
+
+Use a relational statement, not only a coordinate:
+- “hand enters from the lower edge and grips the bottle,”
+- “bottle is seated in a cup holder that provides scale and foreground occlusion,”
+- “product is partially cropped in the foreground while the use environment recedes behind it,”
+- “product leans against a verified scene object and creates a diagonal counterforce to the headline.”
+
+When people are present, specify the action and contact point. A model standing near the product without a communication role is not meaningful interaction.
+
+When no person is present, the product may still interact through support, containment, overlap, occlusion, reflection, crop, scale contrast, or directional effect.
+
+Do not force dynamic posing when product evidence does not support it. In that case, keep the verified view and make the **scene adapt to the product** rather than inventing geometry.
+
 ### Composition tension
 Identify what prevents the frame from becoming a passive placement of assets.
 
@@ -100,12 +115,29 @@ Avoid unless specifically justified:
 - decorative lines with no compositional role,
 - information added merely because it is confirmed.
 
+## Reference transfer checkpoint
+
+When benchmarking was required, the Composition Contract must identify which observed reference mechanism materially informed at least one concrete choice in the frame.
+
+Acceptable transfer targets include:
+- product placement / crop / angle,
+- product–scene or human interaction,
+- depth / overlap / occlusion,
+- headline scale / line break / alignment / product relationship,
+- color / light / material treatment,
+- graphic / semantic effect,
+- negative-space or visual-path behavior.
+
+If the layout was already fixed and the reference is being used only to justify it afterward, this checkpoint fails.
+
 ## Composition checkpoint
 
 Before production:
 - the first/second read is intentional,
 - product and copy have a designed relationship,
+- product participation is explicit when a scene is used,
 - at least one composition mechanism creates focus/tension,
+- benchmark-derived choices are traceable when benchmarking was required,
 - text roles are clear,
 - nonessential copy is removed,
 - the composition still supports the Visual Thesis at thumbnail/mobile scale.
