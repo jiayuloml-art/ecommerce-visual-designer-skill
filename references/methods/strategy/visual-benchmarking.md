@@ -17,6 +17,25 @@ Usually reuse an existing recent benchmark for:
 - local revisions,
 - additional outputs inside a stable approved campaign system.
 
+## Question-driven research
+
+Do not benchmark only by broad category labels such as “premium bottle visual” or “good e-commerce layout”.
+
+Before searching, define the unresolved visual question that the current hero or slot needs evidence for.
+
+Examples:
+- how do strong drinkware ads show one-hand lid use without obscuring the product?
+- how is portability communicated through hand / bag / commute interaction?
+- how is cup-holder fit shown through context, scale, and contact?
+- how do product and headline share the frame without defaulting to left-text/right-product?
+- how is a pale product separated from a warm lifestyle environment through light and material contrast?
+
+Use the question to shape search terms and reference selection.
+
+For a supporting slot, prefer **1–2 strong, directly relevant references** that answer the slot's unresolved visual question over a larger set of generic inspiration.
+
+For a hero/KV, retain enough evidence to understand both target-platform/category behavior and visual excellence, but treat sample counts as guidance rather than quotas. Do not spend time collecting redundant references once the needed mechanism is sufficiently evidenced.
+
 ## Two-track benchmark
 
 Keep the two tracks separate during research and in the deliverable. A reference may inform both tracks only when it independently satisfies both roles.
@@ -62,9 +81,10 @@ Do not call a sample “head”, “top”, “best-selling”, “high-performi
 
 #### Sample set
 When live research is available:
-- prefer **3–5 qualified target-platform/category samples** before broadening the search,
-- aim for **5–10 total useful samples across both benchmark tracks** when efficient,
-- do not satisfy the sample count with low-quality, inaccessible, weakly related, or redundant pages.
+- prefer **3–5 qualified target-platform/category samples** for a new hero/KV when platform convention materially matters,
+- for a narrow slot-specific question, **1–2 directly relevant references** may be sufficient,
+- broaden only when the current evidence does not resolve the visual question,
+- do not satisfy a target count with low-quality, inaccessible, weakly related, or redundant pages.
 
 Extract:
 - platform-effective patterns,
@@ -221,6 +241,7 @@ For a new hero/KV or deliberate visual upgrade, the benchmark is **not complete*
 
 Before production, the synthesis should be able to answer, at minimum:
 - what should dominate the first impression,
+- what viewer/evidence question the reference research was trying to resolve,
 - how the product should relate to the scene and copy,
 - which product placement / interaction behavior is worth transferring,
 - which composition / typography / color / light mechanisms will be used,
