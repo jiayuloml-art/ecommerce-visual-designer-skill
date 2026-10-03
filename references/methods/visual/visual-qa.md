@@ -78,6 +78,18 @@ Check balance, tension, spacing, repetition/variation, crop, scale, and negative
 ### V8 Information Hierarchy
 Check first, second, and supporting reads. Exact copy should remain legible at the intended viewing condition.
 
+### V8a Hero Typography
+For hero/KV work, explicitly verify:
+- headline legibility at reduced viewing size,
+- clear headline/supporting-copy hierarchy,
+- purposeful line breaks and spacing,
+- sufficient contrast over the image,
+- product/copy spatial relationship,
+- absence of unnecessary translucent cards/pills or template-like text containers,
+- restraint: supporting facts do not overwhelm the first impression.
+
+If the title, model name, or proof text becomes hard to read at the intended thumbnail/mobile scale, this check is **FAIL** even when the exact strings are technically correct.
+
 ### V9 Strategy–Visual Alignment
 Confirm the dominant visual resource and first focal point support the approved communication job and hero selling point.
 
@@ -92,6 +104,18 @@ For multi-image/multi-slot work, compare side-by-side for:
 - meaningful variation,
 - duplicate jobs,
 - drift.
+
+### V11 Anchor Acceptance Gate
+Before presenting a representative anchor as a direction for client approval, all applicable hero/KV checks must pass or be explicitly marked unresolved:
+- product truth,
+- grounding/contact,
+- first-impression hierarchy,
+- hero typography,
+- product/brand specificity,
+- strategy–visual alignment,
+- benchmark-to-artifact transfer when benchmarking was used.
+
+A technically correct artifact with obvious template composition, weak typography, poor grounding, or unreadable text must remain an internal/recovery draft rather than an approval-ready anchor.
 
 ## Production Efficiency Review
 Keep this separate from Visual Excellence and hard gates. When materially relevant, record:
