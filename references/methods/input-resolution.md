@@ -29,6 +29,21 @@ Use the strongest available evidence:
 
 Do not upgrade lower-confidence evidence into verified truth.
 
+## Project source scope
+Before resolving inputs, establish which files belong to the active project.
+
+Default source scope:
+- the current brief and user-supplied files,
+- the active project's own state, inputs, and approved artifacts,
+- Skill/reference files needed to execute the method,
+- external references explicitly selected or authorized for this project.
+
+For **CREATE**, do not search sibling project folders, prior project states, or prior generated artifacts to fill missing information unless the user explicitly supplies or selects them as references.
+
+For **EXTEND / REVISE / ADAPT**, reuse only the explicitly selected existing project's state and artifacts. A nearby file is not evidence merely because it exists in the same parent directory.
+
+If a file's project ownership is ambiguous, treat it as out of scope until its role is established. This prevents cross-project contamination from being mistaken for product truth.
+
 ## Truth states
 - **CONFIRMED FACT** — directly verified.
 - **DERIVED BENEFIT** — reasonable benefit derived from confirmed facts; keep the derivation traceable.
