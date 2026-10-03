@@ -6,11 +6,14 @@ Use one structured plan per output instance or independently produced slot. This
 Campaign-level strategy, product truth, and campaign visual system are shared.
 Production decisions are output/slot-specific.
 
+When `anchor: true`, the slot must follow `anchor-production-protocol.md`. The production plan records the current protocol stage but does not replace the protocol's mandatory transition gates.
+
 ```yaml
 slot_identity:
   slot_id:
   output_id:
   anchor: false
+  anchor_protocol_stage: null # AP0_READY | AP1_DESIGN_LOCK | AP2_SCENE_FIT | AP3_PRODUCT_INTEGRATION | AP4_TYPOGRAPHY | AP5_FINAL_QA | AP6_CLIENT_PREVIEW
 
 output_identity:
   output:
