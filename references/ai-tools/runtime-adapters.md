@@ -113,3 +113,7 @@ Load host-specific details only when they affect the current task.
 Do not pre-create empty files for every AI product. Create a dedicated host file only when it contains real, stable differences from this common contract.
 
 Potential hosts may include ChatGPT, Codex, Claude, Copilot, Cursor, Gemini, DeepSeek, Doubao, Kimi, Qwen, or others; this list is not a capability claim.
+
+
+## Codex host adapter
+When the active host is Codex, load `references/ai-tools/codex.md` for host-specific image-generation wait budgets, staged product-hero routing, and deterministic fallback behavior.
