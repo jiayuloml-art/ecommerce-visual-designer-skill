@@ -37,12 +37,12 @@ When a hero requires both lifestyle atmosphere and strict product fidelity, pref
 If a required scene asset is missing, the production plan should identify and create/source it intentionally rather than defaulting to an empty template.
 
 ## Anchor-first production
-For a coordinated set with shared visual decisions:
-1. produce one representative anchor slot,
-2. verify truth, hierarchy, visual system, exact text handling, and technical constraints,
-3. expand remaining slots only after the anchor is acceptable.
+For any representative hero/KV/anchor that will establish the visual language for later outputs, follow `anchor-production-protocol.md`.
 
-Do not propagate a failed anchor across the set.
+That protocol is authoritative for stage order and client-preview eligibility:
+**READY → DESIGN LOCK → SCENE FIT → PRODUCT INTEGRATION → TYPOGRAPHY → FINAL QA → CLIENT PREVIEW**.
+
+Do not bypass failed gates, do not show an internal failed candidate as an approval-ready concept, and do not propagate a failed anchor across the set.
 
 ## Asset preservation
 A verified layer is preserved by default when the requested change does not depend on it.
