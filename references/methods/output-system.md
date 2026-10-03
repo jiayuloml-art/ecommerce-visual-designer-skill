@@ -58,9 +58,11 @@ After approval, create a Confirmed Output Set.
 ## Image/slot role planning
 For each meaningful slot, map:
 
-**Viewer Question → Primary Communication Job → First Visual Focal Point → Visual Evidence → In-image Text / Source**
+**Viewer Question → Primary Communication Job → Required Visible Evidence → Evidence Route → First Visual Focal Point → In-image Text / Source**
 
-A slot may use supporting mechanisms, but it should not exist only to increase image count.
+For selling-point or use-context slots, load `references/methods/visual/visual-evidence-strategy.md` before composition.
+
+A slot may use supporting mechanisms, but it should not exist only to increase image count. Copy or decorative graphics do not count as sufficient visual evidence when the viewer question requires demonstration, context, fit, scale, or use.
 
 ## No Redundant Output Rule
 Every additional output/slot must add at least one of:
