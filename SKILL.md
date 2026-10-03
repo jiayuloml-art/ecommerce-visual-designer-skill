@@ -37,7 +37,7 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 
 21. **Readiness before production.** Do not enter expensive or fidelity-sensitive production because the direction merely sounds plausible. Resolve the minimum production-critical context, translate benchmark evidence into executable visual mechanisms, plan required assets, and choose both a primary and recovery route first.
 22. **Bounded execution.** Tool calls may be SUCCESS, FAILED, or STALLED. A long-running call with no meaningful progress must not cause indefinite waiting; recover with a bounded retry and then an alternate route while preserving truth and quality status.
-23. **Anchor protocol is mandatory.** Any representative hero/KV/anchor that will be shown for direction approval must follow `references/methods/visual/anchor-production-protocol.md` in order. No later anchor stage may begin while the preceding gate is FAIL or NOT_CHECKED.
+23. **Anchor protocol is mandatory.** Any representative hero/KV/anchor that will be shown for direction approval must follow `references/methods/visual/anchor-production.md` in order. No later anchor stage may begin while the preceding gate is FAIL or NOT_CHECKED.
 
 ## Operating modes
 
@@ -138,11 +138,11 @@ Use:
 8. Do not fabricate unknown product facts or brand facts. Use placeholders when necessary.
 
 Use:
-- `references/methods/visual/art-direction.md`
+- `references/methods/visual/visual-direction.md`
 - `references/methods/visual/campaign-visual-system.md`
 - `references/methods/visual/production-plan.md`
 - `references/methods/visual/production-routing.md`
-- `references/methods/visual/layout-and-typography.md`
+- `references/methods/visual/composition-and-typography.md`
 - `references/methods/production/provider-routing.md`
 - `references/methods/production/provider-registry.md`
 - `references/ai-tools/runtime-adapters.md`
@@ -154,17 +154,7 @@ Run hard gates first:
 3. **Regression QA** against approved baseline when one exists
 4. **Platform / Compliance QA**
 
-Only after applicable hard gates pass, run **Visual Excellence QA**:
-- full-size craft,
-- thumbnail / first impression,
-- product specificity,
-- brand specificity,
-- grounding/contact,
-- element justification,
-- composition rhythm,
-- information hierarchy,
-- strategy–visual alignment,
-- campaign contact-sheet consistency when relevant.
+Only after applicable hard gates pass, run the **Independent Visual Critic** on the rendered artifact. The Critic judges the visible result before reading the producer's rationale/self-QA and returns PASS / REVISE / REJECT. For representative anchors, client preview requires both Visual Critic PASS and applicable hard/integrity QA PASS.
 
 Use QA states: **PASS / FAIL / NOT_CHECKED / NOT_APPLICABLE**. Applicable NOT_CHECKED items are not PASS.
 
@@ -172,13 +162,13 @@ On failure: identify the responsible layer → return to the nearest responsible
 
 Blocking failures cannot be averaged away by aesthetic scores.
 
-Do not present a representative hero/KV as an approval-ready anchor unless applicable product grounding, first-impression hierarchy, hero typography/readability, product/brand specificity, strategy alignment, and benchmark-transfer checks have passed. A technically correct but visually weak fallback remains an internal/recovery draft.
+Do not present a representative hero/KV as an approval-ready anchor unless the Independent Visual Critic returns PASS and applicable hard/integrity gates pass. A technically correct but visually weak fallback remains an internal/recovery draft.
 
 For a client-facing visual delivery, include a concise design rationale: the visual thesis, 2–3 key design decisions and how they support the communication goal, plus any unresolved production/platform caveat. This is a presentation artifact, not hidden chain-of-thought.
 
 Record production-efficiency evidence when execution was materially slow, stalled, retried, or rerouted; runtime failure and visual quality are separate evaluation dimensions.
 
-Use `references/methods/visual/visual-qa.md` and `references/methods/production/failure-recovery.md`.
+Use `references/methods/production/artifact-qa.md`, `references/methods/visual/visual-critic.md`, and `references/methods/production/failure-recovery.md`.
 
 ## Human Gates
 
@@ -248,15 +238,17 @@ Load only what is needed. Do not dump all references into context.
 - Selling points → `references/methods/strategy/selling-point-discovery.md`
 - Visual benchmark → `references/methods/strategy/visual-benchmarking.md`
 - Medium grammar → `references/methods/mediums/*.md`
-- Art direction → `references/methods/visual/art-direction.md`
-- Anchor production / approval sequence → `references/methods/visual/anchor-production-protocol.md`
+- Art direction → `references/methods/visual/visual-direction.md`
+- Anchor production / approval sequence → `references/methods/visual/anchor-production.md`
+- Independent visual criticism → `references/methods/visual/visual-critic.md`
 - Campaign consistency → `references/methods/visual/campaign-visual-system.md`
 - Per-output/slot production → `references/methods/visual/production-plan.md`
 - Tool-method routing → `references/methods/visual/production-routing.md`
-- Exact text/layout → `references/methods/visual/layout-and-typography.md`
-- Visual QA → `references/methods/visual/visual-qa.md`
+- Exact text/layout → `references/methods/visual/composition-and-typography.md`
+- Visual QA → `references/methods/production/artifact-qa.md`
 - Provider capabilities → `references/methods/production/provider-registry.md`
 - Provider selection → `references/methods/production/provider-routing.md`
+- Hard artifact integrity QA → `references/methods/production/artifact-qa.md`
 - Failure recovery → `references/methods/production/failure-recovery.md`
 
 ### Runtime
