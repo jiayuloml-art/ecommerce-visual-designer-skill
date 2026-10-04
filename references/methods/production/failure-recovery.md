@@ -17,6 +17,44 @@ A STALLED call is a failure-recovery condition. Do not keep waiting indefinitely
 3. MANUAL HANDOFF with a provider-ready production pack.
 4. FOCUSED CLARIFICATION only for client-exclusive blocking information.
 
+## Recovery Viability Gate
+
+Before choosing a local repair, decide whether the current scene / composition / route is still structurally capable of producing the intended relationship.
+
+A defect is **LOCAL** only when the underlying geometry remains valid and one or a few bounded layer edits can plausibly fix it without changing the scene backbone.
+
+Typical local defects:
+- text collision / contrast,
+- local shadow strength,
+- minor edge cleanup,
+- small crop / spacing adjustment,
+- isolated prop cleanup,
+- minor mask refinement.
+
+A defect is **STRUCTURAL** when the intended result requires changing one or more of:
+- camera / perspective,
+- product placement plane,
+- product–container or product–human geometry,
+- product scale class,
+- scene asset / receiver geometry,
+- major occlusion path,
+- product pose/view,
+- composition backbone.
+
+Examples:
+- a cup holder exists in the image but is not positioned or angled so the product can actually enter it,
+- the product view is incompatible with the scene camera,
+- the container is visibly too small/large for the claimed fit,
+- a hand/product relationship cannot be made credible without changing the source interaction geometry.
+
+### Escalation rule
+- Make at most **one bounded local repair attempt** for the same visible defect.
+- If the same defect remains, or the client repeats the same structural complaint, reclassify it as STRUCTURAL.
+- Do not continue coordinate nudging, CSS offsets, masks, shadows, or foreground patches to simulate a relationship the underlying scene does not support.
+- STRUCTURAL defects must return to scene selection / composition / production routing, not remain in local-polish recovery.
+
+Locality is an optimization rule, not a requirement to preserve a bad scene.
+
 ## Bounded retry / stall recovery
 For a FAILED or STALLED production call:
 1. inspect whether the failure is transient and whether any useful partial artifact exists,
@@ -101,4 +139,4 @@ Examples:
 - export/spec → technical/export,
 - provider unavailable → capability/provider routing.
 
-Fix highest-impact failure first. Structural revision is justified only when local repair cannot satisfy the target.
+Fix highest-impact failure first. Use the Recovery Viability Gate before local repair. If scene/camera/scale/contact geometry is incompatible with the intended relationship, structural revision is immediately justified; do not require repeated failed local edits first.
