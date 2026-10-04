@@ -187,7 +187,16 @@ Use `references/methods/production/artifact-qa.md`, `references/methods/visual/v
 Use when strategy or output-package choices materially affect project direction. It is mandatory when the agent has recommended or inferred an output package/type/scope that the client did not explicitly specify. Present the recommendation, short rationale, approval target, and consequence of approval. Prefer one recommended route over a questionnaire.
 
 ### HG2 — Production Readiness
-Conditional. Trigger only when a genuinely blocking input, proof item, product reference, conflict, or platform requirement is missing/unresolved.
+Conditional. Trigger when a genuinely blocking input, proof item, product reference, conflict, or platform requirement is missing/unresolved.
+
+Also trigger HG2 when missing evidence would force a material downgrade of an already-approved communication job — for example:
+- real operation/demo → static close-up,
+- factual product state → speculative concept,
+- compatibility proof → contextual-only illustration,
+- removal/replacement of a core selling-point shot,
+- weakening/reframing of a client-facing claim.
+
+Use the Evidence Authorization sequence: ask for factual support first; if unavailable, ask whether a clearly labeled conceptual depiction is acceptable; only then move to a weaker truthful fallback when needed. Do not silently downgrade a core approved evidence route.
 
 ### HG3 — External Execution Authorization
 Conditional. Trigger before external spend, credits, login, third-party asset upload, or other consequential external execution that has not already been authorized.
