@@ -85,16 +85,18 @@ A beautiful room is not enough. It must be camera-compatible with the product.
 ### Scene checkpoint
 Without final product/copy, verify:
 - the intended product–scene relationship is geometrically plausible,
+- the receiver/container/contact zone is actually located where the product can interact with it,
 - human/object interaction has a credible contact path when used,
 - plausible placement plane,
 - compatible perspective,
 - believable environmental scale,
 - dimensionally plausible product/context relation when fit / compatibility is being implied,
+- the intended containment / insertion depth can be achieved without faking the geometry through arbitrary masks or offsets,
 - compatible light system,
 - sufficient composition space,
 - semantic relevance to the Visual Thesis.
 
-If FAIL, rebuild/reselect the scene.
+If any intended interaction requires the product to be moved into a region or angle the scene does not support, Scene Fit FAILS. Rebuild/reselect the scene before integration.
 
 ## A3 — PRODUCT INTEGRATION
 
@@ -118,7 +120,7 @@ Inspect product + scene without final copy.
 
 The product must look physically present in the same photographic world.
 
-If it reads as a sticker, cutout, floating layer, isolated card, oversized/miniature object, or mismatched light source, integration FAILS.
+If it reads as a sticker, cutout, floating layer, isolated card, oversized/miniature object, mismatched light source, or if the product is visibly not inside/on/against the object it is supposed to interact with, integration FAILS.
 
 A fallback that preserves exact pixels but fails integration remains an internal recovery draft.
 
@@ -185,8 +187,9 @@ General rules:
 - generic direction / weak idea → Visual Direction
 - passive or template composition → Composition & Typography
 - unsupported/new product geometry → A1 / Product Truth
-- scene perspective/scale mismatch → A2
-- cutout/shadow/light mismatch → A3
+- scene perspective / scale / receiver-position mismatch → A2 / reselect scene
+- repeated failure to create containment/contact through local offsets/masks → A2 / structural revision
+- cutout/shadow/light mismatch with otherwise-valid geometry → A3
 - meaningless effect → Visual Direction or A4
 - text hierarchy/readability → Composition & Typography / A5
 - stalled provider → runtime/failure recovery
