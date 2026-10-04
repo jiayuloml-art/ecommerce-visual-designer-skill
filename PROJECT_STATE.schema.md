@@ -16,6 +16,7 @@ facts:
   product: {}
   product_condition: null
   audience: []
+  evidence_authorizations: [] # unresolved/verified/user-described/concept-authorized/concept-prohibited truth-sensitive depiction decisions
   commercial_context: {}
   verified_claims: []
   derived_benefits: []
@@ -78,6 +79,7 @@ pending:
   inputs: []
   approvals: []
   conflicts: []
+  evidence_authorizations: []
 
 history:
   - timestamp: null
