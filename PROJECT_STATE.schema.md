@@ -75,6 +75,7 @@ artifacts:
     baseline: false
     qa_status: null
     qa_checks: {}
+    qa_invalidated_by_client_feedback: false
     path_or_ref: null
 
 pending:
@@ -103,4 +104,5 @@ history:
 - A new client decision supersedes an old decision explicitly; do not silently overwrite.
 - Runtime/host capabilities are session properties and should not be persisted as durable project truth.
 - If an approved artifact changes, set `integrity: CHANGED` until it passes affected-scope QA and required approval again.
+- If concrete client feedback contradicts a prior visual PASS, mark that artifact's affected QA scope invalidated and require re-QA after repair.
 - Keep only meaningful history entries: approved changes, rejected routes, resolved conflicts, platform changes, major visual-system changes, and final artifact versions.
