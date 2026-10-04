@@ -74,6 +74,7 @@ Resolve as applicable:
 - product placement plane,
 - environmental scale cues,
 - product scale relative to nearby objects,
+- dimensional basis when fit / containment / compatibility is part of the communication job,
 - source/environment light direction,
 - light softness/color temperature,
 - copy/effect space,
@@ -88,6 +89,7 @@ Without final product/copy, verify:
 - plausible placement plane,
 - compatible perspective,
 - believable environmental scale,
+- dimensionally plausible product/context relation when fit / compatibility is being implied,
 - compatible light system,
 - sufficient composition space,
 - semantic relevance to the Visual Thesis.
@@ -100,6 +102,7 @@ Composite/edit/reconstruct according to the view state and chosen route.
 
 Check and repair as applicable:
 - scale,
+- dimensional plausibility / fit relation when relevant,
 - human/object contact geometry,
 - perspective,
 - grounding/contact,
