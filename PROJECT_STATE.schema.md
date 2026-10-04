@@ -9,11 +9,17 @@ project:
   current_stage: null
   task_operation: null # CREATE | EXTEND | REVISE | ADAPT | DIRECTION_ONLY
   mode: CLIENT
+  workspace_rel: null # relative to the current runtime/workspace root; no machine-specific absolute path
+  source_scope: [] # active-project files and explicitly allowed external references
+  continuity: NEW # NEW | EXTEND | REVISE | ADAPT
+  baseline_project: null # explicit only; never inferred from same product/brand
+  inherited_truth_sources: [] # named base-truth sources only unless broader inheritance is explicitly approved
 
 facts:
   product: {}
   product_condition: null
   audience: []
+  evidence_authorizations: [] # unresolved/verified/user-described/concept-authorized/concept-prohibited truth-sensitive depiction decisions; include whether HG2 is required before fallback
   commercial_context: {}
   verified_claims: []
   derived_benefits: []
@@ -69,6 +75,7 @@ artifacts:
     baseline: false
     qa_status: null
     qa_checks: {}
+    qa_invalidated_by_client_feedback: false
     path_or_ref: null
 
 pending:
@@ -76,6 +83,7 @@ pending:
   inputs: []
   approvals: []
   conflicts: []
+  evidence_authorizations: [] # unresolved authorization decisions that block/downgrade approved evidence routes
 
 history:
   - timestamp: null
@@ -86,9 +94,15 @@ history:
 ```
 
 ## Persistence rules
+- Keep one `PROJECT_STATE` per active project workspace. Do not reuse another project's state as implicit context for a new project.
+- Store portable relative paths where possible; host/runtime-specific absolute paths may be used transiently for execution but should not become durable project truth.
+- Cross-project references must be explicit in `source_scope`; sibling project folders are not implicitly readable evidence.
+- Same product/brand/SKU does not imply continuity. New platform/campaign/output-family tests default to `continuity: NEW` unless the client explicitly selects an existing project/baseline.
+- For `continuity: NEW`, inherit only specifically named base-truth sources; prior campaign state, prompts, generated scenes, visual direction, outputs, platform decisions, and QA are excluded by default.
 - Store confirmed facts, explicit derived benefits/hypotheses, prohibited inferences, client-approved decisions, and unresolved conflicts; do not store hidden reasoning.
 - Keep missing information distinct from conflicting information.
 - A new client decision supersedes an old decision explicitly; do not silently overwrite.
 - Runtime/host capabilities are session properties and should not be persisted as durable project truth.
 - If an approved artifact changes, set `integrity: CHANGED` until it passes affected-scope QA and required approval again.
+- If concrete client feedback contradicts a prior visual PASS, mark that artifact's affected QA scope invalidated and require re-QA after repair.
 - Keep only meaningful history entries: approved changes, rejected routes, resolved conflicts, platform changes, major visual-system changes, and final artifact versions.

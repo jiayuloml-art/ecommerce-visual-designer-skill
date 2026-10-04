@@ -22,6 +22,23 @@ Persist the approved shared visual language across outputs.
 17. Allowed Changes / Variation Rules
 18. Distinctive Device / Motif — optional; only when there is a real campaign-specific recurring device
 
+## Graphic-token consistency
+
+When a campaign uses recurring graphic devices, define a compact token set when useful:
+- line weight / curve behavior,
+- arrow style,
+- endpoint / dot style,
+- corner radius,
+- highlight / accent color behavior,
+- label container behavior,
+- numbering behavior,
+- icon style,
+- recurring spacing relationships.
+
+The purpose is coherence, not decoration. Do not add tokens that have no communication role.
+
+Across a coordinated set, verify that recurring lines, arrows, dots, labels, and numbered markers look intentionally related rather than improvised per page.
+
 ## Lock / variation
 Consistency does not mean identical layouts.
 
