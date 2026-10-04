@@ -86,6 +86,12 @@ before:
 before:
 **direction defect → re-art-direction**
 
+But local repair is allowed only after the **Recovery Viability Gate** in `failure-recovery.md`.
+
+If the intended relationship depends on a different camera, product-placement plane, container geometry, product scale class, major occlusion path, or product view/pose, classify the defect as STRUCTURAL and return upstream immediately.
+
+Do not keep a scene merely because some useful pixels already exist. Preserving a structurally incompatible scene is false economy.
+
 Do not regenerate unrelated verified layers.
 
 ## Fallback quality rule
