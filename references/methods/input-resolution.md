@@ -32,13 +32,40 @@ Do not upgrade lower-confidence evidence into verified truth.
 ## Project source scope
 Before resolving inputs, establish which files belong to the active project.
 
+### Same product does not imply same project
+Reusing the same product, brand, SKU, or source image does **not** authorize reuse of a prior campaign/project state.
+
+Treat `EXTEND / REVISE / ADAPT` as continuity operations only when the client explicitly indicates continuity or explicitly selects an existing project / approved artifact as the baseline.
+
+A new platform, new campaign, new output-family test, or fresh brief using the same product should default to a **new project boundary** unless continuity is explicit.
+
 Default source scope:
-- the current brief and user-supplied files,
-- the active project's own state, inputs, and approved artifacts,
+- the current brief and files supplied or explicitly selected for this project,
+- the active project's own state and project-local inputs,
 - Skill/reference files needed to execute the method,
 - external references explicitly selected or authorized for this project.
 
-For **CREATE**, do not search sibling project folders, prior project states, or prior generated artifacts to fill missing information unless the user explicitly supplies or selects them as references.
+For **CREATE**, do not search or inherit:
+- sibling project folders,
+- prior `PROJECT_STATE`,
+- prior campaign visual systems,
+- prior prompts / generation plans,
+- prior generated scenes / outputs,
+- prior platform/surface decisions,
+- prior QA conclusions,
+
+unless the client explicitly selects a specific item as a reference or baseline.
+
+### Selective inheritance
+A new project may selectively reuse **base truth sources** from an earlier project, such as:
+- original user-supplied product photography,
+- verified logo / brand asset,
+- verified product dimensions/specifications,
+- official manuals or source documents.
+
+Selective inheritance must name the specific source item. Do not import the earlier project directory as a whole.
+
+Generated campaign imagery, composed outputs, derived copy, visual direction, platform strategy, prompts, and project state are **not** base truth sources by default.
 
 For **EXTEND / REVISE / ADAPT**, reuse only the explicitly selected existing project's state and artifacts. A nearby file is not evidence merely because it exists in the same parent directory.
 
