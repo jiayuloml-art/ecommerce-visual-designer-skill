@@ -45,6 +45,14 @@ truth_constraints:
   allowed_derivations: []
   prohibited_inferences: []
 
+product_representation:
+  mode: null # SOURCE_PIXEL_LOCKED | IDENTITY_PRESERVING_RECONSTRUCTION | AUTHORIZED_CONCEPT_STATE
+  source_identity_assets: []
+  identity_anchors: []
+  allowed_pose_view_state_changes: []
+  authorization_required_for: []
+  provisional_state_label: null
+
 visual_lock:
   fixed_rules: []
   allowed_changes: []
@@ -199,6 +207,15 @@ Do not call an expensive generation/edit route merely because a general mood has
 ## Product identity anchors
 When product fidelity matters, explicitly lock what cannot change:
 shape/silhouette, proportions, color, material, logo/label, controls/components, quantity/variant, scale cues, current condition.
+
+Do not confuse identity preservation with source-image preservation.
+
+Choose a `product_representation.mode` deliberately:
+- use `SOURCE_PIXEL_LOCKED` when exact source pixels are actually required,
+- use `IDENTITY_PRESERVING_RECONSTRUCTION` when better integration, pose, view, crop, or verified use-state depiction materially improves the communication job,
+- use `AUTHORIZED_CONCEPT_STATE` only after the Evidence Authorization Human Gate when exact alternate/open/hidden geometry is not fully evidenced.
+
+A reconstruction must still pass T2 against the identity anchors. It may improve scene integration; it may not silently redesign the product.
 
 ## Fidelity-preserving integration
 Preserving the source product does not mean leaving it visually isolated from the scene. When a verified product layer is composited into a new environment, integrate it non-destructively through perspective/scale alignment, contact shadow, ambient light/color matching, edge treatment, depth, and occlusion as appropriate.
