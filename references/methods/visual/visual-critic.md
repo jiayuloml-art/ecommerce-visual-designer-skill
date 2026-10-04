@@ -54,6 +54,8 @@ Inspect:
 - relative scale,
 - dimensional plausibility when fit / containment / compatibility is part of the claim,
 - perspective/camera compatibility,
+- whether the receiver/container is actually under/around/against the product where the claim requires it,
+- credible containment / insertion depth,
 - contact/weight,
 - shadow direction/softness,
 - environment light/color influence,
@@ -63,6 +65,8 @@ Inspect:
 - product identity fidelity.
 
 The product must look like it belongs to the same visual world as the scene.
+
+If the claim requires containment or insertion, a nearby container elsewhere in the frame does not count. The visible geometry must show the product actually entering / resting in / being held by the intended receiver.
 
 ## C3 — Typography
 Inspect:
@@ -150,7 +154,8 @@ Every non-PASS verdict must state:
 Typical routing:
 - weak/generic visual thesis → Visual Direction → REJECT
 - template/passive composition → Composition & Typography → REJECT or REVISE
-- camera/scale/light or dimensional-plausibility mismatch → Anchor Production A2/A3 / Production Plan → REVISE
+- receiver-position / camera / scale / containment mismatch → Anchor Production A2 / scene reselection → REVISE or REJECT
+- light/edge/local integration mismatch with valid geometry → Anchor Production A3 → REVISE
 - typography hierarchy → Composition & Typography / A5 → REVISE
 - decorative effect → Visual Direction / A4 → REVISE or REJECT
 - product identity drift → Product Truth / A1 → REVISE
