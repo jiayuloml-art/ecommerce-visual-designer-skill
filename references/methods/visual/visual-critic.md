@@ -52,6 +52,7 @@ Inspect:
 ## C2 — Product / scene realism
 Inspect:
 - relative scale,
+- dimensional plausibility when fit / containment / compatibility is part of the claim,
 - perspective/camera compatibility,
 - contact/weight,
 - shadow direction/softness,
@@ -72,9 +73,13 @@ Inspect:
 - rhythm/spacing,
 - contrast,
 - type/product relationship,
-- whether typography is an active composition element.
+- whether typography is an active composition element,
+- price / offer / date / CTA spacing and grouping,
+- whether labels collide with large numerals or other commercial text,
+- whether type color remains legible against the actual local background,
+- whether repeated roles across a set use coherent scale and spacing.
 
-Reject metadata-like strategy keywords, tiny accidental product identifiers, or text blocks that merely occupy empty space.
+Reject metadata-like strategy keywords, tiny accidental product identifiers, low-contrast commercial text, accidental overlaps, or text blocks that merely occupy empty space.
 
 ## C4 — Semantic effect
 If effects exist:
@@ -86,12 +91,14 @@ If effects exist:
 
 If an effect is only decoration, revise or remove it.
 
-## C5 — Specificity
+## C5 — Specificity / repetition
 Ask:
 - if the product were swapped for a competitor, would the design remain almost unchanged?
 - if the logo were swapped, would the design remain almost unchanged?
+- across a coordinated set, is the product repeatedly shown as the same front-view / upright / full-outline cutout without a deliberate communication reason?
+- do page-to-page differences come mainly from background swaps rather than meaningful product participation?
 
-If yes, product/brand specificity is insufficient.
+If yes, product/brand specificity or product participation is insufficient.
 
 ## C6 — Viewer Question / Visual Evidence
 For each supporting or selling-point output, ask:
@@ -109,8 +116,10 @@ Examples:
 
 If required visible evidence is absent, use **REVISE** or **REJECT** and return to Visual Evidence Strategy / Production Plan rather than polishing typography around the gap.
 
-## C7 — Strategy alignment
+## C7 — Strategy / platform alignment
 Confirm the visible result supports the approved communication job and first impression without relying on explanatory text outside the artifact.
+
+Also compare the artifact against the already-approved platform/content strategy. If production reintroduces elements that the strategy intentionally deferred, removed, or softened — for example moving price / CTA back onto a content-first cover after deciding to place commerce information later in the sequence — treat that as strategy drift and revise unless there is a documented reason.
 
 ## C8 — Benchmark transfer
 Only after C0–C6, inspect the Reference Basis when benchmarking informed the direction.
@@ -141,11 +150,13 @@ Every non-PASS verdict must state:
 Typical routing:
 - weak/generic visual thesis → Visual Direction → REJECT
 - template/passive composition → Composition & Typography → REJECT or REVISE
-- camera/scale/light mismatch → Anchor Production A2/A3 → REVISE
+- camera/scale/light or dimensional-plausibility mismatch → Anchor Production A2/A3 / Production Plan → REVISE
 - typography hierarchy → Composition & Typography / A5 → REVISE
 - decorative effect → Visual Direction / A4 → REVISE or REJECT
 - product identity drift → Product Truth / A1 → REVISE
 - missing/weak visible evidence for viewer question → Visual Evidence Strategy / Production Plan → REVISE or REJECT
+- static product repetition across the set → Composition & Typography / Production Plan → REVISE
+- platform strategy drift → Strategy / Production Plan → REVISE
 - benchmark not transferred → Visual Direction → REJECT
 
 ## Client-preview gate
