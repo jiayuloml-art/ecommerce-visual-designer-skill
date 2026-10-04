@@ -48,6 +48,18 @@ When people are present, specify the action and contact point. A model standing 
 
 When no person is present, the product may still interact through support, containment, overlap, occlusion, reflection, crop, scale contrast, or directional effect.
 
+Across a coordinated set, do not let product presentation collapse into repeated front-view / upright / full-outline placement by default. Repetition is acceptable only when it serves a deliberate campaign system.
+
+When evidence permits, vary participation through:
+- crop / partial entry,
+- foreground occlusion,
+- containment in a bag / holder / storage context,
+- support / leaning / resting relation,
+- different verified view selection,
+- credible tilt / orientation,
+- human/object contact,
+- foreground–midground–background placement.
+
 Do not force dynamic posing when product evidence does not support it. In that case, keep the verified view and make the **scene adapt to the product** rather than inventing geometry.
 
 ### Composition tension
@@ -96,6 +108,15 @@ Resolve as applicable:
 - negative space,
 - relationship to product/effect,
 - reading order at the intended viewing size.
+
+For commercial layers such as price / offer / date / CTA, check the relationship among label, number, currency symbol, qualifier, and surrounding background instead of treating each as an isolated text box.
+
+Avoid:
+- low-contrast brand-color text on a similar brand-color field,
+- labels touching or visually colliding with large price numerals,
+- mechanically inconsistent spacing between similar text roles,
+- arbitrary size changes that are not tied to hierarchy,
+- atmospheric photography paired with typography that feels pasted on top rather than integrated into the composition.
 
 Bold text alone is not typography design.
 
