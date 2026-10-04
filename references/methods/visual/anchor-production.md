@@ -36,17 +36,31 @@ Protect verified identity:
 - quantity/variant,
 - supported structural features.
 
-### View flexibility
-**Product identity locked does not mean camera view locked.**
+### Product representation mode
+**Product identity locked does not mean source pixels or camera view are locked.**
 
-Assign the usable view state from evidence:
+Resolve both the representation mode and usable view state.
 
-- `VIEW_LOCKED` — only one trustworthy view / insufficient geometry evidence; scene must adapt to that view.
+Representation mode:
+- `SOURCE_PIXEL_LOCKED` — exact supplied/approved pixels must remain the product layer.
+- `IDENTITY_PRESERVING_RECONSTRUCTION` — supplied assets define identity, but the product may be re-rendered/reconstructed into a better camera, pose, crop, contact relation, or verified functional state.
+- `AUTHORIZED_CONCEPT_STATE` — client-authorized conceptual alternate/open/hidden state; provisional only, never technical proof.
+
+View state:
+- `VIEW_LOCKED` — only one trustworthy view / insufficient geometry evidence; if representation mode is source-pixel locked, the scene must adapt to that view.
 - `VIEW_SELECTABLE` — multiple trustworthy official/source views exist; choose the view that best serves the composition.
-- `VIEW_RECONSTRUCTABLE` — sufficient multi-view/video/360/3D/reference evidence exists and the production route can create a new camera view while preserving identity; rendered result requires strict T2 comparison.
-- `VIEW_PROHIBITED` — the intended view would expose unsupported geometry/structure; do not fabricate it.
+- `VIEW_RECONSTRUCTABLE` — enough identity/geometry evidence exists to create a new camera view while preserving product identity; rendered result requires strict T2 comparison.
+- `VIEW_PROHIBITED` — the intended view/state would expose unsupported geometry and has not received concept authorization.
 
-Prefer a better verified view when the supplied view is incompatible with the intended scene. Do not keep a poor camera match merely to preserve source pixels.
+Do not default to `SOURCE_PIXEL_LOCKED` merely because a PNG exists. If exact cutout reuse creates a stiff, pasted, or camera-incompatible result, prefer identity-preserving reconstruction when truth evidence and authorization allow it.
+
+For an opened/operating state:
+- verified visual/structural evidence → reconstruct faithfully,
+- confirmed function but unresolved hidden geometry → trigger Evidence Authorization / HG2,
+- explicit concept authorization → allow a plausible provisional state with the truth boundary recorded,
+- no authorization → choose another truthful evidence route.
+
+Prefer a better verified/reconstructable view when the supplied view is incompatible with the intended scene. Do not keep a poor camera match merely to preserve source pixels.
 
 ### Pose / interaction flexibility
 **Product identity locked does not mean product pose or scene relationship must remain static.**
