@@ -165,6 +165,31 @@ Use when helpful:
 
 Ask at the nearest consequential point. Do not make this a routine intake question for outputs that do not need unseen structure.
 
+### Evidence Authorization Human Gate
+
+A fallback may be chosen autonomously only when it preserves the approved communication job and evidence strength.
+
+If resolving missing evidence would materially change any of the following, trigger **HG2 — Production Readiness** before silently downgrading:
+- the core selling point being demonstrated,
+- the evidence strength (for example, real action → static close-up),
+- whether the artifact is factual vs conceptual,
+- whether an approved shot/page is removed or replaced,
+- whether the client-facing claim must be weakened or reframed.
+
+Client-facing resolution should be concise and sequential:
+1. state what evidence is missing,
+2. ask whether the client can provide a relevant image/video/render or factual description,
+3. if unavailable, ask whether a clearly labeled conceptual depiction is acceptable,
+4. only after the client declines / cannot provide evidence and does not authorize concept generation, propose the truthful fallback route.
+
+Do not skip directly from `EVIDENCE_UNRESOLVED` to a lower-evidence fallback when that fallback weakens a core approved communication job.
+
+A non-core supporting shot may still use an autonomous fallback when:
+- the fallback preserves the same communication job,
+- it does not weaken or change a material claim,
+- it does not require speculative product truth,
+- and the change is recorded in the production plan.
+
 ## Asset roles
 - PRODUCT_REFERENCE
 - BRAND_ASSET
