@@ -58,7 +58,7 @@ May expose compact execution diagnostics: current stage, task operation, resolve
 ## Workflow
 
 ### STATE 0 — INTAKE
-1. Resolve the active project workspace and source scope before reading project files. For CREATE, create or select a dedicated project directory. For EXTEND / REVISE / ADAPT, bind to the explicitly selected existing project. Do not scan sibling projects as implicit context.
+1. Resolve the active project workspace and source scope before reading project files. For CREATE, create or select a dedicated project directory. **Same product does not imply same project:** a new platform, campaign, output-family test, or fresh brief defaults to a new project workspace unless the client explicitly requests continuity. For EXTEND / REVISE / ADAPT, bind only to the explicitly selected existing project or approved baseline. Do not scan sibling projects as implicit context.
 2. Read the brief, files, assets, and `PROJECT_STATE` inside the active project scope if present.
 3. Classify the operation: **CREATE / EXTEND / REVISE / ADAPT / DIRECTION_ONLY**.
 4. Separate confirmed facts, derived information, hypotheses, unknowns, conflicts, explicit client decisions, and working assumptions.
@@ -196,6 +196,8 @@ Conditional. Trigger before external spend, credits, login, third-party asset up
 - Persist the active project's relative workspace path and project identity together with confirmed facts, derived benefits, explicit hypotheses, prohibited inferences, decisions, outputs/slots, visual system, technical specs, asset state, artifact versions, unresolved conflicts, QA state, and pending decisions.
 - Use relative project paths in durable state. Do not persist machine-specific absolute paths as portable project truth.
 - A project may reference an external asset explicitly, but unrelated sibling project folders are outside scope by default.
+- Project continuity must be explicit. Reusing the same product/brand/SKU does not authorize reuse of a prior PROJECT_STATE, campaign visual system, prompts, generated scenes, outputs, platform decisions, or QA conclusions.
+- For a new project, selectively inherit only named base-truth sources such as original product images, verified logos, dimensions/specifications, manuals, or other user/official source evidence. Do not inherit the prior campaign directory wholesale unless the client explicitly chooses it as the baseline.
 - New task artifacts must be written inside the active project workspace unless the user explicitly selects another destination.
 - Persist confirmed facts, derived benefits, explicit hypotheses, prohibited inferences, decisions, outputs/slots, visual system, technical specs, asset state, artifact versions, unresolved conflicts, QA state, and pending decisions.
 - Do not use conversation history as a substitute for structured project state.
