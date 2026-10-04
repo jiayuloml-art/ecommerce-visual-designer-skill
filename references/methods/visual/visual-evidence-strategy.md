@@ -88,12 +88,16 @@ Stronger evidence:
 
 ### Cup-holder compatibility
 Weak evidence:
-- abstract circle standing in for a cup holder.
+- abstract circle standing in for a cup holder,
+- context composite whose product/container scale is visually plausible but dimensionally unsupported while presented as fit proof.
 
 Stronger evidence:
 - credible vehicle cup-holder context,
 - visible fit / scale relationship,
-- or verified dimensional proof when direct context cannot be safely produced.
+- verified product/container dimensions when available,
+- or a clearly framed scenario illustration when dimensional proof is unavailable.
+
+For fit / compatibility / containment claims, distinguish **contextual plausibility** from **dimensional proof**. If exact dimensions are unavailable, do not let a composite imply precision it does not have.
 
 ## Slot Evidence Card
 
@@ -109,6 +113,7 @@ scene_or_action:
 product_scene_relationship:
 required_assets:
 truth_boundary:
+evidence_authorization_state:
 benchmark_question:
 production_implication:
 fallback_evidence_route:
@@ -118,13 +123,16 @@ Do not force every field when irrelevant, but `required_visible_evidence` and `p
 
 ## Missing evidence behavior
 
-If the strongest evidence route requires unsupported geometry, hidden states, or unavailable product interaction:
+If the strongest evidence route requires unsupported geometry, hidden states, opened states, internal structure, or unavailable product interaction:
 
-1. do not fabricate it,
-2. check whether another truthful evidence route can answer the viewer question,
-3. if yes, use the alternate route,
-4. if no and the slot is important, request the minimum blocking input,
-5. otherwise downgrade or remove the unsupported slot rather than decorating around the gap.
+1. invoke the **Evidence Authorization Ladder** in `references/methods/input-resolution.md`,
+2. first check for supplied visual/technical evidence,
+3. if missing and decision-changing, ask for a relevant image/video/render or concise factual description,
+4. if factual evidence remains unavailable, ask whether a clearly labeled conceptual visualization is acceptable,
+5. if conceptual invention is not allowed, choose another truthful evidence route,
+6. otherwise downgrade or remove the unsupported slot rather than decorating around the gap.
+
+Client authorization to create a concept does not convert speculative structure into verified Product Truth.
 
 ## Handoff
 
