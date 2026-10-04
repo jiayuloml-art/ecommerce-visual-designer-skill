@@ -25,6 +25,13 @@ For a FAILED or STALLED production call:
 4. if the alternate route materially reduces visual quality or fidelity, downgrade artifact status and state that limitation,
 5. use manual handoff or focused clarification only when automatic recovery cannot responsibly continue.
 
+Once the runtime's hard wait budget is reached:
+- stop polling / waiting on that objective,
+- mark the attempt `STALLED`,
+- preserve any usable partial artifacts,
+- continue only through the planned recovery route,
+- do not later report active production time as though the stalled wait never occurred.
+
 Do not restart the same expensive operation in a loop. Runtime-specific adapters/providers may define a reasonable wait budget; Core does not hard-code one universal minute threshold.
 
 ## Missing product information
@@ -57,8 +64,10 @@ Trigger HG3 before unapproved external spend, credits, login, or third-party ass
 
 ## Production-efficiency evidence
 When execution is materially slow, stalled, retried, or rerouted, record compact operational evidence in development state when available:
+- active production time when available,
+- wall-clock elapsed time when materially different,
 - elapsed time to first usable artifact,
-- stalled/failed tool calls,
+- stalled/failed tool calls and stall duration,
 - retry count,
 - route changes,
 - whether the final quality justified the added execution cost/time.
