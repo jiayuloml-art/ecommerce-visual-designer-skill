@@ -119,7 +119,7 @@ For each confirmed output:
 1. Resolve required / conditional required / recommended inputs.
 2. Lock product truth as confirmed facts, allowed derivations, hypotheses, preserved invariants, and prohibited inferences.
 3. Treat missing information and conflicting information differently; unresolved conflicts remain explicit.
-4. Do not fabricate unseen product geometry, internal structures, reverse views, opened states, or mechanisms that are not evidenced.
+4. Do not fabricate unseen product geometry, internal structures, reverse views, opened states, or mechanisms that are not evidenced. When a confirmed communication job materially depends on such a state, use the **Evidence Authorization Ladder** in `input-resolution.md`: check supplied evidence → ask for visual/factual support if needed → ask whether a clearly labeled conceptual depiction is acceptable → otherwise change the evidence route.
 5. Resolve platform, surface, output type, category, and current technical specification. If category/use context materially changes scene validity, load the category playbook before locking scene semantics.
 6. Apply the most specific valid rule: general platform → surface → output type → category/account override → latest verified rule.
 7. Distinguish hard requirement, official recommendation, and internal design default.
@@ -139,8 +139,8 @@ Use:
 
 1. Resolve art direction from strategy, benchmark findings when available, and approved references.
 2. Establish or reuse the campaign visual system.
-3. For each confirmed output/slot, resolve the **Visual Evidence Strategy** before layout when the viewer question depends on use, fit, scale, interaction, detail, or proof.
-4. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job.
+3. For each confirmed output/slot, resolve the **Visual Evidence Strategy** before layout when the viewer question depends on use, fit, scale, interaction, detail, or proof. If the required evidence exposes hidden/open/internal product structure, resolve its evidence-authorization state before production.
+4. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job. For fit/containment/compatibility visuals, record the dimensional basis and do not present contextual-only illustration as exact dimensional proof.
 5. **If the output is a representative hero/KV/anchor, switch to the mandatory `anchor-production.md` and execute A0 → A6 in order.** That protocol owns the sequence for design lock, camera-matched scene, product integration, typography, anchor QA, rejection/revision, and client preview.
 6. **Anchor-first is fail-closed.** If a multi-output package uses an anchor to establish the campaign direction, do not produce supporting outputs until the anchor has passed Visual Critic + applicable hard QA and the required client approval has been recorded. Planning supporting outputs is allowed; rendering/exporting them is not.
 7. For non-anchor outputs, assign layer ownership and precision requirements, route production method (GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID), resolve runtime capability, and select the least unnecessary provider/dependency that satisfies quality, fidelity, and precision.
@@ -165,7 +165,7 @@ Run hard gates first:
 3. **Regression QA** against approved baseline when one exists
 4. **Platform / Compliance QA**
 
-Only after applicable hard gates pass, run the **Independent Visual Critic** on the rendered artifact. The Critic judges the visible result before reading the producer's rationale/self-QA and returns PASS / REVISE / REJECT. For representative anchors, client preview requires both Visual Critic PASS and applicable hard/integrity QA PASS.
+Only after applicable hard gates pass, run the **Independent Visual Critic** on the rendered artifact. The Critic judges the visible result before reading the producer's rationale/self-QA and returns PASS / REVISE / REJECT. For representative anchors, client preview requires both Visual Critic PASS and applicable hard/integrity QA PASS. For coordinated sets, also check static product repetition, dimensional plausibility where relevant, platform-strategy drift, and recurring graphic-token consistency.
 
 Use QA states: **PASS / FAIL / NOT_CHECKED / NOT_APPLICABLE**. Applicable NOT_CHECKED items are not PASS.
 
