@@ -34,6 +34,8 @@ visual_evidence:
   scene_or_action:
   required_assets: []
   truth_boundary: []
+  evidence_authorization_state:
+  dimensional_basis:
   benchmark_question:
   fallback_evidence_route:
 
@@ -89,6 +91,7 @@ scene_layers:
 
 product_scene_integration:
   perspective_scale:
+  dimensional_plausibility:
   interaction_contact:
   contact:
   shadow:
@@ -167,7 +170,15 @@ For scene-based work, `product_scene_relationship` should state how the product 
 
 For selling-point / demonstration slots, resolve `visual_evidence.required_visible_evidence` before layout. If the intended message requires use, fit, scale, interaction, or detail proof, copy plus a decorative arrow/shape does not satisfy this field by itself.
 
-If the strongest evidence route cannot be produced truthfully with available assets, choose a truthful fallback evidence route or mark the dependent slot BLOCKED / request the minimum input. Do not decorate around missing evidence.
+If the strongest evidence route cannot be produced truthfully with available assets, invoke the Evidence Authorization Ladder. Prefer client-supplied visual evidence, then specific factual description, then explicit concept authorization; if concept depiction is prohibited, choose a truthful fallback evidence route or mark the dependent slot BLOCKED / request the minimum input. Do not decorate around missing evidence.
+
+For fit / containment / compatibility / wearable / insertion visuals, record the dimensional basis:
+- verified dimensions,
+- credible visible scale cue,
+- user-confirmed approximate relation,
+- or contextual-only illustration.
+
+Do not present contextual-only illustration as dimensional proof.
 
 ## Pre-Production Readiness Gate
 Before a slot becomes `READY`, resolve every production-critical field that materially affects the intended result. A slot may still proceed as `S0 CONCEPT` with explicit gaps, but it must not silently enter production-ready execution.
