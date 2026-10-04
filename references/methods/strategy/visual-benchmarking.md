@@ -36,12 +36,36 @@ For a supporting slot, prefer **1–2 strong, directly relevant references** tha
 
 For a hero/KV, retain enough evidence to understand both target-platform/category behavior and visual excellence, but treat sample counts as guidance rather than quotas. Do not spend time collecting redundant references once the needed mechanism is sufficiently evidenced.
 
-## Two-track benchmark
+## Reference lenses
 
-Keep the two tracks separate during research and in the deliverable. A reference may inform both tracks only when it independently satisfies both roles.
+For new platform work, new long-form/detail systems, new hero/KV, or deliberate visual upgrades, keep the following reference lenses distinct so platform convention is not confused with category/product presentation.
 
-### A. Market / Platform Benchmark
-Study what appears to work in the **target platform + target category** context.
+### A. Platform / Surface Benchmark
+Study what appears to work on the **target platform / target surface** regardless of whether every example is from the exact same product category.
+
+Use this lens to learn:
+- information density and reading rhythm,
+- module/slot structure,
+- commercial hierarchy,
+- platform-native interaction patterns,
+- trust/proof placement,
+- CTA / price / promotion behavior,
+- visual conventions that are surface-specific.
+
+### B. Category / Product Benchmark
+Study the **same product category or closely adjacent product logic** across strong relevant sources.
+
+Use this lens to learn:
+- how the product is physically presented,
+- which views/states/actions make category selling points legible,
+- scale / portability / fit / material / mechanism visualization,
+- common category clichés and missed opportunities,
+- product–scene relationships that feel credible for this category.
+
+When possible, target-platform + same-category references can serve both A and B, but still record the two different lessons separately.
+
+### C. Visual Excellence Benchmark
+Study high-quality commercial / brand visual references to understand what execution quality could achieve beyond platform convention or category habit.
 
 #### Search order
 Prefer evidence in this order:
@@ -94,7 +118,6 @@ Extract:
 - crowded/saturated approaches,
 - differentiation opportunities.
 
-### B. Visual Excellence Benchmark
 Study high-quality commercial / brand visual references to understand what execution quality could achieve beyond category convention.
 
 These references do **not** need to be the target platform, but they must be visually inspectable and intentionally selected for execution quality.
@@ -205,16 +228,24 @@ If the reference did not materially influence any planned decision, record it as
 
 Keep the evidence structure visible enough that the design recommendation can be audited.
 
-### Market / Platform section
+### Platform / Surface section
 For each selected sample, retain:
 - source,
-- platform,
-- category fit,
+- platform / surface,
 - date,
 - accessibility status,
 - visible market/performance signal or NONE OBSERVED,
-- observed visual pattern,
-- why it matters to the target platform/category.
+- observed platform/surface pattern,
+- which current output/module decision it may affect.
+
+### Category / Product section
+For each selected sample, retain:
+- source,
+- category fit,
+- date,
+- accessibility status,
+- visible product-presentation / use / evidence pattern,
+- which product view / state / scene / selling-point visualization it may affect.
 
 ### Visual Excellence section
 For each selected reference, retain:
@@ -226,15 +257,16 @@ For each selected reference, retain:
 - what must not be copied literally.
 
 ### Synthesis
-Only after both tracks are sufficiently established, synthesize:
-- effective platform/category patterns,
+Only after the required lenses are sufficiently established, synthesize:
+- effective platform/surface patterns,
+- category/product-presentation patterns,
 - visual-excellence patterns,
 - saturated clichés,
 - differentiation opportunities,
 - anti-patterns,
 - implications for the proposed visual direction.
 
-If one track is weak or unavailable, say so explicitly instead of presenting a complete-sounding benchmark.
+If a required lens is weak or unavailable, say so explicitly instead of presenting a complete-sounding benchmark.
 
 ### Completion gate
 For a new hero/KV or deliberate visual upgrade, the benchmark is **not complete** until the synthesis yields a compact set of executable visual rules for the current task. A list of URLs, screenshots, or style adjectives alone is insufficient.
@@ -283,3 +315,16 @@ Pass forward:
 - evidence gaps.
 
 `references/methods/visual/visual-direction.md` is responsible for synthesizing those mechanisms into a product-specific Visual Thesis.
+
+
+## Client-facing benchmark summary
+
+When benchmarking was required, the final client-facing design explanation must include a concise reference basis rather than hiding the research entirely.
+
+Show only the useful transfer, not the full research log:
+- **Platform / Surface reference:** what platform-native structure or hierarchy was learned and where it appears.
+- **Category / Product reference:** what product-view / state / interaction / evidence mechanism was learned and where it appears.
+- **Optional visual-excellence reference:** what execution-quality mechanism was transferred.
+- **Do-not-copy boundary:** one short note when needed.
+
+The explanation should answer: **what was learned, what changed in this design because of it, and what was deliberately not copied.**
