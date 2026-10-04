@@ -109,6 +109,35 @@ Unknown product truth must never be converted into a verified-looking fact.
 ## Unseen geometry rule
 Not observed does not equal verified. Do not invent product backs, interiors, opened states, hidden mechanisms, accessories, ports, controls, or structural details that are not supported by evidence.
 
+## Evidence Authorization Ladder
+
+When a confirmed communication job materially benefits from an unseen / opened / internal / alternate-state product view, do not stop at a generic prohibition and do not silently fabricate the missing structure.
+
+Resolve the truth boundary in this order:
+
+1. **Check supplied / project evidence first.**
+   Look for relevant photos, video, CAD, renders, manuals, diagrams, 360/multi-view assets, prior approved visuals, or other project-scoped evidence.
+2. **Ask for missing factual support only when needed.**
+   If no usable visual evidence exists, ask whether the client can provide:
+   - a relevant image/video/render,
+   - or a concise written description / dimensions / structural explanation that constrains the requested state.
+3. **Use user-confirmed descriptive evidence carefully.**
+   A specific client-supplied structural description may become a confirmed fact for the described attributes, but generated pixels remain generated evidence and still require T2 review.
+4. **If factual evidence remains unavailable, ask whether a clearly labeled conceptual visualization is acceptable.**
+   Client authorization may permit a speculative concept illustration for communication/exploration, but it does **not** convert invented geometry into verified Product Truth. Mark the dependent output as concept/provisional and avoid wording that implies the internal structure is factual.
+5. **If conceptual invention is not allowed, change the evidence route.**
+   Use another truthful route such as external hand/contact action, use context, result/proof, verified exterior detail, scale relation, or adjusted copy.
+
+### Authorization states
+Use when helpful:
+- `EVIDENCE_VERIFIED` — supported by project/official evidence.
+- `EVIDENCE_USER_DESCRIBED` — specific client-provided factual description constrains the depiction.
+- `CONCEPT_AUTHORIZED` — client explicitly permits speculative concept visualization; not Product Truth.
+- `CONCEPT_PROHIBITED` — client does not permit speculative depiction; select another evidence route.
+- `EVIDENCE_UNRESOLVED` — required truth-sensitive depiction is still blocked.
+
+Ask at the nearest consequential point. Do not make this a routine intake question for outputs that do not need unseen structure.
+
 ## Asset roles
 - PRODUCT_REFERENCE
 - BRAND_ASSET
