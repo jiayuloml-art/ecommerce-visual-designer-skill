@@ -42,7 +42,9 @@ For coordinated visual sets, also check:
 - numbering does not overpower the selling point,
 - spacing rhythm is coherent across the series,
 - repeated alignment is intentional rather than mechanically identical,
-- text does not collide with product, arrows, rings, or other graphics.
+- text does not collide with product, arrows, rings, or other graphics,
+- recurring line / arrow / dot / radius / label / icon treatments follow one coherent graphic token system,
+- commercial text groups (price / offer label / date / CTA) remain legible and internally spaced at intended viewing size.
 
 ## Q2 — Regression QA
 When an approved baseline exists, check unintended changes to:
