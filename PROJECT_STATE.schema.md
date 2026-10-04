@@ -11,6 +11,9 @@ project:
   mode: CLIENT
   workspace_rel: null # relative to the current runtime/workspace root; no machine-specific absolute path
   source_scope: [] # active-project files and explicitly allowed external references
+  continuity: NEW # NEW | EXTEND | REVISE | ADAPT
+  baseline_project: null # explicit only; never inferred from same product/brand
+  inherited_truth_sources: [] # named base-truth sources only unless broader inheritance is explicitly approved
 
 facts:
   product: {}
@@ -93,6 +96,8 @@ history:
 - Keep one `PROJECT_STATE` per active project workspace. Do not reuse another project's state as implicit context for a new project.
 - Store portable relative paths where possible; host/runtime-specific absolute paths may be used transiently for execution but should not become durable project truth.
 - Cross-project references must be explicit in `source_scope`; sibling project folders are not implicitly readable evidence.
+- Same product/brand/SKU does not imply continuity. New platform/campaign/output-family tests default to `continuity: NEW` unless the client explicitly selects an existing project/baseline.
+- For `continuity: NEW`, inherit only specifically named base-truth sources; prior campaign state, prompts, generated scenes, visual direction, outputs, platform decisions, and QA are excluded by default.
 - Store confirmed facts, explicit derived benefits/hypotheses, prohibited inferences, client-approved decisions, and unresolved conflicts; do not store hidden reasoning.
 - Keep missing information distinct from conflicting information.
 - A new client decision supersedes an old decision explicitly; do not silently overwrite.
