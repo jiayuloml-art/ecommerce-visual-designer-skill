@@ -170,3 +170,10 @@ The producer may not present an anchor as completed/approval-ready unless:
 2. all applicable hard/integrity QA gates are PASS.
 
 A concept status such as S0 does not waive basic visual quality.
+
+### Client contradiction rule
+If the client points out a concrete visible failure that contradicts a prior PASS — for example missing containment, obvious scale mismatch, pasted-on integration, text collision, or scene relationship failure — the prior PASS is invalidated for that scope.
+
+Do not defend the previous verdict or continue downstream as if it still passed. Mark the affected artifact/QA state for revision and return to the responsible stage.
+
+If the same client-visible failure remains after one bounded local repair, invoke the Recovery Viability Gate and reassess whether the defect is structural.
