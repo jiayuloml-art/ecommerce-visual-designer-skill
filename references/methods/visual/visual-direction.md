@@ -61,9 +61,26 @@ Prefer a relationship expressed as an action or spatial interaction, for example
 
 Do not reduce this to coordinates such as “product on the right”.
 
-**Product Identity Lock ≠ Product Pose Lock.** Preserve verified form, proportions, labels, material, controls, quantity, and supported geometry; allow the pose, crop, contact relationship, and scene participation to become more dynamic when evidence and production capability support it.
+**Product Identity Lock ≠ Source Pixel Lock ≠ Product Pose Lock.**
 
-Any physical interaction must remain plausible for the product and must not imply an unsupported function, geometry, accessory, or use condition.
+A supplied product image is a source of product truth; it is **not automatically a requirement to reuse those exact pixels, that exact camera, or that exact pose**.
+
+Resolve the product representation mode for the output:
+
+- `SOURCE_PIXEL_LOCKED` — exact supplied pixels / approved render must be preserved; use when the client, legal/compliance, retouching requirement, or product-fidelity risk demands it.
+- `IDENTITY_PRESERVING_RECONSTRUCTION` — the supplied image is a visual identity reference. The product may be re-rendered / reconstructed into a better camera, pose, crop, contact relation, or verified functional state when product identity can remain stable.
+- `AUTHORIZED_CONCEPT_STATE` — the client explicitly authorizes an alternate/open/hidden state whose exact geometry is not fully evidenced. It may be used as a clearly provisional/conceptual depiction, not as factual mechanism proof.
+
+Preserve verified identity anchors: overall product family/form, proportions that are known, color/material, branding, controls/components that are visible/confirmed, quantity/variant, and verified functional relationships.
+
+Prefer reference-grounded reconstruction over a visibly pasted cutout when exact source pixels prevent credible scene integration and the chosen representation mode allows reconstruction.
+
+For functional states such as opening, folding, extending, inserting, wearing, or operating:
+- if the state and geometry are evidenced, reconstruct it faithfully;
+- if the function is confirmed but exact hidden geometry is not, use the Evidence Authorization Ladder before showing a reconstructed state;
+- if concept authorization is granted, keep the depiction plausible and avoid presenting the invented hidden geometry as technical proof.
+
+Any physical interaction must remain plausible for the product and must not imply an unsupported function, accessory, performance claim, or exact hidden geometry.
 
 ### Distinctive visual mechanism
 Resolve at least one mechanism that makes the direction more than a category template, such as:
@@ -134,7 +151,7 @@ A reference that produces only a mood adjective or post-hoc explanation is not c
 The benchmark is not complete for visual direction if it yields only URLs, style adjectives, or generic language that would remain true for almost any layout.
 
 ### Client-facing reference basis
-For a direction or delivered visual, CLIENT MODE may show a concise 2–4 reference summary when it helps explain the proposal:
+When benchmarking was required, CLIENT MODE **must** show a concise 2–4 reference summary with the direction/delivery:
 - reference/source,
 - mechanism learned,
 - where that mechanism appears in the current design.
