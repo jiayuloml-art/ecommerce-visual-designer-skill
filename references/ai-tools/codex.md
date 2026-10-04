@@ -11,11 +11,12 @@ Resolve Core paths such as `projects/<project-id>/...` against the active Codex 
 ## Native image generation / edit behavior
 Treat native image generation/edit as a potentially asynchronous or long-running provider call.
 
-For a single hero/KV anchor:
+For a single hero/KV anchor or other expensive image objective:
 - allow only one active generation/edit attempt for the same production objective at a time;
 - do not narrate repeated "still waiting" progress messages;
 - if no usable artifact or meaningful progress signal appears within the **soft wait budget of 6 minutes**, perform one status check and classify the call as suspected `STALLED`;
-- if the same call still has no usable result by the **hard wait budget of 10 minutes total**, stop waiting for it and move to the planned alternate route;
+- if the same call still has no usable result by the **hard wait budget of 10 minutes total**, stop polling/waiting for that objective, record it as `STALLED`, and move to the planned alternate route;
+- do not allow a background shell/process wait, status check, or image-inspection step to keep the same objective open past the hard budget without an explicit new recovery decision;
 - retry the same expensive call at most once, and only when there is a concrete transient-failure reason;
 - never restart identical generation/edit calls in a loop.
 
@@ -44,8 +45,11 @@ If the fallback cannot produce plausible product-scene integration or art-direct
 ## Evidence to record in development state
 When a production call stalls or reroutes, record when available:
 - start time,
+- active production time,
+- wall-clock elapsed time when materially different,
 - time to first usable artifact,
 - soft/hard budget reached,
+- stall duration,
 - retry count,
 - route change,
 - final artifact status.
