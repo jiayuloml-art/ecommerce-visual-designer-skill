@@ -19,7 +19,7 @@ facts:
   product: {}
   product_condition: null
   audience: []
-  evidence_authorizations: [] # unresolved/verified/user-described/concept-authorized/concept-prohibited truth-sensitive depiction decisions
+  evidence_authorizations: [] # unresolved/verified/user-described/concept-authorized/concept-prohibited truth-sensitive depiction decisions; include whether HG2 is required before fallback
   commercial_context: {}
   verified_claims: []
   derived_benefits: []
@@ -83,7 +83,7 @@ pending:
   inputs: []
   approvals: []
   conflicts: []
-  evidence_authorizations: []
+  evidence_authorizations: [] # unresolved authorization decisions that block/downgrade approved evidence routes
 
 history:
   - timestamp: null
