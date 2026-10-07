@@ -57,7 +57,7 @@ V1.1 is the integrated baseline for external black-box testing. Test-driven corr
 - Campaign Visual System now distinguishes fixed rules and allowed changes.
 - Production routing now favors asset preservation and minimum-variable repair.
 - Exact commercial text now has explicit rendering ownership.
-- Repository references are reorganized under Context / Methods / AI Tools.
+- Repository references are organized under Context (including AI runtime conditions) and Methods.
 - Runtime capability resolution is cross-cutting rather than limited to production.
 - Repository growth follows stable-responsibility / caller / loading-condition / non-overlap governance.
 - After hard gates pass, Visual Excellence is the primary optimization target.

@@ -116,4 +116,4 @@ Potential hosts may include ChatGPT, Codex, Claude, Copilot, Cursor, Gemini, Dee
 
 
 ## Codex host adapter
-When the active host is Codex, load `references/ai-tools/codex.md` for host-specific image-generation wait budgets, staged product-hero routing, and deterministic fallback behavior.
+When the active host is Codex, load `references/context/ai-tools/codex.md` for host-specific image-generation wait budgets, staged product-hero routing, and deterministic fallback behavior.

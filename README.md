@@ -28,19 +28,18 @@ CHANGELOG.md
 references/
 ├── context/
 │   ├── platforms/
-│   └── categories/
-├── methods/
+│   ├── categories/
+│   └── ai-tools/
+└── methods/
 │   ├── strategy/
 │   ├── mediums/
 │   ├── visual/
 │   └── production/
-└── ai-tools/
 ```
 
 The upper-level structure separates:
-- **context** — external task conditions,
-- **methods** — design and production methods,
-- **ai-tools** — host/runtime adaptation.
+- **context** — external task and runtime conditions, including platform, category, and AI host differences,
+- **methods** — design and production methods.
 
 The detailed design taxonomy remains inside those layers rather than being flattened into one directory.
 

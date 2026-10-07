@@ -2,7 +2,7 @@
 
 Provider capabilities change quickly. Re-check current access, pricing, and API status when execution depends on them.
 
-This registry describes **production providers/tools**, not the AI host/runtime in which the Skill is running. Host/runtime behavior belongs in `references/ai-tools/runtime-adapters.md`.
+This registry describes **production providers/tools**, not the AI host/runtime in which the Skill is running. Host/runtime behavior belongs in `references/context/ai-tools/runtime-adapters.md`.
 
 ## Provider profile schema
 - Provider
