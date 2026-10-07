@@ -23,7 +23,6 @@ V1.1 keeps the seven-state controller and strengthens four areas:
 
 ```text
 SKILL.md
-PROJECT_STATE.schema.md
 CHANGELOG.md
 references/
 ├── context/
@@ -31,10 +30,11 @@ references/
 │   ├── categories/
 │   └── ai-tools/
 └── methods/
-│   ├── strategy/
-│   ├── mediums/
-│   ├── visual/
-│   └── production/
+    ├── PROJECT_STATE.schema.md
+    ├── strategy/
+    ├── mediums/
+    ├── visual/
+    └── production/
 ```
 
 The upper-level structure separates:

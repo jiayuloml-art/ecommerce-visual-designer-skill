@@ -18,6 +18,7 @@
 - Mandatory Anchor Production Protocol: READY → DESIGN LOCK → SCENE FIT → PRODUCT INTEGRATION → TYPOGRAPHY → FINAL QA → CLIENT PREVIEW, with fail-closed stage transitions and no client preview for failed candidates.
 
 ### Changed
+- Project-state schema moved under `references/methods/` so runtime state guidance is routed with other task methods.
 - Category scene validity now checks whether the product has a credible use/context relationship instead of accepting literal campaign-copy scenery.
 - Visual Core reorganized into four explicit design responsibilities: Visual Direction, Composition & Typography, Anchor Production, and Independent Visual Critic.
 - Product fidelity now separates Product Identity Lock from View Flexibility (VIEW_LOCKED / VIEW_SELECTABLE / VIEW_RECONSTRUCTABLE / VIEW_PROHIBITED).

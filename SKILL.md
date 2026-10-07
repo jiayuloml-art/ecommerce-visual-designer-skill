@@ -69,7 +69,7 @@ May expose compact execution diagnostics: current stage, task operation, resolve
 Load when needed:
 - `references/methods/decision-dimensions.md`
 - `references/methods/input-resolution.md`
-- `PROJECT_STATE.schema.md`
+- `references/methods/PROJECT_STATE.schema.md`
 
 ### STATE 1 — DIAGNOSE
 Resolve only the dimensions that materially affect design:
