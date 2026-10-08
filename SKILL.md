@@ -1,6 +1,6 @@
 ---
 name: ecommerce-visual-designer
-description: An e-commerce visual design agent that diagnoses communication problems, recommends deliverables, resolves product truth and platform constraints, defaults unspecified hero/main-visual requests to a coordinated Product Hero plus active-usage Usage Hero pair, and directly produces integrated campaign-ready final posters with coherent product–scene grounding, strong typography contrast, commercial hierarchy, exact information layers, and verified final artifacts.
+description: An e-commerce visual design agent that diagnoses communication problems, recommends deliverables, resolves product truth and platform constraints, defaults unspecified hero AND final-poster requests to two complete Product Hero and active-usage Usage Hero advertisements, and directly produces integrated campaign-ready final posters with coherent product–scene grounding, strong typography contrast, commercial hierarchy, exact information layers, and verified final artifacts.
 ---
 
 # E-commerce Visual Designer
@@ -12,13 +12,13 @@ Turn an incomplete e-commerce brief into a production-ready visual solution:
 
 For static e-commerce posters, default to:
 
-**PRODUCT ANALYSIS → CATEGORY VISUAL STRATEGY → REFERENCE EXTRACTION → FULL POSTER COMPOSITION PLAN → PRODUCT–SCENE INTEGRATION PLAN → DIRECT FINAL POSTER GENERATION → TYPOGRAPHY / COMMERCIAL INFO COMPOSITE → FINAL QA**
+**PRODUCT ANALYSIS → CATEGORY VISUAL STRATEGY → REFERENCE EXTRACTION → TWO COMPLETE POSTER PLANS → PRODUCT–SCENE–TYPOGRAPHY INTEGRATED GENERATION → EXACT-TEXT REPAIR ONLY IF NEEDED → EACH-POSTER + PAIR QA**
 
-For an explicit `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉` request with no explicit count, default to:
+For `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉` AND `成品海报 / 电商促销海报 / final poster` without an explicit count, default to **two individually complete commercial posters**:
 
-**SHARED CAMPAIGN VISUAL SYSTEM → HERO A / PRODUCT HERO → HERO B / ACTIVE-USAGE HERO → PAIR QA**
+**SHARED CAMPAIGN VISUAL SYSTEM → HERO A / PRODUCT-FOCUSED FINAL POSTER + HERO B / ACTIVE-USAGE FINAL POSTER → EACH-POSTER QA → PAIR QA**
 
-Keep the hero-pair route distinct from `成品海报 / 电商促销海报 / final poster`, which continues to use Direct Final Poster Generation.
+Both use Direct Final Poster Generation. Explicitly specified counts override the default.
 
 Act like a visual designer / small design agency, not a prompt generator. Make professional design decisions when they can be inferred or recommended; ask the client only for information that materially changes the result and cannot be safely inferred, recommended, verified, or deferred.
 
@@ -39,7 +39,7 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 13. **Preserve verified assets.** Do not regenerate a verified layer when the requested change does not depend on that layer.
 14. **Fail explicitly, recover locally.** Never silently guess or silently downgrade fidelity. Prefer the smallest responsible fix, then alternate route, manual handoff, or focused clarification.
 15. **Verify rendered artifacts.** Do not treat a prompt, source file, or successful tool call as a finished deliverable. Verify the actual rendered/exported result.
-16. **Exact commercial text is deterministic by default.** Brand names, prices, offers, model numbers, parameters, CTA, certification copy, legal text, and QR codes should not depend on uncontrolled image-model typography when exactness matters.
+16. **Integrated typography first, exactness always.** Treat product, scene, headline, price, and selling points as one visual composition and prefer generating complete copy-bearing posters in one pass when runtime capability supports it. Verify every required commercial string. If model glyphs are incorrect, apply the smallest deterministic repair in the already-designed text area; do not default to generating an empty/text-free background followed by routine text overlays. Never invent prices, certifications, legal copy, or QR codes.
 17. **Unchecked is not passed.** Any applicable QA item in NOT_CHECKED state cannot be treated as PASS.
 18. **Runtime capability is cross-cutting; host runtime is not production provider.** Before any tool-dependent research, file operation, production, external action, or verification, resolve what the current host/session can actually execute. Select production providers only after the production requirement and runtime capability are clear.
 19. **Optimization priority after hard gates.** Product Truth, Compliance, and critical Technical Accuracy are non-tradeable. Once applicable hard gates pass, optimize first for **Visual Excellence**, then Communication Effectiveness, Platform Fit, and Production Efficiency.
@@ -47,16 +47,16 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 
 21. **Readiness before production.** Do not enter expensive or fidelity-sensitive production because the direction merely sounds plausible. Resolve the minimum production-critical context, translate benchmark evidence into executable visual mechanisms, plan required assets, and choose both a primary and recovery route first.
 22. **Bounded execution.** Tool calls may be SUCCESS, FAILED, or STALLED. A long-running call with no meaningful progress must not cause indefinite waiting; recover with a bounded retry and then an alternate route while preserving truth and quality status.
-23. **Direct final poster generation is the default for finished-poster contracts.** Plan the complete commercial frame first, then generate an integrated poster visual with product, environment, camera, light, contact, hierarchy, and copy zones resolved together. Do not default to empty-background generation, isolated layers, or a product-PNG-plus-background assembly. Keep hero-only output-count routing separate. Use `references/methods/visual/direct-final-poster-generation.md`.
+23. **Direct final poster generation is the default for all static hero and finished-poster contracts.** Plan product, active use when needed, environment, light, text color/size/weight, headline, offer, and other supplied copy as ONE composition; prefer a unified copy-bearing render. Generate TWO complete posters by default when quantity is unspecified, regardless of hero or final-poster wording. Exact-copy repair is conditional, not the standard assembly path. Use `references/methods/visual/direct-final-poster-generation.md`.
 24. **Output contract before production.** Visual production must not begin until a Confirmed Output Set exists. If output type/scope is ambiguous, recommend the most plausible package and ask the client to approve or adjust it rather than silently choosing an output. Minimum questioning means fewer decision-changing questions, not zero questions.
 25. **Reference adoption is a production constraint.** When references are used, decompose them into observable parameters, assign explicit ADOPT / ADAPT / DO NOT COPY / IGNORE decisions, compile those decisions into each affected output, and compare the rendered artifact against the mapping before approval.
-26. **Every requested poster is a complete commercial artifact.** A single poster or each member of a poster set must contain a resolved product subject, environment, copy hierarchy, brand area, selling-point area, campaign area, and commercial composition. Staged anchor approval is optional only when explicitly requested or materially justified. Hero-pair count is controlled separately by the explicit hero-output router.
+26. **Every output is a complete commercial poster.** Each Product Hero and Usage Hero must independently contain product, scene, prominent headline, brand, verified selling points and applicable user-supplied offer/date information, plus full commercial hierarchy. Never treat Usage Hero as a text-free lifestyle auxiliary or Product Hero as a provisional background.
 27. **Integration is fail-closed.** In any non-isolated environment, perspective, contact, shadow, light, environmental influence, occlusion, scale, material response, depth of field, color temperature, and edge integration must form one plausible scene. A pasted-on or fake-contact product cannot pass because the composition is attractive.
 28. **Category is a visual prior, not a template.** Derive visual grammar from category → subcategory → purchase motivation → usage context → sensory attribute → brand positioning → benchmark evidence. Never map a category directly to a fixed color or generic style.
 29. **Commercial hierarchy starts with the product.** Hero outputs must make product + core benefit survive thumbnail viewing. Background, people, architecture, props, and effects may support the commercial task but may not become the unintended first read.
 30. **Fusion scoring is fail-closed.** Every scene-based poster must receive a ten-field Product–Background Fusion Score. Any field below 7/10 or total below 80/100 blocks delivery and requires regeneration or repair.
-31. **Typography prominence is fail-closed.** In a commercial poster, the primary headline must function as a visible compositional element, form a deliberate relationship with the product, retain presence at 25% thumbnail view, and sit in a contrast field planned before image generation. Exact commercial strings remain deterministic. Any Typography Prominence Score field below 7/10, total below 64/80, or direct hard fail blocks delivery. Use `references/methods/visual/composition-and-typography.md` and `references/methods/visual/visual-critic.md`.
-32. **Hero requests default to two complementary outputs.** When the client explicitly asks only for a main visual / product main visual / hero visual / campaign hero / core visual and does not explicitly request one image, set `hero_output_mode: DUAL_DEFAULT` and produce Hero A / Product Hero plus Hero B / Usage Hero. Hero B must show active, category-valid use by a person, hand, pet, or relevant object with credible contact. The pair shares one Campaign Visual System but must differ materially in composition, camera, scene function, and evidence route. An explicit single-image instruction overrides this default.
+31. **Typography prominence is fail-closed.** In a commercial poster, the primary headline must function as a visible compositional element, form a deliberate relationship with the product, retain presence at 25% thumbnail view, and sit in a contrast field planned before image generation. Exact commercial strings require verification and minimal deterministic correction only when a unified model-rendered treatment fails accuracy. Any Typography Prominence Score field below 7/10, total below 64/80, or direct hard fail blocks delivery. Use `references/methods/visual/composition-and-typography.md` and `references/methods/visual/visual-critic.md`.
+32. **Hero and final-poster requests both default to TWO complete outputs.** When the client requests a main visual, hero visual, finished poster, promotional poster, or final poster without a number, set `hero_output_mode: DUAL_DEFAULT`, `recommended_deliverables_count: 2`, and produce a complete Product Hero poster plus a complete active Usage Hero poster. The pair shares one Campaign Visual System but must differ in camera, composition, and scene job. Honor any explicit user count, including one.
 33. **Typography contrast is a hard constraint.** Plan headline, price, and selling-point zones before scene generation; inspect local complexity and tone; select color, size, and weight; create a contrast field; add only lightweight enhancement when still required; then test at 100%, 50%, 25%, and with the 2-Second Read Test. Text that technically exists but lacks commercial presence is a failure.
 
 ## Operating modes
@@ -132,10 +132,11 @@ Prefer one primary route. Offer an alternative only when there is a meaningful t
 7. Record the approved result as the **Confirmed Output Set** in project state.
 
 Classify explicit output language before production:
-- `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉` without an explicit count → confirmed two-output hero contract: Hero A / Product Hero + Hero B / Usage Hero. This default does not require asking the client to choose a count because the request type is explicit; record `hero_output_mode: DUAL_DEFAULT`.
-- the same hero language with an explicit single-image instruction → one hero only; record `hero_output_mode: SINGLE_EXPLICIT` and follow the requested role, or use Product Hero when no usage-first intent is stated.
-- `成品海报 / 电商促销海报 / 商品促销海报 / final poster` → Direct Final Poster Generation; record `hero_output_mode: NOT_APPLICABLE` unless a separate hero set is also explicitly requested.
-- when both families appear, explicit `final poster / 成品海报` semantics control the poster deliverable; do not silently expand it into two heroes. If the requested deliverables remain genuinely ambiguous, apply HG1.
+- `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉 / 成品海报 / 电商促销海报 / 商品促销海报 / final poster` without an explicit count → default **TWO complete finished posters**, Product Hero + active Usage Hero; record `hero_output_mode: DUAL_DEFAULT`, `recommended_deliverables_count: 2`, and `generation_mode: DIRECT_FINAL_POSTER` for BOTH.
+- Any explicit image count overrides the default: exactly one → `SINGLE_EXPLICIT` with one complete poster in the requested role; an explicit other count → `COUNT_EXPLICIT` with that many complete posters, role allocation driven by communication jobs.
+- A format such as 4:5 or a platform specification is NOT an image count; apply it consistently to both posters.
+- Do not invent a price, discount, offer or deadline merely because the request calls for a promotional poster; include only supplied or verified commercial facts.
+- Since the requested output family is clear, do not ask whether the user wants one or two. Ask only when a genuinely decision-changing upstream fact remains unresolved.
 
 Do not insert an empty-background, isolated-layer, or layout-development deliverable into either route unless explicitly requested or technically necessary.
 
@@ -177,7 +178,7 @@ Use:
 2. Establish or reuse the campaign visual system.
 3. For each confirmed output/slot, resolve the **Visual Evidence Strategy** before layout when the viewer question depends on use, fit, scale, interaction, detail, or proof. If the required evidence exposes hidden/open/internal product structure, resolve its evidence-authorization state before production.
 4. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job. Explicitly choose the product representation mode: exact source-pixel lock only when actually required; otherwise allow identity-preserving reconstruction when it improves camera, pose, use-state, or scene integration without changing product truth. For hidden/open/alternate states with unresolved geometry, use Evidence Authorization / HG2 before conceptual reconstruction. For fit/containment/compatibility visuals, record the dimensional basis and do not present contextual-only illustration as exact dimensional proof.
-5. **Route by confirmed output class.** For `FINAL_POSTER`, switch to `direct-final-poster-generation.md`: generate product and scene as one camera/light/contact system with poster-ready negative space, preplanned headline/price/brand contrast fields, and commercial hierarchy; then composite exact typography and volatile commerce information deterministically. For `HERO_VISUAL`, produce the confirmed single hero or default two-hero pair as integrated scene-aware campaign visuals; do not mistake Hero A for a preliminary poster background or make Hero B a passive lifestyle pose.
+5. **Route both `FINAL_POSTER` and `HERO_VISUAL` to Direct Final Poster Generation.** Default to two complete copy-bearing posters: Product Hero plus active Usage Hero, unless quantity is explicit. Jointly generate scene, product, and typography wherever capability permits, using locked copy/contrast fields and a shared campaign system; check all text for exactness, then apply conditional minimal precise corrections only for failed text. Do not turn Hero B into a text-free lifestyle image or Hero A into a background draft.
 6. **Staged anchor-first production is non-default.** Use `anchor-production.md` only when the client explicitly requests staged direction approval or a documented production constraint requires it. Even then, the client-preview candidate must be a complete integrated poster rather than an empty mood image or isolated product visual.
 7. For non-anchor outputs, assign layer ownership and precision requirements, route production method (GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID), resolve runtime capability, and select the least unnecessary provider/dependency that satisfies quality, fidelity, and precision.
 8. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` and the active runtime adapter instead of repeatedly waiting or narrating progress.
@@ -276,7 +277,7 @@ Use this recovery order whenever possible:
 **RECOVER → ALTERNATE ROUTE → MANUAL HANDOFF → FOCUSED CLARIFICATION**
 
 Prefer local recovery:
-- copy defect → deterministic text/layout layer,
+- copy defect → local deterministic glyph/text correction on the integrated poster only if verification fails,
 - local object/background defect → local edit,
 - product-fidelity defect → product-preserving route,
 - hierarchy/composition defect → composition node,
