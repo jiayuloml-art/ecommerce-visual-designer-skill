@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08 — Product Hero Visual Impact
+- Added `references/methods/visual/product-hero-impact.md` to make Product Hero stronger through verified product silhouette/scale, camera perspective, material light, composition energy, brand-specific background and intentional product–type hierarchy.
+- Added an independent five-field Product Hero Impact Check (each ≥7/10; total ≥40/50) and compiled its decisions into Visual Direction, Composition, Direct Final Poster, Production Plan, Visual Critic and PROJECT_STATE.
+- Preserved active Usage Hero, dual independently complete posters, product truth, scene relevance/fusion and typography gates. Rule-level scenario validation does not constitute a live generative-image test.
+
+
 ## 2026-10-08 — Product–Background Relationship
 - Added product-first scene protocol, interchangeability test and independent five-field relationship QA (each ≥7, total ≥40/50).
 - Synced Skill, Visual Direction, Composition, Direct Final Poster, Production Plan, Visual Critic, project state, category playbook and README.
