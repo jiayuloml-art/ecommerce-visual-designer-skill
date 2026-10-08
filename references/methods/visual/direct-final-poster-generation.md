@@ -91,6 +91,9 @@ The provider brief must cause the scene itself to reserve low-complexity, contra
 
 When the local background is a middle tone, do not accept weak light-gray or thin dark-gray typography. Move the local field decisively lighter or darker, simplify it, and choose an opposing text tone/weight. The title, promotional price, and core selling points must remain visually distinct from the background at thumbnail scale.
 
+## Product Hero impact preflight
+For Product Hero, use `product-hero-impact.md` before integrated poster generation: lock the visible product's focal advantage, deliberate dominance, evidence-supported camera/crop, material-specific light and scene/typography counterweight. Prefer distinctive product photography over generic front-facing catalog staging, while rejecting float podium defaults, false glow, unverified details and lens distortion. Inspect rendered Impact QA independently. Usage Hero retains authentic active-use priority.
+
 ## Product-first scene design gate
 Apply `product-scene-relationship.md` before physical fusion: background must serve verified product function, use, visible form/material and brand, with a clear framing and copy relationship. A generic but beautifully lit environment fails the separate five-field Product–Scene Relationship Check. Purposeful studios may pass. For default dual complete posters, Product Hero emphasizes form/material while Usage Hero shows real active contextual use.
 
@@ -227,6 +230,9 @@ Record the ten field scores and total in project/artifact state. Do not replace 
 
 ## Product–Scene Relationship Score — independent hard gate
 Score Scene Relevance, Visual Correspondence, Spatial Integration, Commercial Hierarchy and Brand Consistency on the actual rendered poster (1–10 each). Require every field ≥7/10 and total ≥40/50. This does not replace the ten-field physical Product–Background Fusion Score or the Product Truth, Usage Authenticity and Typography gates. Return failed scene decisions to Visual Direction instead of adding decorative props. See `product-scene-relationship.md`.
+
+## Product Hero Impact Gate
+Product Hero must pass the independent five-field Impact Check: product focal dominance, expressive but truthful camera/silhouette, material/lighting quality, compositional energy, and commercial impact/brand fit (each ≥7/10; total ≥40/50). Any NOT_CHECKED/FAIL blocks delivery. See `product-hero-impact.md`. Existing Product Truth, Fusion, Scene Relationship, Typography and platform gates remain independent.
 
 ## Final standard
 
