@@ -3,6 +3,9 @@
 ## [1.2.0] — Unreleased
 
 ### Added
+- Canonical-wording conflict handling: wording, translations, version names, texture names, and descriptive copy that conflict with frozen Product Truth require explicit confirmation before factual or final use.
+- Per-Run confirmation scope: confirmations are limited to the current Run, Case, output scope, and named disputed fact; they do not authorize later runs or different outputs.
+- STATE 4 conflict records: factual conflicts now record source wording, frozen wording, affected output, blocking scope, and the exact confirmation required.
 - Fail-closed Output Contract Gate: ambiguous briefs receive a recommended output package and client approval before visual production; minimum questioning no longer permits silent output selection.
 - Project workspace isolation: each distinct project uses an explicit active project scope instead of inheriting unrelated files from a shared parent directory.
 - Portable relative project layout (`projects/<project-id>/input|state|working|output`) with runtime-specific path mapping.
