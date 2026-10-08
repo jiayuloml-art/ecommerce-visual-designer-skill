@@ -29,13 +29,16 @@ Instead:
 
 This is a recommendation, not a questionnaire.
 
+### Required-content confirmation
+A confirmed image count/ratio is NOT consent to unknown price, date, product claim or platform. Before any finished generation run `references/methods/production/mandatory-input-confirmation.md`: missing required values must be asked and answered or user explicitly approves removing the requested field and reflows the layout. No stand-ins or blank 'reserved' fields.
+
 ### Platform/surface
-If platform/surface materially changes the output package, benchmark set, information density, composition, or technical production, resolve it before production.
+For finished commercial work, ask for the target platform when missing, before final image generation—even if an aspect ratio is supplied. Never assume a generic platform-neutral route is approved.
 
 If the platform is unknown, the agent may recommend a likely route, but a platform-neutral concept may only be produced after the client explicitly approves that concept-only scope.
 
 ### Fail-closed rule
-**No Confirmed Output Set → no visual production.**
+**No Confirmed Output Set OR Mandatory Missing-Input Confirmation Gate != PASS → no final visual production.**
 
 Preparing strategy, benchmark research, or a proposed output package is allowed before confirmation. Rendering/assembling the client-facing artifact is not.
 
@@ -94,7 +97,7 @@ Every poster contract must include:
 - core-copy/headline zone,
 - selling-point information zone,
 - brand zone,
-- campaign/price/date/CTA zone when applicable,
+- campaign/price/date/CTA zone only when the actual required content is confirmed; otherwise pause to ask or obtain explicit approval to remove the requested field and replan,
 - commercial hierarchy and intended thumbnail read,
 - one camera, perspective, lighting, shadow, reflection, and material-response system,
 - Product–Background Fusion Score gate.
