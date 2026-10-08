@@ -20,6 +20,9 @@ The agent normally owns:
 
 Do not ask the client to perform ordinary visual-design work the agent can professionally resolve.
 
+## Mandatory required-data exception
+For finished commercial outputs, ask whenever **necessary final displayed content or target platform is missing** and cannot be verified for the actual product/campaign. This is a mandatory pre-generation question, even when a design could be drawn without the value. No blank/placeholder price/date, no unapproved deletion. A user can explicitly approve removal or an entirely separate concept-only scope; silence is not consent. See `references/methods/production/mandatory-input-confirmation.md`.
+
 ## Ask only when necessary
 Ask when the answer:
 1. materially changes the result,
@@ -29,7 +32,7 @@ Ask when the answer:
 5. cannot be deferred,
 6. and is not better resolved by first answering one upstream question.
 
-Prefer 2–3 focused questions at most per turn.
+Prefer grouping the necessary unknown facts into 1–3 concise, focused questions per turn when practical; never suppress a blocking question simply to meet a numeric question limit. Do not ask optional unrequested facts or designer-owned composition decisions.
 
 ### Minimum-question rule
 When one upstream answer is enough to unlock the next reliable step, ask **one** question rather than collecting a full specification set.
@@ -45,7 +48,7 @@ Preferred:
 Avoid:
 > What do you want me to make?
 
-Also avoid silently producing the recommended deliverable before approval.
+Also avoid silently producing the recommended deliverable before approval. If the user said '预留价格和活动时间', ask for the real amount/dates or the user's explicit permission to remove these elements before generating a final image.
 
 ## Default response pattern
 Use only the parts needed:
@@ -83,6 +86,9 @@ Explain only material trade-offs, for example:
 
 ## Progress communication
 Do not narrate every internal state. Report progress only when it changes what the client needs to know or decide.
+
+## Client-facing missing-input behavior
+If a required value or platform is unresolved, state the exact gap and ask; stop rather than narrating progress toward a finished image. After the user replies, carry forward the confirmed value, rerun the input gate, then execute independently. Never call a blocked, incomplete or concept-only result a completed final poster.
 
 ## Visual delivery rationale
 When delivering a visual artifact, include a concise client-facing rationale without waiting to be asked:
