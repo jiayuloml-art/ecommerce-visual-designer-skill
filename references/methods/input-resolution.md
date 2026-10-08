@@ -120,6 +120,23 @@ A missing platform may block platform-specific benchmarking, platform-fit claims
 
 Do not silently pick a value from a conflict. Record it in project state and resolve only when the dependent branch requires it.
 
+<!-- STABILITY TEST: ADDED — canonical wording conflict record and run-scoped confirmation. -->
+
+## Canonical wording and conflict record
+
+When a factual wording conflict is found, record at minimum:
+
+    fact_conflict:
+      source_wording: "brief or asset wording"
+      canonical_wording: "frozen Product Truth wording"
+      conflict_type: TRANSLATION | VERSION | TEXTURE | PRICE | SPEC | CLAIM | OTHER
+      affected_outputs: []
+      blocking_scope: "dependent output or module only"
+      confirmation_needed: "minimum user question"
+      confirmation_scope: "current Run / Case / output scope"
+
+The record is diagnostic state, not client-facing copy. It prevents a later Run or output family from silently inheriting a prior wording approval.
+
 ## Product truth examples
 May include:
 - exact model/SKU/variant,
