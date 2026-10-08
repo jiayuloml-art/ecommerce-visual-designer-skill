@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08 — PR #4 follow-up: Dual Complete Posters + Unified Typography
+- Hero and finished-poster requests without explicit quantity both default to two independently complete Product Hero + active Usage Hero posters; honor explicit quantity overrides.
+- Generate product, environment, active use and copy as a unified poster where supported; verify exact wording, and only use localized deterministic repairs on failed glyphs.
+- Synchronized controller, output routing, production-plan, QA, project-state, Codex adapter and docs.
+
+
 ## [1.2.0] — Unreleased
 
 ### Added
