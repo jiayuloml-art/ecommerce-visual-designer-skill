@@ -141,7 +141,7 @@ Internal labels such as:
 must not be placed into the visual unless they have been rewritten into intentional customer-facing language.
 
 ### Typography as composition
-Typography must participate in the frame rather than occupy leftover empty space. Exact type may be rendered deterministically after integrated image generation, but the type zones, contrast fields, scale relationships, and reading order must already be part of the full-poster composition plan.
+Typography must participate in the frame rather than occupy leftover empty space. Prefer rendering typography jointly with product/scene in a complete poster. Plan copy zones, contrast fields, scale and reading order before generation. Verify exact strings; apply localized deterministic correction only when the model-rendered text fails, rather than default background-first separate text assembly.
 
 Resolve as applicable:
 - scale,
@@ -309,7 +309,7 @@ Avoid tiny/weak headlines, low-contrast or washed-out text, thin type over compl
 For a standalone e-commerce hero/KV, the viewer should normally be able to identify what product is being shown from the artifact and its immediate context. Product/model identification may be quiet or prominent depending on brand/strategy, but it must not become unintentionally illegible.
 
 ### Exact text
-Brand names, model names, prices, offers, parameters, CTA, certification/legal copy, and other exact commercial strings should use deterministic layout unless a model-rendered treatment is intentionally used and verified.
+Brand names, model names, prices, offers, parameters, CTA, certification/legal copy and other exact strings must be source-verified. Prefer integrated generation of product, scene and text when supported; use localized deterministic correction only for incorrectly rendered exact strings. Never invent prices, dates, claims or QR codes.
 
 ### Anti-template rules
 Avoid unless specifically justified:
