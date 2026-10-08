@@ -37,8 +37,8 @@ Check as applicable:
 - hierarchy spacing and unintended crowding,
 - export integrity,
 - duration/frame/audio/subtitle constraints for temporal outputs.
-- required anchor-package completeness: when Confirmed Output Set uses Dual-Hero, both Hero A and Hero B artifacts exist, are correctly identified, and retain separate QA states,
-- deterministic commercial text remains inside the reserved copy zones and does not collide with product silhouette or required usage interaction.
+- required package completeness: for unspecified-count hero OR finished-poster requests, BOTH complete Product Hero and active Usage Hero posters exist, are identified, and retain separate QA states; explicit count overrides,
+- complete integrated commercial text remains readable and verified in reserved contrast fields without colliding with required product or usage evidence; minimal deterministic repair only if rendered exact copy fails.
 
 For coordinated visual sets, also check:
 - numbering does not overpower the selling point,
@@ -51,7 +51,7 @@ For coordinated visual sets, also check:
 For every static e-commerce poster, also check:
 - the delivered artifact is a complete poster, not an empty background, isolated product visual, or mood draft,
 - product, environment, headline/core-copy zone, selling-point zone, brand zone, campaign/price/date/CTA zone as applicable, and commercial hierarchy are all resolved,
-- deterministic typography follows the preplanned zones rather than rescuing an unplanned image,
+- typography and product/scene are planned and preferably generated together; exact copy is verified and corrected locally only if necessary rather than using default staged text overlay,
 - the Product–Background Fusion Score report contains ten numeric fields and a total,
 - every fusion field is at least 7/10 and the total is at least 80/100.
 
