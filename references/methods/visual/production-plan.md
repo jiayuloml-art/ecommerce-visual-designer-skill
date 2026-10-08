@@ -18,6 +18,16 @@ slot_identity:
   paired_anchor_id: null
   anchor_protocol_stage: null # AP0_READY | AP1_DESIGN_LOCK | AP2_SCENE_FIT | AP3_PRODUCT_INTEGRATION | AP4_TYPOGRAPHY | AP5_FINAL_QA | AP6_CLIENT_PREVIEW
 
+mandatory_input_confirmation:
+  status: NOT_CHECKED # NOT_CHECKED | BLOCKED_AWAITING_USER | PASS
+  platform_or_explicit_concept_scope: null
+  required_fields: [] # {field, status, evidence, user_approval}
+  unresolved_blocking_fields: []
+  user_authorized_omissions: []
+  confirmed_output_scope: NOT_CHECKED
+  no_placeholders_policy: NOT_CHECKED
+  # Missing requested price/date/platform blocks the entire final image, not merely a text layer.
+
 hero_outputs:
   hero_output_mode: DUAL_DEFAULT # DUAL_DEFAULT | SINGLE_EXPLICIT | COUNT_EXPLICIT
   recommended_deliverables_count: 2 # explicit user count overrides
@@ -285,6 +295,9 @@ tool_plan:
   parameters: {}
 
 checks:
+  mandatory_input_confirmation: NOT_CHECKED
+  no_placeholders: NOT_CHECKED
+  final_delivery_gate: NOT_CHECKED
   truth_supported: NOT_CHECKED
   hierarchy_clear: NOT_CHECKED
   visual_lock_consistent: NOT_CHECKED
@@ -364,6 +377,14 @@ typography_prominence_score:
   overall_commercial_typography: null
   total: null
   status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
+
+final_delivery:
+  status: NOT_CHECKED # NOT_CHECKED | BLOCKED | PASS
+  required_text_verification: NOT_CHECKED
+  no_unapproved_omissions: NOT_CHECKED
+  zero_placeholders_or_fictional_values: NOT_CHECKED
+  actual_artifact_inspected: NOT_CHECKED
+  technical_and_visual_qa: NOT_CHECKED
 
 unresolved_conflicts: []
 status: NOT_COMPILED # NOT_COMPILED | BLOCKED | READY
@@ -447,8 +468,11 @@ For fit / containment / compatibility / wearable / insertion visuals, record the
 
 Do not present contextual-only illustration as dimensional proof.
 
+## Mandatory pre-generation factual gate
+Before Product Hero / Usage Hero finished image generation run `../production/mandatory-input-confirmation.md`. Missing platform, user-requested price/date (including 'reserve a field'), unverified required product benefit, disputed campaign facts, or absent approval to remove a requested item mean `BLOCKED_AWAITING_USER`: ask and wait. Do not generate placeholders or silently reclassify as concept. This overrides scoped blocking but not explicit image count and designer autonomy.
+
 ## Pre-Production Readiness Gate
-Before a slot becomes `READY`, resolve every production-critical field that materially affects the intended result. A slot may still proceed as `S0 CONCEPT` with explicit gaps, but it must not silently enter production-ready execution.
+Before a slot becomes `READY`, resolve every production-critical field that materially affects the intended result. Internal non-rendered planning may continue with gaps, but finished image generation may not. Concept-only artwork requires separately explicit authorization and cannot include fabricated facts or placeholders.
 
 For hero/KV work, readiness normally includes:
 - output/surface/platform state when it changes composition or export behavior,
