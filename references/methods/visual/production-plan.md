@@ -297,6 +297,7 @@ checks:
   thumbnail_impact: NOT_CHECKED
   direct_final_poster_complete: NOT_CHECKED
   product_background_fusion: NOT_CHECKED
+  product_hero_impact: NOT_CHECKED # only for product-focused final posters
   product_scene_relationship: NOT_CHECKED
   typography_prominence: NOT_CHECKED
   typography_contrast: NOT_CHECKED
@@ -318,6 +319,30 @@ product_background_fusion_score:
   overall_scene_coherence: null
   total: null
   status: NOT_CHECKED
+
+product_hero_impact:
+  core_product_focal_advantage: null
+  visual_impact_mechanism: null
+  product_silhouette_read: null
+  camera_angle_and_lens_logic: null
+  product_frame_dominance_and_crop: null
+  foreground_midground_background_depth: null
+  material_and_highlight_plan: null
+  scene_to_product_contrast_plan: null
+  product_typography_counterweight: null
+  hero_specific_background_relationship: null
+  protected_identity_and_legibility_zones: []
+  overstyling_risks_to_avoid: []
+  selected_direction_rationale: null
+
+product_hero_impact_score:
+  product_focal_dominance: null
+  camera_silhouette_expressiveness: null
+  material_lighting_quality: null
+  compositional_energy: null
+  commercial_impact_brand_fit: null
+  total: null
+  status: NOT_CHECKED # each ≥7 and total ≥40/50
 
 product_scene_relationship_score:
   scene_relevance: null
@@ -359,6 +384,8 @@ Use when the client asks only for `主视觉 / 商品主视觉 / hero visual / c
 If the client explicitly requests one image, set `hero_output_mode: SINGLE_EXPLICIT` and create exactly one complete poster in the requested role (or product-focused by default). Other explicit counts use `COUNT_EXPLICIT` and compile that many complete plans. For `成品海报 / 电商促销海报 / final poster`, apply the SAME dual-hero default as main visuals. Every member is a final poster, not a background or auxiliary scene.
 
 ### Hero A — Product Hero
+
+Use the Product Hero Impact Protocol (`product-hero-impact.md`). Internally compare 2–3 product-specific visual strategies and compile the strongest one. The result must foreground a real signature form/material/benefit through at least two supported camera, scale, light, depth, background contrast or typographic mechanisms; avoid universal extreme effects.
 
 Must explicitly resolve:
 - `communication_job`: PRODUCT DESIRE,
@@ -438,7 +465,7 @@ For direct-final poster work, every unified composition field and the Typography
 
 For typography-bearing poster work, `typography_contrast_contract` must be complete in this order: headline/price/selling-point zones → local background complexity/tone → text color → headline size/weight → contrast field → lightweight fallback enhancement if needed → 100%/50%/25% and 2-Second Read Test. Midtone fields that do not separate decisively from either light or dark text must be intentionally shifted/simplified before rendering.
 
-For `DUAL_DEFAULT`, readiness requires two distinct COMPLETE FINAL POSTER cards, matching campaign visual system, confirmed commercial text, active-usage evidence for Hero B, preplanned title/price contrast fields, joint-generation plan, and explicit differences in camera/composition/scene-function/evidence. Missing Hero B, missing final copy, or a background-only variation is `BLOCKED`, not a smaller package.
+For `DUAL_DEFAULT`, readiness requires a fully resolved Product Hero Impact strategy for Hero A (signature product focus, ≥2 justified impact levers, identity protection and typography fit) and two distinct COMPLETE FINAL POSTER cards, matching campaign visual system, confirmed commercial text, active-usage evidence for Hero B, preplanned title/price contrast fields, joint-generation plan, and explicit differences in camera/composition/scene-function/evidence. Missing Hero B, missing final copy, or a background-only variation is `BLOCKED`, not a smaller package.
 
 Do not call an expensive generation/edit route merely because a general mood has been chosen.
 
