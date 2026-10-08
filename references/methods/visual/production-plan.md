@@ -200,6 +200,17 @@ scene_layers:
   human_or_object_interaction:
   attention_guidance:
 
+product_background_relationship:
+  scene_role:
+  scene_specificity_thesis:
+  functional_relevance:
+  visual_correspondence:
+  spatial_relationship:
+  composition_guidance:
+  brand_emotional_fit:
+  background_swap_test:
+  role_specific_difference:
+
 product_scene_integration:
   camera_height:
   horizon:
@@ -286,6 +297,7 @@ checks:
   thumbnail_impact: NOT_CHECKED
   direct_final_poster_complete: NOT_CHECKED
   product_background_fusion: NOT_CHECKED
+  product_scene_relationship: NOT_CHECKED
   typography_prominence: NOT_CHECKED
   typography_contrast: NOT_CHECKED
   thumbnail_typography: NOT_CHECKED
@@ -306,6 +318,15 @@ product_background_fusion_score:
   overall_scene_coherence: null
   total: null
   status: NOT_CHECKED
+
+product_scene_relationship_score:
+  scene_relevance: null
+  visual_correspondence: null
+  spatial_integration: null
+  commercial_hierarchy: null
+  brand_consistency: null
+  total: null
+  status: NOT_CHECKED # each >=7 and total >=40/50
 
 typography_prominence_score:
   headline_visibility: null
