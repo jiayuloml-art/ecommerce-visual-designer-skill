@@ -91,6 +91,9 @@ The provider brief must cause the scene itself to reserve low-complexity, contra
 
 When the local background is a middle tone, do not accept weak light-gray or thin dark-gray typography. Move the local field decisively lighter or darker, simplify it, and choose an opposing text tone/weight. The title, promotional price, and core selling points must remain visually distinct from the background at thumbnail scale.
 
+## Mandatory finished-poster content readiness
+Before producing an integrated Product Hero OR Usage Hero image, `../production/mandatory-input-confirmation.md` must PASS: platform confirmed, required brand/product facts/claims confirmed, and every user-requested price/offer/date/campaign field supplied or explicitly removed with permission. 'Reserve a price/date area' with unknown content must block generation; it never means draw empty price/date copy zones or type `XX`/`___`. Do not silently produce a concept instead. Only proceed once actual content and desired number of outputs are known. Then plan the full product–scene–text frame together.
+
 ## Product Hero impact preflight
 For Product Hero, use `product-hero-impact.md` before integrated poster generation: lock the visible product's focal advantage, deliberate dominance, evidence-supported camera/crop, material-specific light and scene/typography counterweight. Prefer distinctive product photography over generic front-facing catalog staging, while rejecting float podium defaults, false glow, unverified details and lens distortion. Inspect rendered Impact QA independently. Usage Hero retains authentic active-use priority.
 
@@ -233,6 +236,9 @@ Score Scene Relevance, Visual Correspondence, Spatial Integration, Commercial Hi
 
 ## Product Hero Impact Gate
 Product Hero must pass the independent five-field Impact Check: product focal dominance, expressive but truthful camera/silhouette, material/lighting quality, compositional energy, and commercial impact/brand fit (each ≥7/10; total ≥40/50). Any NOT_CHECKED/FAIL blocks delivery. See `product-hero-impact.md`. Existing Product Truth, Fusion, Scene Relationship, Typography and platform gates remain independent.
+
+## No Placeholder / Final Delivery Check
+After the image is rendered, inspect all displayed text and planned commercial zones against the confirmed contract. Reject unverified or invented product claims, prices, dates, placeholder-like strings, blank requested fields and unapproved omissions. Rerender/repair or ask for missing values. Only declare a complete final advertisement after the independent `Fail-Closed Final Delivery Gate` PASS in `../production/mandatory-input-confirmation.md`.
 
 ## Final standard
 
