@@ -61,6 +61,8 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 
 34. **Product–Scene Relationship is a separate hard gate.** Before rendering, derive the background from verified product benefit, use, form/material, framing and brand rather than generic decoration. See `references/methods/visual/product-scene-relationship.md`; score its five fields separately (each ≥7/10, total ≥40/50) alongside the existing physical Fusion Score. Product-specific minimal studios remain valid.
 
+35. **Product Hero impact is product-specific, not generic spectacle.** For Hero A and explicitly product-focused single posters, compile the `Product Hero Impact` plan from verified silhouette/material/benefit: select at least two justified visual levers among hero scale, expressive supported camera, cinematic material lighting, compositional depth/tension, scene contrast and detail emphasis. Independently check five rendered impact dimensions (each ≥7/10, total ≥40/50). Preserve truth, brand, physical integration and text legibility. See `references/methods/visual/product-hero-impact.md`.
+
 ## Operating modes
 
 ### CLIENT MODE — default
@@ -165,7 +167,7 @@ For each confirmed output:
 13. For commercial posters, also lock a Typography Prominence Contract before generation: primary message, headline scale/weight/lines/contrast, headline–product relationship, offer priority, copy density, text contrast field, and thumbnail reading order. A copy zone without a viable local contrast field is unresolved.
 14. Before production, lock the Reference Adoption Mapping, Style Justification, full-poster Composition Plan, and Product–Scene Integration Plan. Empty mappings, mood adjectives, background-only briefs, weak/invisible headline plans, or post-hoc rationalization fail readiness.
 15. For every typography-bearing poster, execute the Typography Contrast order: zones → local background complexity/tone → text color → headline size/weight → contrast field → lightweight fallback enhancement only if needed → 100%/50%/25% readability plus 2-Second Read Test.
-16. For `DUAL_DEFAULT`, compile two separate production plans. Hero A must emphasize product form, material, structure, core benefit, and commercial display. Hero B must show active use with credible occlusion/contact/force. Lock shared campaign color, brand character, type logic, and reference logic while forcing meaningful camera, composition, action, and scene-function differences.
+16. For `DUAL_DEFAULT`, compile two separate production plans. Hero A must emphasize product form, material, structure, core benefit, and commercial display; it must additionally lock a Product Hero Impact plan covering signature focal feature, evidence-supported camera, compelling silhouette/scale, material lighting, composition depth and product–copy counterweight, without overstyling. Hero B must show active use with credible occlusion/contact/force. Lock shared campaign color, brand character, type logic, and reference logic while forcing meaningful camera, composition, action, and scene-function differences.
 
 Use:
 - `references/methods/input-resolution.md`
@@ -206,11 +208,13 @@ Run hard gates first:
 
 Only after applicable hard gates pass, run the **Independent Visual Critic** on the rendered artifact. The Critic judges the visible result before reading the producer's rationale/self-QA and returns PASS / REVISE / REJECT. For representative anchors, client preview requires both Visual Critic PASS and applicable hard/integrity QA PASS. For coordinated sets, also check static product repetition, dimensional plausibility where relevant, platform-strategy drift, and recurring graphic-token consistency.
 
-The Visual Critic must treat these as explicit visible gates: Product–Scene Relationship Check, Hero Output Check, Product Presence, Commercial Readability, Reference Adoption, Product–Environment Integration, Category Fit, Visual Distinctiveness, Usage Authenticity, Copy Readiness, Typography Contrast, Typography Prominence, Thumbnail Readability, 2-Second Read Test, and Product Truth. Applicable pair completeness/diversity, reference-adoption, integration, typography-contrast, typography-prominence, commercial-hierarchy, active-usage, or thumbnail failures are blocking even when the image is aesthetically attractive.
+The Visual Critic must treat these as explicit visible gates: Product Hero Impact Check (for Product Hero), Product–Scene Relationship Check, Hero Output Check, Product Presence, Commercial Readability, Reference Adoption, Product–Environment Integration, Category Fit, Visual Distinctiveness, Usage Authenticity, Copy Readiness, Typography Contrast, Typography Prominence, Thumbnail Readability, 2-Second Read Test, and Product Truth. Applicable pair completeness/diversity, reference-adoption, integration, typography-contrast, typography-prominence, commercial-hierarchy, active-usage, or thumbnail failures are blocking even when the image is aesthetically attractive.
 
 For every scene-based poster, calculate the Product–Background Fusion Score for Perspective, Lighting, Shadow, Reflection, Scale, Occlusion, Material response, Color temperature, Contact realism, and Overall scene coherence. Any field below 7/10 or total below 80/100 is a blocking failure.
 
 For every commercial poster, run 100%, 50%, and 25% typography checks plus the 2-Second Read Test, then calculate the eight-field Typography Prominence Score and explicit Typography Contrast status. Any field below 7/10, total below 64/80, or direct hard fail defined in `visual-critic.md` blocks delivery. Product–Background Fusion, Typography Contrast, and Typography Prominence are independent hard gates; one cannot compensate for another.
+
+Product Hero must also pass its independent five-field Visual Impact Check (each ≥7/10 and total ≥40/50) on the actual rendered poster. Weak first-glance presence, flat catalog staging or unsupported spectacle fails; do not transfer this visual style requirement mechanically to Usage Hero.
 
 When `hero_output_mode: DUAL_DEFAULT`, delivery is blocked until both `product_hero_status` and `usage_hero_status` are PASS and the pair gate confirms shared campaign identity plus meaningful composition/camera/scene-function/evidence differences. One passing hero cannot compensate for the other.
 
@@ -308,6 +312,7 @@ Load only what is needed. Do not dump all references into context.
 - Visual benchmark + Reference Adoption Protocol → `references/methods/strategy/visual-benchmarking.md`
 - Medium grammar → `references/methods/mediums/*.md`
 - Art direction → `references/methods/visual/visual-direction.md`
+- Product Hero camera/scale/material-led impact and independent Hero Impact QA → `references/methods/visual/product-hero-impact.md`
 - Default direct integrated poster production and Product–Background Fusion Score → `references/methods/visual/direct-final-poster-generation.md`
 - Optional explicitly requested staged anchor approval → `references/methods/visual/anchor-production.md`
 - Independent visual criticism, Hero Output Check, Typography Contrast QA, 2-Second Read Test, and thumbnail typography gate → `references/methods/visual/visual-critic.md`
