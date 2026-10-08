@@ -44,6 +44,9 @@ Do the rendered composition, scale, camera, light, material, typography, depth, 
 ### D. PRODUCT–ENVIRONMENT INTEGRATION
 Do perspective, contact, shadow, light, environmental influence, occlusion, scale, color temperature, depth of field, edge behavior, and material response form one believable world?
 
+### D2. PRODUCT–SCENE RELATIONSHIP
+Judge whether the background meaningfully belongs to this product, rather than merely matching its lighting. See `product-scene-relationship.md`. An intentional minimal studio may pass when tailored to the product.
+
 ### E. CATEGORY FIT
 Does the result express this category/subcategory's use, purchase, sensory, and trust logic rather than a generic AI style?
 
@@ -169,6 +172,9 @@ Scoring is a hard gate, not an averaged aesthetic preference:
 Judge the visible artifact, not prompt wording or producer claims. Record all ten values and the total.
 
 If the claim requires containment or insertion, a nearby container elsewhere in the frame does not count. The visible geometry must show the product actually entering / resting in / being held by the intended receiver.
+
+## C2b — Product–Scene Relationship Check
+Separately score actual visible Scene Relevance, Visual Correspondence, Spatial Integration, Commercial Hierarchy and Brand Consistency (1–10 each). Each must be ≥7 and total ≥40/50; otherwise REVISE/REJECT even if physical Fusion Score passes. Record the offending scene decision and re-inspect the corrected render. Reject generic interchangeable backdrops; do not demand needless props in product-specific studios.
 
 ## C3 — Typography
 Inspect:
