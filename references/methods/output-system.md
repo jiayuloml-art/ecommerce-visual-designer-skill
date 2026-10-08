@@ -78,15 +78,15 @@ If it does not, merge or remove it.
 
 Classify explicit output language before applying package recommendations:
 
-- `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉`, without an explicit single-image instruction → confirm a two-output package by default: Hero A / Product Hero + Hero B / active Usage Hero.
-- the same hero language plus an explicit single-image instruction → confirm one hero only; follow an explicit product/usage role, otherwise use Product Hero unless the brief is usage-first.
-- `成品海报 / 电商促销海报 / 商品促销海报 / final poster` → confirm Direct Final Poster Generation with the user-requested count; do not add a hero pair unless separately requested.
+- `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉 / 成品海报 / 电商促销海报 / 商品促销海报 / final poster` without an explicitly specified quantity → **recommend and deliver 2 complete final posters**: Hero A / product-focused full poster + Hero B / active-usage full poster.
+- Any explicit count overrides two: one means exactly one complete poster (requested hero role, otherwise product-focused); other explicit counts determine the actual number delivered. Do not treat aspect ratio `4:5` as quantity.
+- Both output families use Direct Final Poster Generation with the same complete-poster standard and individual QA. Do not recommend a single platform-neutral 4:5 poster as the default.
 
 The default two-hero package is not redundant: Product Hero answers product desire/form/material/core-benefit questions, while Usage Hero answers use/fit/interaction/experience questions. Hero B must show active, category-valid use rather than lifestyle adjacency.
 
 ## Default direct-final poster output
 
-When the client requests a finished promotional/final poster, recommend one complete integrated poster or a set of individually complete posters.
+When the client requests a finished promotional/final poster without an explicit quantity, recommend TWO individually complete integrated posters: Product Hero and active Usage Hero. The user may explicitly override the quantity. Do not convert a user-specified format into an assumed single image.
 
 Every poster contract must include:
 - product subject and identity locks,
@@ -103,11 +103,11 @@ Default hierarchy:
 
 **PRODUCT → PRIMARY BENEFIT / HEADLINE → BRAND / SERIES → SELLING POINTS / OFFER → ENVIRONMENT / DECORATION**
 
-Do not add an empty-background deliverable, pure mood frame, isolated product hero, or layout-only intermediate to the client package unless the client explicitly asks for that staged artifact.
+Do not add an empty-background deliverable, pure mood frame, isolated product hero, or layout-only intermediate to the client package unless the client explicitly asks for that staged artifact. Prefer generating each full poster with product + scene + finished typography and offer copy in a single coordinated image-generation pass. If exact glyphs cannot be verified, locally repair only failed text instead of reverting to a default background-first multi-layer workflow.
 
 When a multi-poster set is justified, each image must add a distinct communication job/evidence route while remaining a complete poster. Do not generate one hero first merely to establish a background style and then treat the remaining posters as downstream layout variants.
 
-For the default or explicitly requested Dual-Hero package, each member must be an integrated, campaign-ready hero and pass independently; the pair must not become background swaps. Share color, brand character, typography logic, and reference logic, but require meaningful differences in composition, camera, scene function, and evidence route.
+For the default or explicitly requested Dual-Hero full-poster package, each member must have final ad typography, product/scene integration, brand and applicable supplied commercial information, and pass independently; the pair must not become background swaps. Share color, brand character, typography logic, and reference logic, but require meaningful differences in composition, camera, scene function, and evidence route.
 
 ## Runtime Output Specification
 Compose from:
