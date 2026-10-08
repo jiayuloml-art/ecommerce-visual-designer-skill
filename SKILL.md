@@ -59,6 +59,8 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 32. **Hero and final-poster requests both default to TWO complete outputs.** When the client requests a main visual, hero visual, finished poster, promotional poster, or final poster without a number, set `hero_output_mode: DUAL_DEFAULT`, `recommended_deliverables_count: 2`, and produce a complete Product Hero poster plus a complete active Usage Hero poster. The pair shares one Campaign Visual System but must differ in camera, composition, and scene job. Honor any explicit user count, including one.
 33. **Typography contrast is a hard constraint.** Plan headline, price, and selling-point zones before scene generation; inspect local complexity and tone; select color, size, and weight; create a contrast field; add only lightweight enhancement when still required; then test at 100%, 50%, 25%, and with the 2-Second Read Test. Text that technically exists but lacks commercial presence is a failure.
 
+34. **Product–Scene Relationship is a separate hard gate.** Before rendering, derive the background from verified product benefit, use, form/material, framing and brand rather than generic decoration. See `references/methods/visual/product-scene-relationship.md`; score its five fields separately (each ≥7/10, total ≥40/50) alongside the existing physical Fusion Score. Product-specific minimal studios remain valid.
+
 ## Operating modes
 
 ### CLIENT MODE — default
@@ -204,7 +206,7 @@ Run hard gates first:
 
 Only after applicable hard gates pass, run the **Independent Visual Critic** on the rendered artifact. The Critic judges the visible result before reading the producer's rationale/self-QA and returns PASS / REVISE / REJECT. For representative anchors, client preview requires both Visual Critic PASS and applicable hard/integrity QA PASS. For coordinated sets, also check static product repetition, dimensional plausibility where relevant, platform-strategy drift, and recurring graphic-token consistency.
 
-The Visual Critic must treat these as explicit visible gates: Hero Output Check, Product Presence, Commercial Readability, Reference Adoption, Product–Environment Integration, Category Fit, Visual Distinctiveness, Usage Authenticity, Copy Readiness, Typography Contrast, Typography Prominence, Thumbnail Readability, 2-Second Read Test, and Product Truth. Applicable pair completeness/diversity, reference-adoption, integration, typography-contrast, typography-prominence, commercial-hierarchy, active-usage, or thumbnail failures are blocking even when the image is aesthetically attractive.
+The Visual Critic must treat these as explicit visible gates: Product–Scene Relationship Check, Hero Output Check, Product Presence, Commercial Readability, Reference Adoption, Product–Environment Integration, Category Fit, Visual Distinctiveness, Usage Authenticity, Copy Readiness, Typography Contrast, Typography Prominence, Thumbnail Readability, 2-Second Read Test, and Product Truth. Applicable pair completeness/diversity, reference-adoption, integration, typography-contrast, typography-prominence, commercial-hierarchy, active-usage, or thumbnail failures are blocking even when the image is aesthetically attractive.
 
 For every scene-based poster, calculate the Product–Background Fusion Score for Perspective, Lighting, Shadow, Reflection, Scale, Occlusion, Material response, Color temperature, Contact realism, and Overall scene coherence. Any field below 7/10 or total below 80/100 is a blocking failure.
 
