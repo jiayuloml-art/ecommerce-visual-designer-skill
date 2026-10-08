@@ -11,6 +11,8 @@ Do not use a fixed intake questionnaire. Confirm outputs first, then back-propag
 - **CONDITIONAL_REQUIRED:** required only because a chosen output/mechanism/route depends on it.
 - **RECOMMENDED:** improves quality but is not blocking.
 
+**Precedence:** For any finished poster, `references/methods/production/mandatory-input-confirmation.md` overrides generic defer/omit/scoped-blocking advice. Required final content that is absent or contradictory blocks **the entire final-generation and final-delivery stage** until verified or explicitly resolved. The client must actively approve removal of any requested field. No placeholders.
+
 ## Gap classes
 - **INFERABLE:** safely inferred from available evidence.
 - **RECOMMENDABLE:** the agent should propose a professional default.
@@ -85,9 +87,9 @@ For truth-sensitive production, record:
 A missing or conflicting input blocks only the outputs, slots, claims, or production decisions that depend on it unless the unresolved item invalidates the whole direction.
 
 Example:
-- unresolved price → block exact promotional price layer,
+- unresolved **requested** price → block the entire finished-poster render until exact verified price is supplied or user approves removing price and redesigning the layout; never print a blank/placeholder price, 
 - product image + verified geometry available → composition/background work may continue,
-- unknown certification → block certification claim, not unrelated visual production.
+- unknown certification → block the finished-poster render if the user requests certification copy; ask for source evidence or user approval to remove it. Unrequested certifications are optional: do not invent or ask for unnecessary facts.
 
 ## Upstream resolution first
 When one upstream answer can resolve several downstream unknowns, resolve the upstream item first. Do not ask the client separately for downstream choices the agent can determine afterward.
@@ -112,7 +114,10 @@ Example:
 - after the platform is known, infer or recommend the platform's ordinary detail-page surface/default presentation when safe;
 - do **not** immediately ask separate questions about mobile/desktop, aspect ratio, page container, or similar downstream details unless they remain materially ambiguous after the platform is resolved.
 
-A missing platform may block platform-specific benchmarking, platform-fit claims, and final technical production, while generic strategy/page-structure work may continue.
+For a finished commercial deliverable, a missing platform always triggers an upstream platform question before final image generation. If the user explicitly authorizes a platform-neutral concept-only task, label it concept-only; no substitution is allowed silently. Internal strategy/page planning may continue without pretending that final production is ready.
+
+## Mandatory final-artwork input audit
+For each requested/required display field (product/brand/model, verified benefit, price, prior price, discounts, campaign dates, CTA, platform, etc.), mark `VERIFIED`, `MISSING_REQUIRED`, `CONFLICTING`, `NEEDS_SOURCE_EVIDENCE`, or `CONFIRMED_NOT_SHOWN` (explicit client opt-out). Use `OPTIONAL_NOT_REQUESTED` only for content genuinely not part of the requested final deliverable. Any `MISSING_REQUIRED`, `CONFLICTING` or `NEEDS_SOURCE_EVIDENCE` blocks final generation and triggers a focused question. Phrases such as '预留价格/日期' do NOT authorize a placeholder or omission. See `mandatory-input-confirmation.md`.
 
 ## Missing vs conflict
 - **MISSING:** no supported value exists.
