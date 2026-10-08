@@ -110,7 +110,7 @@ Product–Scene Integration Plan
         ↓
 Direct Final Poster Generation
         ↓
-Typography / Commercial Info Composite
+Integrated Text Verification / Minimal Repair if Needed
         ↓
 Typography Prominence + Thumbnail QA
         ↓
@@ -119,18 +119,18 @@ Independent Visual Critic
 Client Preview / revision loop
 ```
 
-Hero-only requests use a separate branch:
+Both main-visual and finished-poster requests default to this dual complete-poster branch:
 
 ```text
 Shared Campaign Visual System
         ↓
-Hero A / Product Hero ── Hero B / Active Usage Hero
+Full Product Poster ── Full Active-Usage Poster
         ↓                         ↓
 Independent QA              Independent QA
         └──────── Pair Consistency + Diversity Gate ────────┘
 ```
 
-The hero pair shares color, brand character, typography logic, and reference logic, while composition, camera, scene function, and evidence route must differ. An explicit single-image instruction produces one hero. An explicit final-poster instruction stays on Direct Final Poster Generation and does not inherit the two-hero default.
+Both complete posters share color, brand character, type and reference logic, but differ in composition, camera and communication job. Both use Direct Final Poster Generation; explicit counts override the two-poster default.
 
 Hard artifact QA (truth, technical, regression, platform/compliance) remains separate from visual criticism.
 
@@ -145,7 +145,7 @@ V1.2 adds nine connected mechanisms:
 5. **Category Visual Intelligence** — visual grammar is derived from category, subcategory, purchase motivation, use context, sensory attribute, brand positioning, platform, and benchmark evidence; category-to-color templates are prohibited.
 6. **Commercial and diversity guards** — product + core benefit must survive thumbnail viewing, copy zones are reserved before generation, and unsupported AI-default styling requires revision.
 7. **Typography Prominence Protocol** — headline, offer, brand, and selling points are planned as commercial visual structure before generation; scene-aware Text Contrast Fields, headline/product relationships, 100%/50%/25% checks, a 2-Second Read Test, and an eight-field 64/80 hard gate prevent technically present but commercially invisible copy.
-8. **Default Dual-Hero Output Router** — hero-only requests without an explicit count produce Product Hero + active Usage Hero; final-poster language remains routed to Direct Final Poster Generation.
+8. **Default Dual Complete-Poster Router** — main-visual AND finished-poster requests without a count produce Product Hero + active Usage Hero as TWO independently complete advertising posters.
 9. **Typography Contrast Hard Gate** — headline, price, and selling-point zones are designed before generation; local complexity/tone determines text color, size, weight, and contrast field; 100%/50%/25% plus 2-Second checks reject midtone washout, thin type, weak price hierarchy, and commercially invisible copy.
 
 The upgraded system is intended to be:
