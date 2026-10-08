@@ -91,6 +91,9 @@ The provider brief must cause the scene itself to reserve low-complexity, contra
 
 When the local background is a middle tone, do not accept weak light-gray or thin dark-gray typography. Move the local field decisively lighter or darker, simplify it, and choose an opposing text tone/weight. The title, promotional price, and core selling points must remain visually distinct from the background at thumbnail scale.
 
+## Product-first scene design gate
+Apply `product-scene-relationship.md` before physical fusion: background must serve verified product function, use, visible form/material and brand, with a clear framing and copy relationship. A generic but beautifully lit environment fails the separate five-field Product–Scene Relationship Check. Purposeful studios may pass. For default dual complete posters, Product Hero emphasizes form/material while Usage Hero shows real active contextual use.
+
 ## Product–scene integration plan
 
 Prioritize:
@@ -221,6 +224,9 @@ Hard gate:
 - only a score with every field ≥7 and total ≥80 may proceed to delivery, subject to Product Truth, Technical, Compliance, Copy, and Visual Critic gates.
 
 Record the ten field scores and total in project/artifact state. Do not replace visible inspection with a self-reported prompt claim.
+
+## Product–Scene Relationship Score — independent hard gate
+Score Scene Relevance, Visual Correspondence, Spatial Integration, Commercial Hierarchy and Brand Consistency on the actual rendered poster (1–10 each). Require every field ≥7/10 and total ≥40/50. This does not replace the ten-field physical Product–Background Fusion Score or the Product Truth, Usage Authenticity and Typography gates. Return failed scene decisions to Visual Direction instead of adding decorative props. See `product-scene-relationship.md`.
 
 ## Final standard
 
