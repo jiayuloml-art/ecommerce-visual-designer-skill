@@ -50,14 +50,15 @@ outputs:
   completed: []
   pending: []
   slots: []
-  hero_output_mode: NOT_APPLICABLE # DUAL_DEFAULT | SINGLE_EXPLICIT | NOT_APPLICABLE
+  hero_output_mode: DUAL_DEFAULT # DUAL_DEFAULT | SINGLE_EXPLICIT | COUNT_EXPLICIT; hero and finished-poster requests share default
+  recommended_deliverables_count: 2 # explicit count overrides
   product_hero_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
   usage_hero_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
   typography_contrast_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
   typography_prominence_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
   thumbnail_typography_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
   anchor_package:
-    mode: null # SINGLE | DUAL_HERO; DUAL_HERO is default for an explicit hero request without a single-image instruction
+    mode: null # SINGLE | DUAL_HERO | COUNT_EXPLICIT; DUAL_HERO default for hero and finished-poster requests without a specified count
     hero_a_product: null
     hero_b_usage: null
     pair_approval: NOT_CHECKED
@@ -190,6 +191,9 @@ artifacts:
       overall_commercial_typography: null
       total: null
       status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
+    integrated_visual_generation_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
+    text_accuracy_verified_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
+    text_repair_reason: null # only on failed integrated exact-copy rendering
     qa_invalidated_by_client_feedback: false
     path_or_ref: null
 
@@ -217,7 +221,7 @@ history:
 - Store confirmed facts, explicit derived benefits/hypotheses, prohibited inferences, client-approved decisions, and unresolved conflicts; do not store hidden reasoning.
 - Persist direct-final poster mode, unified composition fields, poster-completeness checks, and the ten-field Product–Background Fusion Score for every scene-based poster.
 - Persist Typography Contrast status, Typography Prominence status, the eight-field prominence score, and 100%/50%/25% thumbnail typography status for every commercial poster. Applicable NOT_CHECKED, REVISE, or FAIL states are not deliverable PASS.
-- Persist `hero_output_mode`, `product_hero_status`, and `usage_hero_status`. An explicit hero/main-visual request without a single-image instruction uses `DUAL_DEFAULT`; both hero statuses and pair approval must be PASS. An explicit single request uses `SINGLE_EXPLICIT`; a final-poster-only request uses `NOT_APPLICABLE`.
+- Persist `hero_output_mode`, `recommended_deliverables_count`, `product_hero_status`, and `usage_hero_status`. Both main-visual AND finished-poster requests without a stated quantity use `DUAL_DEFAULT`: two individually complete posters with two PASS statuses and pair approval. Explicit one uses `SINGLE_EXPLICIT`; other explicit counts use `COUNT_EXPLICIT`. Record unified image+text rendering status, exact-copy verification and any needed localized repair reason.
 - Persist separate hero readiness/QA and pair approval whenever the default or explicitly requested coordinated pair applies.
 - Persist Reference Adoption Records and output traceability when references are used; a URL list without ADOPT/ADAPT/DO_NOT_COPY/IGNORE and mapped output fields is incomplete.
 - Persist Category Visual Intelligence and Style Justification only as concise decisions/constraints, not hidden reasoning.
