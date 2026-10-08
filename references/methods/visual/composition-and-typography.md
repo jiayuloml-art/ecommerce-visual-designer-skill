@@ -58,6 +58,9 @@ Choose the mechanism that creates the first focal event, for example:
 
 Use only mechanisms that support the Visual Thesis.
 
+### Product-first background relationship
+Before fixing foreground/midground/background and text zones, apply `product-scene-relationship.md`: identify product-derived scene meaning, visual correspondence, use/context, space/attention structure, brand relevance and the background-swap diagnostic. Plan product, background and copy as one composition. Preserve thumbnail product dominance and readable contrast.
+
 ### Relationship map
 Define the spatial/attention relationship among the elements that actually matter:
 - PRODUCT ↔ COPY
