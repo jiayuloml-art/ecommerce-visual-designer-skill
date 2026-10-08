@@ -192,9 +192,11 @@ When Dual-Hero applies, resolve one shared campaign thesis plus two non-redundan
 
 ### Hero A — Product Hero
 - communication job: PRODUCT DESIRE,
+- select a specific visual impact route per `product-hero-impact.md`: product signature silhouette/feature, sufficiently assertive product scale, evidence-grounded camera, material-specific cinematic lighting and deliberate depth/typographic counterweight,
+- explore 2–3 different art directions internally and select one strongest, rather than defaulting to a fixed podium/neon/giant-object template,
 - first impression: product identity + primary benefit,
 - define product scale, camera/view, composition, background role, lighting, copy zone, and reference mapping,
-- environment and effects remain subordinate to product form/material/benefit.
+- environment and effects remain subordinate to product form/material/benefit. A refined minimal studio is valid when product scale, silhouette, contrast and lighting create a memorable first read. No fake geometry, extreme distortion or generic forced spectacle.
 
 ### Hero B — Usage Hero
 - communication job: USAGE DESIRE / EXPERIENCE,
