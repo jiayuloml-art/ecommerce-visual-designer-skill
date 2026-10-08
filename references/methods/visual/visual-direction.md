@@ -52,6 +52,7 @@ Do not encode aesthetic judgment as a universal product-area percentage.
 For hero work, product prominence is non-negotiable even when the chosen mechanism uses a person, architecture, or an expressive environment. The Product Hero must make the product the first visual subject; the Usage Hero must make the product-use relationship—not the model or room—the first meaningful read.
 
 ### Product–scene relationship
+For every scene-based poster, complete `product-scene-relationship.md` first: record one product-specific background thesis, a verified function/use or material presentation reason, a form/color/material relation, spatial support and attention guidance, brand fit and an interchangeability test. Do not force props into justified minimal studio frames.
 When a scene is used, define **how the product physically or visually participates in it**.
 
 Prefer a relationship expressed as an action or spatial interaction, for example:
@@ -100,6 +101,7 @@ Resolve at least one mechanism that makes the direction more than a category tem
 If the same mechanism would work unchanged after swapping in any competitor product and logo, strengthen specificity.
 
 ### Scene logic
+Make background geometry, materials and atmosphere respond to the specific product and its approved commercial message; an attractive interchangeable room or abstract stage is not enough. Product Hero should emphasize product form/material, while active Usage Hero should emphasize authentic action and contextual fit.
 Define what the environment must communicate and which contextual elements are necessary. Avoid decorating the scene with props that do not support meaning, scale, attention, or brand.
 
 For daily-use functional physical products, default toward a **credible use context** rather than an abstract design stage when the communication goal benefits from purchase imagination, relevance, or use understanding.
