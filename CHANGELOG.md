@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-08 — Mandatory Missing Inputs / No Placeholders
+- Added `references/methods/production/mandatory-input-confirmation.md` with priority above generic 'few questions' and deferral rules. Required missing platform/price/date/benefit inputs STOP finished generation until verified/user confirmed or requested element explicitly removed.
+- Prohibited commercial text placeholders, empty reserved fields, invented price/date/product facts and silent omission in final artwork; user-approved removal triggers a layout reflow.
+- Added pre-generation audit and separate after-render Final Delivery Gate to SKILL.md, input-resolution, client-communication, output-system, production-plan, PROJECT_STATE, artifact-qa, direct-final-poster-generation, Codex adapter and failure-recovery.
+- Added `tests/mandatory-missing-input-regression.md` with 12 behavioral acceptance scenarios and expected stops/questions/outputs. Rule consistency can be checked statically, but interactive Codex regressions require actual runs.
+- Preserved exact user image counts, default Product Hero + Usage Hero, visual impact, scene integration, category/platform constraints, verified typography and designer autonomy after required confirmations.
+
+
 ## 2026-10-08 — Product Hero Visual Impact
 - Added `references/methods/visual/product-hero-impact.md` to make Product Hero stronger through verified product silhouette/scale, camera perspective, material light, composition energy, brand-specific background and intentional product–type hierarchy.
 - Added an independent five-field Product Hero Impact Check (each ≥7/10; total ≥40/50) and compiled its decisions into Visual Direction, Composition, Direct Final Poster, Production Plan, Visual Critic and PROJECT_STATE.
