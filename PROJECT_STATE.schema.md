@@ -113,6 +113,7 @@ artifacts:
       commercial_readability: NOT_CHECKED
       reference_adoption: NOT_CHECKED
       product_environment_integration: NOT_CHECKED
+      product_scene_relationship: NOT_CHECKED
       category_fit: NOT_CHECKED
       visual_distinctiveness: NOT_CHECKED
       usage_authenticity: NOT_CHECKED
@@ -154,6 +155,24 @@ artifacts:
       headline_zone: null
       price_zone: null
       brand_zone: null
+    product_background_relationship:
+      scene_role: null
+      scene_specificity_thesis: null
+      functional_relevance: null
+      visual_correspondence: null
+      spatial_relationship: null
+      composition_guidance: null
+      brand_emotional_fit: null
+      background_swap_test: null
+      role_specific_difference: null
+    product_scene_relationship_score:
+      scene_relevance: null
+      visual_correspondence: null
+      spatial_integration: null
+      commercial_hierarchy: null
+      brand_consistency: null
+      total: null
+      status: NOT_CHECKED # all >=7, total >=40/50
     product_background_fusion_score:
       perspective: null
       lighting: null
