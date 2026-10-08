@@ -114,6 +114,7 @@ artifacts:
       reference_adoption: NOT_CHECKED
       product_environment_integration: NOT_CHECKED
       product_scene_relationship: NOT_CHECKED
+      product_hero_impact: NOT_CHECKED # applicable to Product Hero
       category_fit: NOT_CHECKED
       visual_distinctiveness: NOT_CHECKED
       usage_authenticity: NOT_CHECKED
@@ -165,6 +166,25 @@ artifacts:
       brand_emotional_fit: null
       background_swap_test: null
       role_specific_difference: null
+    product_hero_impact:
+      core_product_focal_advantage: null
+      visual_impact_mechanism: null
+      product_silhouette_read: null
+      camera_angle_and_lens_logic: null
+      product_frame_dominance_and_crop: null
+      material_and_highlight_plan: null
+      scene_to_product_contrast_plan: null
+      product_typography_counterweight: null
+      protected_identity_and_legibility_zones: []
+      selected_direction_rationale: null
+    product_hero_impact_score:
+      product_focal_dominance: null
+      camera_silhouette_expressiveness: null
+      material_lighting_quality: null
+      compositional_energy: null
+      commercial_impact_brand_fit: null
+      total: null
+      status: NOT_CHECKED # each >=7/10 and total >=40/50
     product_scene_relationship_score:
       scene_relevance: null
       visual_correspondence: null
@@ -241,7 +261,7 @@ history:
 - Persist direct-final poster mode, unified composition fields, poster-completeness checks, and the ten-field Product–Background Fusion Score for every scene-based poster.
 - Persist Typography Contrast status, Typography Prominence status, the eight-field prominence score, and 100%/50%/25% thumbnail typography status for every commercial poster. Applicable NOT_CHECKED, REVISE, or FAIL states are not deliverable PASS.
 - Persist `hero_output_mode`, `recommended_deliverables_count`, `product_hero_status`, and `usage_hero_status`. Both main-visual AND finished-poster requests without a stated quantity use `DUAL_DEFAULT`: two individually complete posters with two PASS statuses and pair approval. Explicit one uses `SINGLE_EXPLICIT`; other explicit counts use `COUNT_EXPLICIT`. Record unified image+text rendering status, exact-copy verification and any needed localized repair reason.
-- Persist separate hero readiness/QA and pair approval whenever the default or explicitly requested coordinated pair applies.
+- Persist separate hero readiness/QA and pair approval whenever the default or explicitly requested coordinated pair applies. For every Product Hero, persist its impact contract, chosen product-specific visual levers and five-field rendered Product Hero Impact Score (each ≥7/10, total ≥40/50), independently of product truth, scene relationship, fusion, and typography.
 - Persist Reference Adoption Records and output traceability when references are used; a URL list without ADOPT/ADAPT/DO_NOT_COPY/IGNORE and mapped output fields is incomplete.
 - Persist Category Visual Intelligence and Style Justification only as concise decisions/constraints, not hidden reasoning.
 - Keep missing information distinct from conflicting information.
