@@ -61,6 +61,9 @@ Use only mechanisms that support the Visual Thesis.
 ### Product-first background relationship
 Before fixing foreground/midground/background and text zones, apply `product-scene-relationship.md`: identify product-derived scene meaning, visual correspondence, use/context, space/attention structure, brand relevance and the background-swap diagnostic. Plan product, background and copy as one composition. Preserve thumbnail product dominance and readable contrast.
 
+### Product Hero visual impact composition
+For a product-focused Hero A or explicitly product-focused single poster, load `product-hero-impact.md`. Choose a verified focal product feature and at least two category-appropriate impact levers: controlled product scale/silhouette, expressive physically plausible camera, material light, asymmetrical depth/energy, background-to-product contrast, and deliberate product-to-headline counterweight. Avoid automatic centered/podium rendering, empty-product tiny framing or extreme wide-angle deformation. Do not crop critical identity or let dramatic product framing make typography unreadable.
+
 ### Relationship map
 Define the spatial/attention relationship among the elements that actually matter:
 - PRODUCT ↔ COPY
