@@ -191,6 +191,9 @@ For a category-specific note, record:
 Do not invent category-specific facts when no category evidence has been supplied or researched.
 
 
+## Product-specific background relevance
+Provide verified category/use/material/brand cues to `../../methods/visual/product-scene-relationship.md`. The product must determine the visual role and structure of its background, not be placed on an interchangeable category-neutral image by habit. Purposefully product-specific studio images are valid without extra props.
+
 ## Scene validity check
 
 When category/use context materially affects an image, validate the scene before production.
