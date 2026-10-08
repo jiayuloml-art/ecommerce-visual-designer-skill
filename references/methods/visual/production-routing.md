@@ -30,13 +30,13 @@ Use when generative imagery and deterministic commercial layers must coexist.
 For static e-commerce posters, default to a direct integrated route:
 1. plan the full poster composition, including product, environment, camera, contact surface, light/shadow/reflection, foreground/background interaction, and all copy/commercial zones,
 2. use an edit, identity-preserving reconstruction, compositing, or hybrid method that can make the product and scene one photographic system,
-3. generate/render the integrated poster visual rather than an empty background,
-4. composite exact typography, price, date, CTA, legal, and volatile commerce information into the pre-reserved zones,
+3. generate/render product, environment, usage behavior where applicable, and planned headline, brand, selling points and confirmed promotion information together as a complete poster wherever the runtime supports integrated text rendering,
+4. verify exact wording/glyphs and use the smallest localized deterministic text repair only if the unified result is inaccurate; never default to a text-free plate followed by routine overlay of all copy,
 5. run Product Truth, Product–Background Fusion Score, Visual Critic, and technical/compliance QA.
 
 Do not default to `empty AI background → flat product PNG overlay`. A separate verified product layer is permitted only when the route includes real perspective/scale alignment, contact/weight, matched shadows, environmental light spill, reflection/material response, natural occlusion, depth, and edge integration. If these cannot be achieved, use an interaction-capable edit/reconstruction route or redesign the scene.
 
-Deterministic typography remains encouraged; deterministic type completion does not make the visual a staged background workflow because its zones and hierarchy are resolved before generation.
+Deterministic typography is an accuracy fallback for specific unverified/incorrect strings, not the default first-pass workflow. Even when repair is necessary, the design and layout must have been solved in the unified pre-generation composition.
 
 ### Interaction-aware routing
 If the Visual Evidence Strategy requires any of the following:
@@ -76,7 +76,7 @@ If not, the route is ineligible even if it can make an attractive lifestyle imag
 ## Direct final poster production
 For static e-commerce posters/KVs, follow `direct-final-poster-generation.md`:
 
-**PRODUCT ANALYSIS → CATEGORY VISUAL STRATEGY → REFERENCE EXTRACTION → FULL POSTER COMPOSITION PLAN → PRODUCT–SCENE INTEGRATION PLAN → DIRECT FINAL POSTER GENERATION → TYPOGRAPHY / COMMERCIAL INFO COMPOSITE → FINAL QA**.
+**PRODUCT ANALYSIS → CATEGORY VISUAL STRATEGY → REFERENCE EXTRACTION → TWO COMPLETE POSTER PLANS (UNLESS EXPLICIT COUNT) → INTEGRATED PRODUCT + SCENE + TYPOGRAPHY GENERATION → VERIFY / MINIMAL TEXT REPAIR IF NEEDED → FINAL AND PAIR QA**.
 
 Use `anchor-production.md` only for explicitly requested staged approval. Do not show an empty mood image, background plate, or isolated product layer as though it were the final campaign direction.
 
