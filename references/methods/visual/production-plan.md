@@ -6,7 +6,7 @@ Use one structured plan per output instance or independently produced slot. This
 Campaign-level strategy, product truth, and campaign visual system are shared.
 Production decisions are output/slot-specific.
 
-For explicit finished posters, use `generation_mode: DIRECT_FINAL_POSTER` and follow `direct-final-poster-generation.md`. For an explicit hero/main-visual request with no single-image instruction, use `hero_output_mode: DUAL_DEFAULT` and compile two peer plans: Hero A / Product Hero and Hero B / active Usage Hero. Use `anchor-production.md` only when staged approval is explicitly requested or documented as necessary.
+For BOTH finished-poster and hero/main-visual requests without an explicit count, use `generation_mode: DIRECT_FINAL_POSTER`, `hero_output_mode: DUAL_DEFAULT` and compile TWO independently complete final-poster plans: Hero A / Product Hero and Hero B / active Usage Hero. An explicit count overrides two. Use `anchor-production.md` only when staged approval is requested or documented as necessary.
 
 ```yaml
 slot_identity:
@@ -14,12 +14,13 @@ slot_identity:
   output_id:
   anchor: false
   generation_mode: DIRECT_FINAL_POSTER # DIRECT_FINAL_POSTER | HERO_VISUAL | EXPLICIT_STAGED_ANCHOR | OTHER
-  hero_role: null # PRODUCT_HERO | USAGE_HERO | null
+  hero_role: null # PRODUCT_HERO | USAGE_HERO | null; each role is an independently complete final poster
   paired_anchor_id: null
   anchor_protocol_stage: null # AP0_READY | AP1_DESIGN_LOCK | AP2_SCENE_FIT | AP3_PRODUCT_INTEGRATION | AP4_TYPOGRAPHY | AP5_FINAL_QA | AP6_CLIENT_PREVIEW
 
 hero_outputs:
-  hero_output_mode: NOT_APPLICABLE # DUAL_DEFAULT | SINGLE_EXPLICIT | NOT_APPLICABLE
+  hero_output_mode: DUAL_DEFAULT # DUAL_DEFAULT | SINGLE_EXPLICIT | COUNT_EXPLICIT
+  recommended_deliverables_count: 2 # explicit user count overrides
   hero_a:
     role: product_hero
     output_id: null
@@ -231,6 +232,8 @@ direct_final_poster:
   one_scene_system: NOT_CHECKED
   one_lighting_system: NOT_CHECKED
   one_camera_system: NOT_CHECKED
+  one_pass_product_scene_typography: NOT_CHECKED # PASS requires joint poster generation, or documented runtime limitation with minimal exact-text correction
+  text_accuracy_verified: NOT_CHECKED
   provider_prompt_negatives: []
 
 content_layers:
@@ -246,7 +249,9 @@ content_layers:
 copy:
   exact_strings: []
   fact_mappings: []
-  rendering_owner: null # DETERMINISTIC_LAYOUT | MODEL_RENDERED_AND_VERIFIED | NO_TEXT
+  rendering_owner: MODEL_RENDERED_AND_VERIFIED # MODEL_RENDERED_AND_VERIFIED default | MINIMAL_DETERMINISTIC_REPAIR on verified failure | NO_TEXT only if explicitly requested
+  text_accuracy_checks: []
+  localized_repairs: []
 
 layer_ownership: {}
 
@@ -285,6 +290,8 @@ checks:
   typography_contrast: NOT_CHECKED
   thumbnail_typography: NOT_CHECKED
   hero_output: NOT_CHECKED
+  integrated_visual_generation: NOT_CHECKED
+  text_accuracy_verified: NOT_CHECKED
 
 product_background_fusion_score:
   perspective: null
@@ -328,7 +335,7 @@ Remove elements that do not serve communication, context, attention, brand, or n
 
 Use when the client asks only for `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉` and does not explicitly say one image. Set `hero_output_mode: DUAL_DEFAULT` and compile two separate integrated hero plans linked by `paired_anchor_id`. Do not wait for a second instruction and do not treat Hero A as an intermediate for Hero B.
 
-If the client explicitly requests a single image, set `hero_output_mode: SINGLE_EXPLICIT` and compile only the requested hero role. If no role is stated, default that single output to Product Hero unless the brief is explicitly usage-first. For `成品海报 / 电商促销海报 / final poster`, set `hero_output_mode: NOT_APPLICABLE` and use Direct Final Poster Generation; do not apply the dual-hero default.
+If the client explicitly requests one image, set `hero_output_mode: SINGLE_EXPLICIT` and create exactly one complete poster in the requested role (or product-focused by default). Other explicit counts use `COUNT_EXPLICIT` and compile that many complete plans. For `成品海报 / 电商促销海报 / final poster`, apply the SAME dual-hero default as main visuals. Every member is a final poster, not a background or auxiliary scene.
 
 ### Hero A — Product Hero
 
@@ -410,7 +417,7 @@ For direct-final poster work, every unified composition field and the Typography
 
 For typography-bearing poster work, `typography_contrast_contract` must be complete in this order: headline/price/selling-point zones → local background complexity/tone → text color → headline size/weight → contrast field → lightweight fallback enhancement if needed → 100%/50%/25% and 2-Second Read Test. Midtone fields that do not separate decisively from either light or dark text must be intentionally shifted/simplified before rendering.
 
-For `DUAL_DEFAULT`, readiness requires two distinct cards, shared Campaign Visual System locks, active-usage evidence for Hero B, and explicit composition/camera/scene-function/evidence-route differences. Missing Hero B or a background-only variation is `BLOCKED`, not a smaller package.
+For `DUAL_DEFAULT`, readiness requires two distinct COMPLETE FINAL POSTER cards, matching campaign visual system, confirmed commercial text, active-usage evidence for Hero B, preplanned title/price contrast fields, joint-generation plan, and explicit differences in camera/composition/scene-function/evidence. Missing Hero B, missing final copy, or a background-only variation is `BLOCKED`, not a smaller package.
 
 Do not call an expensive generation/edit route merely because a general mood has been chosen.
 
