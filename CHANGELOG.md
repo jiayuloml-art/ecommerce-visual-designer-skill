@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-08 — Product–Background Relationship
+- Added product-first scene protocol, interchangeability test and independent five-field relationship QA (each ≥7, total ≥40/50).
+- Synced Skill, Visual Direction, Composition, Direct Final Poster, Production Plan, Visual Critic, project state, category playbook and README.
+- Preserved default dual complete posters, integrated typography and independent physical Fusion Score.
+- Rule inspection is not a live image-generation evaluation; test output quality separately.
+
+
 ## 2026-10-08 — PR #4 follow-up: Dual Complete Posters + Unified Typography
 - Hero and finished-poster requests without explicit quantity both default to two independently complete Product Hero + active Usage Hero posters; honor explicit quantity overrides.
 - Generate product, environment, active use and copy as a unified poster where supported; verify exact wording, and only use localized deterministic repairs on failed glyphs.
