@@ -6,15 +6,15 @@ Use this as the default production protocol for explicit static `成品海报 / 
 
 ## Output-route boundary
 
-Do not use “Direct Final Poster Generation” to collapse a hero-only request into one poster. An explicit `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉` request with no explicit single-image instruction routes to two coordinated hero outputs:
-- Hero A / Product Hero,
-- Hero B / active Usage Hero.
+Direct Final Poster Generation applies to BOTH main-visual/hero requests and final/promotional poster requests. Without an explicit quantity, produce TWO individually complete finished posters:
+- Hero A / Product Hero: complete product-focused poster with legible headline, brand and applicable confirmed copy.
+- Hero B / active Usage Hero: complete usage-focused poster with real actor/product interaction, legible headline, brand and applicable confirmed copy.
 
-Those heroes must still be scene-integrated, commercially composed, and campaign-ready, but they are two peer outputs rather than a poster base followed by a scene variant. If the user explicitly requests one hero, produce one. If the user explicitly requests a final poster, stay on this protocol and do not add the hero pair unless separately requested.
+Use a shared Campaign Visual System but distinct camera, composition, scene function and evidence. An explicit quantity overrides two; never infer quantity from 4:5 or other aspect ratios.
 
 ## Required sequence
 
-**PRODUCT ANALYSIS → CATEGORY VISUAL STRATEGY → REFERENCE EXTRACTION → FULL POSTER COMPOSITION PLAN → PRODUCT–SCENE INTEGRATION PLAN → DIRECT FINAL POSTER GENERATION → TYPOGRAPHY / COMMERCIAL INFO COMPOSITE → FINAL QA**
+**PRODUCT ANALYSIS → CATEGORY VISUAL STRATEGY → REFERENCE EXTRACTION → TWO COMPLETE POSTER COMPOSITION PLANS → PRODUCT–SCENE–TEXT INTEGRATED GENERATION → VERIFY EXACT COPY → CONDITIONAL MINIMAL TEXT REPAIR → INDIVIDUAL + PAIR QA**
 
 Do not output an empty background, pure mood image, isolated visual draft, or separate hero layer as the default intermediate client deliverable.
 
@@ -32,7 +32,7 @@ Every poster must resolve in one frame:
 
 The generated visual base must already behave like an **integrated ecommerce poster** with **product embedded in environment**, **scene-aware product placement**, **commercial composition**, **poster-ready layout**, **copy-safe negative space**, **hero product dominance**, **retail advertising**, **campaign-ready key visual**, and **premium ecommerce finish**.
 
-Deterministic typography and volatile commercial information may be composited after image generation, but their zones, contrast fields, scale, hierarchy, and relationship to the product must be planned before generation. Exact glyph rendering is a precision completion layer; typography itself is part of pre-generation spatial planning and cannot rescue an unplanned image.
+**Default to one-pass finished typography inside the scene**: headline, supplied offer/price/date, selling points and brand are designed and rendered jointly with product/environment/usage wherever the active tool can do so. Plan exact wording, zones, contrast fields, scale, color, hierarchy and product relationship before generation. Verify the rendered text. Only when exact wording fails may a deterministic repair replace the affected glyphs in the existing planned zone; do not routinely generate a text-free plate and overlay all copy later.
 
 ## Unified composition lock
 
@@ -188,11 +188,11 @@ A person standing near a product is not usage evidence. A hand touching the outl
 
 ## Typography and commercial information
 
-After the integrated visual base is viable:
-1. composite exact brand, headline, selling points, price, date, CTA, legal, and platform copy deterministically when precision matters;
-2. preserve the preplanned zones and reading order;
-3. preserve product + primary headline/core benefit as the intended dual commercial core, with offer prominence matched to the brief;
-4. verify that text does not cover required product interaction or integration evidence;
+Render the full scene, product, usage action, headline, brand and any verified promotion copy **together** whenever supported. Then:
+1. verify every exact required string, punctuation, number, brand mark and claim against source data; do not invent prices or promotional dates;
+2. if image-generated glyphs fail, use the smallest localized deterministic text correction in its planned contrast field, keeping camera, scene, type scale and spatial relation fixed;
+3. preserve the preplanned zones and reading order, including the product + headline dual core;
+4. verify that text does not obscure product interaction or integration evidence;
 5. verify full-view, 50%, and 25% readability and run the 2-Second Read Test;
 6. do not use opaque cards, fog, glow, or cropping to hide failed product–scene integration or an unresolved contrast field.
 
@@ -234,4 +234,4 @@ not:
 
 Require:
 
-**ONE SCENE · ONE LIGHTING SYSTEM · ONE CAMERA SYSTEM · ONE COMMERCIAL COMPOSITION · ONE FINAL POSTER**
+**ONE SCENE · ONE LIGHTING SYSTEM · ONE CAMERA SYSTEM · ONE PRODUCT–TYPOGRAPHY COMPOSITION · TWO COMPLETE FINAL POSTERS BY DEFAULT**
