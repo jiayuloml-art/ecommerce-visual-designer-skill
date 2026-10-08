@@ -134,6 +134,9 @@ Both complete posters share color, brand character, type and reference logic, bu
 
 Hard artifact QA (truth, technical, regression, platform/compliance) remains separate from visual criticism.
 
+### Product–Background Relationship Upgrade
+New `references/methods/visual/product-scene-relationship.md` requires a product-first scene rationale, function/context relevance, visual material/form correspondence, spatial support, commercial focus and brand specificity. Independent five-part Relationship Score: all fields ≥7/10, total ≥40/50; this supplements (never replaces) ten-part physical Fusion Score. Background-swap tests reject generic scenery but allow justified minimal studios. Default two complete integrated posters and copy/usage rules remain unchanged.
+
 ### Visual Quality Upgrade
 
 V1.2 adds nine connected mechanisms:
