@@ -20,7 +20,7 @@ Persist the approved shared visual language across outputs.
 15. Negative Direction
 16. Fixed Rules / Locks
 17. Allowed Changes / Variation Rules
-18. Distinctive Device / Motif — optional; only when there is a real campaign-specific recurring device
+18. Distinctive Device / Motif — for a new campaign created without a client-supplied concept, required-or-justified: either name the recurring device and where it appears across outputs, or record an explicit, justified “quiet system” decision; for routine adaptations or revisions inside an approved system, optional and only when there is a real campaign-specific recurring device
 
 ## Graphic-token consistency
 

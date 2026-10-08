@@ -16,6 +16,10 @@
 - Codex-specific runtime adapter with bounded image-generation wait budgets and staged exact-product hero routing.
 - Hero typography craft and approval-ready anchor acceptance gate.
 - Mandatory Anchor Production Protocol: READY → DESIGN LOCK → SCENE FIT → PRODUCT INTEGRATION → TYPOGRAPHY → FINAL QA → CLIENT PREVIEW, with fail-closed stage transitions and no client preview for failed candidates.
+- Creative-proposition gate: a visual thesis must add an insight, tension, or device beyond the brief; restating or rewording client-supplied themes, campaign names, promo lines, or fact lines no longer qualifies as a concept.
+- Named differentiation commitment: benchmark synthesis must end with at least one committed departure from category convention, handed off to Visual Direction and presented to the client as the distinctiveness rationale at direction approval.
+- Ownable device requirement: new campaigns created without a client-supplied concept must name a repeatable distinctive device/motif across outputs or record an explicit, justified “quiet system” decision; mood, palette, and seasonal atmosphere are support layers, not mechanisms.
+- Direction-level swap test: creative specificity is checked on the Visual Direction Card before composition, not only on finished artifacts; paraphrased concepts and category-typical mood-only systems are treated as insufficient specificity.
 
 ### Changed
 - Project-state schema moved under `references/methods/` so runtime state guidance is routed with other task methods.

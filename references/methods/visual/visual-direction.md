@@ -36,6 +36,14 @@ Stronger:
 
 Mood words may support the thesis; they cannot replace it.
 
+A thesis must also add something the brief did not literally say: an insight, a tension, or a device. Restating or rewording client-supplied themes, campaign names, promo lines, product names, or fact lines is not a visual thesis — it is the brief repeated back.
+
+Weak:
+> Rephrase the supplied theme “Travel light, warmth follows” as “Autumn companion, temperature just right.”
+
+Stronger:
+> Make the commute-to-weekend day visible as one continuous path the product travels, so “fits my whole day” is seen as a journey rather than claimed as a slogan.
+
 ### Product role
 Define how the product participates in the visual:
 - dominant object,
@@ -92,6 +100,8 @@ Resolve at least one mechanism that makes the direction more than a category tem
 - semantic visual effect,
 - typographic counterweight,
 - brand-specific graphic behavior.
+
+For a new campaign or a concept-open brief, name **one ownable device or motif** the campaign can repeat and be recognized by. Mood, palette, and seasonal atmosphere are support layers, not mechanisms: “warm autumn tones”, “soft morning light”, or “beige with a green accent” describe a category default, not a distinctive mechanism.
 
 If the same mechanism would work unchanged after swapping in any competitor product and logo, strengthen specificity.
 
@@ -167,6 +177,9 @@ Visual Direction is resolved only when all are true:
 - product–scene relationship is explicit when a scene is used,
 - required visible evidence is compatible with the chosen scene / interaction when the viewer question depends on evidence,
 - at least one distinctive visual mechanism is defined,
+- the visual thesis is not a paraphrase of client-supplied copy,
+- at least one named differentiation move from category convention is committed, stating what this direction deliberately does differently,
+- the direction passes a card-level swap test: if this card could describe a competitor's typical ad unchanged, return to thesis and mechanism,
 - scene/effect logic is purposeful where applicable,
 - benchmark evidence has been translated into named current-design decisions when benchmarking was required,
 - negative direction is known.

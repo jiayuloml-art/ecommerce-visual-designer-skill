@@ -89,6 +89,7 @@ Recommend:
 - proof/trust strategy,
 - platform strategy,
 - visual direction,
+- for a concept-open brief, an ownable creative proposition plus one named differentiation move; never present reworded client-supplied copy as the concept,
 - campaign scale when relevant.
 
 Resolve product selling points using `references/methods/strategy/selling-point-discovery.md`.
@@ -184,7 +185,7 @@ Use `references/methods/production/artifact-qa.md`, `references/methods/visual/v
 ## Human Gates
 
 ### HG1 — Strategy / Output Approval
-Use when strategy or output-package choices materially affect project direction. It is mandatory when the agent has recommended or inferred an output package/type/scope that the client did not explicitly specify. Present the recommendation, short rationale, approval target, and consequence of approval. Prefer one recommended route over a questionnaire.
+Use when strategy or output-package choices materially affect project direction. It is mandatory when the agent has recommended or inferred an output package/type/scope that the client did not explicitly specify. Present the recommendation, short rationale, approval target, and consequence of approval. Prefer one recommended route over a questionnaire. When the approval includes a visual direction, also present the distinctiveness rationale: the category default and what this proposal deliberately does differently.
 
 ### HG2 — Production Readiness
 Conditional. Trigger when a genuinely blocking input, proof item, product reference, conflict, or platform requirement is missing/unresolved.

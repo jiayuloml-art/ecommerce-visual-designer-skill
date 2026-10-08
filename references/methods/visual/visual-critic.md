@@ -101,8 +101,10 @@ Ask:
 - if the logo were swapped, would the design remain almost unchanged?
 - across a coordinated set, is the product repeatedly shown as the same front-view / upright / full-outline cutout without a deliberate communication reason?
 - do page-to-page differences come mainly from background swaps rather than meaningful product participation?
+- does the campaign concept or headline system merely reword client-supplied copy (supplied theme, promo name, product facts) instead of adding an idea?
+- is the visual system built only from category-typical mood — seasonal palette plus scenic context — with no ownable device or motif?
 
-If yes, product/brand specificity or product participation is insufficient.
+If yes, product/brand specificity, creative specificity, or product participation is insufficient. A paraphrased concept or mood-only system returns to Visual Direction, not to typography polish.
 
 ## C6 — Viewer Question / Visual Evidence
 For each supporting or selling-point output, ask:
