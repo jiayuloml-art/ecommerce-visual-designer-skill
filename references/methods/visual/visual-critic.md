@@ -94,7 +94,7 @@ Aesthetic appeal cannot average away these failures.
 First classify the output contract:
 - explicit hero/main-visual request with no explicit single-image instruction → require two outputs;
 - explicit single hero → require only the requested one;
-- explicit finished/final poster → do not require the hero pair unless separately requested.
+- explicit finished/final poster without an explicit quantity → require TWO complete Product Hero + active Usage Hero posters; explicit quantity overrides.
 
 For `hero_output_mode: DUAL_DEFAULT`, verify:
 - Hero A / Product Hero is present and makes product form, material, structure, core benefit, and commercial display the dominant job;
@@ -304,7 +304,7 @@ Remove unjustified competition.
 
 ## Dual-Hero pair gate
 
-When `hero_output_mode: DUAL_DEFAULT` or an explicit two-hero request applies, assess each hero independently and then the pair:
+When `hero_output_mode: DUAL_DEFAULT` applies to EITHER hero requests OR finished posters, assess each complete poster independently and then the pair:
 - Hero A achieves Product Desire with product-first commercial hierarchy,
 - Hero B achieves Usage Desire / Experience through active category-valid use,
 - campaign color/material/type/brand/reference logic is coherent,
@@ -312,7 +312,7 @@ When `hero_output_mode: DUAL_DEFAULT` or an explicit two-hero request applies, a
 - the pair is not a background swap,
 - both survive thumbnail review.
 
-One PASS cannot compensate for the other hero's FAIL / REVISE / NOT_CHECKED.
+One PASS cannot compensate for the other poster's FAIL / REVISE / NOT_CHECKED. Both must have legible brand/headline, verified applicable copy, integrated product/scene/type, and independently complete commercial composition. Reject background-only or text-free auxiliary views.
 
 ## Verdict + return map
 
