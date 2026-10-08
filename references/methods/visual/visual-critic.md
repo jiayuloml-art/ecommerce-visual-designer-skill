@@ -47,6 +47,9 @@ Do perspective, contact, shadow, light, environmental influence, occlusion, scal
 ### D2. PRODUCT–SCENE RELATIONSHIP
 Judge whether the background meaningfully belongs to this product, rather than merely matching its lighting. See `product-scene-relationship.md`. An intentional minimal studio may pass when tailored to the product.
 
+### D3. PRODUCT HERO IMPACT
+For Product Hero, evaluate whether verified silhouette, product form/material, controlled camera/scale, contrast and composition make the product the unmistakable first read. A refined studio can excel; fake drama, distortion, excessive props and a default floating podium cannot substitute for designed impact. See `product-hero-impact.md`. Usage Hero has separate action-first priorities.
+
 ### E. CATEGORY FIT
 Does the result express this category/subcategory's use, purchase, sensory, and trust logic rather than a generic AI style?
 
@@ -175,6 +178,9 @@ If the claim requires containment or insertion, a nearby container elsewhere in 
 
 ## C2b — Product–Scene Relationship Check
 Separately score actual visible Scene Relevance, Visual Correspondence, Spatial Integration, Commercial Hierarchy and Brand Consistency (1–10 each). Each must be ≥7 and total ≥40/50; otherwise REVISE/REJECT even if physical Fusion Score passes. Record the offending scene decision and re-inspect the corrected render. Reject generic interchangeable backdrops; do not demand needless props in product-specific studios.
+
+## C2c — Independent Product Hero Impact Check
+On the **rendered Product Hero**, score 1–10: Product Focal Dominance; Camera/Silhouette Expressiveness; Material/Lighting Quality; Compositional Energy; Commercial Impact/Brand Fit. Each must be ≥7 and total ≥40/50; NOT_CHECKED is not PASS. Reject timid catalog product staging and unverified spectacle even if surroundings are attractive; allow striking minimal material/camera craft. Do not average over Product Truth, scene relevance, fusion or typography failures. For non-PASS, specify the low-scoring impact lever and targeted repair.
 
 ## C3 — Typography
 Inspect:
@@ -311,7 +317,7 @@ Remove unjustified competition.
 ## Dual-Hero pair gate
 
 When `hero_output_mode: DUAL_DEFAULT` applies to EITHER hero requests OR finished posters, assess each complete poster independently and then the pair:
-- Hero A achieves Product Desire with product-first commercial hierarchy,
+- Hero A achieves Product Desire with product-first commercial hierarchy and passes the separate Product Hero Impact Check,
 - Hero B achieves Usage Desire / Experience through active category-valid use,
 - campaign color/material/type/brand/reference logic is coherent,
 - composition, camera, scene function, and evidence route are meaningfully different,
@@ -330,6 +336,7 @@ Every non-PASS verdict must state:
 
 Typical routing:
 - weak/generic visual thesis → Visual Direction → REJECT
+- weak Product Hero first-glance prominence, camera/silhouette, material lighting or compositional energy → Product Hero Impact Protocol / Production Plan → REVISE or REJECT
 - template/passive composition → Composition & Typography → REJECT or REVISE
 - receiver-position / camera / scale / containment mismatch → Direct Final Poster Composition / Integration Plan → REVISE or REJECT
 - light/edge/local integration mismatch with valid geometry → Product–Scene Integration repair → REVISE
@@ -346,7 +353,7 @@ The producer may not present an anchor as completed/approval-ready unless:
 1. Visual Critic verdict is PASS, and
 2. all applicable hard/integrity QA gates are PASS.
 
-For referenced or scene-based anchors, PASS also requires applicable Reference Adoption QA, Product–Scene Integration QA, Commercial Hierarchy QA, Usage Authenticity QA, Copy Readiness QA, and Thumbnail Impact QA. For Dual-Hero, both individual verdicts and the pair gate must PASS.
+For referenced or scene-based anchors, PASS also requires Product Hero Impact QA when the output is Product Hero, plus applicable Reference Adoption QA, Product–Scene Integration QA, Commercial Hierarchy QA, Usage Authenticity QA, Copy Readiness QA, and Thumbnail Impact QA. For Dual-Hero, both individual verdicts and the pair gate must PASS.
 
 A concept status such as S0 does not waive basic visual quality.
 
