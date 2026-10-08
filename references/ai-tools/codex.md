@@ -23,13 +23,14 @@ For a single direct-final poster or other expensive image objective:
 These are internal runtime defaults for production efficiency, not platform requirements. If the runtime exposes a reliable provider-specific timeout/progress contract, prefer that verified contract.
 
 ## Direct-final poster routing
+Both unspecified `主视觉` and `成品海报 / 电商促销海报` requests default to TWO complete posters (Product Hero + active Usage Hero); explicit image count overrides. Ratio 4:5 is not a count. Both outputs include commercial typography and undergo individual plus pair QA.
 When the user supplies a verified product asset, default to an integrated final-poster route:
 
 1. analyze and lock product identity/truth;
 2. resolve category strategy and reference mapping;
 3. lock product position/scale, camera/horizon/lens feeling, contact surface, light/shadow direction, environment color/reflection, and copy/headline/price/brand zones as one composition;
 4. use native generation/edit or an identity-preserving reconstruction/composite route that produces one coherent product–scene system;
-5. place exact copy/logo/price/date/CTA deterministically inside the preplanned zones;
+5. generate product, scene and commercial typography together whenever supported; verify exact copy and perform only localized deterministic correction where generated text fails;
 6. run Product–Background Fusion Score, Visual Critic, and hard artifact QA before delivery.
 
 Do not default to generating a text-free empty background and later placing a flat product cutout on it. A verified product layer may be used only when the full route can produce matched camera/perspective, credible contact and shadows, environmental light spill/reflection, material response, natural occlusion, depth integration, and clean edges. Otherwise use a supported identity-preserving edit/reconstruction route or redesign the composition.
