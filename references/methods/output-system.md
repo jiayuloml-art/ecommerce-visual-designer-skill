@@ -74,6 +74,41 @@ Every additional output/slot must add at least one of:
 
 If it does not, merge or remove it.
 
+## Hero vs final-poster routing
+
+Classify explicit output language before applying package recommendations:
+
+- `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉`, without an explicit single-image instruction → confirm a two-output package by default: Hero A / Product Hero + Hero B / active Usage Hero.
+- the same hero language plus an explicit single-image instruction → confirm one hero only; follow an explicit product/usage role, otherwise use Product Hero unless the brief is usage-first.
+- `成品海报 / 电商促销海报 / 商品促销海报 / final poster` → confirm Direct Final Poster Generation with the user-requested count; do not add a hero pair unless separately requested.
+
+The default two-hero package is not redundant: Product Hero answers product desire/form/material/core-benefit questions, while Usage Hero answers use/fit/interaction/experience questions. Hero B must show active, category-valid use rather than lifestyle adjacency.
+
+## Default direct-final poster output
+
+When the client requests a finished promotional/final poster, recommend one complete integrated poster or a set of individually complete posters.
+
+Every poster contract must include:
+- product subject and identity locks,
+- background/environment and contact surface,
+- core-copy/headline zone,
+- selling-point information zone,
+- brand zone,
+- campaign/price/date/CTA zone when applicable,
+- commercial hierarchy and intended thumbnail read,
+- one camera, perspective, lighting, shadow, reflection, and material-response system,
+- Product–Background Fusion Score gate.
+
+Default hierarchy:
+
+**PRODUCT → PRIMARY BENEFIT / HEADLINE → BRAND / SERIES → SELLING POINTS / OFFER → ENVIRONMENT / DECORATION**
+
+Do not add an empty-background deliverable, pure mood frame, isolated product hero, or layout-only intermediate to the client package unless the client explicitly asks for that staged artifact.
+
+When a multi-poster set is justified, each image must add a distinct communication job/evidence route while remaining a complete poster. Do not generate one hero first merely to establish a background style and then treat the remaining posters as downstream layout variants.
+
+For the default or explicitly requested Dual-Hero package, each member must be an integrated, campaign-ready hero and pass independently; the pair must not become background swaps. Share color, brand character, typography logic, and reference logic, but require meaningful differences in composition, camera, scene function, and evidence route.
+
 ## Runtime Output Specification
 Compose from:
 **Common Output Core + Medium Grammar + Primary Job + Supporting Mechanisms + Platform Adapter + Product/Strategy Context + Campaign Visual System**.

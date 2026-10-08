@@ -6,14 +6,40 @@ Use one structured plan per output instance or independently produced slot. This
 Campaign-level strategy, product truth, and campaign visual system are shared.
 Production decisions are output/slot-specific.
 
-When `anchor: true`, the slot must follow `anchor-production.md`. The production plan records the current protocol stage but does not replace the protocol's mandatory transition gates.
+For explicit finished posters, use `generation_mode: DIRECT_FINAL_POSTER` and follow `direct-final-poster-generation.md`. For an explicit hero/main-visual request with no single-image instruction, use `hero_output_mode: DUAL_DEFAULT` and compile two peer plans: Hero A / Product Hero and Hero B / active Usage Hero. Use `anchor-production.md` only when staged approval is explicitly requested or documented as necessary.
 
 ```yaml
 slot_identity:
   slot_id:
   output_id:
   anchor: false
+  generation_mode: DIRECT_FINAL_POSTER # DIRECT_FINAL_POSTER | HERO_VISUAL | EXPLICIT_STAGED_ANCHOR | OTHER
+  hero_role: null # PRODUCT_HERO | USAGE_HERO | null
+  paired_anchor_id: null
   anchor_protocol_stage: null # AP0_READY | AP1_DESIGN_LOCK | AP2_SCENE_FIT | AP3_PRODUCT_INTEGRATION | AP4_TYPOGRAPHY | AP5_FINAL_QA | AP6_CLIENT_PREVIEW
+
+hero_outputs:
+  hero_output_mode: NOT_APPLICABLE # DUAL_DEFAULT | SINGLE_EXPLICIT | NOT_APPLICABLE
+  hero_a:
+    role: product_hero
+    output_id: null
+    communication_job: PRODUCT_DESIRE
+    status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
+  hero_b:
+    role: usage_hero
+    output_id: null
+    communication_job: USAGE_DESIRE_EXPERIENCE
+    active_usage_actor: null # person | hand | pet | relevant_object
+    active_usage_action: null
+    contact_occlusion_force_evidence: []
+    status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
+  shared_campaign_visual_system: []
+  required_pair_differences:
+    - composition
+    - camera
+    - scene_function
+    - evidence_route
+  pair_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
 
 output_identity:
   output:
@@ -27,6 +53,17 @@ output_role:
 message:
   main:
   supporting:
+
+category_intelligence:
+  category:
+  subcategory:
+  purchase_motivation:
+  usage_context:
+  sensory_attributes: []
+  brand_positioning:
+  visual_grammar: []
+  rejected_cliches: []
+  style_justifications: []
 
 visual_evidence:
   required_visible_evidence:
@@ -58,7 +95,16 @@ visual_lock:
   allowed_changes: []
 
 reference_map:
-  # reference id, visible observations, extracted mechanism, transfer target, do-not-copy boundary, coverage limits
+  - reference_id:
+    source:
+    role:
+    visible_observations: []
+    adopt: []
+    adapt: []
+    do_not_copy: []
+    ignore: []
+    output_trace: {}
+    verification_cues: []
 
 preproduction_readiness:
   platform_surface_resolved: NOT_CHECKED
@@ -78,9 +124,24 @@ supporting_asset_plan:
 
 composition:
   primary_focal_subject:
+  product_position:
   product_scale_target:
   product_bbox:
+  camera_angle:
+  horizon:
+  contact_surface:
+  light_direction:
+  shadow_direction:
+  environment_color:
+  product_reflection:
   copy_safe_zone:
+  headline_zone:
+  price_zone:
+  brand_zone:
+  logo_zone:
+  cta_support_zone:
+  product_silhouette_zone:
+  negative_space_behavior:
   visual_path: []
   supporting_elements: []
   forbidden_competition: []
@@ -91,6 +152,47 @@ composition:
   reference_influences: []
   sequence_or_timing:
 
+typography_prominence_contract:
+  primary_message:
+  headline_role:
+  headline_scale:
+  headline_weight:
+  headline_lines:
+  headline_alignment:
+  headline_contrast_strategy:
+  headline_product_relationship:
+  price_role:
+  price_priority:
+  price_scale:
+  price_contrast_strategy:
+  supporting_copy_scale:
+  supporting_copy_density:
+  brand_scale:
+  brand_position:
+  copy_density: null # LOW | MEDIUM | HIGH
+  local_background_complexity:
+  text_contrast_field:
+  thumbnail_reading_order: []
+
+typography_contrast_contract:
+  headline_text_color:
+  headline_size_strategy:
+  headline_weight_strategy:
+  headline_background_relation:
+  price_contrast_strategy:
+  selling_point_contrast_strategy:
+  local_background_complexity:
+  contrast_field_method:
+  fallback_enhancement:
+  execution_status:
+    zones_locked: NOT_CHECKED
+    background_assessed: NOT_CHECKED
+    text_color_selected: NOT_CHECKED
+    size_weight_locked: NOT_CHECKED
+    contrast_field_built: NOT_CHECKED
+    fallback_checked: NOT_CHECKED
+    scale_tests_complete: NOT_CHECKED
+
 scene_layers:
   atmosphere:
   semantic_context:
@@ -98,15 +200,38 @@ scene_layers:
   attention_guidance:
 
 product_scene_integration:
+  camera_height:
+  horizon:
+  vanishing_direction:
+  lens_perspective_feeling:
   perspective_scale:
   dimensional_plausibility:
   interaction_contact:
   contact:
   shadow:
+  key_fill_rim_light:
+  shadow_direction_softness:
   ambient_light_color:
+  environmental_reflection:
+  color_temperature:
+  material_response:
   edge_quality:
   depth_occlusion:
+  depth_of_field:
   preserve_product_identity: true
+
+direct_final_poster:
+  complete_product_subject: NOT_CHECKED
+  environment_resolved: NOT_CHECKED
+  core_copy_zone_resolved: NOT_CHECKED
+  selling_point_zone_resolved: NOT_CHECKED
+  brand_zone_resolved: NOT_CHECKED
+  campaign_zone_resolved: NOT_CHECKED
+  commercial_hierarchy_resolved: NOT_CHECKED
+  one_scene_system: NOT_CHECKED
+  one_lighting_system: NOT_CHECKED
+  one_camera_system: NOT_CHECKED
+  provider_prompt_negatives: []
 
 content_layers:
   - product
@@ -148,6 +273,44 @@ checks:
   hierarchy_clear: NOT_CHECKED
   visual_lock_consistent: NOT_CHECKED
   technical_supported: NOT_CHECKED
+  reference_adoption: NOT_CHECKED
+  product_scene_integration: NOT_CHECKED
+  commercial_hierarchy: NOT_CHECKED
+  usage_authenticity: NOT_CHECKED
+  copy_readiness: NOT_CHECKED
+  thumbnail_impact: NOT_CHECKED
+  direct_final_poster_complete: NOT_CHECKED
+  product_background_fusion: NOT_CHECKED
+  typography_prominence: NOT_CHECKED
+  typography_contrast: NOT_CHECKED
+  thumbnail_typography: NOT_CHECKED
+  hero_output: NOT_CHECKED
+
+product_background_fusion_score:
+  perspective: null
+  lighting: null
+  shadow: null
+  reflection: null
+  scale: null
+  occlusion: null
+  material_response: null
+  color_temperature: null
+  contact_realism: null
+  overall_scene_coherence: null
+  total: null
+  status: NOT_CHECKED
+
+typography_prominence_score:
+  headline_visibility: null
+  headline_scale: null
+  headline_contrast: null
+  reading_hierarchy: null
+  product_type_relationship: null
+  offer_visibility: null
+  mobile_thumbnail_readability: null
+  overall_commercial_typography: null
+  total: null
+  status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
 
 unresolved_conflicts: []
 status: NOT_COMPILED # NOT_COMPILED | BLOCKED | READY
@@ -161,6 +324,45 @@ When a scene/background is used:
 
 Remove elements that do not serve communication, context, attention, brand, or necessary production function.
 
+## Main-visual default Dual-Hero production cards
+
+Use when the client asks only for `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉` and does not explicitly say one image. Set `hero_output_mode: DUAL_DEFAULT` and compile two separate integrated hero plans linked by `paired_anchor_id`. Do not wait for a second instruction and do not treat Hero A as an intermediate for Hero B.
+
+If the client explicitly requests a single image, set `hero_output_mode: SINGLE_EXPLICIT` and compile only the requested hero role. If no role is stated, default that single output to Product Hero unless the brief is explicitly usage-first. For `成品海报 / 电商促销海报 / final poster`, set `hero_output_mode: NOT_APPLICABLE` and use Direct Final Poster Generation; do not apply the dual-hero default.
+
+### Hero A — Product Hero
+
+Must explicitly resolve:
+- `communication_job`: PRODUCT DESIRE,
+- `product_scale`,
+- `camera`,
+- `composition`,
+- `background`,
+- `lighting`,
+- `copy_zone`,
+- `reference_mapping`.
+
+The plan must make the product the primary visual mass and keep the background supportive.
+
+### Hero B — Usage Hero
+
+Must explicitly resolve:
+- `communication_job`: USAGE DESIRE / EXPERIENCE,
+- `user` or other actor,
+- `usage_action`,
+- `interaction` and contact points,
+- `camera`,
+- `environment`,
+- `lighting`,
+- `copy_zone`,
+- `reference_mapping`.
+
+The action must be active and category-valid. Record required occlusion, pressure, containment, grip, body fit, fur/hair overlap, food/liquid behavior, or other interaction evidence when applicable.
+
+Pair-level compilation must confirm shared Campaign Visual System locks and meaningful differences in composition, camera, evidence route, and scene function.
+
+Hero B must show active use, not lifestyle adjacency. Examples include an eye mask visibly worn with credible fit/occlusion, TWS earbuds worn in-ear, or a pet drinking from a fountain with believable muzzle/water/contact behavior. A person, hand, or pet merely appearing near the product does not satisfy the plan.
+
 ## Visual resource allocation
 The plan must make clear:
 - what is the first focal subject,
@@ -173,6 +375,8 @@ The plan must make clear:
 Do not hard-code universal product occupancy percentages.
 
 For benchmarked hero/KV work, `reference_influences` should name the concrete decisions inherited from the Reference Transfer Map. Empty or generic entries such as “premium”, “clean”, or “more dynamic” do not satisfy benchmark translation.
+
+Every ADOPT item in `reference_map` must appear in `output_trace` and constrain a production field. References without a production trace are removed or marked non-influential; they cannot be cited as adopted.
 
 For scene-based work, `product_scene_relationship` should state how the product participates in the scene. If the field can only be described as “product placed left/right/center”, revisit Visual Direction / Composition.
 
@@ -201,6 +405,12 @@ For hero/KV work, readiness normally includes:
 - supporting scene/prop/usage assets needed by the concept,
 - primary production route,
 - recovery route for critical tool/provider failure.
+
+For direct-final poster work, every unified composition field and the Typography Prominence Contract must be resolved before rendering. The headline–product relationship and text contrast field cannot be blank. For referenced work, `reference_adoption` must be resolved before rendering. For scene-based work, the applicable integration fields must be resolved rather than left as generic “match lighting” instructions.
+
+For typography-bearing poster work, `typography_contrast_contract` must be complete in this order: headline/price/selling-point zones → local background complexity/tone → text color → headline size/weight → contrast field → lightweight fallback enhancement if needed → 100%/50%/25% and 2-Second Read Test. Midtone fields that do not separate decisively from either light or dark text must be intentionally shifted/simplified before rendering.
+
+For `DUAL_DEFAULT`, readiness requires two distinct cards, shared Campaign Visual System locks, active-usage evidence for Hero B, and explicit composition/camera/scene-function/evidence-route differences. Missing Hero B or a background-only variation is `BLOCKED`, not a smaller package.
 
 Do not call an expensive generation/edit route merely because a general mood has been chosen.
 

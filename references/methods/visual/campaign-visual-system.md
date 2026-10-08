@@ -21,6 +21,9 @@ Persist the approved shared visual language across outputs.
 16. Fixed Rules / Locks
 17. Allowed Changes / Variation Rules
 18. Distinctive Device / Motif — optional; only when there is a real campaign-specific recurring device
+19. Category Visual Intelligence — product-specific category prior and rejected clichés
+20. Style Justification — evidence supporting major visual decisions
+21. Dual-Hero Relationship — shared locks plus required Product Hero / Usage Hero differences
 
 ## Graphic-token consistency
 
@@ -51,3 +54,29 @@ For every output/slot, make the boundary explicit:
 - what is allowed to change.
 
 Do not create a distinctive-device rule merely to fill a field. Use it only when the campaign has an evidenced, intentional recurring visual mechanism.
+
+## Dual-Hero relationship
+
+When Dual-Hero applies, persist:
+
+**Shared locks**
+- product truth and brand behavior,
+- color / material / typography logic,
+- light-quality family unless a justified use context requires variation,
+- reference-adoption logic,
+- graphic-token family,
+- negative direction.
+
+**Required differences**
+- Product Hero centers product form, material, primary benefit, and commercial copy readiness,
+- Usage Hero centers active use, contact, experience, and category-valid context,
+- camera, crop, composition backbone, evidence route, and scene function must differ meaningfully,
+- the pair may not be produced as one layout with a background replacement.
+
+Record pair-level QA: visual family coherence, non-redundancy, product prominence in both, and whether Product Desire + Usage Desire are both achieved.
+
+## Visual Diversity memory
+
+Within the active project/campaign, record repeated stylistic devices that should not recur without justification. Check for unsupported repetition of gradients, floating products, glowing rings, pedestals, fog, neon, waves, centered objects, split layouts, oversized generic sans-serif headlines, and futuristic studios.
+
+This is not a ban list. A repeated device is allowed when product, brand, selling point, category intelligence, or reference evidence explicitly supports it; record that Style Justification.

@@ -4,18 +4,20 @@ A portable AI Skill for e-commerce visual design.
 
 ## Version status
 
-- **V1.1** is the current integrated baseline.
-- It includes the completed four-peer capability integration and repository restructuring.
+- **V1.2** is the current unreleased Visual Quality Upgrade.
+- **V1.1** remains the fixed integrated baseline for historical black-box comparison.
+- V1.2 preserves the seven-state controller, Product Truth, Human Gates, platform verification, production/provider routing, project isolation, CLIENT MODE, artifact states, and deterministic commercial typography.
 - External black-box validation remains intentionally outside this repository.
-- Test-driven fixes discovered from V1.1 will be collected into **V1.2** rather than continuously mutating the V1.1 baseline.
 - The original V1 baseline commit is `953d35840649bdfe067b80f79da836c7a72cb3ca`.
+- V1.2 routes explicit finished posters through **Direct Final Poster Generation**: one scene, one camera, one lighting system, one commercial composition, followed by deterministic exact-copy completion, a fail-closed Product–Background Fusion Score, and fail-closed Typography Contrast/Prominence checks.
+- Explicit `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉` requests default to two coordinated outputs when the client does not explicitly ask for one: Hero A / Product Hero plus Hero B / active Usage Hero.
 
 ## What V1.1 changes
 
 V1.1 keeps the seven-state controller and strengthens four areas:
 
 1. **Strategy intelligence** — selling-point discovery and evidence-backed visual benchmarking.
-2. **Production discipline** — non-redundant output planning, anchor-first expansion, asset preservation, and local revision.
+2. **Production discipline** — non-redundant output planning, direct integrated poster generation, asset preservation, and local revision.
 3. **Production compilation** — structured per-output/slot plans with truth constraints, scene layers, visual resource allocation, text ownership, routing, and QA states.
 4. **Runtime portability** — host/runtime adaptation is separated from production-provider selection.
 
@@ -95,20 +97,59 @@ Use **V1.1** as the fixed black-box test baseline. Record test findings external
 
 ## V1.2 Visual Core
 
-Representative e-commerce visual production is organized as:
+Representative final-poster production is organized as:
 
 ```text
 Visual Benchmarking
         ↓
 Visual Direction
         ↓
-Composition & Typography
+Full Poster Composition Plan
         ↓
-Anchor Production
+Product–Scene Integration Plan
+        ↓
+Direct Final Poster Generation
+        ↓
+Typography / Commercial Info Composite
+        ↓
+Typography Prominence + Thumbnail QA
         ↓
 Independent Visual Critic
         ↓
 Client Preview / revision loop
 ```
 
+Hero-only requests use a separate branch:
+
+```text
+Shared Campaign Visual System
+        ↓
+Hero A / Product Hero ── Hero B / Active Usage Hero
+        ↓                         ↓
+Independent QA              Independent QA
+        └──────── Pair Consistency + Diversity Gate ────────┘
+```
+
+The hero pair shares color, brand character, typography logic, and reference logic, while composition, camera, scene function, and evidence route must differ. An explicit single-image instruction produces one hero. An explicit final-poster instruction stays on Direct Final Poster Generation and does not inherit the two-hero default.
+
 Hard artifact QA (truth, technical, regression, platform/compliance) remains separate from visual criticism.
+
+### Visual Quality Upgrade
+
+V1.2 adds nine connected mechanisms:
+
+1. **Direct Final Poster Generation** — every static e-commerce output is planned and generated as a complete poster rather than an empty background plus product overlay.
+2. **Product–Background Fusion Score** — ten 1–10 integration fields fail closed below 7 each or 80/100 total.
+3. **Reference Adoption Protocol** — SEARCH → SELECT → DECOMPOSE → ADOPT → PRODUCE → COMPARE → REVISE. Every important reference records SOURCE / ADOPT / ADAPT / DO NOT COPY / IGNORE and a Reference → Output trace.
+4. **Product–Environment Integration Protocol** — scene-based output fails closed on perspective, contact, shadow, light, environmental influence, occlusion, scale, color temperature, depth of field, edge integration, or material response.
+5. **Category Visual Intelligence** — visual grammar is derived from category, subcategory, purchase motivation, use context, sensory attribute, brand positioning, platform, and benchmark evidence; category-to-color templates are prohibited.
+6. **Commercial and diversity guards** — product + core benefit must survive thumbnail viewing, copy zones are reserved before generation, and unsupported AI-default styling requires revision.
+7. **Typography Prominence Protocol** — headline, offer, brand, and selling points are planned as commercial visual structure before generation; scene-aware Text Contrast Fields, headline/product relationships, 100%/50%/25% checks, a 2-Second Read Test, and an eight-field 64/80 hard gate prevent technically present but commercially invisible copy.
+8. **Default Dual-Hero Output Router** — hero-only requests without an explicit count produce Product Hero + active Usage Hero; final-poster language remains routed to Direct Final Poster Generation.
+9. **Typography Contrast Hard Gate** — headline, price, and selling-point zones are designed before generation; local complexity/tone determines text color, size, weight, and contrast field; 100%/50%/25% plus 2-Second checks reject midtone washout, thin type, weak price hierarchy, and commercially invisible copy.
+
+The upgraded system is intended to be:
+
+**REFERENCE-INFORMED · PRODUCT-CENTERED · SCENE-INTEGRATED · TYPOGRAPHICALLY STRONG · CATEGORY-SPECIFIC · COMMERCIALLY READABLE · THUMBNAIL-LEGIBLE · VISUALLY DISTINCTIVE**
+
+It is not a request for more decorative or more elaborate imagery.

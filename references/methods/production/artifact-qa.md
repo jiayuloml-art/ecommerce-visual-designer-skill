@@ -37,6 +37,8 @@ Check as applicable:
 - hierarchy spacing and unintended crowding,
 - export integrity,
 - duration/frame/audio/subtitle constraints for temporal outputs.
+- required anchor-package completeness: when Confirmed Output Set uses Dual-Hero, both Hero A and Hero B artifacts exist, are correctly identified, and retain separate QA states,
+- deterministic commercial text remains inside the reserved copy zones and does not collide with product silhouette or required usage interaction.
 
 For coordinated visual sets, also check:
 - numbering does not overpower the selling point,
@@ -45,6 +47,13 @@ For coordinated visual sets, also check:
 - text does not collide with product, arrows, rings, or other graphics,
 - recurring line / arrow / dot / radius / label / icon treatments follow one coherent graphic token system,
 - commercial text groups (price / offer label / date / CTA) remain legible and internally spaced at intended viewing size.
+
+For every static e-commerce poster, also check:
+- the delivered artifact is a complete poster, not an empty background, isolated product visual, or mood draft,
+- product, environment, headline/core-copy zone, selling-point zone, brand zone, campaign/price/date/CTA zone as applicable, and commercial hierarchy are all resolved,
+- deterministic typography follows the preplanned zones rather than rescuing an unplanned image,
+- the Product–Background Fusion Score report contains ten numeric fields and a total,
+- every fusion field is at least 7/10 and the total is at least 80/100.
 
 ## Q2 — Regression QA
 When an approved baseline exists, check unintended changes to:
@@ -71,9 +80,13 @@ Hard-gate failures cannot be averaged away by visual quality.
 
 A visually strong artifact with an applicable hard-gate FAIL cannot become S2/S3 or be described as platform/final ready.
 
+A scene-based poster with any Product–Background Fusion Score field below 7 or total below 80 cannot be delivered, regardless of attractiveness or copy accuracy.
+
 ## Relationship to Visual Critic
 A client-preview anchor requires:
 - Visual Critic PASS, and
 - all applicable hard/integrity gates PASS.
+
+For Dual-Hero, this requirement applies to both hero artifacts and the pair-level gate. Do not mark the package complete when only one hero passes.
 
 Keep visual criticism in `references/methods/visual/visual-critic.md`; do not move aesthetic judgments into this file.
