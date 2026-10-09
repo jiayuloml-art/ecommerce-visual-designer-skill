@@ -81,7 +81,14 @@ visual_system:
   perceptual_target: []
   locks: {}
   allowed_variations: {}
-  distinctive_device: null
+  distinctive_device: null # named motif or justified QUIET_SYSTEM
+  differentiation_commitment:
+    category_default: null
+    named_move: null
+    executable_design_decision: null
+    evidence_basis: null
+    quiet_system_justification: null
+    swap_test_status: NOT_CHECKED # NOT_CHECKED | PASS | FAIL
   approved_references: []
   reference_adoption:
     records: [] # SOURCE / observations / ADOPT / ADAPT / DO_NOT_COPY / IGNORE
@@ -301,6 +308,7 @@ Each entry in `outputs.final_artwork_input_audit.fields` records `key`, `value`,
 - Persist separate hero readiness/QA and pair approval whenever the default or explicitly requested coordinated pair applies. For every Product Hero, persist its impact contract, chosen product-specific visual levers and five-field rendered Product Hero Impact Score (each ≥7/10, total ≥40/50), independently of product truth, scene relationship, fusion, and typography.
 - Persist Reference Adoption Records and output traceability when references are used; a URL list without ADOPT/ADAPT/DO_NOT_COPY/IGNORE and mapped output fields is incomplete.
 - Persist Category Visual Intelligence and Style Justification only as concise decisions/constraints, not hidden reasoning.
+- Record the concept-open creative differentiation and named device or justified QUIET_SYSTEM; the shared thesis applies across independently complete Product Hero and Usage Hero.
 - Keep missing information distinct from conflicting information.
 - On a new Run, Case, platform, output family, affected slot, or wording variant, re-validate exact confirmation scope before reusing a fact; unscoped historical approval is context, not delivery authorization.
 - Persist canonical wording and source wording for each approval/conflict; do not promote translation, synonyms, version or texture descriptions, or extra selling-point copy without matching confirmation.

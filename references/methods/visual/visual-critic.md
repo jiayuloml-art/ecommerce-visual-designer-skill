@@ -268,8 +268,10 @@ Ask:
 - if the logo were swapped, would the design remain almost unchanged?
 - across a coordinated set, is the product repeatedly shown as the same front-view / upright / full-outline cutout without a deliberate communication reason?
 - do page-to-page differences come mainly from background swaps rather than meaningful product participation?
+- is the campaign's supposed concept merely a paraphrase of the client's supplied campaign text, theme, or product facts?
+- does the direction rely solely on a familiar category mood or seasonal palette without an observable product-specific device or justified quiet system?
 
-If yes, product/brand specificity or product participation is insufficient.
+If yes, product, brand, creative specificity or product participation is insufficient. Send the underlying thesis back to Visual Direction for revision rather than attempting to fix it with typography polish. A quiet system can pass when composition, product-use relation, or material treatment creates specific differentiation.
 
 Also compare against Category Visual Intelligence and Style Justification. If the same gradient, floating product, glow ring, pedestal, fog, neon, centered object, split layout, giant headline, or futuristic studio could be used unchanged for an unrelated category, require evidence for the choice or revise it.
 

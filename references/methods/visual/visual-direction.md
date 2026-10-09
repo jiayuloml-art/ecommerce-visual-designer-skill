@@ -38,6 +38,8 @@ Stronger:
 
 Mood words may support the thesis; they cannot replace it.
 
+For a concept-open brief, the thesis must add a product-specific insight, tension, or meaningful visual relationship beyond the supplied slogan, campaign name, or facts. Paraphrasing the client's copy does not constitute a creative proposition.
+
 ### Product role
 Define how the product participates in the visual:
 - dominant object,
@@ -97,6 +99,8 @@ Resolve at least one mechanism that makes the direction more than a category tem
 - semantic visual effect,
 - typographic counterweight,
 - brand-specific graphic behavior.
+
+For new concept-open campaigns, name one observable differentiation move from category convention. Either define an ownable repeating visual device or justify a QUIET_SYSTEM differentiated through product-specific material, use, space, camera, or typography. Category mood and seasonal palette alone do not qualify. Carry a shared concept across Product Hero and active Usage Hero without forcing identical compositions.
 
 If the same mechanism would work unchanged after swapping in any competitor product and logo, strengthen specificity.
 
@@ -242,6 +246,9 @@ Visual Direction is resolved only when all are true:
 - product–scene relationship is explicit when a scene is used,
 - required visible evidence is compatible with the chosen scene / interaction when the viewer question depends on evidence,
 - at least one distinctive visual mechanism is defined,
+- the thesis adds an insight rather than paraphrasing supplied copy for a concept-open brief,
+- a named differentiation move and executable product-specific decision depart from category convention,
+- the direction card passes a swap test: if a competitor's generic advertisement could use it unchanged, revisit thesis or mechanism,
 - scene/effect logic is purposeful where applicable,
 - benchmark evidence has been translated into named current-design decisions when benchmarking was required,
 - negative direction is known.
