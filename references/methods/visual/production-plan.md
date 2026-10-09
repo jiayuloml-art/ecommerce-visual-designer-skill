@@ -28,6 +28,16 @@ mandatory_input_confirmation:
   no_placeholders_policy: NOT_CHECKED
   # Missing requested price/date/platform blocks the entire final image, not merely a text layer.
 
+single_image_hero_role_confirmation:
+  applies: false # true for explicit exactly-one-image final contracts
+  explicit_image_count: null # 1 for SINGLE_EXPLICIT
+  selected_hero_role: null # PRODUCT_HERO | USAGE_HERO | null
+  role_confirmation_source: null # USER_EXPLICIT | USER_CONFIRMED_AFTER_QUESTION | null
+  recommendation: null # not authorization
+  status: NOT_APPLICABLE # NOT_APPLICABLE | NOT_CHECKED | BLOCKED_AWAITING_USER | RECOMMENDED_AWAITING_CONFIRMATION | PASS
+  pending_question: null
+  confirmed_in_current_project: false
+
 hero_outputs:
   hero_output_mode: DUAL_DEFAULT # DUAL_DEFAULT | SINGLE_EXPLICIT | COUNT_EXPLICIT
   recommended_deliverables_count: 2 # explicit user count overrides
@@ -295,6 +305,7 @@ tool_plan:
   parameters: {}
 
 checks:
+  single_image_hero_role_confirmation: NOT_CHECKED # NOT_APPLICABLE for default two posters; PASS required for SINGLE_EXPLICIT
   mandatory_input_confirmation: NOT_CHECKED
   no_placeholders: NOT_CHECKED
   final_delivery_gate: NOT_CHECKED
@@ -402,7 +413,7 @@ Remove elements that do not serve communication, context, attention, brand, or n
 
 Use when the client asks only for `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉` and does not explicitly say one image. Set `hero_output_mode: DUAL_DEFAULT` and compile two separate integrated hero plans linked by `paired_anchor_id`. Do not wait for a second instruction and do not treat Hero A as an intermediate for Hero B.
 
-If the client explicitly requests one image, set `hero_output_mode: SINGLE_EXPLICIT` and create exactly one complete poster in the requested role (or product-focused by default). Other explicit counts use `COUNT_EXPLICIT` and compile that many complete plans. For `成品海报 / 电商促销海报 / final poster`, apply the SAME dual-hero default as main visuals. Every member is a final poster, not a background or auxiliary scene.
+If the client explicitly requests one image, set `hero_output_mode: SINGLE_EXPLICIT` and apply `single-image-hero-role-confirmation.md`. If the client explicitly specified Product Hero or Usage Hero, lock that role. Otherwise ask for Hero A/B and wait; NEVER fall back to product-focused by default. If asked to pick, recommend a role but require affirmative confirmation before image generation. Other explicit counts use `COUNT_EXPLICIT` and compile that many complete plans. For `成品海报 / 电商促销海报 / final poster`, apply the SAME dual-hero default as main visuals. Every member is a final poster, not a background or auxiliary scene.
 
 ### Hero A — Product Hero
 
@@ -467,6 +478,9 @@ For fit / containment / compatibility / wearable / insertion visuals, record the
 - or contextual-only illustration.
 
 Do not present contextual-only illustration as dimensional proof.
+
+## Single-image Hero role gate (before generation)
+When `hero_output_mode: SINGLE_EXPLICIT`, require `single_image_hero_role_confirmation.status: PASS`, non-null `selected_hero_role` and explicit/user-confirmed source. If ambiguous, set `BLOCKED_AWAITING_USER`; if a suggested role awaits approval, set `RECOMMENDED_AWAITING_CONFIRMATION`. Either status forbids image calls, poster `READY`, or final delivery even if all pricing/platform/product facts are verified. `4:5` and `成品海报` are not valid role evidence. Do not ask when the role was already unambiguously specified. See `../single-image-hero-role-confirmation.md`.
 
 ## Mandatory pre-generation factual gate
 Before Product Hero / Usage Hero finished image generation run `../production/mandatory-input-confirmation.md`. Missing platform, user-requested price/date (including 'reserve a field'), unverified required product benefit, disputed campaign facts, or absent approval to remove a requested item mean `BLOCKED_AWAITING_USER`: ask and wait. Do not generate placeholders or silently reclassify as concept. This overrides scoped blocking but not explicit image count and designer autonomy.
