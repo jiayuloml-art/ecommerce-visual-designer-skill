@@ -29,6 +29,9 @@ Instead:
 
 This is a recommendation, not a questionnaire.
 
+### Single-Image Hero Role Confirmation (mandatory)
+For an explicit request for EXACTLY ONE finished image, the count is known but the specific role may not be. Follow `references/methods/single-image-hero-role-confirmation.md`: if the user has NOT clearly requested Product Hero (Hero A) or active Usage Hero (Hero B), **ask which role and WAIT**. Never infer Product Hero from '4:5', '成品海报', '主视觉', a product photograph or conventional preference. '你帮我选' allows a recommendation, NOT automatic execution; request confirmation. Explicit '产品展示型' / '真实使用场景型' settles the role without redundant questioning. This role gate must PASS independently of the required commercial-input gate before final rendering.
+
 ### Required-content confirmation
 A confirmed image count/ratio is NOT consent to unknown price, date, product claim or platform. Before any finished generation run `references/methods/production/mandatory-input-confirmation.md`: missing required values must be asked and answered or user explicitly approves removing the requested field and reflows the layout. No stand-ins or blank 'reserved' fields.
 
@@ -38,7 +41,7 @@ For finished commercial work, ask for the target platform when missing, before f
 If the platform is unknown, the agent may recommend a likely route, but a platform-neutral concept may only be produced after the client explicitly approves that concept-only scope.
 
 ### Fail-closed rule
-**No Confirmed Output Set OR Mandatory Missing-Input Confirmation Gate != PASS → no final visual production.**
+**No Confirmed Output Set OR Mandatory Missing-Input Confirmation Gate != PASS OR (SINGLE_EXPLICIT AND Single-Image Hero Role Confirmation Gate != PASS) → no final visual production.**
 
 Preparing strategy, benchmark research, or a proposed output package is allowed before confirmation. Rendering/assembling the client-facing artifact is not.
 
@@ -82,7 +85,7 @@ If it does not, merge or remove it.
 Classify explicit output language before applying package recommendations:
 
 - `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉 / 成品海报 / 电商促销海报 / 商品促销海报 / final poster` without an explicitly specified quantity → **recommend and deliver 2 complete final posters**: Hero A / product-focused full poster + Hero B / active-usage full poster.
-- Any explicit count overrides two: one means exactly one complete poster (requested hero role, otherwise product-focused); other explicit counts determine the actual number delivered. Do not treat aspect ratio `4:5` as quantity.
+- Any explicit count overrides two: exactly one means `SINGLE_EXPLICIT` and requires explicit or subsequently confirmed `PRODUCT_HERO` vs `USAGE_HERO`. If unspecified, ASK and WAIT; no product-focused fallback. If the client requests a recommendation, recommend and seek confirmation. Other explicit counts determine the actual number. Aspect ratio `4:5` is neither quantity nor hero role.
 - Both output families use Direct Final Poster Generation with the same complete-poster standard and individual QA. Do not recommend a single platform-neutral 4:5 poster as the default.
 
 The default two-hero package is not redundant: Product Hero answers product desire/form/material/core-benefit questions, while Usage Hero answers use/fit/interaction/experience questions. Hero B must show active, category-valid use rather than lifestyle adjacency.
