@@ -25,6 +25,9 @@ Check:
 
 For rendered product visuals, perform T2 comparison against supplied/verified product evidence.
 
+## Q0b — Final commercial-content and delivery gate
+For each finished commercial poster, before rendering require `outputs.final_artwork_input_audit.status: PASS` and verified target platform; requested/required copy fields must be exact and supported or explicitly approved not to appear with layout reflow. After rendering, inspect actual visible text, price, date, model, claim and CTA against canonical/source wording. Reject blank fields, placeholders (`¥___`, `____/____`, `待填`, etc.), unsupported claims and unauthorized omissions. Set the artifact `final_delivery_gate: PASS` only after rendered copy matches and all applicable hard gates pass. Concept-only work must be clearly labeled and must not claim final delivery.
+
 ## Q1 — Technical QA
 Check as applicable:
 - canvas/aspect ratio/resolution,

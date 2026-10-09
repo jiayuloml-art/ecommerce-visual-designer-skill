@@ -6,6 +6,8 @@ Use this structure to persist project truth and decisions independently from cha
 project:
   id: null
   name: null
+  active_run_id: null # current execution run; do not silently inherit approval across runs
+  active_case_id: null # current test/campaign case; re-check scoped confirmation
   current_stage: null
   task_operation: null # CREATE | EXTEND | REVISE | ADAPT | DIRECTION_ONLY
   mode: CLIENT
@@ -26,6 +28,8 @@ facts:
   hypotheses: []
   prohibited_inferences: []
   prohibited_or_unverified_claims: []
+  canonical_wording: {} # confirmed exact brand/product/version/texture/spec/price/claim wording by fact key
+  fact_conflicts: [] # conflicting source/canonical wording with affected outputs and blocking scope
 
 decisions:
   positioning: null
@@ -44,12 +48,21 @@ decisions:
     rejected_cliches: []
   style_justifications: []
 
+confirmation_scope:
+  records: [] # fact-level approvals: run_id, case_id, output_family, affected_slots, fact_key, source_wording, canonical_wording, confirmation_status, affected_downstream_modules, platform, wording_variant
+  last_validation: NOT_CHECKED # NOT_CHECKED | PASS | FAIL; re-evaluate on scope change
+
 outputs:
   proposed: []
   confirmed: []
   completed: []
   pending: []
   slots: []
+  final_artwork_input_audit:
+    status: NOT_CHECKED # NOT_CHECKED | PASS | BLOCKED
+    fields: [] # per requested/required field: key, value, source_ref, status, approved_omission
+    platform_status: NOT_CHECKED # VERIFIED | MISSING_REQUIRED | CONFIRMED_CONCEPT_ONLY
+    blocking_reasons: []
   hero_output_mode: DUAL_DEFAULT # DUAL_DEFAULT | SINGLE_EXPLICIT | COUNT_EXPLICIT; hero and finished-poster requests share default
   recommended_deliverables_count: 2 # explicit count overrides
   product_hero_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
@@ -107,6 +120,8 @@ artifacts:
     integrity: CLEAN
     baseline: false
     qa_status: null
+    final_delivery_gate: NOT_CHECKED # NOT_CHECKED | PASS | FAIL; inspect rendered copy before final delivery
+    rendered_copy_verified: false
     qa_checks: {}
     visual_core_checks:
       product_presence: NOT_CHECKED
@@ -251,6 +266,28 @@ history:
     reason: null
 ```
 
+## Confirmation record contract
+Each entry in `confirmation_scope.records` must contain these named fields, with no implicit global approval:
+
+```yaml
+run_id: null
+case_id: null
+output_family: null
+affected_slots: []
+fact_key: null
+source_wording: null
+canonical_wording: null
+source_ref: null
+confirmation_status: UNCONFIRMED # UNCONFIRMED | CONFIRMED | SUPERSEDED | INVALIDATED
+confirmed_by: null
+confirmed_at: null
+platform: null
+wording_variant: null
+affected_downstream_modules: []
+```
+
+Each entry in `outputs.final_artwork_input_audit.fields` records `key`, `value`, `source_ref`, `status`, and `approved_omission`. Use `VERIFIED`, `MISSING_REQUIRED`, `CONFLICTING`, `NEEDS_SOURCE_EVIDENCE`, `CONFIRMED_NOT_SHOWN`, or `OPTIONAL_NOT_REQUESTED`. `CONFIRMED_NOT_SHOWN` requires explicit client approval and a revised layout. The audit is `PASS` only when all required fields are verified or explicitly approved not to appear, and the target platform is confirmed for a finished deliverable. A separate, explicitly authorized concept-only scope is not final artwork.
+
 ## Persistence rules
 - Keep one `PROJECT_STATE` per active project workspace. Do not reuse another project's state as implicit context for a new project.
 - Store portable relative paths where possible; host/runtime-specific absolute paths may be used transiently for execution but should not become durable project truth.
@@ -265,6 +302,9 @@ history:
 - Persist Reference Adoption Records and output traceability when references are used; a URL list without ADOPT/ADAPT/DO_NOT_COPY/IGNORE and mapped output fields is incomplete.
 - Persist Category Visual Intelligence and Style Justification only as concise decisions/constraints, not hidden reasoning.
 - Keep missing information distinct from conflicting information.
+- On a new Run, Case, platform, output family, affected slot, or wording variant, re-validate exact confirmation scope before reusing a fact; unscoped historical approval is context, not delivery authorization.
+- Persist canonical wording and source wording for each approval/conflict; do not promote translation, synonyms, version or texture descriptions, or extra selling-point copy without matching confirmation.
+- Persist per-output Final Artwork Input Audit and per-artifact final-delivery status. Missing or conflicting requested/required fields block the dependent finished poster; never ship placeholders or blank price/date fields. Only explicit client approval may remove a requested element and authorize layout reflow.
 - A new client decision supersedes an old decision explicitly; do not silently overwrite.
 - Runtime/host capabilities are session properties and should not be persisted as durable project truth.
 - If an approved artifact changes, set `integrity: CHANGED` until it passes affected-scope QA and required approval again.

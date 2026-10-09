@@ -85,7 +85,7 @@ For truth-sensitive production, record:
 A missing or conflicting input blocks only the outputs, slots, claims, or production decisions that depend on it unless the unresolved item invalidates the whole direction.
 
 Example:
-- unresolved price → block exact promotional price layer,
+- unresolved **requested** price → continue independent planning, but block the dependent finished-poster generation/delivery until verified or the client explicitly approves removing the field and reflowing the layout,
 - product image + verified geometry available → composition/background work may continue,
 - unknown certification → block certification claim, not unrelated visual production.
 
@@ -112,7 +112,18 @@ Example:
 - after the platform is known, infer or recommend the platform's ordinary detail-page surface/default presentation when safe;
 - do **not** immediately ask separate questions about mobile/desktop, aspect ratio, page container, or similar downstream details unless they remain materially ambiguous after the platform is resolved.
 
-A missing platform may block platform-specific benchmarking, platform-fit claims, and final technical production, while generic strategy/page-structure work may continue.
+For finished commercial artwork, a missing target platform blocks final generation until the destination is confirmed. Generic research, strategy and page planning may continue; a platform-neutral concept-only scope requires explicit client authorization and cannot be delivered as a finished, platform-ready poster.
+
+## Final Artwork Input Audit — mandatory for finished commercial posters
+Before any finished poster image generation, inspect every requested/required visible field (product/brand/model, verified benefit or claim, price, prior price, discount, offer, campaign dates, CTA, and platform as applicable). Assign one status per field:
+- `VERIFIED` — exact value and supporting source/confirmation are recorded.
+- `MISSING_REQUIRED` — required value is missing.
+- `CONFLICTING` — sources disagree; do not silently select one.
+- `NEEDS_SOURCE_EVIDENCE` — a requested factual claim lacks support.
+- `CONFIRMED_NOT_SHOWN` — client explicitly approved removing the requested field and reflowing the layout.
+- `OPTIONAL_NOT_REQUESTED` — not part of this deliverable; do not request irrelevant facts.
+
+Record the audit under `PROJECT_STATE.outputs.final_artwork_input_audit`. Any `MISSING_REQUIRED`, `CONFLICTING`, or `NEEDS_SOURCE_EVIDENCE` blocks that dependent poster's **entire final image generation** and final delivery, even if an isolated text layer could be skipped. Continue only unrelated planning or outputs whose requirements pass. Phrases such as “预留价格/日期” are not permission to leave placeholders or silently omit those fields. Obtain exact source values or explicit approval to remove and reflow. Do not silently downgrade final art to concept-only. Re-check exact copy on the actual rendered artifact before final delivery.
 
 ## Missing vs conflict
 - **MISSING:** no supported value exists.
@@ -120,7 +131,6 @@ A missing platform may block platform-specific benchmarking, platform-fit claims
 
 Do not silently pick a value from a conflict. Record it in project state and resolve only when the dependent branch requires it.
 
-<!-- STABILITY TEST: ADDED — canonical wording conflict record and run-scoped confirmation. -->
 
 ## Canonical wording and conflict record
 

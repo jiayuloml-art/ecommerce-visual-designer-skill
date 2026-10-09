@@ -73,9 +73,10 @@ Once the runtime's hard wait budget is reached:
 Do not restart the same expensive operation in a loop. Runtime-specific adapters/providers may define a reasonable wait budget; Core does not hard-code one universal minute threshold.
 
 ## Missing product information
-- If non-blocking: omit or use explicit placeholder.
-- If needed only later: defer.
-- If blocking: ask one focused question.
+- For unrequested, truly optional information: omit rather than fabricate; do not add placeholders to finished commercial artwork.
+- If needed only for a later, unapproved output: defer until that output is confirmed.
+- If a requested/required fact, claim, price/date, or target platform is missing or conflicting: continue unaffected research/planning but stop the dependent **finished poster generation and delivery**. Ask a focused question or obtain explicit approval to remove a requested field and reflow its layout.
+- Clearly marked provisional placeholders may occur only in a separately and explicitly authorized `S0 CONCEPT` artifact, never a finished or platform-ready poster.
 - Never invent dimensions, performance, certifications, warranty, claims, price, or SKU facts.
 
 ## Conflicting information
