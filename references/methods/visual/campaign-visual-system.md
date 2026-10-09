@@ -20,7 +20,7 @@ Persist the approved shared visual language across outputs.
 15. Negative Direction
 16. Fixed Rules / Locks
 17. Allowed Changes / Variation Rules
-18. Distinctive Device / Motif — optional; only when there is a real campaign-specific recurring device
+18. Distinctive Device / Motif — for new concept-open campaigns, name a recurring product-specific device or justify a differentiated QUIET_SYSTEM; optional for routine revisions
 19. Category Visual Intelligence — product-specific category prior and rejected clichés
 20. Style Justification — evidence supporting major visual decisions
 21. Dual-Hero Relationship — shared locks plus required Product Hero / Usage Hero differences
@@ -53,7 +53,7 @@ For every output/slot, make the boundary explicit:
 - what must remain fixed,
 - what is allowed to change.
 
-Do not create a distinctive-device rule merely to fill a field. Use it only when the campaign has an evidenced, intentional recurring visual mechanism.
+Do not invent decorative motifs merely to fill a field. A new concept-open campaign must have an observable differentiation move, supported by a named recurring device or a justified quiet system rooted in product form, space, material, typography, or use.
 
 ## Dual-Hero relationship
 
