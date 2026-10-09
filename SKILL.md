@@ -65,6 +65,8 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 
 36. **No Placeholders + Mandatory Missing-Input Confirmation take precedence.** Before ANY final image generation, audit required fields and block until required missing/conflicting facts are answered or authoritative evidence resolves them. Even a user request to *reserve* a price/date zone still requires real values or affirmative permission to remove the elements and reflow composition. No placeholders, fictional commercial facts, or unauthorized omission. After rendering, a separate fail-closed Final Delivery Gate checks the actual artwork. Do not label concept/blocked work final. Follow `references/methods/production/mandatory-input-confirmation.md` regardless of autonomy/deferral/recovery advice.
 
+37. **Single-image Hero role confirmation is mandatory.** When exactly ONE image is explicitly requested, NEVER silently default to Product Hero. If the user has not clearly selected product display (Hero A) or active usage (Hero B), ask which they want and WAIT. If the user requests a recommendation, recommend a role but require their confirmation before generation. If the brief clearly specified a role, honor it without re-asking. `4:5`, platform, `主视觉`, and `成品海报` do not specify role. See `references/methods/single-image-hero-role-confirmation.md`; this gate is independent of required commercial-input confirmation.
+
 ## Operating modes
 
 ### CLIENT MODE — default
@@ -139,14 +141,14 @@ Prefer one primary route. Offer an alternative only when there is a meaningful t
 
 Classify explicit output language before production:
 - `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉 / 成品海报 / 电商促销海报 / 商品促销海报 / final poster` without an explicit count → default **TWO complete finished posters**, Product Hero + active Usage Hero; record `hero_output_mode: DUAL_DEFAULT`, `recommended_deliverables_count: 2`, and `generation_mode: DIRECT_FINAL_POSTER` for BOTH.
-- Any explicit image count overrides the default: exactly one → `SINGLE_EXPLICIT` with one complete poster in the requested role; an explicit other count → `COUNT_EXPLICIT` with that many complete posters, role allocation driven by communication jobs.
+- Any explicit image count overrides the default: exactly one → `SINGLE_EXPLICIT`. If the user clearly requested product presentation, lock `PRODUCT_HERO`; if they clearly requested real active use, lock `USAGE_HERO`. **If no role is specified, set `single_image_hero_role_confirmation: BLOCKED_AWAITING_USER`, explicitly ask Hero A versus Hero B and WAIT. Never default to Product Hero.** If the user says 'you choose', recommend a role but still require their express confirmation. Any explicitly different count → `COUNT_EXPLICIT` with that many complete posters.
 - A format such as 4:5 or a platform specification is NOT an image count; apply it consistently to both posters.
 - Do not invent a price, discount, offer or deadline merely because the request calls for a promotional poster; include only supplied or verified commercial facts.
 - Since the requested output family is clear, do not ask whether the user wants one or two. Ask only when a genuinely decision-changing upstream fact remains unresolved.
 
 Do not insert an empty-background, isolated-layer, or layout-development deliverable into either route unless explicitly requested or technically necessary.
 
-**Fail-closed rule:** no Confirmed Output Set → no STATE 5 production.
+**Fail-closed rule:** no Confirmed Output Set → no STATE 5 production. For `SINGLE_EXPLICIT`, no role-confirmation PASS → no final generation, regardless of other readiness gates.
 
 Use `references/methods/output-system.md`.
 
@@ -184,7 +186,7 @@ Use:
 2. Establish or reuse the campaign visual system.
 3. For each confirmed output/slot, resolve the **Visual Evidence Strategy** before layout when the viewer question depends on use, fit, scale, interaction, detail, or proof. If the required evidence exposes hidden/open/internal product structure, resolve its evidence-authorization state before production.
 4. For each confirmed output/slot, build a structured visual production plan, including any missing supporting visual assets that must be created for the intended communication job. Explicitly choose the product representation mode: exact source-pixel lock only when actually required; otherwise allow identity-preserving reconstruction when it improves camera, pose, use-state, or scene integration without changing product truth. For hidden/open/alternate states with unresolved geometry, use Evidence Authorization / HG2 before conceptual reconstruction. For fit/containment/compatibility visuals, record the dimensional basis and do not present contextual-only illustration as exact dimensional proof.
-5. **Route both `FINAL_POSTER` and `HERO_VISUAL` to Direct Final Poster Generation.** Default to two complete copy-bearing posters: Product Hero plus active Usage Hero, unless quantity is explicit. Jointly generate scene, product, and typography wherever capability permits, using locked copy/contrast fields and a shared campaign system; check all text for exactness, then apply conditional minimal precise corrections only for failed text. Do not turn Hero B into a text-free lifestyle image or Hero A into a background draft.
+5. **Route both `FINAL_POSTER` and `HERO_VISUAL` to Direct Final Poster Generation, AFTER confirming the Hero A/B role of an explicit single-image request.** Default to two complete copy-bearing posters: Product Hero plus active Usage Hero, unless quantity is explicit. Jointly generate scene, product, and typography wherever capability permits, using locked copy/contrast fields and a shared campaign system; check all text for exactness, then apply conditional minimal precise corrections only for failed text. Do not turn Hero B into a text-free lifestyle image or Hero A into a background draft.
 6. **Staged anchor-first production is non-default.** Use `anchor-production.md` only when the client explicitly requests staged direction approval or a documented production constraint requires it. Even then, the client-preview candidate must be a complete integrated poster rather than an empty mood image or isolated product visual.
 7. For non-anchor outputs, assign layer ownership and precision requirements, route production method (GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID), resolve runtime capability, and select the least unnecessary provider/dependency that satisfies quality, fidelity, and precision.
 8. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` and the active runtime adapter instead of repeatedly waiting or narrating progress.
@@ -211,7 +213,7 @@ Run hard gates first:
 
 Only after applicable hard gates pass, run the **Independent Visual Critic** on the rendered artifact. The Critic judges the visible result before reading the producer's rationale/self-QA and returns PASS / REVISE / REJECT. For representative anchors, client preview requires both Visual Critic PASS and applicable hard/integrity QA PASS. For coordinated sets, also check static product repetition, dimensional plausibility where relevant, platform-strategy drift, and recurring graphic-token consistency.
 
-The Visual Critic must treat these as explicit visible gates: Product Hero Impact Check (for Product Hero), Product–Scene Relationship Check, Hero Output Check, Product Presence, Commercial Readability, Reference Adoption, Product–Environment Integration, Category Fit, Visual Distinctiveness, Usage Authenticity, Copy Readiness, Typography Contrast, Typography Prominence, Thumbnail Readability, 2-Second Read Test, and Product Truth. Applicable pair completeness/diversity, reference-adoption, integration, typography-contrast, typography-prominence, commercial-hierarchy, active-usage, or thumbnail failures are blocking even when the image is aesthetically attractive.
+The Visual Critic must treat these as explicit visible gates: Single-Image Hero Role Confirmation (when one image is requested), Product Hero Impact Check (for Product Hero), Product–Scene Relationship Check, Hero Output Check, Product Presence, Commercial Readability, Reference Adoption, Product–Environment Integration, Category Fit, Visual Distinctiveness, Usage Authenticity, Copy Readiness, Typography Contrast, Typography Prominence, Thumbnail Readability, 2-Second Read Test, and Product Truth. Applicable pair completeness/diversity, reference-adoption, integration, typography-contrast, typography-prominence, commercial-hierarchy, active-usage, or thumbnail failures are blocking even when the image is aesthetically attractive.
 
 For every scene-based poster, calculate the Product–Background Fusion Score for Perspective, Lighting, Shadow, Reflection, Scale, Occlusion, Material response, Color temperature, Contact realism, and Overall scene coherence. Any field below 7/10 or total below 80/100 is a blocking failure.
 
@@ -329,6 +331,7 @@ Load only what is needed. Do not dump all references into context.
 - Hard artifact integrity QA → `references/methods/production/artifact-qa.md`
 - Failure recovery → `references/methods/production/failure-recovery.md`
 - Mandatory required-input audit, No Placeholders Policy and fail-closed final-delivery gate → `references/methods/production/mandatory-input-confirmation.md`
+- Explicit single-image Hero A/B role confirmation and blocking states → `references/methods/single-image-hero-role-confirmation.md`
 
 ### Runtime
 - Host/runtime adaptation, Skill invocation/packaging, and tool/API binding → `references/ai-tools/runtime-adapters.md`
