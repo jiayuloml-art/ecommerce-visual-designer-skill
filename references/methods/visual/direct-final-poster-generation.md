@@ -91,9 +91,6 @@ The provider brief must cause the scene itself to reserve low-complexity, contra
 
 When the local background is a middle tone, do not accept weak light-gray or thin dark-gray typography. Move the local field decisively lighter or darker, simplify it, and choose an opposing text tone/weight. The title, promotional price, and core selling points must remain visually distinct from the background at thumbnail scale.
 
-## Single-image Hero A/B role preflight
-If the user wants exactly ONE finished poster, run `../single-image-hero-role-confirmation.md` before drawing it. If their brief does not unambiguously specify Product Hero vs active Usage Hero, explicitly ask and wait. If they say 'you choose', recommend and seek confirmation. A size, platform, 4:5 ratio or word 'final poster' is not role confirmation. Generation requires `single_image_hero_role_confirmation: PASS` in addition to the mandatory content gate. Lock the confirmed role and its appropriate product-visual-impact or genuine active-use requirements; do not default to Product Hero.
-
 ## Mandatory finished-poster content readiness
 Before producing an integrated Product Hero OR Usage Hero image, `../production/mandatory-input-confirmation.md` must PASS: platform confirmed, required brand/product facts/claims confirmed, and every user-requested price/offer/date/campaign field supplied or explicitly removed with permission. 'Reserve a price/date area' with unknown content must block generation; it never means draw empty price/date copy zones or type `XX`/`___`. Do not silently produce a concept instead. Only proceed once actual content and desired number of outputs are known. Then plan the full product–scene–text frame together.
 

@@ -134,9 +134,6 @@ Both complete posters share color, brand character, type and reference logic, bu
 
 Hard artifact QA (truth, technical, regression, platform/compliance) remains separate from visual criticism.
 
-### Single-Image Hero A/B Confirmation Gate
-If the client explicitly requests exactly one final image, the Skill no longer defaults to Product Hero. If its communication role is not clear, it MUST ask “Hero A（产品展示型）还是 Hero B（真实使用场景型）？” before generation. Explicit product showcase or active-use language settles the role without a redundant question; “你帮我选” allows a recommendation but requires the client's approval. Ratio 4:5, platform and general poster wording do not determine Hero role. The gate is separate from missing platform/price/claim confirmation and has a blocking `BLOCKED_AWAITING_USER` state. No quantity specified retains default TWO complete Product Hero + Usage Hero outputs. See `references/methods/single-image-hero-role-confirmation.md` and `tests/single-image-hero-role-regression.md`.
-
 ### No Placeholders & Mandatory Confirmation Gates
 Final commercial image generation now requires a **Mandatory Missing-Input Confirmation Gate**: check the actual product/brand facts, verified requested claims, campaign price/discount/date/CTA and target platform. **No placeholders** (including blank price/date reserved areas), invented values, silent omission, or unapproved neutral-platform fallback. Ask for required missing fields and wait; the user can explicitly authorize removing a requested field and reflowing the design. Designer-owned visual choices remain autonomous; explicit output image count overrides the default two posters. A separate **Fail-Closed Final Delivery Gate** inspects rendered artwork for accurate required content and platform/quality checks before claiming completion. See `references/methods/production/mandatory-input-confirmation.md` and `tests/mandatory-missing-input-regression.md`.
 

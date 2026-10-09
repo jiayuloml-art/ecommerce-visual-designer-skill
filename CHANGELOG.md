@@ -1,11 +1,5 @@
 # Changelog
 
-## 2026-10-09 — Single-Image Hero A/B Confirmation
-- Added mandatory `references/methods/single-image-hero-role-confirmation.md`: when exactly one finished image is explicitly requested with no clear Hero A/B role, ask and wait, never default to Product Hero. A clear product-display or genuine-usage brief locks the role without repetition; '你帮我选' requires explicit confirmation of the recommendation.
-- Updated SKILL controller, output-system, client-communication, production plan and PROJECT_STATE; separately gated role selection in mandatory-input rules, artifact QA, Codex adapter, direct-final-poster generation and visual critic.
-- Added `tests/single-image-hero-role-regression.md` with 14 expected interactive acceptance scenarios. Preserved default two complete posters when no quantity is supplied, one image only when requested, all no-placeholder and visual/product QA. Static verification is not evidence of live Codex behavior.
-
-
 ## 2026-10-08 — Mandatory Missing Inputs / No Placeholders
 - Added `references/methods/production/mandatory-input-confirmation.md` with priority above generic 'few questions' and deferral rules. Required missing platform/price/date/benefit inputs STOP finished generation until verified/user confirmed or requested element explicitly removed.
 - Prohibited commercial text placeholders, empty reserved fields, invented price/date/product facts and silent omission in final artwork; user-approved removal triggers a layout reflow.

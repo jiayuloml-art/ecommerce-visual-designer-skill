@@ -45,15 +45,6 @@ decisions:
   style_justifications: []
 
 outputs:
-  single_image_hero_role_confirmation:
-    applies: false
-    explicit_image_count: null
-    selected_hero_role: null # PRODUCT_HERO | USAGE_HERO | null
-    role_confirmation_source: null # USER_EXPLICIT | USER_CONFIRMED_AFTER_QUESTION | null
-    recommendation: null
-    status: NOT_APPLICABLE # NOT_APPLICABLE | NOT_CHECKED | BLOCKED_AWAITING_USER | RECOMMENDED_AWAITING_CONFIRMATION | PASS
-    pending_question: null
-    confirmed_in_current_project: false
   proposed: []
   confirmed: []
   completed: []
@@ -287,7 +278,6 @@ history:
 - Persist per-project mandatory-input status before generation and per-artifact final-delivery status after inspecting the output. Missing required price/date (including requested empty zones) blocks final generation; only explicit user removal approval resolves it, never placeholders.
 - Persist direct-final poster mode, unified composition fields, poster-completeness checks, and the ten-field Product–Background Fusion Score for every scene-based poster.
 - Persist Typography Contrast status, Typography Prominence status, the eight-field prominence score, and 100%/50%/25% thumbnail typography status for every commercial poster. Applicable NOT_CHECKED, REVISE, or FAIL states are not deliverable PASS.
-- Persist `outputs.single_image_hero_role_confirmation` for any explicit one-image contract: selected A/B, exact source of client confirmation, pending role question and gate status. No confirmed role → `BLOCKED_AWAITING_USER`; recommending a role alone → `RECOMMENDED_AWAITING_CONFIRMATION`, not PASS. User-specified role → PASS without re-asking. Keep role gate independent of mandatory commercial-input audit. See `references/methods/single-image-hero-role-confirmation.md`.
 - Persist `hero_output_mode`, `recommended_deliverables_count`, `product_hero_status`, and `usage_hero_status`. Both main-visual AND finished-poster requests without a stated quantity use `DUAL_DEFAULT`: two individually complete posters with two PASS statuses and pair approval. Explicit one uses `SINGLE_EXPLICIT`; other explicit counts use `COUNT_EXPLICIT`. Record unified image+text rendering status, exact-copy verification and any needed localized repair reason.
 - Persist separate hero readiness/QA and pair approval whenever the default or explicitly requested coordinated pair applies. For every Product Hero, persist its impact contract, chosen product-specific visual levers and five-field rendered Product Hero Impact Score (each ≥7/10, total ≥40/50), independently of product truth, scene relationship, fusion, and typography.
 - Persist Reference Adoption Records and output traceability when references are used; a URL list without ADOPT/ADAPT/DO_NOT_COPY/IGNORE and mapped output fields is incomplete.

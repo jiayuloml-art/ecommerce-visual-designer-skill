@@ -12,9 +12,6 @@ Use states:
 
 Applicable NOT_CHECKED items are not PASS.
 
-## Q-2 — Single-Image Hero Role Confirmation (blocking)
-When the client requested exactly ONE final image, verify a documented, client-selected `PRODUCT_HERO` or `USAGE_HERO` and `single_image_hero_role_confirmation.status: PASS`. If the role was unspecified, the user must first answer the A/B question; if the agent recommended a role, it must receive explicit acceptance. Do not accept a default Product Hero or infer role from 4:5, platform, '主视觉' or '成品海报'. Missing role approval blocks final image generation and finished delivery regardless of all other QA. See `../single-image-hero-role-confirmation.md`.
-
 ## Q-1 — Mandatory Pre-Generation Confirmation (blocking)
 Before ANY final commercial poster generation, inspect `mandatory-input-confirmation.md`. All requested/required facts and the target platform must be verified/confirmed; a missing price or date *including a requested reserved zone* is blocking unless the user explicitly approves removal. NO placeholders, guessed promotion facts or unapproved deletion. If input audit is NOT_CHECKED/BLOCKED/FAIL, halt generation and ask the user. This check cannot be waived by excellent composition or autonomous execution.
 
@@ -82,7 +79,7 @@ Check:
 If target platform is absent or an account-dependent rule cannot be resolved for final production, ask for the missing information BEFORE final image generation. Do not choose a generic platform or silently proceed with a finished export.
 
 ## Q4 — Fail-Closed Final Delivery Gate (blocking)
-Inspect the rendered artifact itself and verify: (0) for `SINGLE_EXPLICIT`, the user-confirmed A/B role is recorded and output matches it, (1) pre-generation audit PASS, (2) every required user field is present with **actual confirmed content** or explicitly removed with user approval, (3) zero price/date/brand/parameter stand-ins, blanks or invented facts, (4) real text accurately matches verified sources, (5) platform and technical rules satisfied and relevant visual/artifact QA PASS. A blank region labeled price/date does NOT satisfy content completeness. Failure / NOT_CHECKED blocks 'final', S2/S3, client approval-ready and platform-ready claims. Request data or re-render/reflow, then inspect again.
+Inspect the rendered artifact itself and verify: (1) pre-generation audit PASS, (2) every required user field is present with **actual confirmed content** or explicitly removed with user approval, (3) zero price/date/brand/parameter stand-ins, blanks or invented facts, (4) real text accurately matches verified sources, (5) platform and technical rules satisfied and relevant visual/artifact QA PASS. A blank region labeled price/date does NOT satisfy content completeness. Failure / NOT_CHECKED blocks 'final', S2/S3, client approval-ready and platform-ready claims. Request data or re-render/reflow, then inspect again.
 
 ## Blocking rule
 Hard-gate failures cannot be averaged away by visual quality.

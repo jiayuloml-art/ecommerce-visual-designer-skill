@@ -2,9 +2,6 @@
 
 These are **acceptance cases for live Codex runs**, not proof that image-generation behavior has been executed. Use the newest `SKILL.md` and `references/methods/production/mandatory-input-confirmation.md`. For each scenario, start a fresh active project unless it explicitly reuses confirmed facts.
 
-## Additional single-image role gate
-For any explicitly one-image final request, independently consult `tests/single-image-hero-role-regression.md` and `references/methods/single-image-hero-role-confirmation.md`. A missing Hero A/B role blocks final generation even if platform, price, date and product facts are known. Role must come from clear user-specified semantics or subsequent affirmative user confirmation; never product-focused by default.
-
 ## Gate checks common to ALL scenarios
 - Verify the assistant inspected current-project facts before asking and never fabricated product/brand/commercial details.
 - Required missing data → `BLOCKED_AWAITING_USER` with a concrete question, **no final image-generation tool call** and no "final complete" claim.
@@ -29,6 +26,6 @@ For any explicitly one-image final request, independently consult `tests/single-
 
 ## Case verification record
 For each actual Codex run, record:
-- `scenario_id`, `single_image_role_gate`, `selected_hero_role`, `initial_missing_required`, `user_question`, `response_authorization`, `pre_generation_gate`, `image_provider_called_before_gate`, `rendered_placeholders`, `final_delivery_gate`, `actual_output_count`.
+- `scenario_id`, `initial_missing_required`, `user_question`, `response_authorization`, `pre_generation_gate`, `image_provider_called_before_gate`, `rendered_placeholders`, `final_delivery_gate`, `actual_output_count`.
 - Mark **PASS** only after observing the interactive transcript and resulting output, where applicable.
 - Static documentation inspection may be reported as **policy-consistency check**, never as a successful behavior/image test.

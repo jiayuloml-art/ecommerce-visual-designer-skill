@@ -98,9 +98,6 @@ Use **REVISE** or **REJECT** regardless of general attractiveness when any appli
 
 Aesthetic appeal cannot average away these failures.
 
-## Single-Image Role Gate (before visual judgment)
-For `SINGLE_EXPLICIT`, require `single_image_hero_role_confirmation: PASS` and exactly one delivered poster in the user's expressly selected Hero A or Hero B role. An A/B role recommended by the agent but not accepted is NOT PASS. If role was absent, final generation should have been blocked; do not rationalize a default Product Hero through visual quality. A 4:5 format is not the role. For `DUAL_DEFAULT`, continue to require both distinct complete posters.
-
 ## Hero Output Check
 
 First classify the output contract:
