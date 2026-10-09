@@ -22,11 +22,14 @@ For a single direct-final poster or other expensive image objective:
 
 These are internal runtime defaults for production efficiency, not platform requirements. If the runtime exposes a reliable provider-specific timeout/progress contract, prefer that verified contract.
 
+## Codex single-image Hero role stop-before-render
+Run `references/methods/single-image-hero-role-confirmation.md` BEFORE any image tool/provider/script for `SINGLE_EXPLICIT`. Count = one does NOT mean product-focused default. If the brief explicitly says Hero A / product showcase, lock A; if it explicitly says Hero B / real active use, lock B; no redundant question. If role is unspecified (even with `4:5` / `成品海报`), ASK “你要 Hero A（产品展示型）还是 Hero B（真实使用场景型）？” and wait. If asked to pick, recommend but wait for an affirmative confirmation. Persist `selected_hero_role` and `single_image_hero_role_confirmation: PASS`. This gate is independent of platform/price/product-fact confirmation and cannot be bypassed by an image-generation provider, local script or autonomous creative decisions.
+
 ## Mandatory Codex stop-before-render behavior
 Apply `references/methods/production/mandatory-input-confirmation.md` as an explicit preflight **before any image provider call or final poster script**. Inspect existing context and confirmed facts, then ask for each missing required final-content field (group related questions). Missing platform ALWAYS requires a question unless the user explicitly authorized a separate platform-neutral concept-only scope. Missing user-requested price/date (even when only 'reserved zones' were requested) must STOP formal generation until real values or affirmative omission permission arrive. Never create `¥___`, `____/____`, `XX元` placeholders, silently delete required text, or claim the unfinished/blocked image final. The few-questions preference does not supersede this hard gate. Resume only after facts/approval are recorded and preflight PASS, then run separate rendered-artifact final delivery QA.
 
 ## Direct-final poster routing
-Both unspecified `主视觉` and `成品海报 / 电商促销海报` requests default to TWO complete posters (Product Hero + active Usage Hero); explicit image count overrides. Ratio 4:5 is not a count. Both outputs include commercial typography and undergo individual plus pair QA.
+Both unspecified `主视觉` and `成品海报 / 电商促销海报` requests default to TWO complete posters (Product Hero + active Usage Hero); explicit image count overrides. For explicitly ONE poster with no role, STOP and confirm A/B; never pick Product Hero by default. Ratio 4:5 is not a count. Both outputs include commercial typography and undergo individual plus pair QA.
 When the user supplies a verified product asset, default to an integrated final-poster route:
 
 1. analyze and lock product identity/truth; **block finished generation if mandatory confirmed-input audit is not PASS**;
