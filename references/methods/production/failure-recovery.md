@@ -72,13 +72,11 @@ Once the runtime's hard wait budget is reached:
 
 Do not restart the same expensive operation in a loop. Runtime-specific adapters/providers may define a reasonable wait budget; Core does not hard-code one universal minute threshold.
 
-## Missing product or commercial information
-For FINAL artworks, `mandatory-input-confirmation.md` controls recovery: no placeholders, fictional values, unauthorized omissions or silent concept downgrade.
-- If the information is genuinely OPTIONAL_NOT_REQUESTED, it is not part of the artifact and need not be invented or queried.
-- If it is REQUIRED or REQUESTED, including price/dates that the client asked to 'reserve', STOP finished generation and ask for exact values (or explicit approval to omit the element and reflow layout).
-- If platform is absent, ask before final generation even if the ratio is supplied; a user-approved concept-only alternative is a separate, clearly marked scope.
-- Do not continue to 'finished' production with unresolved required data. Resume only after rechecking the mandatory input gate.
-- Never invent dimensions, performance, certifications, warranty, claims, price, timing or SKU facts.
+## Missing product information
+- If non-blocking: omit or use explicit placeholder.
+- If needed only later: defer.
+- If blocking: ask one focused question.
+- Never invent dimensions, performance, certifications, warranty, claims, price, or SKU facts.
 
 ## Conflicting information
 - Keep the conflict explicit.
@@ -91,7 +89,7 @@ For FINAL artworks, `mandatory-input-confirmation.md` controls recovery: no plac
 2. Check current official source.
 3. Check current merchant/admin UI if account-dependent.
 4. Ask user for current UI screenshot if necessary.
-5. If unresolved, remain BLOCKED_AWAITING_USER for final generation, ask for the required current platform/spec evidence, and do not claim a draft is platform-ready or a finished poster.
+5. If unresolved, remain `S1 PRODUCTION_DRAFT`; do not claim platform-ready.
 
 ## Provider unavailable
 - Re-resolve current runtime capabilities.

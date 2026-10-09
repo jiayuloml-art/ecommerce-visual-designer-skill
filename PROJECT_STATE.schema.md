@@ -92,18 +92,6 @@ technical_specs:
   runtime_checks_required: []
   last_verified: null
 
-mandatory_input_confirmation:
-  status: NOT_CHECKED # NOT_CHECKED | BLOCKED_AWAITING_USER | PASS
-  required_fields: [] # {field, status, evidence, user_approval}
-  target_platform_or_explicit_concept_scope: null
-  missing_required: []
-  conflicts: []
-  user_approved_removals: []
-  pending_questions: []
-  no_placeholders_policy: NOT_CHECKED
-  confirmed_content_ready: NOT_CHECKED
-  reviewed_at: null
-
 assets:
   available: []
   approved: []
@@ -119,11 +107,6 @@ artifacts:
     integrity: CLEAN
     baseline: false
     qa_status: null
-    final_delivery_gate: NOT_CHECKED # NOT_CHECKED | BLOCKED | PASS
-    required_content_verified: NOT_CHECKED
-    placeholders_absent: NOT_CHECKED
-    user_required_fields_present_or_explicitly_removed: NOT_CHECKED
-    verified_platform_spec: NOT_CHECKED
     qa_checks: {}
     visual_core_checks:
       product_presence: NOT_CHECKED
@@ -275,7 +258,6 @@ history:
 - Same product/brand/SKU does not imply continuity. New platform/campaign/output-family tests default to `continuity: NEW` unless the client explicitly selects an existing project/baseline.
 - For `continuity: NEW`, inherit only specifically named base-truth sources; prior campaign state, prompts, generated scenes, visual direction, outputs, platform decisions, and QA are excluded by default.
 - Store confirmed facts, explicit derived benefits/hypotheses, prohibited inferences, client-approved decisions, and unresolved conflicts; do not store hidden reasoning.
-- Persist per-project mandatory-input status before generation and per-artifact final-delivery status after inspecting the output. Missing required price/date (including requested empty zones) blocks final generation; only explicit user removal approval resolves it, never placeholders.
 - Persist direct-final poster mode, unified composition fields, poster-completeness checks, and the ten-field Product–Background Fusion Score for every scene-based poster.
 - Persist Typography Contrast status, Typography Prominence status, the eight-field prominence score, and 100%/50%/25% thumbnail typography status for every commercial poster. Applicable NOT_CHECKED, REVISE, or FAIL states are not deliverable PASS.
 - Persist `hero_output_mode`, `recommended_deliverables_count`, `product_hero_status`, and `usage_hero_status`. Both main-visual AND finished-poster requests without a stated quantity use `DUAL_DEFAULT`: two individually complete posters with two PASS statuses and pair approval. Explicit one uses `SINGLE_EXPLICIT`; other explicit counts use `COUNT_EXPLICIT`. Record unified image+text rendering status, exact-copy verification and any needed localized repair reason.

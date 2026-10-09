@@ -76,9 +76,6 @@ Do headline, price/offer, and core selling points visibly separate from their ac
 
 Use `PASS / FAIL / NOT_APPLICABLE`. An applicable NOT_CHECKED is not PASS.
 
-## Commercial-content completeness gate
-The separate mandatory pre-generation and final-delivery checks in `../production/mandatory-input-confirmation.md` take precedence over aesthetic approval. Reject any rendered poster with price/date stand-ins (e.g. `¥___`, `____/____`), a blank user-requested selling-price/campaign label, fabricated commercial claims, or omitted requested content that the user did not explicitly agree to remove. Do not award visual PASS or call the result a final finished poster when those required facts are missing; stop and ask. For a platform-ready claim, the actual destination/specification must have been confirmed.
-
 ## Blocking visual failures
 
 Use **REVISE** or **REJECT** regardless of general attractiveness when any applicable condition is visibly true:

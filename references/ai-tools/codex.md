@@ -22,14 +22,11 @@ For a single direct-final poster or other expensive image objective:
 
 These are internal runtime defaults for production efficiency, not platform requirements. If the runtime exposes a reliable provider-specific timeout/progress contract, prefer that verified contract.
 
-## Mandatory Codex stop-before-render behavior
-Apply `references/methods/production/mandatory-input-confirmation.md` as an explicit preflight **before any image provider call or final poster script**. Inspect existing context and confirmed facts, then ask for each missing required final-content field (group related questions). Missing platform ALWAYS requires a question unless the user explicitly authorized a separate platform-neutral concept-only scope. Missing user-requested price/date (even when only 'reserved zones' were requested) must STOP formal generation until real values or affirmative omission permission arrive. Never create `¥___`, `____/____`, `XX元` placeholders, silently delete required text, or claim the unfinished/blocked image final. The few-questions preference does not supersede this hard gate. Resume only after facts/approval are recorded and preflight PASS, then run separate rendered-artifact final delivery QA.
-
 ## Direct-final poster routing
 Both unspecified `主视觉` and `成品海报 / 电商促销海报` requests default to TWO complete posters (Product Hero + active Usage Hero); explicit image count overrides. Ratio 4:5 is not a count. Both outputs include commercial typography and undergo individual plus pair QA.
 When the user supplies a verified product asset, default to an integrated final-poster route:
 
-1. analyze and lock product identity/truth; **block finished generation if mandatory confirmed-input audit is not PASS**;
+1. analyze and lock product identity/truth;
 2. resolve category strategy and reference mapping;
 3. lock product position/scale, camera/horizon/lens feeling, contact surface, light/shadow direction, environment color/reflection, and copy/headline/price/brand zones as one composition;
 4. use native generation/edit or an identity-preserving reconstruction/composite route that produces one coherent product–scene system;

@@ -134,9 +134,6 @@ Both complete posters share color, brand character, type and reference logic, bu
 
 Hard artifact QA (truth, technical, regression, platform/compliance) remains separate from visual criticism.
 
-### No Placeholders & Mandatory Confirmation Gates
-Final commercial image generation now requires a **Mandatory Missing-Input Confirmation Gate**: check the actual product/brand facts, verified requested claims, campaign price/discount/date/CTA and target platform. **No placeholders** (including blank price/date reserved areas), invented values, silent omission, or unapproved neutral-platform fallback. Ask for required missing fields and wait; the user can explicitly authorize removing a requested field and reflowing the design. Designer-owned visual choices remain autonomous; explicit output image count overrides the default two posters. A separate **Fail-Closed Final Delivery Gate** inspects rendered artwork for accurate required content and platform/quality checks before claiming completion. See `references/methods/production/mandatory-input-confirmation.md` and `tests/mandatory-missing-input-regression.md`.
-
 ### Product Hero Visual Impact Upgrade
 Product Hero now has a dedicated `references/methods/visual/product-hero-impact.md` art-direction and QA protocol. Choose at least two product-specific visual levers—dominant recognizable silhouette, evidence-supported expressive camera, material-led cinematographic light, purposeful depth/compositional tension, product–scene contrast, or detailed focal proof—without fabricating product features or forcing neon/floating podiums. Judge the rendered Product Hero independently on focal dominance, camera/silhouette, material/light, composition energy and commercial/brand impact (each ≥7/10, total ≥40/50). This strengthens the product-focused poster without altering the Usage Hero active-use obligation, dual-complete-poster default or integrated typography.
 

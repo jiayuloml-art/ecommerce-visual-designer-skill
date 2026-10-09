@@ -12,9 +12,6 @@ Use states:
 
 Applicable NOT_CHECKED items are not PASS.
 
-## Q-1 — Mandatory Pre-Generation Confirmation (blocking)
-Before ANY final commercial poster generation, inspect `mandatory-input-confirmation.md`. All requested/required facts and the target platform must be verified/confirmed; a missing price or date *including a requested reserved zone* is blocking unless the user explicitly approves removal. NO placeholders, guessed promotion facts or unapproved deletion. If input audit is NOT_CHECKED/BLOCKED/FAIL, halt generation and ask the user. This check cannot be waived by excellent composition or autonomous execution.
-
 ## Q0 — Product Truth / Fact QA
 Check:
 - product/SKU/variant/condition,
@@ -76,10 +73,7 @@ Check:
 - commercial text requirements,
 - intended viewing condition.
 
-If target platform is absent or an account-dependent rule cannot be resolved for final production, ask for the missing information BEFORE final image generation. Do not choose a generic platform or silently proceed with a finished export.
-
-## Q4 — Fail-Closed Final Delivery Gate (blocking)
-Inspect the rendered artifact itself and verify: (1) pre-generation audit PASS, (2) every required user field is present with **actual confirmed content** or explicitly removed with user approval, (3) zero price/date/brand/parameter stand-ins, blanks or invented facts, (4) real text accurately matches verified sources, (5) platform and technical rules satisfied and relevant visual/artifact QA PASS. A blank region labeled price/date does NOT satisfy content completeness. Failure / NOT_CHECKED blocks 'final', S2/S3, client approval-ready and platform-ready claims. Request data or re-render/reflow, then inspect again.
+If account-dependent or current platform rules are unresolved, do not claim platform-ready status.
 
 ## Blocking rule
 Hard-gate failures cannot be averaged away by visual quality.

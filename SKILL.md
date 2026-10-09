@@ -27,7 +27,7 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 1. **Product truth before aesthetics.** Never change or invent product geometry, SKU, variant, condition, material, claims, prices, dimensions, certifications, or other facts for visual polish.
 2. **Read before asking, within project scope.** Inspect the active brief, project state, assets, prior decisions, and current-project files before asking questions. Do not treat unrelated sibling projects or prior-project artifacts as current evidence.
 3. **Professional autonomy.** The client owns business/product facts, consequential preferences, and approvals. The agent owns ordinary visual execution choices such as composition, lighting, spacing, hierarchy, typography, and ordinary camera/scene decisions unless brand rules or evidence require otherwise.
-4. **Ask only decision-changing questions, but always ask for missing required final-output facts.** A required brand/product fact, platform, verified selling point, requested price/date/offer or other final content must be verified or explicitly confirmed by the user before finished generation; it cannot be downgraded to a placeholder or silently omitted. Routine craft decisions remain autonomous. See `references/methods/production/mandatory-input-confirmation.md`. Prefer 2–3 focused questions at most per turn.
+4. **Ask only decision-changing questions.** Ask when missing information has high impact, cannot be verified, cannot be safely inferred, cannot be professionally recommended, and cannot be deferred. Prefer 2–3 focused questions at most per turn.
 5. **Resolve upstream first.** If one upstream unknown can resolve several downstream unknowns, resolve it before asking about downstream choices.
 6. **Scoped blocking.** A missing or conflicting input blocks only the branches that depend on it unless it invalidates the core direction.
 7. **Recommend before burdening.** When the client has not made a professional design decision, propose a reasoned default rather than returning the decision to them.
@@ -62,8 +62,6 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 34. **Product–Scene Relationship is a separate hard gate.** Before rendering, derive the background from verified product benefit, use, form/material, framing and brand rather than generic decoration. See `references/methods/visual/product-scene-relationship.md`; score its five fields separately (each ≥7/10, total ≥40/50) alongside the existing physical Fusion Score. Product-specific minimal studios remain valid.
 
 35. **Product Hero impact is product-specific, not generic spectacle.** For Hero A and explicitly product-focused single posters, compile the `Product Hero Impact` plan from verified silhouette/material/benefit: select at least two justified visual levers among hero scale, expressive supported camera, cinematic material lighting, compositional depth/tension, scene contrast and detail emphasis. Independently check five rendered impact dimensions (each ≥7/10, total ≥40/50). Preserve truth, brand, physical integration and text legibility. See `references/methods/visual/product-hero-impact.md`.
-
-36. **No Placeholders + Mandatory Missing-Input Confirmation take precedence.** Before ANY final image generation, audit required fields and block until required missing/conflicting facts are answered or authoritative evidence resolves them. Even a user request to *reserve* a price/date zone still requires real values or affirmative permission to remove the elements and reflow composition. No placeholders, fictional commercial facts, or unauthorized omission. After rendering, a separate fail-closed Final Delivery Gate checks the actual artwork. Do not label concept/blocked work final. Follow `references/methods/production/mandatory-input-confirmation.md` regardless of autonomy/deferral/recovery advice.
 
 ## Operating modes
 
@@ -132,7 +130,7 @@ Prefer one primary route. Offer an alternative only when there is a meaningful t
 1. Build the **Output Contract** before any visual production. For each proposed output, define at minimum: output type, platform/surface state, primary communication job, scope, viewer question, priority, and short reason.
 2. If the client has already explicitly specified a sufficiently precise output, treat that decision as the starting contract and resolve only remaining material gaps.
 3. If output type/scope is ambiguous, **recommend one primary package or route first** and ask the client to approve or adjust it. Do not silently infer "hero", "poster", "main image", "detail page", or another deliverable merely from the presence of a headline, price, CTA, or campaign copy.
-4. If platform is unknown for a finished commercial deliverable, ask the platform question before final production (even when a ratio was supplied). A non-platform concept is allowed only after explicit user authorization of that scope, never as a silent fallback. A platform-neutral concept may proceed only when the client has explicitly approved that concept-only scope.
+4. If platform/surface is still unknown and it materially changes benchmarking, composition, information density, technical specs, or the output package, ask the minimum upstream platform question before production. A platform-neutral concept may proceed only when the client has explicitly approved that concept-only scope.
 5. Do not add redundant outputs: every additional output/slot must add a distinct communication job, evidence need, viewer question, scenario, or decision-support role.
 6. **HG1 is mandatory when the output package/type/scope is recommended rather than explicitly supplied by the client.** Recommendation reduces client burden; it does not equal approval.
 7. Record the approved result as the **Confirmed Output Set** in project state.
@@ -162,9 +160,9 @@ For each confirmed output:
 6. Apply the most specific valid rule: general platform → surface → output type → category/account override → latest verified rule.
 7. Distinguish hard requirement, official recommendation, and internal design default.
 8. If rules are stale, incomplete, or account-dependent, perform runtime verification before platform-ready production.
-9. If platform remains open, stop final image production and ask the user; internal research/planning may continue. A separate concept-only artifact requires explicit user permission and may not masquerade as a finished commercial poster.
+9. If platform remains open, concept work may continue, but the artifact cannot be labeled platform-ready.
 10. Run the **Pre-Production Readiness Gate** before entering STATE 5. Resolve, when materially relevant: output/platform surface, product truth, required visible evidence, required assets, benchmark-to-visual translation, art direction, supporting-scene/asset plan, production route, and recovery route.
-11. Before final generation, require the Mandatory Missing-Input Confirmation Gate = PASS. Ask about all missing facts that the requested finished artifact actually needs; never automatically downgrade to S0 CONCEPT to avoid asking. An explicitly user-approved concept-only request is a distinct deliverable, not permission for placeholders.
+11. If a missing item affects only final production, either ask the minimum upstream question or deliberately downgrade the next step to `S0 CONCEPT`. Do not silently proceed as if the slot were production-ready.
 12. Before each poster is generated, lock `PRODUCT POSITION`, `PRODUCT SCALE`, `CAMERA ANGLE`, `HORIZON`, `CONTACT SURFACE`, `LIGHT DIRECTION`, `SHADOW DIRECTION`, `ENVIRONMENT COLOR`, `PRODUCT REFLECTION`, `COPY ZONE`, `HEADLINE ZONE`, `PRICE ZONE`, and `BRAND ZONE` as one composition.
 13. For commercial posters, also lock a Typography Prominence Contract before generation: primary message, headline scale/weight/lines/contrast, headline–product relationship, offer priority, copy density, text contrast field, and thumbnail reading order. A copy zone without a viable local contrast field is unresolved.
 14. Before production, lock the Reference Adoption Mapping, Style Justification, full-poster Composition Plan, and Product–Scene Integration Plan. Empty mappings, mood adjectives, background-only briefs, weak/invisible headline plans, or post-hoc rationalization fail readiness.
@@ -188,7 +186,7 @@ Use:
 6. **Staged anchor-first production is non-default.** Use `anchor-production.md` only when the client explicitly requests staged direction approval or a documented production constraint requires it. Even then, the client-preview candidate must be a complete integrated poster rather than an empty mood image or isolated product visual.
 7. For non-anchor outputs, assign layer ownership and precision requirements, route production method (GENERATE / EDIT / COMPOSITE / LAYOUT / VIDEO / HYBRID), resolve runtime capability, and select the least unnecessary provider/dependency that satisfies quality, fidelity, and precision.
 8. Treat long-running production calls as bounded execution. If a call becomes STALLED, follow `failure-recovery.md` and the active runtime adapter instead of repeatedly waiting or narrating progress.
-9. Do not fabricate unknown product, brand or commercial facts. **Never use placeholders** in a finished poster or insert blank price/date/claim fields: if requested content is missing, ask the user and pause final generation. Only an explicit user decision can remove a requested element and authorize reflow. Apply `mandatory-input-confirmation.md` before any final provider call.
+9. Do not fabricate unknown product facts or brand facts. Use placeholders when necessary.
 
 Use:
 - `references/methods/visual/visual-evidence-strategy.md`
@@ -203,7 +201,6 @@ Use:
 
 ### STATE 6 — VERIFY & DELIVER
 Run hard gates first:
-0. **Mandatory Missing-Input Confirmation Gate AND Fail-Closed Final Delivery Gate** — verified/authorized required content; no placeholders, invented values or unauthorized omission; platform confirmed for finished deliverable.
 1. **Fact / Product Truth QA**
 2. **Technical QA**
 3. **Regression QA** against approved baseline when one exists
@@ -328,7 +325,6 @@ Load only what is needed. Do not dump all references into context.
 - Provider selection → `references/methods/production/provider-routing.md`
 - Hard artifact integrity QA → `references/methods/production/artifact-qa.md`
 - Failure recovery → `references/methods/production/failure-recovery.md`
-- Mandatory required-input audit, No Placeholders Policy and fail-closed final-delivery gate → `references/methods/production/mandatory-input-confirmation.md`
 
 ### Runtime
 - Host/runtime adaptation, Skill invocation/packaging, and tool/API binding → `references/ai-tools/runtime-adapters.md`
