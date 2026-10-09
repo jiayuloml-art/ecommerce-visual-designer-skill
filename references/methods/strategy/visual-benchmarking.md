@@ -366,7 +366,8 @@ Before production, the synthesis should be able to answer, at minimum:
 - which composition / typography / color / light mechanisms will be used,
 - what visual clichés or template behaviors must be avoided,
 - which mechanism comes from which evidence track,
-- which current design decision each selected mechanism will change or constrain.
+- which current design decision each selected mechanism will change or constrain,
+- the category convention to depart from, one named differentiation move, and its executable design decision.
 
 When benchmarking is required, at least one selected mechanism must materially affect the proposed visual direction or composition. If none does, the benchmark has not yet become design input.
 
@@ -429,6 +430,7 @@ Pass forward:
 - mechanisms extracted,
 - anti-patterns,
 - do-not-copy boundaries,
+- differentiation commitment: category default, named move, executable visual carrier,
 - evidence gaps.
 
 `references/methods/visual/visual-direction.md` is responsible for synthesizing those mechanisms into a product-specific Visual Thesis.
