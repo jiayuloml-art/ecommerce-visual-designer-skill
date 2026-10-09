@@ -35,7 +35,10 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 9. **Outputs determine downstream inputs.** Do not use a fixed intake questionnaire. Confirm outputs, then resolve the product facts, assets, proof, platform rules, and production dependencies they require.
 10. **Shared strategy, output-specific production.** Campaign strategy, product truth, and campaign visual system persist across outputs; production plans are output/slot-specific.
 11. **Internal complexity, external clarity.** Default to CLIENT MODE. Do not expose internal taxonomies, state labels, hidden reasoning, routing scores, or implementation diagnostics unless the user explicitly asks for development/debugging.
-12. **Confirmed decisions persist.** Reuse confirmed facts and decisions. Do not silently re-derive or replace them unless new evidence invalidates them or the client requests a change.
+<!-- STABILITY TEST: MODIFIED — confirmation inheritance is scoped to prevent cross-run/cross-output drift. -->
+12. **Confirmed decisions persist within scope.** Reuse confirmed facts and decisions only within the confirmed Run, Case, output scope, and fact scope. Before a new Run, new Case, new output family, or new wording variant is used, re-check the relevant Product Truth and confirmation scope. Do not treat a prior approval as authorization for a different fact or deliverable.
+<!-- STABILITY TEST: ADDED — canonical wording and translation boundary. -->
+**Canonical wording lock.** Establish canonical wording for brand name, product name, version, texture, specification, price, claim, certification, promotion, and key selling points. Translation, abbreviation, synonym, and marketing rewrite are candidate expressions only; they cannot replace canonical wording. If a candidate expression may change the factual meaning, enter confirmation state before using it in final commercial copy.
 13. **Preserve verified assets.** Do not regenerate a verified layer when the requested change does not depend on that layer.
 14. **Fail explicitly, recover locally.** Never silently guess or silently downgrade fidelity. Prefer the smallest responsible fix, then alternate route, manual handoff, or focused clarification.
 15. **Verify rendered artifacts.** Do not treat a prompt, source file, or successful tool call as a finished deliverable. Verify the actual rendered/exported result.
@@ -62,6 +65,21 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 34. **Product–Scene Relationship is a separate hard gate.** Before rendering, derive the background from verified product benefit, use, form/material, framing and brand rather than generic decoration. See `references/methods/visual/product-scene-relationship.md`; score its five fields separately (each ≥7/10, total ≥40/50) alongside the existing physical Fusion Score. Product-specific minimal studios remain valid.
 
 35. **Product Hero impact is product-specific, not generic spectacle.** For Hero A and explicitly product-focused single posters, compile the `Product Hero Impact` plan from verified silhouette/material/benefit: select at least two justified visual levers among hero scale, expressive supported camera, cinematic material lighting, compositional depth/tension, scene contrast and detail emphasis. Independently check five rendered impact dimensions (each ≥7/10, total ≥40/50). Preserve truth, brand, physical integration and text legibility. See `references/methods/visual/product-hero-impact.md`.
+
+<!-- STABILITY TEST: ADDED — confirmation scope record. -->
+## Stability controls
+
+For any confirmed wording or fact that may be reused, retain a compact scope record containing:
+- `run_id`
+- `case_id`
+- output family and affected slots
+- canonical wording and source wording
+- confirmation status
+- affected downstream modules
+
+A new Run, Case, platform, output type, or wording variant must re-check whether the confirmation still applies. Unscoped confirmation is background context, not authorization for final delivery.
+
+For language conversion or localization, establish a fact-term mapping before production. If version, texture, claim, or selling-point translation cannot be verified, preserve the original wording, mark the candidate translation as unresolved, and do not place it in final commercial text. A concept may show it only as clearly labeled provisional copy.
 
 ## Operating modes
 
@@ -154,7 +172,12 @@ Enter this state only for outputs in the Confirmed Output Set.
 For each confirmed output:
 1. Resolve required / conditional required / recommended inputs.
 2. Lock product truth as confirmed facts, allowed derivations, hypotheses, preserved invariants, and prohibited inferences.
-3. Treat missing information and conflicting information differently; unresolved conflicts remain explicit.
+<!-- STABILITY TEST: MODIFIED — conflict handling covers translated, version, texture, and descriptive wording. -->
+3. When brief wording, asset text, translation, version name, texture name, selling-point wording, or extra descriptive copy conflicts with frozen Product Truth, preserve both the source wording and canonical wording; mark the item as CONFLICT. Do not choose, normalize, translate, synonymize, or merge them silently. Record the affected outputs and ask only the minimum question needed to confirm canonical wording.
+4. Treat missing information and conflicting information differently; unresolved conflicts remain explicit.
+<!-- STABILITY TEST: ADDED — scoped blocking and extra-copy boundary. -->
+5. A conflict blocks only the output modules that depend on that fact. Preparation, asset inventory, structure planning, and non-factual visual direction may continue when they do not depend on the conflict. Any final deliverable containing disputed price, specification, version, texture, claim, or commercial wording must wait for confirmation.
+6. Extra descriptive copy, benefit explanations, texture associations, usage experience, and version-difference descriptions are independent fact-risk items. They do not become global Product Truth through one approval; each confirmation is bound to the current Run, Case, output scope, and exact wording.
 4. Do not fabricate unseen product geometry, internal structures, reverse views, opened states, or mechanisms that are not evidenced. When a confirmed communication job materially depends on such a state, use the **Evidence Authorization Ladder** in `input-resolution.md`: check supplied evidence → ask for visual/factual support if needed → ask whether a clearly labeled conceptual depiction is acceptable → otherwise change the evidence route.
 5. Resolve platform, surface, output type, category, and current technical specification. If category/use context materially changes scene validity, load the category playbook before locking scene semantics.
 6. Apply the most specific valid rule: general platform → surface → output type → category/account override → latest verified rule.
