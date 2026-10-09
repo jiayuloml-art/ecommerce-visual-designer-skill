@@ -74,7 +74,7 @@ For any confirmed wording or fact that may be reused, retain a compact scope rec
 - confirmation status
 - affected downstream modules
 
-A new Run, Case, platform, output type, or wording variant must re-check whether the confirmation still applies. Unscoped confirmation is background context, not authorization for final delivery. Persist fact-specific approvals in `PROJECT_STATE.schema.md` under `confirmation_scope.records`; do not promote provisional translations or extra copy to project-wide Product Truth.
+A new Run, Case, platform, output type, or wording variant must re-check whether the confirmation still applies. Unscoped confirmation is background context, not authorization for final delivery. Persist fact-specific approvals in `references/methods/PROJECT_STATE.schema.md` under `confirmation_scope.records`; do not promote provisional translations or extra copy to project-wide Product Truth.
 
 For language conversion or localization, establish a fact-term mapping before production. If version, texture, claim, or selling-point translation cannot be verified, preserve the original wording, mark the candidate translation as unresolved, and do not place it in final commercial text. A concept may show it only as clearly labeled provisional copy.
 
@@ -107,7 +107,7 @@ May expose compact execution diagnostics: current stage, task operation, resolve
 Load when needed:
 - `references/methods/decision-dimensions.md`
 - `references/methods/input-resolution.md`
-- `PROJECT_STATE.schema.md`
+- `references/methods/PROJECT_STATE.schema.md`
 
 ### STATE 1 — DIAGNOSE
 Resolve only the dimensions that materially affect design:
@@ -131,7 +131,7 @@ Recommend:
 
 Resolve product selling points using `references/methods/strategy/selling-point-discovery.md`.
 
-When a new campaign/KV, new platform, new long-form/detail system, visual upgrade, or unresolved visual direction warrants external evidence, use `references/methods/strategy/visual-benchmarking.md`. Before tool-dependent research, resolve the relevant runtime capability via `references/ai-tools/runtime-adapters.md`; if live research is unavailable, use supplied references and mark the evidence gap. Reuse a recent valid benchmark for routine adaptations or revisions. Keep **platform/surface references** and **category/product references** distinct enough to learn both platform-native information behavior and category-specific product presentation. For a new hero/KV, new long-form/detail visual system, or deliberate visual upgrade, benchmarking is not complete until selected references have been translated into executable visual mechanisms such as focal hierarchy, module rhythm, product/context relation, product view/state, composition, typography role, light/material treatment, scene semantics, brand device, and anti-patterns.
+When a new campaign/KV, new platform, new long-form/detail system, visual upgrade, or unresolved visual direction warrants external evidence, use `references/methods/strategy/visual-benchmarking.md`. Before tool-dependent research, resolve the relevant runtime capability via `references/context/ai-tools/runtime-adapters.md`; if live research is unavailable, use supplied references and mark the evidence gap. Reuse a recent valid benchmark for routine adaptations or revisions. Keep **platform/surface references** and **category/product references** distinct enough to learn both platform-native information behavior and category-specific product presentation. For a new hero/KV, new long-form/detail visual system, or deliberate visual upgrade, benchmarking is not complete until selected references have been translated into executable visual mechanisms such as focal hierarchy, module rhythm, product/context relation, product view/state, composition, typography role, light/material treatment, scene semantics, brand device, and anti-patterns.
 
 When visual references are supplied or selected, execute the complete **Reference Adoption Protocol**: SEARCH → SELECT → DECOMPOSE → ADOPT → PRODUCE → COMPARE → REVISE. Reference research that does not create a production constraint and output trace is incomplete.
 
@@ -216,7 +216,7 @@ Use:
 - `references/methods/visual/composition-and-typography.md`
 - `references/methods/production/provider-routing.md`
 - `references/methods/production/provider-registry.md`
-- `references/ai-tools/runtime-adapters.md`
+- `references/context/ai-tools/runtime-adapters.md`
 
 ### STATE 6 — VERIFY & DELIVER
 Run hard gates first:
@@ -348,8 +348,8 @@ Load only what is needed. Do not dump all references into context.
 - Failure recovery → `references/methods/production/failure-recovery.md`
 
 ### Runtime
-- Host/runtime adaptation, Skill invocation/packaging, and tool/API binding → `references/ai-tools/runtime-adapters.md`
-- Codex runtime adapter (load only when active host is Codex) → `references/ai-tools/codex.md`
+- Host/runtime adaptation, Skill invocation/packaging, and tool/API binding → `references/context/ai-tools/runtime-adapters.md`
+- Codex runtime adapter (load only when active host is Codex) → `references/context/ai-tools/codex.md`
 
 ## Final behavior
 The client should experience a concise, capable design collaborator. The implementation may be complex; the client-facing interaction should not be.

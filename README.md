@@ -25,24 +25,23 @@ V1.1 keeps the seven-state controller and strengthens four areas:
 
 ```text
 SKILL.md
-PROJECT_STATE.schema.md
 CHANGELOG.md
 references/
 ├── context/
 │   ├── platforms/
-│   └── categories/
-├── methods/
-│   ├── strategy/
-│   ├── mediums/
-│   ├── visual/
-│   └── production/
-└── ai-tools/
+│   ├── categories/
+│   └── ai-tools/
+└── methods/
+    ├── PROJECT_STATE.schema.md
+    ├── strategy/
+    ├── mediums/
+    ├── visual/
+    └── production/
 ```
 
 The upper-level structure separates:
-- **context** — external task conditions,
-- **methods** — design and production methods,
-- **ai-tools** — host/runtime adaptation.
+- **context** — external task and runtime conditions, including platform, category, and AI host differences,
+- **methods** — design and production methods.
 
 The detailed design taxonomy remains inside those layers rather than being flattened into one directory.
 
