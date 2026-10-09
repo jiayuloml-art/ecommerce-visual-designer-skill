@@ -2,6 +2,22 @@
 
 Use external visual evidence to inform art direction without copying a single competitor.
 
+## Reference Adoption Protocol
+
+When references are supplied or selected, use this complete production loop:
+
+**SEARCH → SELECT → DECOMPOSE → ADOPT → PRODUCE → COMPARE → REVISE**
+
+- **SEARCH:** investigate the unresolved visual/evidence question.
+- **SELECT:** retain only inspectable references with a specific role.
+- **DECOMPOSE:** record visible Visual DNA as executable parameters, not mood adjectives.
+- **ADOPT:** decide what each affected output must inherit, adapt, avoid copying, or ignore.
+- **PRODUCE:** compile the adopted parameters into the Production Plan before rendering.
+- **COMPARE:** compare the rendered artifact against the promised mapping.
+- **REVISE:** repair locally when viable; return upstream when the mapping or scene structure is incompatible.
+
+A reference that remains only in research notes is not adopted. Reference Adoption is a production constraint and QA obligation.
+
 ## When to run
 Run when materially useful, especially for:
 - a new campaign,
@@ -142,6 +158,34 @@ Do not treat adjectives such as “premium”, “warm”, “clean”, “minim
 
 For each selected reference, inspect the relevant dimensions below and record only what is actually visible:
 
+### Visual DNA checklist
+
+For each important reference, resolve the applicable items from this checklist:
+
+1. composition,
+2. product scale,
+3. product placement,
+4. camera angle,
+5. lens / perspective feeling,
+6. crop,
+7. background structure,
+8. spatial depth,
+9. color palette,
+10. contrast,
+11. lighting direction,
+12. light quality,
+13. shadow behavior,
+14. material language,
+15. human presence,
+16. motion / action,
+17. typography scale,
+18. typography position,
+19. information density,
+20. graphic devices,
+21. overall commercial mood.
+
+Record only what is visible. Translate qualitative impressions into constraints when possible, such as negative-space behavior, product dominance, prop count, light direction/softness, interaction contact, typographic mass, or depth structure. “Premium”, “minimal”, “young”, “natural”, and “technological” are not usable Visual DNA by themselves.
+
 ### Composition
 - where the product sits in the frame,
 - first and second focal events,
@@ -213,6 +257,49 @@ Examples of mechanisms include:
 
 The goal is not to reproduce a reference. It is to convert evidence into production-relevant design rules.
 
+## Reference Adoption Record
+
+For every important selected reference, retain:
+
+```yaml
+reference_id:
+source:
+role: # PLATFORM | CATEGORY_PRODUCT | VISUAL_EXCELLENCE | EXECUTION | NEGATIVE
+visible_observations: []
+adopt: []
+adapt: []
+do_not_copy: []
+ignore: []
+affected_outputs: []
+output_trace:
+  # output/hero/slot field -> adopted parameter
+verification_cues: []
+```
+
+- **ADOPT:** visible characteristics that the final design must inherit.
+- **ADAPT:** characteristics retained in principle but changed for product truth, brand, platform, category, or copy.
+- **DO NOT COPY:** competitor identity, proprietary layout details, signature assets, exact styling, or other literal elements that must not transfer.
+- **IGNORE:** visible but irrelevant characteristics that should not influence the current design.
+
+Every ADOPT item must name at least one affected production field such as camera, product scale, placement, crop, light direction/quality, shadow behavior, material response, action/contact, typography hierarchy, copy zone, negative space, palette, contrast, or spatial depth.
+
+## Reference → Output Traceability
+
+Compile a reference trace before rendering:
+
+```text
+Reference A → Hero A camera angle + product scale + lighting logic
+Reference B → Hero A typography hierarchy + copy zone + negative space
+Reference C → Hero B usage action + human crop + material palette
+```
+
+Rules:
+- a reference may constrain multiple outputs,
+- an output may combine mechanisms from multiple references,
+- the trace must name observable fields, not only themes,
+- empty or purely adjectival traces fail the Pre-Production Readiness Gate,
+- the Production Plan owns the executable copy of this mapping.
+
 ## Anti-rationalization rule
 
 For a new hero/KV or deliberate visual upgrade, benchmarking must inform the design **before the Composition Contract is locked**.
@@ -283,6 +370,12 @@ Before production, the synthesis should be able to answer, at minimum:
 
 When benchmarking is required, at least one selected mechanism must materially affect the proposed visual direction or composition. If none does, the benchmark has not yet become design input.
 
+Completion also requires:
+- every important reference has ADOPT / ADAPT / DO NOT COPY / IGNORE decisions,
+- adopted fields are assigned to concrete output/hero/slot fields,
+- verification cues are defined before production,
+- the mapping is available to Production Plan and Visual Critic.
+
 If evidence is insufficient to support those decisions, either continue research, use a curated Skill baseline, or explicitly downgrade to exploratory concept work.
 
 ## Decision trace
@@ -296,6 +389,30 @@ This is an internal audit trail, not a requirement to expose hidden reasoning in
 Do not recreate one competitor as the design answer. Abstract principles across multiple references, then derive a product-specific direction.
 
 If live research is unavailable, use supplied references and clearly mark the evidence gap.
+
+## Post-production Reference Adoption QA
+
+After rendering and before client preview, compare each promised mapping against the artifact. Check, when applicable:
+- composition,
+- product scale and placement,
+- camera / lens / crop relationship,
+- background structure and spatial depth,
+- palette / contrast,
+- lighting direction, quality, and shadow behavior,
+- material language,
+- human presence / motion / usage action,
+- typography scale / position / density,
+- graphic devices and commercial mood.
+
+Use states: **PASS / FAIL / NOT_APPLICABLE**.
+
+`REFERENCE_ADOPTION_QA = FAIL` when an ADOPT item has no visible counterpart, when the result returns to a generic AI default that contradicts the mapping, or when the claimed transfer exists only in the producer's explanation. A beautiful image cannot override this failure.
+
+On FAIL:
+1. identify the missing or contradicted mapped field,
+2. decide whether the defect is local or structural,
+3. revise the responsible layer or regenerate the structurally incompatible output,
+4. compare again before Visual Critic PASS.
 
 ## Curated Skill baseline
 A curated reference set bundled with the Skill may be used as a stable visual-quality baseline across models/runtimes. Curated entries should retain source, date checked, category/context, quality dimension, reusable principle, and non-copy boundary.
@@ -326,5 +443,7 @@ Show only the useful transfer, not the full research log:
 - **Category / Product reference:** what product-view / state / interaction / evidence mechanism was learned and where it appears.
 - **Optional visual-excellence reference:** what execution-quality mechanism was transferred.
 - **Do-not-copy boundary:** one short note when needed.
+
+For important user-supplied references, include each reference's concrete output mapping. If the user supplies three distinct references, the summary must make all three mappings auditable unless one was explicitly rejected or marked non-influential.
 
 The explanation should answer: **what was learned, what changed in this design because of it, and what was deliberately not copied.**

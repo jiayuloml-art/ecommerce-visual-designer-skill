@@ -28,7 +28,91 @@ Use only:
 
 Do not use an averaged aesthetic score.
 
-## C0 — Two-second test
+## Mandatory Visual Core gates
+
+Judge every applicable item explicitly:
+
+### A. PRODUCT PRESENCE
+Is the product sufficiently prominent, identifiable, and visually weighted for the communication job?
+
+### B. COMMERCIAL READABILITY
+Does the artifact behave like a real e-commerce sales visual with clear benefit/message hierarchy rather than environment concept art?
+
+### C. REFERENCE ADOPTION
+Do the rendered composition, scale, camera, light, material, typography, depth, and/or action visibly correspond to the approved Reference Adoption Mapping?
+
+### D. PRODUCT–ENVIRONMENT INTEGRATION
+Do perspective, contact, shadow, light, environmental influence, occlusion, scale, color temperature, depth of field, edge behavior, and material response form one believable world?
+
+### D2. PRODUCT–SCENE RELATIONSHIP
+Judge whether the background meaningfully belongs to this product, rather than merely matching its lighting. See `product-scene-relationship.md`. An intentional minimal studio may pass when tailored to the product.
+
+### D3. PRODUCT HERO IMPACT
+For Product Hero, evaluate whether verified silhouette, product form/material, controlled camera/scale, contrast and composition make the product the unmistakable first read. A refined studio can excel; fake drama, distortion, excessive props and a default floating podium cannot substitute for designed impact. See `product-hero-impact.md`. Usage Hero has separate action-first priorities.
+
+### E. CATEGORY FIT
+Does the result express this category/subcategory's use, purchase, sensory, and trust logic rather than a generic AI style?
+
+### F. VISUAL DISTINCTIVENESS
+Are major stylistic decisions product/brand/reference-specific and justified, rather than repeated gradient/floating/glow/pedestal/futuristic defaults?
+
+### G. USAGE AUTHENTICITY
+For Usage Hero or use-dependent work, is the product actively used through credible contact/action rather than merely held, posed beside, or placed in a lifestyle scene?
+
+### H. COPY READINESS
+Are text-safe, headline, logo, supporting/CTA, negative-space, and product-silhouette zones intentionally resolved?
+
+### I. THUMBNAIL IMPACT
+At intended small/mobile size, do product + core benefit remain the immediate read?
+
+### J. PRODUCT TRUTH
+Are geometry, material, color, identity, state, quantity, and visible claims preserved?
+
+### K. TYPOGRAPHY PROMINENCE
+Does the primary headline function as a commercial visual element, form a deliberate relationship with the product, retain presence at 25% scale, and make the offer legible at the priority required by the brief?
+
+### L. TYPOGRAPHY CONTRAST
+Do headline, price/offer, and core selling points visibly separate from their actual local backgrounds through color, size, weight, local whitespace, background simplification, and a planned contrast field rather than post-hoc rescue panels?
+
+Use `PASS / FAIL / NOT_APPLICABLE`. An applicable NOT_CHECKED is not PASS.
+
+## Blocking visual failures
+
+Use **REVISE** or **REJECT** regardless of general attractiveness when any applicable condition is visibly true:
+- pasted-on product or unrelated lighting system,
+- missing/fake contact, floating without reason, incorrect hand/body/pet interaction,
+- incompatible perspective, scale, shadow, reflection, occlusion, color temperature, depth of field, edge, or material response,
+- product/background hierarchy reversed or product too small at thumbnail size,
+- lifestyle scene without active usage when usage is the job,
+- model/architecture/props overpower the product-use relationship,
+- Reference Adoption Mapping has no visible counterpart,
+- category logic collapses into generic AI luxury, cyberpunk, glow, particles, fog, decorative gradient, or futuristic UI,
+- copy was forced into an unreserved area or competes with product/action,
+- primary headline is visually weak, reads as body copy, or disappears at thumbnail scale,
+- core offer is unreadable or materially weaker than ordinary supporting copy,
+- typography depends on zooming, opaque rescue cards, or leftover-space placement,
+- product truth drift.
+
+Aesthetic appeal cannot average away these failures.
+
+## Hero Output Check
+
+First classify the output contract:
+- explicit hero/main-visual request with no explicit single-image instruction → require two outputs;
+- explicit single hero → require only the requested one;
+- explicit finished/final poster without an explicit quantity → require TWO complete Product Hero + active Usage Hero posters; explicit quantity overrides.
+
+For `hero_output_mode: DUAL_DEFAULT`, verify:
+- Hero A / Product Hero is present and makes product form, material, structure, core benefit, and commercial display the dominant job;
+- Hero B / Usage Hero is present and shows active, category-valid use by a person, hand, pet, or relevant object;
+- Hero B includes credible contact, occlusion, fit/pressure/grip/support/force behavior as applicable;
+- both heroes share the Campaign Visual System in color, brand character, typography logic, and reference logic;
+- composition, camera, scene function, and evidence route are meaningfully different;
+- the pair is not one image with a replaced background.
+
+Missing Hero B, passive lifestyle adjacency, or a background-only variation is a blocking `FAIL`. Judge both outputs independently; one PASS cannot compensate for the other.
+
+## 2-Second Read Test (C0)
 
 At intended thumbnail/mobile viewing size, answer from the visible result:
 - What is noticed first?
@@ -66,7 +150,37 @@ Inspect:
 
 The product must look like it belongs to the same visual world as the scene.
 
+Run the Product–Scene Integration QA fields explicitly: perspective, contact, shadow, light, environmental reflection/influence, occlusion, scale, color temperature, depth of field, edge integration, and material response. Any obvious applicable failure blocks PASS.
+
+### Product–Background Fusion Score
+
+For every scene-based e-commerce poster, assign 1–10 to:
+
+1. Perspective
+2. Lighting
+3. Shadow
+4. Reflection
+5. Scale
+6. Occlusion
+7. Material response
+8. Color temperature
+9. Contact realism
+10. Overall scene coherence
+
+Scoring is a hard gate, not an averaged aesthetic preference:
+- any field below **7** → `FAIL` and `REVISE`/`REJECT`;
+- total below **80/100** → `FAIL` and regenerate or structurally repair;
+- delivery requires every field ≥7 and total ≥80, plus all other applicable gates.
+
+Judge the visible artifact, not prompt wording or producer claims. Record all ten values and the total.
+
 If the claim requires containment or insertion, a nearby container elsewhere in the frame does not count. The visible geometry must show the product actually entering / resting in / being held by the intended receiver.
+
+## C2b — Product–Scene Relationship Check
+Separately score actual visible Scene Relevance, Visual Correspondence, Spatial Integration, Commercial Hierarchy and Brand Consistency (1–10 each). Each must be ≥7 and total ≥40/50; otherwise REVISE/REJECT even if physical Fusion Score passes. Record the offending scene decision and re-inspect the corrected render. Reject generic interchangeable backdrops; do not demand needless props in product-specific studios.
+
+## C2c — Independent Product Hero Impact Check
+On the **rendered Product Hero**, score 1–10: Product Focal Dominance; Camera/Silhouette Expressiveness; Material/Lighting Quality; Compositional Energy; Commercial Impact/Brand Fit. Each must be ≥7 and total ≥40/50; NOT_CHECKED is not PASS. Reject timid catalog product staging and unverified spectacle even if surroundings are attractive; allow striking minimal material/camera craft. Do not average over Product Truth, scene relevance, fusion or typography failures. For non-PASS, specify the low-scoring impact lever and targeted repair.
 
 ## C3 — Typography
 Inspect:
@@ -84,6 +198,59 @@ Inspect:
 - whether repeated roles across a set use coherent scale and spacing.
 
 Reject metadata-like strategy keywords, tiny accidental product identifiers, low-contrast commercial text, accidental overlaps, or text blocks that merely occupy empty space.
+
+### Typography Contrast Check
+
+Check PRIMARY HEADLINE, PRICE/OFFER, BRAND, SELLING POINT, CTA, and DATE separately for foreground/background luminance separation, local complexity, weight, visual size, spacing, overlap, edge collision, product collision, scene interference, and reading priority.
+
+Confirm that the planned contrast field is visible in the scene: low-complexity local detail, controlled negative space, purposeful tonal separation, restrained highlights/shadows, and no collision with faces, active hands, product contact, or critical product structure. A post-hoc card is not evidence that the field was planned.
+
+Direct fail when any applicable condition is visible:
+- headline color and local background are too close,
+- headline exists but is not obvious at first glance,
+- headline requires enlargement/zoom to read clearly,
+- headline weight is too light,
+- headline size differs too little from supporting information,
+- white text sits on a high-key highlight and appears washed out,
+- dark text sinks into a dark or middle-tone field,
+- complex background detail swallows the headline,
+- type covers a face, hand contact, or product-critical structure,
+- headline functions like body copy or a corner label,
+- promotional price/offer is no more prominent than date, CTA, or ordinary supporting copy,
+- product is prominent but copy fails to become the second visual center,
+- copy is technically present but lacks commercial visual presence,
+- primary hierarchy disappears at 25% view,
+- core communication requires zooming.
+
+Do not accept low contrast as “quiet,” “minimal,” or “premium.” Repair color/background relation, size, weight, local scene complexity, or the contrast field. Use restrained shadow, soft backing, or localized gradient only after structural contrast is correct; reject cheap text boxes, PPT-style slabs, sticker treatments, or large image-obscuring panels.
+
+### Thumbnail Readability Check
+
+Inspect the rendered artifact at 100%, 50%, and 25%. At 25%, the viewer must still perceive product category, primary message/core benefit, and—when promotion-led—the importance of the price/offer. Supporting details need not remain fully readable, but the primary headline may not disappear, become a thin gray trace, or lose its second-center relationship with the product.
+
+### 2-Second Read Test
+
+Record the first, second, and third read. Target: `PRODUCT → PRIMARY MESSAGE → OFFER / BENEFIT`, allowing product and headline to operate as a balanced dual core. Fail when the sequence is background-first, product-only with no message, or headline-only with delayed product recognition.
+
+### Typography Prominence Score
+
+Score each field 1–10 from the visible artifact:
+
+1. Headline visibility
+2. Headline scale
+3. Headline contrast
+4. Reading hierarchy
+5. Product–type relationship
+6. Offer visibility
+7. Mobile / thumbnail readability
+8. Overall commercial typography
+
+Hard gate:
+- any field below **7/10** → `FAIL`;
+- total below **64/80** → `FAIL`;
+- primary headline visually disappears, core offer is unreadable, headline functions like body copy, type overlaps important product evidence, hierarchy cannot be identified, contrast depends on zooming, or copy is technically present but commercially invisible → direct `FAIL`.
+
+Record all eight values, total, and status. Product–Background Fusion, Product Truth, Commercial Hierarchy, Reference Adoption, and Final Artifact QA remain independent gates and cannot average away a typography failure.
 
 ## C4 — Semantic effect
 If effects exist:
@@ -103,6 +270,8 @@ Ask:
 - do page-to-page differences come mainly from background swaps rather than meaningful product participation?
 
 If yes, product/brand specificity or product participation is insufficient.
+
+Also compare against Category Visual Intelligence and Style Justification. If the same gradient, floating product, glow ring, pedestal, fog, neon, centered object, split layout, giant headline, or futuristic studio could be used unchanged for an unrelated category, require evidence for the choice or revise it.
 
 ## C6 — Viewer Question / Visual Evidence
 For each supporting or selling-point output, ask:
@@ -133,6 +302,8 @@ Verify:
 
 A research summary with no visible transfer does not count.
 
+For every important reference, inspect SOURCE / ADOPT / ADAPT / DO NOT COPY / IGNORE and its output trace. `REFERENCE_ADOPTION_QA = FAIL` when a promised ADOPT parameter is missing, contradicted, or visible only in the rationale. Check concrete mapped fields rather than overall resemblance; the goal is visual-language transfer, not copying.
+
 ## C9 — Element justification
 Every non-required element should serve at least one:
 - communication,
@@ -142,6 +313,18 @@ Every non-required element should serve at least one:
 - necessary production function.
 
 Remove unjustified competition.
+
+## Dual-Hero pair gate
+
+When `hero_output_mode: DUAL_DEFAULT` applies to EITHER hero requests OR finished posters, assess each complete poster independently and then the pair:
+- Hero A achieves Product Desire with product-first commercial hierarchy and passes the separate Product Hero Impact Check,
+- Hero B achieves Usage Desire / Experience through active category-valid use,
+- campaign color/material/type/brand/reference logic is coherent,
+- composition, camera, scene function, and evidence route are meaningfully different,
+- the pair is not a background swap,
+- both survive thumbnail review.
+
+One PASS cannot compensate for the other poster's FAIL / REVISE / NOT_CHECKED. Both must have legible brand/headline, verified applicable copy, integrated product/scene/type, and independently complete commercial composition. Reject background-only or text-free auxiliary views.
 
 ## Verdict + return map
 
@@ -153,10 +336,11 @@ Every non-PASS verdict must state:
 
 Typical routing:
 - weak/generic visual thesis → Visual Direction → REJECT
+- weak Product Hero first-glance prominence, camera/silhouette, material lighting or compositional energy → Product Hero Impact Protocol / Production Plan → REVISE or REJECT
 - template/passive composition → Composition & Typography → REJECT or REVISE
-- receiver-position / camera / scale / containment mismatch → Anchor Production A2 / scene reselection → REVISE or REJECT
-- light/edge/local integration mismatch with valid geometry → Anchor Production A3 → REVISE
-- typography hierarchy → Composition & Typography / A5 → REVISE
+- receiver-position / camera / scale / containment mismatch → Direct Final Poster Composition / Integration Plan → REVISE or REJECT
+- light/edge/local integration mismatch with valid geometry → Product–Scene Integration repair → REVISE
+- typography hierarchy → Composition & Typography / Commercial Info Composite → REVISE
 - decorative effect → Visual Direction / A4 → REVISE or REJECT
 - product identity drift → Product Truth / A1 → REVISE
 - missing/weak visible evidence for viewer question → Visual Evidence Strategy / Production Plan → REVISE or REJECT
@@ -168,6 +352,8 @@ Typical routing:
 The producer may not present an anchor as completed/approval-ready unless:
 1. Visual Critic verdict is PASS, and
 2. all applicable hard/integrity QA gates are PASS.
+
+For referenced or scene-based anchors, PASS also requires Product Hero Impact QA when the output is Product Hero, plus applicable Reference Adoption QA, Product–Scene Integration QA, Commercial Hierarchy QA, Usage Authenticity QA, Copy Readiness QA, and Thumbnail Impact QA. For Dual-Hero, both individual verdicts and the pair gate must PASS.
 
 A concept status such as S0 does not waive basic visual quality.
 

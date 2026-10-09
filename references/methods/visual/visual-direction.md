@@ -17,6 +17,8 @@ Use only what is relevant:
 - benchmark synthesis and references when required,
 - approved campaign locks for revisions/extensions.
 
+When category materially changes use, sensory response, trust, material treatment, or purchase imagination, also load the Category Visual Intelligence result from `references/context/categories/category-playbooks.md`.
+
 ## Output: Visual Direction Card
 
 ### Communication job
@@ -47,7 +49,10 @@ Define how the product participates in the visual:
 
 Do not encode aesthetic judgment as a universal product-area percentage.
 
+For hero work, product prominence is non-negotiable even when the chosen mechanism uses a person, architecture, or an expressive environment. The Product Hero must make the product the first visual subject; the Usage Hero must make the product-use relationship—not the model or room—the first meaningful read.
+
 ### Product–scene relationship
+For every scene-based poster, complete `product-scene-relationship.md` first: record one product-specific background thesis, a verified function/use or material presentation reason, a form/color/material relation, spatial support and attention guidance, brand fit and an interchangeability test. Do not force props into justified minimal studio frames.
 When a scene is used, define **how the product physically or visually participates in it**.
 
 Prefer a relationship expressed as an action or spatial interaction, for example:
@@ -96,6 +101,7 @@ Resolve at least one mechanism that makes the direction more than a category tem
 If the same mechanism would work unchanged after swapping in any competitor product and logo, strengthen specificity.
 
 ### Scene logic
+Make background geometry, materials and atmosphere respond to the specific product and its approved commercial message; an attractive interchangeable room or abstract stage is not enough. Product Hero should emphasize product form/material, while active Usage Hero should emphasize authentic action and contextual fit.
 Define what the environment must communicate and which contextual elements are necessary. Avoid decorating the scene with props that do not support meaning, scale, attention, or brand.
 
 For daily-use functional physical products, default toward a **credible use context** rather than an abstract design stage when the communication goal benefits from purchase imagination, relevance, or use understanding.
@@ -130,6 +136,75 @@ Define:
 - AI slop to avoid,
 - client-declared dislikes,
 - visual approaches contradicted by product/brand evidence.
+
+Include these defaults when relevant:
+- pasted-on product,
+- inconsistent lighting or shadows,
+- floating without a semantic reason,
+- fake contact / incorrect hand or body interaction,
+- wrong scale or camera mismatch,
+- background / model / props stronger than product,
+- generic AI luxury styling,
+- excessive glow, particles, fog, neon, futuristic UI, or decorative gradients,
+- lifestyle scene without active use,
+- reference researched but not visibly adopted,
+- product too small at thumbnail size,
+- fake materials or excessive depth of field that hides the product.
+
+## Category Visual Intelligence
+
+Derive the direction through this chain:
+
+**CATEGORY → SUBCATEGORY → PURCHASE MOTIVATION → USAGE CONTEXT → SENSORY ATTRIBUTE → BRAND POSITIONING → VISUAL GRAMMAR**
+
+Category supplies a prior, not a finished style. Resolve how category-specific viewer questions, use behavior, material response, trust expectations, and sensory cues change the product view, action, scene, light, camera, and evidence. Then override generic priors with verified brand rules, platform behavior, product truth, selling point, price tier, audience, and selected references.
+
+Do not use fixed equations such as technology = blue gradient, sustainability = green, beauty = pink, premium = black/gold, sport = red/black, or baby = pink/blue.
+
+## Visual Diversity Guard and Style Justification
+
+Before locking the direction, check whether the current or recent work is defaulting without evidence to:
+- purple-blue gradient,
+- floating product,
+- glowing ring,
+- pedestal,
+- fog / neon / particles,
+- abstract wave,
+- centered object,
+- split layout,
+- giant sans-serif headline,
+- generic futuristic studio.
+
+For each major visual choice, record a concise Style Justification:
+
+```yaml
+decision:
+supported_by: # product attribute / brand / selling point / category intelligence / platform / reference
+why_it_serves_this_product:
+rejected_default_or_cliche:
+```
+
+If the answer is only “it looks premium”, the decision is unsupported. Remove or replace it.
+
+## Dual-Hero Visual Direction
+
+When Dual-Hero applies, resolve one shared campaign thesis plus two non-redundant expressions.
+
+### Hero A — Product Hero
+- communication job: PRODUCT DESIRE,
+- select a specific visual impact route per `product-hero-impact.md`: product signature silhouette/feature, sufficiently assertive product scale, evidence-grounded camera, material-specific cinematic lighting and deliberate depth/typographic counterweight,
+- explore 2–3 different art directions internally and select one strongest, rather than defaulting to a fixed podium/neon/giant-object template,
+- first impression: product identity + primary benefit,
+- define product scale, camera/view, composition, background role, lighting, copy zone, and reference mapping,
+- environment and effects remain subordinate to product form/material/benefit. A refined minimal studio is valid when product scale, silhouette, contrast and lighting create a memorable first read. No fake geometry, extreme distortion or generic forced spectacle.
+
+### Hero B — Usage Hero
+- communication job: USAGE DESIRE / EXPERIENCE,
+- first impression: product actively used in a category-valid relationship,
+- define user/pet/object, exact usage action, contact/occlusion, camera, environment, lighting, copy zone, and reference mapping,
+- the user or environment may supply emotion and scale but may not overpower the product-use relationship.
+
+The pair must share color/material/type/brand logic while differing in camera, composition backbone, scene function, and evidence route. A background swap is not a second hero.
 
 ## Reference Transfer Map
 
@@ -170,6 +245,9 @@ Visual Direction is resolved only when all are true:
 - scene/effect logic is purposeful where applicable,
 - benchmark evidence has been translated into named current-design decisions when benchmarking was required,
 - negative direction is known.
+- Category Visual Intelligence has been applied when material, and no fixed category-style shortcut is used.
+- major visual decisions have Style Justification and pass the Visual Diversity Guard.
+- when Dual-Hero applies, both hero expressions and their meaningful differences are explicit.
 
 If these are not resolved, do not move to composition or rendering.
 

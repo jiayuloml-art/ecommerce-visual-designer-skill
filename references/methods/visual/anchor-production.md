@@ -1,6 +1,10 @@
-# Anchor Production
+# Anchor Production — Optional Staged Mode
 
-Purpose: produce a representative hero/KV/anchor from an approved Visual Direction and Composition Contract while preserving product truth and visual quality.
+Purpose: support staged direction approval only when the client explicitly requests it or a documented constraint makes direct final poster production impractical.
+
+This is not the default for static e-commerce posters. Default to `direct-final-poster-generation.md`, which plans and generates the complete integrated poster before deterministic typography/commercial-info completion.
+
+Even in staged mode, the approval candidate must be a complete integrated poster. Do not use a pure background, isolated product hero, or empty mood image as the client-facing anchor.
 
 This module owns production order. It does not invent the direction and it does not self-approve the final visual.
 
@@ -9,6 +13,15 @@ Required sequence:
 **READY → PRODUCT VIEW → SCENE/CAMERA → PRODUCT INTEGRATION → SEMANTIC EFFECT → TYPOGRAPHY → CANDIDATE**
 
 A later stage must not bypass a failed prerequisite.
+
+## Dual-Hero within optional staged anchor mode
+
+This section is optional because staged anchor production itself is optional; it does not override the main output router. When the confirmed output uses `hero_output_mode: DUAL_DEFAULT` or explicitly requests two heroes and staged approval is also active, use:
+
+- **Hero A — Product Hero:** product desire; product is the absolute visual center; form/material/color/core benefit and commercial copy readiness are clear.
+- **Hero B — Usage Hero:** usage desire / experience; product is actively worn, operated, consumed, handled, used by a pet, or performing its function in a real environment.
+
+Run A0 → A6 separately for each hero and then run the pair gate. Shared Campaign Visual System does not permit background-swap duplication. Camera, composition, scene function, and evidence route must be meaningfully different.
 
 ## A0 — READY
 Confirm:
@@ -21,6 +34,10 @@ Confirm:
 - production route,
 - recovery route,
 - active runtime/provider capability.
+- Reference Adoption Records, output traces, and verification cues when references are used,
+- Category Visual Intelligence and Style Justification when material,
+- separate Product Hero / Usage Hero readiness when Dual-Hero applies,
+- pre-reserved copy zones and product silhouette zone.
 
 Do not start an expensive image call merely because a mood is known.
 
@@ -93,6 +110,8 @@ Resolve as applicable:
 - light softness/color temperature,
 - copy/effect space,
 - foreground/midground/background roles.
+- reference-mapped camera, scale, depth, light, and copy-zone constraints,
+- integration targets for perspective, contact, environmental influence, occlusion, and material response.
 
 A beautiful room is not enough. It must be camera-compatible with the product.
 
@@ -128,6 +147,72 @@ Check and repair as applicable:
 - occlusion/depth,
 - reflection/material response,
 - identity locks.
+
+### Product–Environment Integration Protocol
+
+For every product in a non-isolated environment, verify one coherent photographic/visual world.
+
+#### Perspective consistency
+- camera height,
+- horizon,
+- vanishing direction,
+- perspective strength,
+- lens feeling,
+- product view versus scene view.
+
+A front-view product cannot be placed into a strongly top-down scene without a supported reconstruction or a scene redesign.
+
+#### Contact
+All expected physical relationships must be visible and plausible:
+- product on surface → contact zone + weight-bearing shadow,
+- hand-held product → fingers wrap with correct depth and pressure,
+- wearable → body enters/receives the product with credible pressure and overlap,
+- inserted/contained object → receiver geometry and insertion depth are real,
+- pet product → animal body/muzzle/paw/fur forms a credible use relationship.
+
+Nearby is not contact. Avoid floating objects and fake containment.
+
+#### Lighting coherence
+Resolve one system for:
+- key light direction,
+- fill light,
+- rim light,
+- exposure,
+- color temperature,
+- cast-shadow direction and softness.
+
+The product cannot retain an unrelated studio light while the environment uses another system.
+
+#### Environmental influence
+The environment must visibly affect the product where applicable:
+- warm bounce from wood/skin/fabric,
+- cool edge reflection from blue surroundings,
+- soft low-contrast bounce from bedding,
+- bathroom highlights,
+- outdoor hard sunlight,
+- nearby color and surface reflection.
+
+#### Occlusion and depth
+Use natural overlap where interaction requires it: hand over product, hair over headphone, face against mask, clothing over wearable, fur around pet product, foreground object in front of product. Do not preserve a complete product outline when that destroys believable use.
+
+#### Material response
+Metal, glass, plastic, fabric, leather, food, liquid, skin, hair, and fur must respond differently to the same environment. Verify highlight shape, reflection, translucency, roughness, deformation, wetness, and edge behavior as applicable.
+
+#### Integration QA
+Use `PASS / FAIL / NOT_APPLICABLE` for:
+- PERSPECTIVE,
+- CONTACT,
+- SHADOW,
+- LIGHT,
+- REFLECTION / ENVIRONMENTAL INFLUENCE,
+- OCCLUSION,
+- SCALE,
+- COLOR TEMPERATURE,
+- DEPTH OF FIELD,
+- EDGE INTEGRATION,
+- MATERIAL RESPONSE.
+
+Any obvious applicable FAIL blocks A3. Do not advance to typography or hide an integration defect with a card, glow, fog, blur, crop, or decorative overlay.
 
 ### Integration checkpoint — no final typography
 Inspect product + scene without final copy.
@@ -184,6 +269,20 @@ Do not call it completed, approved, or ready for client review yet.
 
 Send the candidate to `visual-critic.md` and separately run applicable hard/integrity QA.
 
+When references were used, run `REFERENCE_ADOPTION_QA` before client preview:
+1. load the approved Reference Adoption Mapping,
+2. compare every ADOPT item to the rendered result,
+3. verify the mapped composition, product scale/placement, camera/crop, depth, color/contrast, light/shadow, material, action, typography, density, and graphic-device fields as applicable,
+4. mark missing or contradicted mappings FAIL,
+5. revise locally only when the underlying structure remains viable; otherwise return to scene/composition/direction and regenerate.
+
+For Dual-Hero, also run the pair gate:
+- Hero A product prominence and core benefit are immediate,
+- Hero B shows active category-valid use,
+- both belong to one campaign system,
+- camera/composition/scene function are not duplicates,
+- neither hero is released while the other is FAIL / REVISE / NOT_CHECKED.
+
 Only a candidate that passes both visual criticism and applicable hard gates may become CLIENT PREVIEW.
 
 ## Runtime / failure behavior
@@ -209,12 +308,12 @@ General rules:
 - stalled provider → runtime/failure recovery
 
 ## Expansion rule
-Anchor-first is fail-closed.
+When explicitly approved staged anchor-first production is used, it is fail-closed.
 
 When an anchor establishes the visual language for a multi-output package:
-1. produce only the anchor,
-2. run Visual Critic + applicable hard QA,
-3. present the passing anchor for the required client approval,
+1. produce only the required anchor member(s); in Dual-Hero mode, produce Hero A + Hero B and no downstream assets,
+2. run Product Truth QA, Reference Adoption QA, Product–Scene Integration QA, Commercial Hierarchy QA, Visual Critic, and applicable hard QA on each member,
+3. present the passing anchor or passing pair for the required client approval,
 4. record that approval,
 5. only then render/export supporting outputs.
 
