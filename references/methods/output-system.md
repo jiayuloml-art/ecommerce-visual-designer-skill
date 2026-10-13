@@ -109,6 +109,24 @@ When a multi-poster set is justified, each image must add a distinct communicati
 
 For the default or explicitly requested Dual-Hero full-poster package, each member must have final ad typography, product/scene integration, brand and applicable supplied commercial information, and pass independently; the pair must not become background swaps. Share color, brand character, typography logic, and reference logic, but require meaningful differences in composition, camera, scene function, and evidence route.
 
+## Visual content sets and sales bundles
+
+Resolve `套餐 / 组合 / 内容组合 / 套餐方案` before production. In an e-commerce visual task, prioritize a coordinated visual content set; do not infer a sales bundle, product quantity, discount, gift, or entitlement. Present sales-bundle facts only when the input explicitly supplies them. If intent remains materially ambiguous, use the existing scoped clarification gate.
+
+For a visual content set, require at least two actual image files with different communication jobs, such as a primary hero plus a texture, selling-point, appetite, or use-context supporting visual. Supporting visuals follow their own slot roles and need not repeat every hero-poster field; explicitly requested Product/Usage Hero pairs retain the full-poster requirements. If an explicit one-image limit conflicts with the requested set, resolve the conflict before production rather than silently changing quantity.
+
+Record each image's filename, communication job, fact scope, and actual status in the active project state/delivery manifest. Planning text alone or one image without distinct set roles cannot satisfy this contract. Tool failure or missing facts may block affected images; report the partial/blocked status honestly, never call the set complete.
+
+## Direct detail-page generation
+
+For an explicit request to directly generate a detail page, deliver:
+- one first-screen mockup for product identity, supplied/verified price when applicable, and core value;
+- one complete group of separately exported, ordered detail-module images covering every requested function/selling point.
+
+Use the long-form medium grammar. Modules explain individual points rather than duplicate the first-screen job. Resolve any required missing/conflicting price through the existing content gate; never invent a price to fill the first screen. A long-page composite may be additional, but one long image alone does not prove the module group complete.
+
+Before production, map each required point to its module and planned crop dimensions. Record module count, order, actual crop dimensions, filenames, fact scopes, states, and omission-check results. Verify each export and its coverage against the input. Missing/unverified modules block a complete/final claim; disclose partial work and remaining dependencies.
+
 ## Runtime Output Specification
 Compose from:
 **Common Output Core + Medium Grammar + Primary Job + Supporting Mechanisms + Platform Adapter + Product/Strategy Context + Campaign Visual System**.

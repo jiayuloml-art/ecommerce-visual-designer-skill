@@ -21,7 +21,8 @@ Check:
 - prices/offers,
 - claims/parameters,
 - certifications/legal facts,
-- prohibited inferences.
+- prohibited inferences,
+- no unauthorized flags, maps, borders, regional emblems, or other geographic/political symbols; confirmed origin/region/platform facts do not authorize decorative symbols.
 
 For rendered product visuals, perform T2 comparison against supplied/verified product evidence.
 
@@ -57,6 +58,13 @@ For every static e-commerce poster, also check:
 - typography and product/scene are planned and preferably generated together; exact copy is verified and corrected locally only if necessary rather than using default staged text overlay,
 - the Product–Background Fusion Score report contains ten numeric fields and a total,
 - every fusion field is at least 7/10 and the total is at least 80/100.
+
+## Output-set and explanation checks
+- Visual content sets: at least two actual image files with distinct communication jobs; no invented sales quantities, discounts, gifts, or entitlements. Resolve conflicting explicit counts before production.
+- Direct detail pages: one first-screen mockup plus the complete separately exported module group; verify count, order, crop dimensions, and coverage of every requested function/selling point. A single long image alone fails group completeness.
+- For every file, verify filename, communication job, fact scope, and actual status against the export and delivery manifest/project state.
+- Check that the concise client rationale uses the current input language (or explicit override), covers goal/decisions/product–scene relationship/fact boundary/delivery state, and agrees with the actual image.
+- Missing images, unchecked applicable QA, or rationale–artifact mismatches block completed/final claims. Report partial/blocked work and outstanding requirements honestly.
 
 ## Q2 — Regression QA
 When an approved baseline exists, check unintended changes to:

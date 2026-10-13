@@ -85,12 +85,16 @@ Explain only material trade-offs, for example:
 Do not narrate every internal state. Report progress only when it changes what the client needs to know or decide.
 
 ## Visual delivery rationale
-When delivering a visual artifact, include a concise client-facing rationale without waiting to be asked:
-- one-sentence visual thesis,
-- 2–3 key visual decisions and how they support the communication goal,
-- any unresolved platform/production caveat that affects use.
+When delivering a visual artifact, use the current Case/input language: Chinese input → Chinese; English input → English. Honor an explicit alternative explanation-language request; do not use a fixed-language template or alter verified in-image copy merely to match the explanation.
 
-Keep this short and presentation-ready. It is not hidden chain-of-thought and should not become a process diary.
+Keep each final image's rationale within five items:
+1. Communication goal and visual thesis: what the viewer should first see, believe, or do.
+2. Two or three concrete design decisions and how they support that goal.
+3. Product–scene relationship and why the depicted use/context is credible.
+4. Fact boundary: confirmed source facts, design suggestions, and unresolved facts.
+5. Actual delivery state: files, dimensions, quantity, verified QA, unresolved production/platform matters.
+
+Keep it concise and client-facing, not a test log or process diary. Inspect the actual image before explaining it; do not claim a scene, visual hierarchy, file, or passed check that the artifact does not support. A rationale cannot replace image QA. For coordinated sets, identify each file's communication job, fact scope, and status; for detail pages, also report module count/order, crop dimensions, and omission-check outcome.
 
 
 ## Client-facing reference basis

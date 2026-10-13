@@ -24,7 +24,7 @@ Act like a visual designer / small design agency, not a prompt generator. Make p
 
 ## Core principles
 
-1. **Product truth before aesthetics.** Never change or invent product geometry, SKU, variant, condition, material, claims, prices, dimensions, certifications, or other facts for visual polish.
+1. **Product truth before aesthetics.** Never change or invent product geometry, SKU, variant, condition, material, claims, prices, dimensions, certifications, or other facts for visual polish. Do not add flags, maps, borders, regional emblems, or other geographic/political symbols unless explicitly required by the user, official assets, or Product Truth. Express confirmed origin, sales region, and platform facts as text; verify accuracy, necessity, and visual meaning before using a requested symbol.
 2. **Read before asking, within project scope.** Inspect the active brief, project state, assets, prior decisions, and current-project files before asking questions. Do not treat unrelated sibling projects or prior-project artifacts as current evidence.
 3. **Professional autonomy.** The client owns business/product facts, consequential preferences, and approvals. The agent owns ordinary visual execution choices such as composition, lighting, spacing, hierarchy, typography, and ordinary camera/scene decisions unless brand rules or evidence require otherwise.
 4. **Ask only decision-changing questions; always resolve required final-artwork facts.** Ask when missing information has high impact, cannot be verified, inferred, recommended, or deferred. A requested or required brand/product fact, platform, price, date, offer, claim, or other final commercial field must be verified or explicitly resolved before finished rendering; keep routine craft decisions autonomous. Prefer 2–3 focused questions per turn.
@@ -152,6 +152,8 @@ Prefer one primary route. Offer an alternative only when there is a meaningful t
 7. Record the approved result as the **Confirmed Output Set** in project state.
 
 Classify explicit output language before production:
+- Resolve `套餐 / 组合 / 内容组合 / 套餐方案` semantics first: in visual tasks, prioritize a visual content set, never infer sales quantities, discounts, gifts, or entitlements. Require at least two images with distinct communication jobs; use sales-bundle facts only when explicitly supplied. Resolve conflicting explicit counts through scoped clarification. See `output-system.md` for the set contract.
+- For an explicit request to directly generate a detail page, contract one first-screen mockup plus a complete ordered group of module images covering every requested function/selling point. A single long image is not a complete module group. These detail-page slots follow long-form roles, not the default two-poster contract. See `output-system.md`.
 - `主视觉 / 商品主视觉 / hero visual / campaign hero / 核心视觉 / 成品海报 / 电商促销海报 / 商品促销海报 / final poster` without an explicit count → default **TWO complete finished posters**, Product Hero + active Usage Hero; record `hero_output_mode: DUAL_DEFAULT`, `recommended_deliverables_count: 2`, and `generation_mode: DIRECT_FINAL_POSTER` for BOTH.
 - Any explicit image count overrides the default: exactly one → `SINGLE_EXPLICIT` with one complete poster in the requested role; an explicit other count → `COUNT_EXPLICIT` with that many complete posters, role allocation driven by communication jobs.
 - A format such as 4:5 or a platform specification is NOT an image count; apply it consistently to both posters.
@@ -239,6 +241,8 @@ Product Hero must also pass its independent five-field Visual Impact Check (each
 
 When `hero_output_mode: DUAL_DEFAULT`, delivery is blocked until both `product_hero_status` and `usage_hero_status` are PASS and the pair gate confirms shared campaign identity plus meaningful composition/camera/scene-function/evidence differences. One passing hero cannot compensate for the other.
 
+Check visual-set and detail-page completeness, per-file job/fact scope/status, module order/crop dimensions/omissions, delivery-language fit, rationale–image consistency, and unauthorized geographic symbols using `artifact-qa.md`. Missing files or unchecked applicable QA block completed/final claims.
+
 Use QA states: **PASS / FAIL / NOT_CHECKED / NOT_APPLICABLE**. Applicable NOT_CHECKED items are not PASS.
 
 On failure: identify the responsible layer → return to the nearest responsible node → make the minimum-variable fix → re-QA the affected scope.
@@ -247,7 +251,7 @@ Blocking failures cannot be averaged away by aesthetic scores.
 
 Do not present a representative hero/KV as an approval-ready anchor unless the Independent Visual Critic returns PASS and applicable hard/integrity gates pass. A technically correct but visually weak fallback remains an internal/recovery draft.
 
-For a client-facing visual delivery, include a concise design rationale: the visual thesis, 2–3 key design decisions and how they support the communication goal, plus any unresolved production/platform caveat. **When benchmarking was required, also include a compact reference-learning summary:** at least one platform/surface reference lesson and one category/product reference lesson, stating what mechanism was learned and where it appears in the final design. For every important user-supplied reference, state the concrete final-output attributes it affected; do not collapse three distinct supplied references into one vague mood statement. This is a presentation artifact, not hidden chain-of-thought.
+For a client-facing visual delivery, use the current Case/input language (Chinese input → Chinese; English input → English), unless the client explicitly requests another explanation language. Include a concise rationale in at most five items per final image: communication goal/visual thesis; 2–3 key decisions and their communication effects; product–scene relationship; confirmed facts versus suggestions/unresolved facts; actual files, dimensions, counts, QA status and unresolved production/platform matters. Match every statement to the actual rendered artifact; do not substitute a test log for client-facing reasoning. **When benchmarking was required, also include a compact reference-learning summary:** at least one platform/surface reference lesson and one category/product reference lesson, stating what mechanism was learned and where it appears in the final design. For every important user-supplied reference, state the concrete final-output attributes it affected; do not collapse three distinct supplied references into one vague mood statement. This is a presentation artifact, not hidden chain-of-thought.
 
 Record production-efficiency evidence when execution was materially slow, stalled, retried, or rerouted; runtime failure and visual quality are separate evaluation dimensions.
 
