@@ -2,7 +2,7 @@
 
 ## Default mode
 Use CLIENT MODE unless the user explicitly requests debugging/development detail.
-Use the current case's client language for customer-facing delivery (Chinese brief → Chinese; English brief → English), unless the user explicitly requests another output language. The SKILL.md language is not a client-language default.
+Use the current case's client language for **all client-facing final delivery sections, revision notes, labels and explanations** (Chinese brief → Chinese; English brief → English), unless the user explicitly requests another output language. Resolve the language from the **active case**, not repository or SKILL.md defaults; do not translate or overwrite locked product names and exact commercial strings without fact confirmation. Check the generated delivery text for unintended English/Chinese template leakage before sending.
 
 ## Professional autonomy
 The client owns:
@@ -87,12 +87,12 @@ Do not narrate every internal state. Report progress only when it changes what t
 
 ## Client language and first visual delivery
 At the **first delivery of actual rendered visual artifacts** in the active case, report exactly four client-facing sections, naturally translated into the case language:
-1. **Design Rationale / 设计说明** — a concise visual thesis, 2–3 consequential design decisions and their communication effect, product–scene logic if relevant, and an honest reference-learning summary under `visual-benchmarking.md`.
+1. **Design Rationale / 设计说明** — a concise visual thesis, 2–3 consequential design decisions and their communication effect, product–scene logic if relevant, and an honest reference-learning summary under `visual-benchmarking.md`. List each actually inspected and adopted outstanding visual example by identifiable work/source + direct link when verified, specify the concrete composition/hierarchy/color-light/product/scene technique learned and how it was transformed in **this** artwork; never substitute vague mood praise or fictional links. This citation requirement must not freeze the source-product camera or suppress creative product–scene reconstruction.
 2. **Delivered Outputs / 输出结果** — each actually rendered output or module, its Communication Job, viewer/decision value and inspectable file/reference. A count or filenames alone are insufficient.
 3. **Factual Boundaries / 事实边界** — verified product facts, supplied/approved assets and canonical commercial copy used; distinguish outstanding facts and never add unverified prices, rights, certifications, performance claims or other product facts.
 4. **Delivery Status / 交付状态** — what was rendered and QA-verified, pending, blocked or awaiting approval, including platform/production dependencies; every completion claim must match an actual artifact.
 
-Do not use the completed-artwork four-section structure to imply delivery when only a proposal, prompt, tool invocation or incomplete render exists. Give the truthful planning/incomplete status instead. Keep explanations concise, client-ready and free of internal logs unless DEBUG MODE was requested.
+Each section is written for the client rather than as a test log. **The four-section contract controls explanation after rendering; it never substitutes for producing or verifying the product-led visuals.** Do not use the completed-artwork four-section structure to imply delivery when only a proposal, prompt, tool invocation or incomplete render exists. Give the truthful planning/incomplete status instead. Keep explanations concise, client-ready and free of internal logs unless DEBUG MODE was requested.
 
 ## Client-facing reference basis
 Only report references actually inspected for the current case, with an identifiable source, verifiable direct link when available, a concrete observable design mechanism and its traceable adaptation in the actual output. Do not invent research activity, links or adoption. When no external benchmark took place, state that plainly; when required benchmarking is incomplete, identify the evidence gap and do not claim it passed. Follow `references/methods/strategy/visual-benchmarking.md` for platform/category expectations and the no-copy boundary.
