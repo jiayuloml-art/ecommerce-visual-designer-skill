@@ -155,6 +155,11 @@ Include these defaults when relevant:
 - product too small at thumbnail size,
 - fake materials or excessive depth of field that hides the product.
 
+Geographic-symbol constraints:
+- Never add flags, maps, borders, regional emblems or political symbols for decorative reasons or solely because of origin, market or category.
+- Preserve authentic source-packaging and verified brand markings when fidelity requires; preservation does not authorize enlarging, repeating or deriving new geographic graphics.
+- For an expressly requested new symbol, verify accuracy, purpose, semantic interpretation and authorization before inclusion in final visuals; unresolved symbols remain excluded.
+
 ## Category Visual Intelligence
 
 Derive the direction through this chain:
