@@ -63,6 +63,16 @@ outputs:
     fields: [] # per requested/required field: key, value, source_ref, status, approved_omission
     platform_status: NOT_CHECKED # VERIFIED | MISSING_REQUIRED | CONFIRMED_CONCEPT_ONLY
     blocking_reasons: []
+  delivery_manifest: [] # actual entries: artifact_id, output_id, slot_id, role, communication_job, fact_scope_refs, file_or_ref, status, qa_status, pending_items
+  detail_page_coverage: # applicable to DETAIL_PAGE; do not duplicate artifact truth
+    first_screen_artifact_id: null
+    modules: [] # module_id, sequence_index, selling_point_ids, communication_job, artifact_id_or_crop_ref, dimensions, crop_bounds, status
+    requested_point_to_module_ids: []
+    module_count: null
+    order_check: NOT_CHECKED
+    dimension_crop_check: NOT_CHECKED
+    coverage_check: NOT_CHECKED
+    missing_items: []
   hero_output_mode: DUAL_DEFAULT # DUAL_DEFAULT | SINGLE_EXPLICIT | COUNT_EXPLICIT; hero and finished-poster requests share default
   recommended_deliverables_count: 2 # explicit count overrides
   product_hero_status: NOT_CHECKED # NOT_CHECKED | PASS | REVISE | FAIL
