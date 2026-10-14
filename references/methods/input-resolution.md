@@ -125,6 +125,11 @@ Before any finished poster image generation, inspect every requested/required vi
 
 Record the audit under `PROJECT_STATE.outputs.final_artwork_input_audit`. Any `MISSING_REQUIRED`, `CONFLICTING`, or `NEEDS_SOURCE_EVIDENCE` blocks that dependent poster's **entire final image generation** and final delivery, even if an isolated text layer could be skipped. Continue only unrelated planning or outputs whose requirements pass. Phrases such as “预留价格/日期” are not permission to leave placeholders or silently omit those fields. Obtain exact source values or explicit approval to remove and reflow. Do not silently downgrade final art to concept-only. Re-check exact copy on the actual rendered artifact before final delivery.
 
+## Output-specific dependencies and symbol evidence
+For each visual-set or detail-page unit, verify only the commercial and product facts its content actually uses. Optional unrequested prices are OPTIONAL_NOT_REQUESTED; never invent them. Missing/conflicting required facts block dependent final artifacts and claims of package completeness, while independent tasks can proceed. Non-poster outputs use equivalent scoped factual checks, without claiming poster-specific audits passed.
+
+Geographical/political symbols newly added to imagery require specific verified meaning, necessity and authorization. Existing authentic approved packaging/brand markings may be preserved as source truth, but do not authorize newly decorative flags, maps, borders or regional badges.
+
 ## Missing vs conflict
 - **MISSING:** no supported value exists.
 - **CONFLICT:** two or more credible sources disagree.
