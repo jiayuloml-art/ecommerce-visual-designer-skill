@@ -74,6 +74,15 @@ Every additional output/slot must add at least one of:
 
 If it does not, merge or remove it.
 
+## Package / bundle semantic routing
+Resolve mentions of 套餐, 组合, 内容组合 and 套餐方案 by context before output defaults. Classify as VISUAL_CONTENT_SET (multiple visual roles), SALES_BUNDLE_FACT (verified commercial bundle), BOTH (separate contracts), or AMBIGUOUS (ask one decision-changing question). Words alone do not authorize images, SKU counts, gifts or discounts. Resolve conflicts between a visual set and an explicit one-image request before production.
+
+## Visual Content Set contract
+When a confirmed visual-content set is requested for direct production, produce at least two actual inspectable visuals with distinct primary Communication Jobs unless the user explicitly settles a conflicting count. For each, retain its viewer question, role, factual scope, actual file/ref and QA status in the delivery manifest. Planning alone, one image or duplicate roles never satisfies the contract.
+
+## Direct detail-page contract
+An explicit direct detail-page request requires one actual first-screen image and a complete inspectable group of ordered module visuals. Separate product/core-value introduction from module-by-module explanation or proof. Map every confirmed requested selling point to at least one module; record each module's role, source evidence, actual image/crop, dimensions, crop bounds and status, plus omitted items and checks. Show prices only when verified and applicable. A single undifferentiated stitched image or a text-only plan does not satisfy completion. Detail pages do not inherit the dual-Hero poster default.
+
 ## Hero vs final-poster routing
 
 Classify explicit output language before applying package recommendations:
