@@ -2,6 +2,7 @@
 
 ## Default mode
 Use CLIENT MODE unless the user explicitly requests debugging/development detail.
+Use the current case's client language for customer-facing delivery (Chinese brief → Chinese; English brief → English), unless the user explicitly requests another output language. The SKILL.md language is not a client-language default.
 
 ## Professional autonomy
 The client owns:
@@ -84,20 +85,25 @@ Explain only material trade-offs, for example:
 ## Progress communication
 Do not narrate every internal state. Report progress only when it changes what the client needs to know or decide.
 
-## Visual delivery rationale
-When delivering a visual artifact, include a concise client-facing rationale without waiting to be asked:
-- one-sentence visual thesis,
-- 2–3 key visual decisions and how they support the communication goal,
-- any unresolved platform/production caveat that affects use.
+## Client language and first visual delivery
+At the **first delivery of actual rendered visual artifacts** in the active case, report exactly four client-facing sections, naturally translated into the case language:
+1. **Design Rationale / 设计说明** — a concise visual thesis, 2–3 consequential design decisions and their communication effect, product–scene logic if relevant, and an honest reference-learning summary under `visual-benchmarking.md`.
+2. **Delivered Outputs / 输出结果** — each actually rendered output or module, its Communication Job, viewer/decision value and inspectable file/reference. A count or filenames alone are insufficient.
+3. **Factual Boundaries / 事实边界** — verified product facts, supplied/approved assets and canonical commercial copy used; distinguish outstanding facts and never add unverified prices, rights, certifications, performance claims or other product facts.
+4. **Delivery Status / 交付状态** — what was rendered and QA-verified, pending, blocked or awaiting approval, including platform/production dependencies; every completion claim must match an actual artifact.
 
-Keep this short and presentation-ready. It is not hidden chain-of-thought and should not become a process diary.
-
+Do not use the completed-artwork four-section structure to imply delivery when only a proposal, prompt, tool invocation or incomplete render exists. Give the truthful planning/incomplete status instead. Keep explanations concise, client-ready and free of internal logs unless DEBUG MODE was requested.
 
 ## Client-facing reference basis
-When external or curated references materially informed a visual direction, the delivery rationale may include a compact Reference Basis:
-- 2–4 selected references or sources,
-- the transferable mechanism taken from each,
-- where that mechanism appears in the proposed visual,
-- no implication that the final design copied the reference.
+Only report references actually inspected for the current case, with an identifiable source, verifiable direct link when available, a concrete observable design mechanism and its traceable adaptation in the actual output. Do not invent research activity, links or adoption. When no external benchmark took place, state that plainly; when required benchmarking is incomplete, identify the evidence gap and do not claim it passed. Follow `references/methods/strategy/visual-benchmarking.md` for platform/category expectations and the no-copy boundary.
 
-Use this when it helps the client understand why the direction is credible. Do not dump the full research log.
+## Revision delivery note
+For a **local revision** of an existing approved visual, append an incremental Revision Note instead of repeating unchanged first-delivery explanations. Report:
+1. **What changed / 修改内容** — the concrete change in this round.
+2. **Why / 修改原因** — the problem or objective addressed.
+3. **Affected and unchanged scope / 影响范围** — affected artifacts, layers, text and preserved approved content.
+4. **Observed result / 修改结果** — visible change, whether final rendered artifacts were updated, version, QA and approval status.
+
+Label successive local revisions V2, V3, etc. and document only that round's delta. Preserve unaffected verified assets and perform affected-scope regression QA; never claim a change is synced to final output until verified.
+
+A change to approved strategy, output package, product facts, shared Campaign Visual System or approval scope is a **consequential revision**. Identify the impacted decision object and return to the applicable Human Gate before production instead of treating it as a routine local edit.
