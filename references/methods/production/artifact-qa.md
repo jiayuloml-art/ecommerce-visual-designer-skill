@@ -78,6 +78,15 @@ Check:
 
 If account-dependent or current platform rules are unresolved, do not claim platform-ready status.
 
+## Specialized visual-set and detail-page integrity checks
+**Q0 — Geographic representation:** Verify every newly added flag, map, national border, regional emblem or comparable symbol has confirmed current-case necessity, accurate meaning and authorization. Authentic source-packaging marks may remain if faithful, but do not authorize additional decoration.
+
+**Q1 — Package completeness:** A VISUAL_CONTENT_SET must have actual inspectable images (normally at least two), distinct primary Communication Jobs, and per-image file/ref, factual scope and QA status. A DETAIL_PAGE must have an actual first screen and each required module or inspectable crop, with complete requested-point coverage, order, module count, export dimensions, crop boundaries and missing-items check. A plan or partial render never passes.
+
+**Q2 — Local revision:** Compare affected portions with the approved baseline, confirm unrelated product truth, scene, typography, campaign locks and assets remain intact; report actual updated file, version, integrity and affected-scope QA.
+
+**Applicability:** These specialized checks are mandatory only for their respective contracts. The existing two-Hero and commercial-poster hard gates remain unchanged for Hero/final-poster contracts; do not force them onto detail modules. Applicable NOT_CHECKED cannot become PASS.
+
 ## Blocking rule
 Hard-gate failures cannot be averaged away by visual quality.
 
