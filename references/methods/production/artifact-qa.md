@@ -23,7 +23,7 @@ Check:
 - certifications/legal facts,
 - prohibited inferences.
 
-For rendered product visuals, perform T2 comparison against supplied/verified product evidence.
+For rendered product visuals, perform T2 comparison against supplied/verified product evidence. **Compare identity anchors and depicted claims, not arbitrary source-pixel or camera similarity**; an approved, evidence-supported perspective, crop, pose or lighting change is not a failure. Fail only unsupported physical changes or unverified newly exposed geometry. Truth and benchmark-source verification must not replace the existing Visual Excellence/Impact/Integration checks.
 
 ## Q0b — Final commercial-content and delivery gate
 For each finished commercial poster, before rendering require `outputs.final_artwork_input_audit.status: PASS` and verified target platform; requested/required copy fields must be exact and supported or explicitly approved not to appear with layout reflow. After rendering, inspect actual visible text, price, date, model, claim and CTA against canonical/source wording. Reject blank fields, placeholders (`¥___`, `____/____`, `待填`, etc.), unsupported claims and unauthorized omissions. Set the artifact `final_delivery_gate: PASS` only after rendered copy matches and all applicable hard gates pass. Concept-only work must be clearly labeled and must not claim final delivery.
@@ -78,10 +78,13 @@ Check:
 
 If account-dependent or current platform rules are unresolved, do not claim platform-ready status.
 
+## Client-facing delivery verification
+At actual first visual delivery, check the four client-facing sections (design rationale, delivered outputs, factual boundaries, delivery status) in the active case language, each tied to actual rendered artifacts. When references were used, inspect the verifiable source URLs and record their concrete transferable visual mechanisms and actual adoption; absent or unverified research must never be invented. For local revisions, check the four incremental revision-note fields and affected-scope version/regression state. Reject unverified 'completed' claims, text-only output masquerading as produced visuals, or English boilerplate in a Chinese-case response (and vice versa). This verification **does not reduce product–scene creation, viewpoint diversity or existing visual quality gates**.
+
 ## Specialized visual-set and detail-page integrity checks
 **Q0 — Geographic representation:** Verify every newly added flag, map, national border, regional emblem or comparable symbol has confirmed current-case necessity, accurate meaning and authorization. Authentic source-packaging marks may remain if faithful, but do not authorize additional decoration.
 
-**Q1 — Package completeness:** A VISUAL_CONTENT_SET must have actual inspectable images (normally at least two), distinct primary Communication Jobs, and per-image file/ref, factual scope and QA status. A DETAIL_PAGE must have an actual first screen and each required module or inspectable crop, with complete requested-point coverage, order, module count, export dimensions, crop boundaries and missing-items check. A plan or partial render never passes.
+**Q1 — Package completeness:** A VISUAL_CONTENT_SET must have actual inspectable images (normally at least two), distinct primary Communication Jobs, and per-image file/ref, factual scope and QA status. Confirm product-first co-designed scene/camera in each applicable image and useful variations in angle/composition or scene role, while preserving product identity and campaign locks. A DETAIL_PAGE must have an actual first screen and each required module or inspectable crop, with complete requested-point coverage, order, module count, export dimensions, crop boundaries and missing-items check. A plan or partial render never passes.
 
 **Q2 — Local revision:** Compare affected portions with the approved baseline, confirm unrelated product truth, scene, typography, campaign locks and assets remain intact; report actual updated file, version, integrity and affected-scope QA.
 

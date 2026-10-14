@@ -26,8 +26,10 @@ Use when generative imagery and deterministic commercial layers must coexist.
 - Unknown product truth must never be generated as verified fact.
 - Use the simplest route that satisfies quality, fidelity, and precision; escalate only when needed.
 
+**Route non-regression:** `Product Truth Lock` preserves verified identity/facts; it does not select `SOURCE_PIXEL_LOCKED` by default. When credible integration or a new approved camera/use view is needed, prefer an identity-preserving edit/reconstruction or fully integrated hybrid render over a fixed product cutout plus a swapped background. Compare actual rendered identity anchors and unsupported new details at T2; do not fail a truthful perspective/crop change simply because it differs from source pixels. Reference verification must not silently downgrade composition, camera, lighting, scene interaction, or the product-specific visual mechanism.
+
 ### Scene + exact-product pattern
-For static e-commerce posters, default to a direct integrated route:
+For static e-commerce posters, default to a direct integrated route. Apply the same product-first co-planning principle to visual-content-set images and detail-page modules without forcing their layouts into poster grammar:
 1. plan the full poster composition, including product, environment, camera, contact surface, light/shadow/reflection, foreground/background interaction, and all copy/commercial zones,
 2. use an edit, identity-preserving reconstruction, compositing, or hybrid method that can make the product and scene one photographic system,
 3. generate/render product, environment, usage behavior where applicable, and planned headline, brand, selling points and confirmed promotion information together as a complete poster wherever the runtime supports integrated text rendering,

@@ -3,6 +3,8 @@
 ## Objective
 A background must express **why this particular product belongs in this scene**, beyond plausible perspective, shadows, and lighting. Apply to Product Hero and active Usage Hero, both independently complete commercial posters. The existing ten-field Product–Background Fusion Score remains separate.
 
+**Joint-creation invariant:** Begin with the verified product silhouette, material, scale cues, user action and selling-point evidence, then design the camera **and** scene together. The original product-photo viewpoint is not frozen by product truth. A newly generated room, pedestal or background with an unchanged flat front-view product pasted onto it does not meet the relationship contract. Supported viewpoint/crop/lighting/pose changes are positive design decisions when they improve product presence and scene coherence. Do not allow reference-link or factual-wording audits to erase these visual decisions.
+
 ## Product-first preflight
 Before rendering, lock a product-specific `product_background_relationship` contract:
 - `scene_role`: credible use context, functional evidence, material expression, brand-specific space, or purposeful minimal studio.

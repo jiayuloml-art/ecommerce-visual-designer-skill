@@ -54,7 +54,7 @@ Do not encode aesthetic judgment as a universal product-area percentage.
 For hero work, product prominence is non-negotiable even when the chosen mechanism uses a person, architecture, or an expressive environment. The Product Hero must make the product the first visual subject; the Usage Hero must make the product-use relationship—not the model or room—the first meaningful read.
 
 ### Product–scene relationship
-For every scene-based poster, complete `product-scene-relationship.md` first: record one product-specific background thesis, a verified function/use or material presentation reason, a form/color/material relation, spatial support and attention guidance, brand fit and an interchangeability test. Do not force props into justified minimal studio frames.
+For every scene-based poster, complete `product-scene-relationship.md` first: record one product-specific background thesis, a verified function/use or material presentation reason, a form/color/material relation, spatial support and attention guidance, brand fit and an interchangeability test. Co-design product camera, scene structure, contact and light; avoid the default of retaining a fixed product snapshot while merely exchanging the background. Do not force props into justified minimal studio frames.
 When a scene is used, define **how the product physically or visually participates in it**.
 
 Prefer a relationship expressed as an action or spatial interaction, for example:
@@ -69,6 +69,8 @@ Prefer a relationship expressed as an action or spatial interaction, for example
 Do not reduce this to coordinates such as “product on the right”.
 
 **Product Identity Lock ≠ Source Pixel Lock ≠ Product Pose Lock.**
+
+**Creative-freedom guard:** When an image supplies only one view, treat that view as evidence for the features it actually shows, not as a mandatory camera for all future outputs. Proactively explore an evidence-supported change in angle, distance, perspective, crop, tilt, placement, lighting, and interaction when it improves the communication job. Preserve the product's known structure and recognizable identity; never invent hidden controls, a rear panel, new accessories, or undocumented operating states merely to create a dramatic view. If a proposed angle exposes unsupported details, choose a supported angle/occlusion or follow Evidence Authorization for the *specific missing detail*; do not freeze every output to the source view.
 
 A supplied product image is a source of product truth; it is **not automatically a requirement to reuse those exact pixels, that exact camera, or that exact pose**.
 
