@@ -449,3 +449,5 @@ Show only the useful transfer, not the full research log:
 For important user-supplied references, include each reference's concrete output mapping. If the user supplies three distinct references, the summary must make all three mappings auditable unless one was explicitly rejected or marked non-influential.
 
 The explanation should answer: **what was learned, what changed in this design because of it, and what was deliberately not copied.**
+
+Client-facing evidence integrity: cite only visual examples actually inspected in the active case. For each, provide the identifiable work/source, a verifiable direct URL when available, a specific observable technique, and how that technique visibly informed the delivered output. Never invent case names, links, inspection, or adoption. State when external research was not performed; if a mandatory benchmark remains incomplete, disclose the gap and do not claim it passed. Keep the existing platform/category evidence requirements and non-copy rule; fewer verified examples must not be padded with fictional ones.
