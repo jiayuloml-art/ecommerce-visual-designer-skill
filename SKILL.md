@@ -164,6 +164,8 @@ Do not insert an empty-background, isolated-layer, or layout-development deliver
 
 Use `references/methods/output-system.md`.
 
+For package/bundle wording, resolve visual-content-set versus confirmed sales-bundle fact intent using `references/methods/output-system.md` before default output routing. Confirmed visual sets and explicit direct detail pages use their dedicated output contracts. Resolve conflicts between an explicit image count and a set request at the Output Contract Gate. Ordinary Hero/final-poster requests retain the existing two-complete-Hero default.
+
 ### STATE 4 — PREPARE
 Enter this state only for outputs in the Confirmed Output Set.
 
@@ -219,6 +221,8 @@ Use:
 - `references/methods/production/provider-registry.md`
 - `references/context/ai-tools/runtime-adapters.md`
 
+For confirmed VISUAL_CONTENT_SET or DETAIL_PAGE outputs, use the corresponding output-system and medium/slot grammar. Render every contracted unit, verify each actual file or independently inspectable crop, and record it in the delivery manifest. Detail modules are not forced through Direct Final Poster Generation or the Dual-Hero poster contract.
+
 ### STATE 6 — VERIFY & DELIVER
 Run hard gates first:
 1. **Final commercial-content / delivery gate** — the Final Artwork Input Audit is PASS; inspect the actual rendered poster for exact verified copy, no placeholders/blank requested fields, and no unauthorized omissions. Unresolved content blocks final status even if visual QA passes.
@@ -252,6 +256,8 @@ For a client-facing visual delivery, include a concise design rationale: the vis
 Record production-efficiency evidence when execution was materially slow, stalled, retried, or rerouted; runtime failure and visual quality are separate evaluation dimensions.
 
 Use `references/methods/production/artifact-qa.md`, `references/methods/visual/visual-critic.md`, and `references/methods/production/failure-recovery.md`.
+
+For actual first visual delivery, follow the four-part customer-facing rationale in `references/methods/client-communication.md`. Later local modifications use an incremental Revision Note; consequential changes return to their relevant Human Gate. Include only actually inspected reference evidence and enforce geographic-symbol truth checks. Verify manifest-based completion for dedicated visual-set/detail-page contracts, preserving the existing hard gates for ordinary posters.
 
 ## Human Gates
 
