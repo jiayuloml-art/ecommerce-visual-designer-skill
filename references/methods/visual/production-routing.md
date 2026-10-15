@@ -27,14 +27,16 @@ Use when generative imagery and deterministic commercial layers must coexist.
 - Use the simplest route that satisfies quality, fidelity, and precision; escalate only when needed.
 
 ### Scene + exact-product pattern
-When a hero requires both lifestyle atmosphere and strict product fidelity, prefer a staged route when appropriate:
-1. create/source the scene or background without inventing the product,
-2. preserve the verified product layer,
-3. composite and integrate it into the scene,
-4. apply deterministic typography/brand layers,
-5. verify the rendered artifact against product source and art direction.
+For static e-commerce posters, default to a direct integrated route:
+1. plan the full poster composition, including product, environment, camera, contact surface, light/shadow/reflection, foreground/background interaction, and all copy/commercial zones,
+2. use an edit, identity-preserving reconstruction, compositing, or hybrid method that can make the product and scene one photographic system,
+3. generate/render product, environment, usage behavior where applicable, and planned headline, brand, selling points and confirmed promotion information together as a complete poster wherever the runtime supports integrated text rendering,
+4. verify exact wording/glyphs and use the smallest localized deterministic text repair only if the unified result is inaccurate; never default to a text-free plate followed by routine overlay of all copy,
+5. run Product Truth, Product–Background Fusion Score, Visual Critic, and technical/compliance QA.
 
-This staged pattern is **not** sufficient by itself when the communication job depends on a real interaction/contact relationship.
+Do not default to `empty AI background → flat product PNG overlay`. A separate verified product layer is permitted only when the route includes real perspective/scale alignment, contact/weight, matched shadows, environmental light spill, reflection/material response, natural occlusion, depth, and edge integration. If these cannot be achieved, use an interaction-capable edit/reconstruction route or redesign the scene.
+
+Deterministic typography is an accuracy fallback for specific unverified/incorrect strings, not the default first-pass workflow. Even when repair is necessary, the design and layout must have been solved in the unified pre-generation composition.
 
 ### Interaction-aware routing
 If the Visual Evidence Strategy requires any of the following:
@@ -53,19 +55,30 @@ Prefer, as appropriate:
 - **HYBRID** when generated context plus deterministic exact-product/text layers must coexist,
 - **GENERATIVE / reconstruction** only when product evidence is sufficient for the required view/state and strict truth verification remains possible.
 
-Do **not** default to “background-only generation + flat front-view product overlay” when the concept depends on real interaction. That route may be acceptable for atmosphere-only scenes, but it cannot substitute for missing use evidence.
+Do **not** use “background-only generation + flat front-view product overlay” as the final-poster route. A background-only asset may exist only as an internal recovery component, and it still requires a subsequent integration process that produces one camera/light/contact/material system before typography and delivery.
 
 If the required interaction cannot be produced truthfully with current evidence/capabilities, use the fallback evidence route from `visual-evidence-strategy.md` or block/request the minimum input.
 
 If a required scene asset is missing, the production plan should identify and create/source it intentionally rather than defaulting to an empty template.
 
-## Anchor-first production
-For any representative hero/KV/anchor that will establish the visual language for later outputs, follow `anchor-production.md`.
+### Usage Hero route test
 
-That protocol is authoritative for stage order and client-preview eligibility:
-**READY → DESIGN LOCK → SCENE FIT → PRODUCT INTEGRATION → TYPOGRAPHY → FINAL QA → CLIENT PREVIEW**.
+Before selecting the provider/method, verify that the route can produce:
+- the active action, not passive holding/posing,
+- required contact and pressure,
+- correct occlusion order,
+- camera-compatible product and actor geometry,
+- category-valid scale and material response,
+- T2 identity verification after generation/edit/composite.
 
-Do not bypass failed gates, do not show an internal failed candidate as an approval-ready concept, and do not propagate a failed anchor across the set.
+If not, the route is ineligible even if it can make an attractive lifestyle image.
+
+## Direct final poster production
+For static e-commerce posters/KVs, follow `direct-final-poster-generation.md`:
+
+**PRODUCT ANALYSIS → CATEGORY VISUAL STRATEGY → REFERENCE EXTRACTION → TWO COMPLETE POSTER PLANS (UNLESS EXPLICIT COUNT) → INTEGRATED PRODUCT + SCENE + TYPOGRAPHY GENERATION → VERIFY / MINIMAL TEXT REPAIR IF NEEDED → FINAL AND PAIR QA**.
+
+Use `anchor-production.md` only for explicitly requested staged approval. Do not show an empty mood image, background plate, or isolated product layer as though it were the final campaign direction.
 
 ## Asset preservation
 A verified layer is preserved by default when the requested change does not depend on it.
@@ -124,4 +137,4 @@ Rules:
 - if the user explicitly chooses another destination, preserve project/source attribution so future sessions do not treat unrelated files as current-project evidence.
 
 ## Visual concept prototype
-A fast generative concept may be used to validate direction before final production. Label it `S0 CONCEPT`; do not treat its text, pricing, product details, or platform specs as final.
+A fast generative concept may be used only when the client explicitly requests exploration or when a documented blocker prevents direct final production. Label it `S0 CONCEPT`; do not present it as the default deliverable or as final text, pricing, product detail, or platform-ready output.

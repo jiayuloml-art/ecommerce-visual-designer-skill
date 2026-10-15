@@ -11,7 +11,7 @@ Resolve Core paths such as `projects/<project-id>/...` against the active Codex 
 ## Native image generation / edit behavior
 Treat native image generation/edit as a potentially asynchronous or long-running provider call.
 
-For a single hero/KV anchor or other expensive image objective:
+For a single direct-final poster or other expensive image objective:
 - allow only one active generation/edit attempt for the same production objective at a time;
 - do not narrate repeated "still waiting" progress messages;
 - if no usable artifact or meaningful progress signal appears within the **soft wait budget of 6 minutes**, perform one status check and classify the call as suspected `STALLED`;
@@ -22,24 +22,25 @@ For a single hero/KV anchor or other expensive image objective:
 
 These are internal runtime defaults for production efficiency, not platform requirements. If the runtime exposes a reliable provider-specific timeout/progress contract, prefer that verified contract.
 
-## High-fidelity product hero routing
-When the user supplies a verified transparent or clean product asset and product identity must remain exact, prefer this route:
+## Direct-final poster routing
+Both unspecified `主视觉` and `成品海报 / 电商促销海报` requests default to TWO complete posters (Product Hero + active Usage Hero); explicit image count overrides. Ratio 4:5 is not a count. Both outputs include commercial typography and undergo individual plus pair QA.
+When the user supplies a verified product asset, default to an integrated final-poster route:
 
-1. generate/source a **text-free scene/background** without the product;
-2. preserve the supplied product asset as the product layer;
-3. composite it into the scene;
-4. perform non-destructive integration: scale/perspective, contact, shadow, ambient light/color, edge quality, depth/occlusion;
-5. place exact copy/logo with deterministic layout;
-6. run anchor Visual Excellence QA before presenting for approval.
+1. analyze and lock product identity/truth;
+2. resolve category strategy and reference mapping;
+3. lock product position/scale, camera/horizon/lens feeling, contact surface, light/shadow direction, environment color/reflection, and copy/headline/price/brand zones as one composition;
+4. use native generation/edit or an identity-preserving reconstruction/composite route that produces one coherent product–scene system;
+5. generate product, scene and commercial typography together whenever supported; verify exact copy and perform only localized deterministic correction where generated text fails;
+6. run Product–Background Fusion Score, Visual Critic, and hard artifact QA before delivery.
 
-Do not attempt a full product image edit first merely to make the product "blend" when a staged background + composite route can satisfy the same goal more predictably.
+Do not default to generating a text-free empty background and later placing a flat product cutout on it. A verified product layer may be used only when the full route can produce matched camera/perspective, credible contact and shadows, environmental light spill/reflection, material response, natural occlusion, depth integration, and clean edges. Otherwise use a supported identity-preserving edit/reconstruction route or redesign the composition.
 
 ## Deterministic fallback
 A local script/HTML/SVG/compositing fallback may preserve exact product pixels and copy, but it is not automatically visually acceptable.
 
 If the fallback cannot produce plausible product-scene integration or art-directed typography:
 - keep it as a working/recovery draft,
-- do not ask the client to approve it as the visual-language anchor,
+- do not ask the client to approve it as a final poster,
 - either revise the composition locally or prepare a manual/provider handoff that preserves the approved art direction.
 
 ## Evidence to record in development state

@@ -45,6 +45,27 @@ These are a routing vocabulary, not a mandatory taxonomy. Use only what material
 
 Prefer evidence that directly answers the viewer question with the least semantic distance.
 
+## Dual-Hero evidence split
+
+When Dual-Hero applies:
+
+- **Hero A — Product Hero:** visible evidence must make product identity, form/material, and the selected primary benefit legible. Product presence and benefit evidence take priority over lifestyle atmosphere.
+- **Hero B — Usage Hero:** visible evidence must show active use and the resulting experience through a real contact/action relationship. A nearby person, hand, pet, room, or prop is not usage evidence by itself.
+
+Resolve separate Slot Evidence Cards for both heroes. Reusing the Product Hero card for Usage Hero fails readiness.
+
+### Active usage authenticity
+
+Specify:
+- actor: person / hand / body / pet / food or drink / environment / compatible object,
+- action verb: wearing, gripping, inserting, applying, drinking, eating, pouring, charging, operating, feeding, playing, cleaning, organizing, etc.,
+- contact points,
+- expected occlusion / pressure / deformation / containment when applicable,
+- functional result visible in the scene,
+- truth boundary and required source evidence.
+
+Reject passive substitutes such as “model holds product”, “pet sits beside product”, or “product appears in a home” when no functional action is visible.
+
 ## Daily-use functional product default
 
 For ordinary physical products whose value is understood through use — such as drinkware, home appliances, kitchen tools, storage, commuting goods, wearables, and similar utility products — prefer:
@@ -117,6 +138,11 @@ evidence_authorization_state:
 benchmark_question:
 production_implication:
 fallback_evidence_route:
+usage_actor:
+usage_action:
+contact_points: []
+required_occlusion:
+functional_result:
 ```
 
 Do not force every field when irrelevant, but `required_visible_evidence` and `production_implication` must be explicit for supporting selling-point outputs.

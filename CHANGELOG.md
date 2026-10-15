@@ -1,8 +1,48 @@
 # Changelog
 
+## 2026-10-08 — Product Hero Visual Impact
+- Added `references/methods/visual/product-hero-impact.md` to make Product Hero stronger through verified product silhouette/scale, camera perspective, material light, composition energy, brand-specific background and intentional product–type hierarchy.
+- Added an independent five-field Product Hero Impact Check (each ≥7/10; total ≥40/50) and compiled its decisions into Visual Direction, Composition, Direct Final Poster, Production Plan, Visual Critic and PROJECT_STATE.
+- Preserved active Usage Hero, dual independently complete posters, product truth, scene relevance/fusion and typography gates. Rule-level scenario validation does not constitute a live generative-image test.
+
+
+## 2026-10-08 — Product–Background Relationship
+- Added product-first scene protocol, interchangeability test and independent five-field relationship QA (each ≥7, total ≥40/50).
+- Synced Skill, Visual Direction, Composition, Direct Final Poster, Production Plan, Visual Critic, project state, category playbook and README.
+- Preserved default dual complete posters, integrated typography and independent physical Fusion Score.
+- Rule inspection is not a live image-generation evaluation; test output quality separately.
+
+
+## 2026-10-08 — PR #4 follow-up: Dual Complete Posters + Unified Typography
+- Hero and finished-poster requests without explicit quantity both default to two independently complete Product Hero + active Usage Hero posters; honor explicit quantity overrides.
+- Generate product, environment, active use and copy as a unified poster where supported; verify exact wording, and only use localized deterministic repairs on failed glyphs.
+- Synchronized controller, output routing, production-plan, QA, project-state, Codex adapter and docs.
+
+
 ## [1.2.0] — Unreleased
 
 ### Added
+- Default hero-output router: explicit main-visual/hero requests without a single-image instruction now produce Hero A / Product Hero plus Hero B / active Usage Hero; explicit single requests remain single and final-poster requests stay on Direct Final Poster Generation.
+- Hero pair gate requiring one shared Campaign Visual System plus meaningful differences in composition, camera, scene function, and evidence route; Hero B must show category-valid active use with credible contact/occlusion/force.
+- Typography Contrast execution order: lock headline/price/selling-point zones → assess local background → select text color → set size/weight → build contrast field → apply lightweight fallback only if needed → inspect at 100%/50%/25% and run the 2-Second Read Test.
+- Typography Contrast Hard Fail for low headline/background separation, weak first-glance visibility, zoom-dependent reading, thin/small headlines, white-on-highlight washout, dark-on-dark/midtone loss, complex-background interference, weak price hierarchy, missing second visual center, and technically present but commercially invisible copy.
+- Production-plan fields for `hero_output_mode`, `hero_a / product_hero`, `hero_b / usage_hero`, and the complete typography contrast contract.
+- Project-state fields for `hero_output_mode`, `product_hero_status`, `usage_hero_status`, `typography_contrast_status`, `typography_prominence_status`, and `thumbnail_typography_status`, using NOT_CHECKED / PASS / REVISE / FAIL.
+- Typography Prominence Upgrade: pre-generation Typography Prominence Contract, relative headline scale system, Text Contrast Fields, explicit headline–product relationship, offer hierarchy, density/overflow control, 100%/50%/25% typography checks, 2-Second Read Test, and an eight-field fail-closed score (each ≥7; total ≥64/80).
+- Typography hard fails for visually disappearing/body-copy headlines, unreadable core offers, product-evidence overlap, unidentified hierarchy, zoom-dependent contrast, and commercially invisible copy.
+- Project-state fields for `typography_prominence_status`, `typography_prominence_score`, and `thumbnail_typography_status` with NOT_CHECKED / PASS / REVISE / FAIL states.
+- Direct Final Poster Generation as the default static e-commerce route: full-poster planning → product–scene integration planning → integrated poster generation → deterministic typography/commercial-info completion → final QA.
+- Unified pre-generation composition lock for product position/scale, camera, horizon, contact surface, light/shadow, environment color, reflection, and copy/headline/price/brand zones.
+- Product–Background Fusion Score with ten 1–10 fields; any field below 7 or total below 80/100 blocks delivery.
+- Mandatory integrated-poster vocabulary and negative constraints covering grounding, camera/light continuity, contact shadow, environmental influence, material response, occlusion, and non-collage appearance.
+- Dual-Hero is the default only for explicit hero/main-visual requests without a single-image instruction; it remains separate from the Direct Final Poster Generation sequence.
+- Reference Adoption Protocol: SEARCH → SELECT → DECOMPOSE → ADOPT → PRODUCE → COMPARE → REVISE.
+- Visual DNA decomposition across composition, product scale/placement, camera/lens/crop, background/depth, color/contrast, light/shadow, material, action, typography, density, graphic devices, and commercial mood.
+- SOURCE / ADOPT / ADAPT / DO NOT COPY / IGNORE records with Reference → Output traceability and post-render Reference Adoption QA.
+- Product–Environment Integration Protocol and fail-closed checks for perspective, contact, shadow, light, environmental influence, occlusion, scale, color temperature, depth of field, edge integration, and material response.
+- Category Visual Intelligence chain and ten category priors covering smart home, digital accessories, eco lifestyle, health & fitness, beauty & skincare, fashion & accessories, food & beverage, home & living, maternal & baby, and pet products.
+- Product Prominence / Commercial Hierarchy QA, pre-generation copy-zone contract, Visual Diversity Guard, Style Justification, Usage Authenticity QA, and Thumbnail Impact QA.
+- Project-state fields for Dual-Hero membership, reference adoption, category intelligence, style justification, pair approval, and Visual Core QA.
 - Fail-closed Output Contract Gate: ambiguous briefs receive a recommended output package and client approval before visual production; minimum questioning no longer permits silent output selection.
 - Project workspace isolation: each distinct project uses an explicit active project scope instead of inheriting unrelated files from a shared parent directory.
 - Portable relative project layout (`projects/<project-id>/input|state|working|output`) with runtime-specific path mapping.
@@ -13,11 +53,21 @@
 - Fidelity-preserving product/scene integration pass.
 - STALLED execution state, bounded retry, and production-efficiency evidence.
 - Client-facing visual delivery rationale.
-- Codex-specific runtime adapter with bounded image-generation wait budgets and staged exact-product hero routing.
+- Codex-specific runtime adapter with bounded image-generation wait budgets and direct integrated final-poster routing.
 - Hero typography craft and approval-ready anchor acceptance gate.
 - Mandatory Anchor Production Protocol: READY → DESIGN LOCK → SCENE FIT → PRODUCT INTEGRATION → TYPOGRAPHY → FINAL QA → CLIENT PREVIEW, with fail-closed stage transitions and no client preview for failed candidates.
 
 ### Changed
+- Dual-Hero is now the default for explicit hero/main-visual requests without an explicit single-image instruction; it remains separate from the final-poster generation route.
+- Contrast fields now require deliberate pre-generation control of local detail, whitespace, luminance, highlights, texture, faces/action, and subtle environmental gradients; post-hoc opaque/PPT/sticker panels are not accepted as the default repair.
+- Typography is now a pre-generation spatial constraint as well as a deterministic exact-copy completion layer: direct-final scenes must reserve headline, price, and brand contrast fields with controlled local complexity before rendering.
+- Independent Visual Critic now treats Typography Prominence as an explicit hard gate independent of Product–Background Fusion, Product Truth, Commercial Hierarchy, Reference Adoption, and Final Artifact QA.
+- Static poster production now plans and generates each complete commercial poster directly instead of producing a separate hero/background before poster assembly.
+- Staged anchor-first production is now optional and requires explicit client request or documented necessity; even staged previews must be complete integrated posters.
+- Visual Benchmarking references now become enforceable production constraints rather than inspiration-only notes.
+- Production Plan now compiles hero-specific camera/action/copy-zone fields, structured reference mappings, category intelligence, and detailed product–scene integration targets.
+- Independent Visual Critic now explicitly checks Product Presence, Commercial Readability, Reference Adoption, Product–Environment Integration, Category Fit, Visual Distinctiveness, Usage Authenticity, Copy Readiness, Thumbnail Impact, and Product Truth.
+- Usage Hero routing requires active category-valid use and an interaction-capable production method; passive holding/posing or lifestyle placement no longer qualifies.
 - Category scene validity now checks whether the product has a credible use/context relationship instead of accepting literal campaign-copy scenery.
 - Visual Core reorganized into four explicit design responsibilities: Visual Direction, Composition & Typography, Anchor Production, and Independent Visual Critic.
 - Product fidelity now separates Product Identity Lock from View Flexibility (VIEW_LOCKED / VIEW_SELECTABLE / VIEW_RECONSTRUCTABLE / VIEW_PROHIBITED).

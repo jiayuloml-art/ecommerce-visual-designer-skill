@@ -21,9 +21,13 @@ Check:
 - prices/offers,
 - claims/parameters,
 - certifications/legal facts,
-- prohibited inferences.
+- prohibited inferences,
+- no unauthorized flags, maps, borders, regional emblems, or other geographic/political symbols; confirmed origin/region/platform facts do not authorize decorative symbols.
 
 For rendered product visuals, perform T2 comparison against supplied/verified product evidence.
+
+## Q0b — Final commercial-content and delivery gate
+For each finished commercial poster, before rendering require `outputs.final_artwork_input_audit.status: PASS` and verified target platform; requested/required copy fields must be exact and supported or explicitly approved not to appear with layout reflow. After rendering, inspect actual visible text, price, date, model, claim and CTA against canonical/source wording. Reject blank fields, placeholders (`¥___`, `____/____`, `待填`, etc.), unsupported claims and unauthorized omissions. Set the artifact `final_delivery_gate: PASS` only after rendered copy matches and all applicable hard gates pass. Concept-only work must be clearly labeled and must not claim final delivery.
 
 ## Q1 — Technical QA
 Check as applicable:
@@ -37,6 +41,8 @@ Check as applicable:
 - hierarchy spacing and unintended crowding,
 - export integrity,
 - duration/frame/audio/subtitle constraints for temporal outputs.
+- required package completeness: for unspecified-count hero OR finished-poster requests, BOTH complete Product Hero and active Usage Hero posters exist, are identified, and retain separate QA states; explicit count overrides,
+- complete integrated commercial text remains readable and verified in reserved contrast fields without colliding with required product or usage evidence; minimal deterministic repair only if rendered exact copy fails.
 
 For coordinated visual sets, also check:
 - numbering does not overpower the selling point,
@@ -45,6 +51,20 @@ For coordinated visual sets, also check:
 - text does not collide with product, arrows, rings, or other graphics,
 - recurring line / arrow / dot / radius / label / icon treatments follow one coherent graphic token system,
 - commercial text groups (price / offer label / date / CTA) remain legible and internally spaced at intended viewing size.
+
+For every static e-commerce poster, also check:
+- the delivered artifact is a complete poster, not an empty background, isolated product visual, or mood draft,
+- product, environment, headline/core-copy zone, selling-point zone, brand zone, campaign/price/date/CTA zone as applicable, and commercial hierarchy are all resolved,
+- typography and product/scene are planned and preferably generated together; exact copy is verified and corrected locally only if necessary rather than using default staged text overlay,
+- the Product–Background Fusion Score report contains ten numeric fields and a total,
+- every fusion field is at least 7/10 and the total is at least 80/100.
+
+## Output-set and explanation checks
+- Visual content sets: at least two actual image files with distinct communication jobs; no invented sales quantities, discounts, gifts, or entitlements. Resolve conflicting explicit counts before production.
+- Direct detail pages: one first-screen mockup plus the complete separately exported module group; verify count, order, crop dimensions, and coverage of every requested function/selling point. A single long image alone fails group completeness.
+- For every file, verify filename, communication job, fact scope, and actual status against the export and delivery manifest/project state.
+- Check that the concise client rationale uses the current input language (or explicit override), covers goal/decisions/product–scene relationship/fact boundary/delivery state, and agrees with the actual image.
+- Missing images, unchecked applicable QA, or rationale–artifact mismatches block completed/final claims. Report partial/blocked work and outstanding requirements honestly.
 
 ## Q2 — Regression QA
 When an approved baseline exists, check unintended changes to:
@@ -71,9 +91,13 @@ Hard-gate failures cannot be averaged away by visual quality.
 
 A visually strong artifact with an applicable hard-gate FAIL cannot become S2/S3 or be described as platform/final ready.
 
+A scene-based poster with any Product–Background Fusion Score field below 7 or total below 80 cannot be delivered, regardless of attractiveness or copy accuracy.
+
 ## Relationship to Visual Critic
 A client-preview anchor requires:
 - Visual Critic PASS, and
 - all applicable hard/integrity gates PASS.
+
+For Dual-Hero, this requirement applies to both hero artifacts and the pair-level gate. Do not mark the package complete when only one hero passes.
 
 Keep visual criticism in `references/methods/visual/visual-critic.md`; do not move aesthetic judgments into this file.
